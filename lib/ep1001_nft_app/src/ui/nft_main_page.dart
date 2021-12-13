@@ -7,17 +7,20 @@ class NftMainPage extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, ref) {
+
     return Scaffold(
       backgroundColor: Colors.blueGrey[50],
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
-        currentIndex: ref.read(nftBottomProvider),
+        currentIndex: ref.watch(nftBottomProvider),
         onTap: (idx) {
           ref.read(nftBottomProvider.notifier).state = idx;
         },
+        selectedItemColor: Colors.black,
+        unselectedItemColor: Colors.blueGrey,
         items: [
           BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
-          BottomNavigationBarItem(icon: Icon(Icons.home), label: "Search"),
+          BottomNavigationBarItem(icon: Icon(Icons.search), label: "Search"),
           BottomNavigationBarItem(icon: Icon(Icons.insert_chart_outlined), label: "Statistic"),
           BottomNavigationBarItem(icon: Icon(Icons.menu), label: "More"),
         ],
