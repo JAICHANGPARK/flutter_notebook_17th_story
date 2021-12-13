@@ -1,6 +1,11 @@
 # flutter_notebook_17th
 
-A new Flutter project.
+
+### EP1001
+
+- Nifty - NFT Marketplace App UI Kit
+- https://dribbble.com/shots/17046370/attachments/12131716?mode=media
+
 
 ## Getting Started
 
