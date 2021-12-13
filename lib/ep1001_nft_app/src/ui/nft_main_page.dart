@@ -7,9 +7,48 @@ class NftMainPage extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, ref) {
-
     return Scaffold(
       backgroundColor: Colors.blueGrey[50],
+      body: SafeArea(
+        child: SingleChildScrollView(
+          child: Column(
+            children: [
+              Padding(
+                padding: const EdgeInsets.all(16.0),
+                child: Row(
+                  children: [
+                    Container(
+                      decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(16)),
+                      padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 4),
+                      child: Row(
+                        children: const [
+                          CircleAvatar(
+                            radius: 16,
+                          ),
+                          SizedBox(
+                            width: 4,
+                          ),
+                          Text(
+                            "32.06 ETH",
+                            style: TextStyle(
+                              fontSize: 13,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          )
+                        ],
+                      ),
+                    ),
+                    const Spacer(),
+                    const CircleAvatar(
+                      backgroundColor: Colors.white,
+                    )
+                  ],
+                ),
+              )
+            ],
+          ),
+        ),
+      ),
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
         currentIndex: ref.watch(nftBottomProvider),
@@ -18,7 +57,7 @@ class NftMainPage extends ConsumerWidget {
         },
         selectedItemColor: Colors.black,
         unselectedItemColor: Colors.blueGrey,
-        items: [
+        items: const [
           BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
           BottomNavigationBarItem(icon: Icon(Icons.search), label: "Search"),
           BottomNavigationBarItem(icon: Icon(Icons.insert_chart_outlined), label: "Statistic"),
