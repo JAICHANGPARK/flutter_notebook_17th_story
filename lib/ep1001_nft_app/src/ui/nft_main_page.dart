@@ -17,9 +17,9 @@ class NftMainPage extends ConsumerWidget {
         },
         items: [
           BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
-          BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
-          BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
-          BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
+          BottomNavigationBarItem(icon: Icon(Icons.home), label: "Search"),
+          BottomNavigationBarItem(icon: Icon(Icons.insert_chart_outlined), label: "Statistic"),
+          BottomNavigationBarItem(icon: Icon(Icons.menu), label: "More"),
         ],
       ),
     );
