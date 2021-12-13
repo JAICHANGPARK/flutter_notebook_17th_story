@@ -15,6 +15,7 @@ class _NftMainPageState extends State<NftMainPage> {
       backgroundColor: Colors.blueGrey[50],
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
+        currentIndex: ,
         items: [
         BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
         BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
