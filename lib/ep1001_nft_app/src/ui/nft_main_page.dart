@@ -75,7 +75,15 @@ class NftMainPage extends ConsumerWidget {
                 padding: const EdgeInsets.only(left: 16, top: 0,),
                 child: SizedBox(
                   height: 320,
-                  child: Placeholder(),
+                  child: ListView.builder(
+
+                      itemCount: 10,
+                      itemBuilder: (context, index){
+                    return Container(
+                      width: 240,
+                      color: Colors.white,
+                    );
+                  }),
                 ),
               )
             ],
