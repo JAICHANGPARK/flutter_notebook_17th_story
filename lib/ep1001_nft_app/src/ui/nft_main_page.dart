@@ -52,7 +52,7 @@ class NftMainPage extends ConsumerWidget {
                         radius: 14,
                         backgroundColor: Colors.red[100],
                         foregroundColor: Colors.red,
-                        child: Text(
+                        child: const Text(
                           "AL",
                           style: TextStyle(fontSize: 12),
                         ),
@@ -61,30 +61,57 @@ class NftMainPage extends ConsumerWidget {
                   ],
                 ),
               ),
-              Padding(
-                padding: const EdgeInsets.all(16.0),
-                child: Text(
+              const Padding(
+                padding: EdgeInsets.all(16.0),
+                child: const Text(
                   "Hot Bids 🔥",
-                  style: TextStyle(
+                  style: const TextStyle(
                     fontSize: 16,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.only(left: 16, top: 0,),
+                padding: const EdgeInsets.only(
+                  left: 16,
+                  top: 0,
+                ),
                 child: SizedBox(
                   height: 320,
                   child: ListView.builder(
-
                       itemCount: 10,
-                      itemBuilder: (context, index){
-                    return Container(
-                      width: 240,
-                      color: Colors.white,
-                    );
-                  }),
+                      itemBuilder: (context, index) {
+                        return Container(
+                          width: 240,
+                          color: Colors.white,
+                        );
+                      }),
                 ),
+              ),
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 16),
+                child: Row(
+                  children: [
+                    const Text(
+                      "Top Collections",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 18,
+                      ),
+                    ),
+                    const Spacer(),
+                    const Text(
+                      "View All",
+                      style: const TextStyle(
+                        fontWeight: FontWeight.bold,
+                        color: Colors.grey,
+                      ),
+                    )
+                  ],
+                ),
+              ),
+              const SizedBox(
+                height: 320,
               )
             ],
           ),
