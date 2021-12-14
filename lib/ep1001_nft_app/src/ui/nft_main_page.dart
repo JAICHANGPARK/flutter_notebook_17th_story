@@ -110,8 +110,18 @@ class NftMainPage extends ConsumerWidget {
                   ],
                 ),
               ),
-              const SizedBox(
+               SizedBox(
                 height: 320,
+                child: ListView.builder(itemBuilder: (context, index) {
+                  return Row(
+                    children: [
+                      SizedBox(
+                        height: 48,
+                        width: 48,
+                      )
+                    ],
+                  );
+                }),
               )
             ],
           ),
