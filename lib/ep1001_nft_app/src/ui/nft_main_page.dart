@@ -91,18 +91,18 @@ class NftMainPage extends ConsumerWidget {
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 16),
                 child: Row(
-                  children: [
-                    const Text(
+                  children: const [
+                    Text(
                       "Top Collections",
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: 18,
                       ),
                     ),
-                    const Spacer(),
-                    const Text(
+                    Spacer(),
+                    Text(
                       "View All",
-                      style: const TextStyle(
+                      style: TextStyle(
                         fontWeight: FontWeight.bold,
                         color: Colors.grey,
                       ),
@@ -124,7 +124,7 @@ class NftMainPage extends ConsumerWidget {
                             width: 42,
                             child: Stack(
                               children: [
-                                CircleAvatar(
+                                const CircleAvatar(
                                   radius: 20,
                                 ),
                                 Positioned(
@@ -133,11 +133,51 @@ class NftMainPage extends ConsumerWidget {
                                     child: CircleAvatar(
                                       radius: 10,
                                       backgroundColor: Colors.white,
-                                      child: Text("${index + 1}"),
-                                    ))
+                                      foregroundColor: Colors.black,
+                                      child: Text(
+                                        "${index + 1}",
+                                        style: const TextStyle(fontSize: 12),
+                                      ),
+                                    )),
                               ],
                             ),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: const [
+                                Text(
+                                  "Dream",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                                SizedBox(
+                                  height: 4,
+                                ),
+                                Text(
+                                  "walk_er_",
+                                  style: TextStyle(
+                                    color: Colors.grey,
+                                  ),
+                                )
+                              ],
+                            ),
+                          ),
+                          Column(
+                            children: [
+                              Row(
+                                children: [
+                                  Icon(Ionicons.logo_bitcoin, size: 14,),
+                                  SizedBox(width: 4,),
+                                  Text("4,218"),
+                                ],
+                              ),
+                              Text("+23.00%"),
+                            ],
                           )
+
                         ],
                       ),
                     );
