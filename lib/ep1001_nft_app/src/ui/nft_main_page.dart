@@ -23,12 +23,14 @@ class NftMainPage extends ConsumerWidget {
                       decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(16)),
                       padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 4),
                       child: Row(
-                        children:  [
+                        children: [
                           CircleAvatar(
                             radius: 16,
                             backgroundColor: Colors.blue[100],
-                            child: const Icon(Ionicons.logo_bitcoin,
-                            color: Colors.indigoAccent,),
+                            child: const Icon(
+                              Ionicons.logo_bitcoin,
+                              color: Colors.indigoAccent,
+                            ),
                           ),
                           const SizedBox(
                             width: 4,
@@ -44,21 +46,38 @@ class NftMainPage extends ConsumerWidget {
                       ),
                     ),
                     const Spacer(),
-                     CircleAvatar(
+                    CircleAvatar(
                       backgroundColor: Colors.white,
                       child: CircleAvatar(
                         radius: 14,
                         backgroundColor: Colors.red[100],
                         foregroundColor: Colors.red,
-                        child: Text("AL", style: TextStyle(
-                          fontSize: 12
-                        ),),
+                        child: Text(
+                          "AL",
+                          style: TextStyle(fontSize: 12),
+                        ),
                       ),
                     ),
                   ],
                 ),
               ),
-              Text("Hot Bids 🔥"),
+              Padding(
+                padding: const EdgeInsets.all(16.0),
+                child: Text(
+                  "Hot Bids 🔥",
+                  style: TextStyle(
+                    fontSize: 16,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(left: 16, top: 0,),
+                child: SizedBox(
+                  height: 320,
+                  child: Placeholder(),
+                ),
+              )
             ],
           ),
         ),
