@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_notebook_17th/ep1001_nft_app/src/provider/nft_btm_provider.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:ionicons/ionicons.dart';
 
 class NftMainPage extends ConsumerWidget {
   const NftMainPage({Key? key}) : super(key: key);
@@ -21,14 +22,17 @@ class NftMainPage extends ConsumerWidget {
                       decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(16)),
                       padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 4),
                       child: Row(
-                        children: const [
+                        children:  [
                           CircleAvatar(
                             radius: 16,
+                            backgroundColor: Colors.blue[100],
+                            child: const Icon(Ionicons.logo_bitcoin,
+                            color: Colors.indigoAccent,),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             width: 4,
                           ),
-                          Text(
+                          const Text(
                             "32.06 ETH",
                             style: TextStyle(
                               fontSize: 13,
@@ -39,8 +43,14 @@ class NftMainPage extends ConsumerWidget {
                       ),
                     ),
                     const Spacer(),
-                    const CircleAvatar(
+                     CircleAvatar(
                       backgroundColor: Colors.white,
+                      child: CircleAvatar(
+                        radius: 14,
+                        backgroundColor: Colors.red[100],
+                        foregroundColor: Colors.red,
+                        child: Text("AL"),
+                      ),
                     )
                   ],
                 ),
