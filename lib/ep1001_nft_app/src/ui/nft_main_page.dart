@@ -13,6 +13,7 @@ class NftMainPage extends ConsumerWidget {
       body: SafeArea(
         child: SingleChildScrollView(
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Padding(
                 padding: const EdgeInsets.all(16.0),
@@ -49,12 +50,15 @@ class NftMainPage extends ConsumerWidget {
                         radius: 14,
                         backgroundColor: Colors.red[100],
                         foregroundColor: Colors.red,
-                        child: Text("AL"),
+                        child: Text("AL", style: TextStyle(
+                          fontSize: 12
+                        ),),
                       ),
-                    )
+                    ),
                   ],
                 ),
-              )
+              ),
+              Text("Hot Bids 🔥"),
             ],
           ),
         ),
