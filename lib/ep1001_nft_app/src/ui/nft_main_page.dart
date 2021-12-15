@@ -106,7 +106,7 @@ class NftMainPage extends ConsumerWidget {
                                   ),
                                 ),
                                 Expanded(
-                                  flex: 3,
+                                  flex: 2,
                                   child: Row(
                                     children: [
                                       Column(
@@ -122,7 +122,7 @@ class NftMainPage extends ConsumerWidget {
                                         ],
                                       ),
                                       const SizedBox(
-                                        width: 12,
+                                        width: 24,
                                       ),
                                       Expanded(
                                           child: Container(
