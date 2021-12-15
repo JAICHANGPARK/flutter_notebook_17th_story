@@ -63,9 +63,9 @@ class NftMainPage extends ConsumerWidget {
               ),
               const Padding(
                 padding: EdgeInsets.all(16.0),
-                child: const Text(
+                child: Text(
                   "Hot Bids 🔥",
-                  style: const TextStyle(
+                  style: TextStyle(
                     fontSize: 16,
                     fontWeight: FontWeight.bold,
                   ),
