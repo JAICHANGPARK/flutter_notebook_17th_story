@@ -102,7 +102,7 @@ class NftMainPage extends ConsumerWidget {
                                         Positioned(
                                           child: Container(
                                             decoration: BoxDecoration(
-                                                borderRadius: BorderRadius.circular(16),
+                                                borderRadius: BorderRadius.circular(8),
                                                 image: const DecorationImage(
                                                     image: CachedNetworkImageProvider(
                                                       "https://cdn.pixabay.com/photo/2014/01/05/01/19/dragon-238931_960_720.jpg",
@@ -113,6 +113,24 @@ class NftMainPage extends ConsumerWidget {
                                           top: 0,
                                           right: 0,
                                           bottom: 0,
+                                        ),
+                                        Positioned(
+                                          child: Container(
+                                            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                                            decoration: BoxDecoration(
+                                                borderRadius: BorderRadius.circular(8),
+                                                color: Colors.black.withOpacity(0.5)),
+                                            child: const Center(
+                                              child: Text(
+                                                "04h 09m 12s",
+                                                style: TextStyle(
+                                                  color: Colors.white,
+                                                ),
+                                              ),
+                                            ),
+                                          ),
+                                          right: 8,
+                                          top: 8,
                                         )
                                       ],
                                     )),
