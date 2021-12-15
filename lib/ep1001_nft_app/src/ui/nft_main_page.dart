@@ -94,7 +94,21 @@ class NftMainPage extends ConsumerWidget {
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                const Expanded(flex: 8, child: const Placeholder()),
+                                 Expanded(flex: 8, child:  Stack(
+                                  children: [
+                                    Positioned(child: Container(
+                                      decoration: BoxDecoration(
+                                        image: DecorationImage(
+                                          image: Cachene
+                                        )
+                                      ),
+
+                                    ), left: 0,
+                                    top: 0,
+                                    right: 0,
+                                    bottom: 0,)
+                                  ],
+                                )),
                                 const Padding(
                                   padding: EdgeInsets.symmetric(vertical: 12),
                                   child: Text(
@@ -121,12 +135,20 @@ class NftMainPage extends ConsumerWidget {
                                             ),
                                           ),
                                           SizedBox(
-                                            height: 4,
+                                            height: 8,
                                           ),
                                           Row(
                                             children: const [
-                                              Icon(Ionicons.logo_bitcoin),
-                                              Text("10.01"),
+                                              Icon(
+                                                Ionicons.logo_bitcoin,
+                                                size: 16,
+                                              ),
+                                              Text(
+                                                "10.01",
+                                                style: TextStyle(
+                                                  fontWeight: FontWeight.bold,
+                                                ),
+                                              ),
                                             ],
                                           ),
                                         ],
