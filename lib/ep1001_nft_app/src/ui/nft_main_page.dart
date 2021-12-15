@@ -101,7 +101,7 @@ class NftMainPage extends ConsumerWidget {
                                       children: [
                                         Positioned(
                                           child: Container(
-                                            decoration: BoxDecoration(
+                                            decoration: const BoxDecoration(
                                                 image: DecorationImage(
                                                     image: CachedNetworkImageProvider(
                                                       "https://cdn.pixabay.com/photo/2014/01/05/01/19/dragon-238931_960_720.jpg",
@@ -140,7 +140,7 @@ class NftMainPage extends ConsumerWidget {
                                               color: Colors.grey,
                                             ),
                                           ),
-                                          SizedBox(
+                                          const SizedBox(
                                             height: 8,
                                           ),
                                           Row(
@@ -187,7 +187,7 @@ class NftMainPage extends ConsumerWidget {
                       }),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 16,
               ),
               Padding(
@@ -292,7 +292,7 @@ class NftMainPage extends ConsumerWidget {
                               ),
                               const Text(
                                 "+23.00%",
-                                style: const TextStyle(
+                                style: TextStyle(
                                   color: Colors.green,
                                 ),
                               ),
