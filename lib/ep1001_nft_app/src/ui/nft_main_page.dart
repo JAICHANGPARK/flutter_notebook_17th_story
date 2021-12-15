@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_notebook_17th/ep1001_nft_app/src/provider/nft_btm_provider.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:ionicons/ionicons.dart';
+import 'package:cached_network_image/cached_network_image.dart';
 
 class NftMainPage extends ConsumerWidget {
   const NftMainPage({Key? key}) : super(key: key);
@@ -94,21 +95,26 @@ class NftMainPage extends ConsumerWidget {
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                 Expanded(flex: 8, child:  Stack(
-                                  children: [
-                                    Positioned(child: Container(
-                                      decoration: BoxDecoration(
-                                        image: DecorationImage(
-                                          image: Cachene
+                                Expanded(
+                                    flex: 8,
+                                    child: Stack(
+                                      children: [
+                                        Positioned(
+                                          child: Container(
+                                            decoration: BoxDecoration(
+                                                image: DecorationImage(
+                                                    image: CachedNetworkImageProvider(
+                                                      "https://cdn.pixabay.com/photo/2014/01/05/01/19/dragon-238931_960_720.jpg",
+                                                    ),
+                                                    fit: BoxFit.cover)),
+                                          ),
+                                          left: 0,
+                                          top: 0,
+                                          right: 0,
+                                          bottom: 0,
                                         )
-                                      ),
-
-                                    ), left: 0,
-                                    top: 0,
-                                    right: 0,
-                                    bottom: 0,)
-                                  ],
-                                )),
+                                      ],
+                                    )),
                                 const Padding(
                                   padding: EdgeInsets.symmetric(vertical: 12),
                                   child: Text(
