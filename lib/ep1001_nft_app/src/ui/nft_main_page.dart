@@ -143,7 +143,7 @@ class NftMainPage extends ConsumerWidget {
                             ),
                           ),
                           Padding(
-                            padding: const EdgeInsets.all(8.0),
+                            padding: const EdgeInsets.fromLTRB(16, 0, 0, 0),
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: const [
@@ -154,7 +154,7 @@ class NftMainPage extends ConsumerWidget {
                                   ),
                                 ),
                                 SizedBox(
-                                  height: 4,
+                                  height: 6,
                                 ),
                                 Text(
                                   "walk_er_",
@@ -165,19 +165,37 @@ class NftMainPage extends ConsumerWidget {
                               ],
                             ),
                           ),
+                          Spacer(),
                           Column(
                             children: [
                               Row(
                                 children: [
-                                  Icon(Ionicons.logo_bitcoin, size: 14,),
-                                  SizedBox(width: 4,),
-                                  Text("4,218"),
+                                  Icon(
+                                    Ionicons.logo_bitcoin,
+                                    size: 14,
+                                  ),
+                                  SizedBox(
+                                    width: 4,
+                                  ),
+                                  Text(
+                                    "4,218",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
                                 ],
                               ),
-                              Text("+23.00%"),
+                              SizedBox(
+                                height: 4,
+                              ),
+                              Text(
+                                "+23.00%",
+                                style: TextStyle(
+                                  color: Colors.green,
+                                ),
+                              ),
                             ],
                           )
-
                         ],
                       ),
                     );
