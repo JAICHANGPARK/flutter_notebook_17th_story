@@ -83,7 +83,11 @@ class NftMainPage extends ConsumerWidget {
                       itemBuilder: (context, index) {
                         return Container(
                           width: 240,
-                          color: Colors.white,
+
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                            borderRadius: BorderRadius.circular(16)
+                          ),
                         );
                       }),
                 ),
