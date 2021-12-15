@@ -80,36 +80,40 @@ class NftMainPage extends ConsumerWidget {
                   height: 320,
                   child: ListView.builder(
                       itemCount: 10,
+                      scrollDirection: Axis.horizontal,
                       itemBuilder: (context, index) {
-                        return Container(
-                          width: 240,
+                        return Padding(
+                          padding: const EdgeInsets.only(right: 16),
+                          child: Container(
+                            width: 240,
 
-                          decoration: BoxDecoration(
-                            color: Colors.white,
-                            borderRadius: BorderRadius.circular(16),
-                          ),
-                          child: Column(
-                            children: [
-                              Expanded(child: Placeholder()),
-                              Text("REX#001",),
-                              Row(
-                                children: [
-                                  Column(
-                                    children: [
-                                      Text("Current bid"),
-                                      Row(
-                                        children: [
-                                          Icon(Ionicons.logo_bitcoin),
-                                          Text("10.01"),
+                            decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(16),
+                            ),
+                            child: Column(
+                              children: [
+                                Expanded(child: Placeholder()),
+                                Text("REX#001",),
+                                Row(
+                                  children: [
+                                    Column(
+                                      children: [
+                                        Text("Current bid"),
+                                        Row(
+                                          children: [
+                                            Icon(Ionicons.logo_bitcoin),
+                                            Text("10.01"),
 
-                                        ],
-                                      )
-                                    ],
-                                  ),
+                                          ],
+                                        )
+                                      ],
+                                    ),
 
-                                ],
-                              )
-                            ],
+                                  ],
+                                )
+                              ],
+                            ),
                           ),
                         );
                       }),
