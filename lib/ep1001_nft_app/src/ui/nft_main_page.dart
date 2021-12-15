@@ -96,13 +96,14 @@ class NftMainPage extends ConsumerWidget {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Expanded(
-                                    flex: 8,
+                                    flex: 10,
                                     child: Stack(
                                       children: [
                                         Positioned(
                                           child: Container(
-                                            decoration: const BoxDecoration(
-                                                image: DecorationImage(
+                                            decoration: BoxDecoration(
+                                                borderRadius: BorderRadius.circular(16),
+                                                image: const DecorationImage(
                                                     image: CachedNetworkImageProvider(
                                                       "https://cdn.pixabay.com/photo/2014/01/05/01/19/dragon-238931_960_720.jpg",
                                                     ),
