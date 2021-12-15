@@ -92,18 +92,20 @@ class NftMainPage extends ConsumerWidget {
                               borderRadius: BorderRadius.circular(16),
                             ),
                             child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Expanded(child: Placeholder()),
-                                Text("REX#001",),
+                                const Expanded(child: const Placeholder()),
+                                const Text("REX#001",),
                                 Row(
                                   children: [
                                     Column(
+                                      crossAxisAlignment: CrossAxisAlignment.start,
                                       children: [
-                                        Text("Current bid"),
+                                        const Text("Current bid"),
                                         Row(
                                           children: [
-                                            Icon(Ionicons.logo_bitcoin),
-                                            Text("10.01"),
+                                            const Icon(Ionicons.logo_bitcoin),
+                                            const Text("10.01"),
 
                                           ],
                                         )
@@ -196,19 +198,19 @@ class NftMainPage extends ConsumerWidget {
                               ],
                             ),
                           ),
-                          Spacer(),
+                          const Spacer(),
                           Column(
                             children: [
                               Row(
                                 children: [
-                                  Icon(
+                                  const Icon(
                                     Ionicons.logo_bitcoin,
                                     size: 14,
                                   ),
-                                  SizedBox(
+                                  const SizedBox(
                                     width: 4,
                                   ),
-                                  Text(
+                                  const Text(
                                     "4,218",
                                     style: TextStyle(
                                       fontWeight: FontWeight.bold,
@@ -216,12 +218,12 @@ class NftMainPage extends ConsumerWidget {
                                   ),
                                 ],
                               ),
-                              SizedBox(
+                              const SizedBox(
                                 height: 4,
                               ),
-                              Text(
+                              const Text(
                                 "+23.00%",
-                                style: TextStyle(
+                                style: const TextStyle(
                                   color: Colors.green,
                                 ),
                               ),
