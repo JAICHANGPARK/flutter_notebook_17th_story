@@ -148,6 +148,7 @@ class NftMainPage extends ConsumerWidget {
                       }),
                 ),
               ),
+              SizedBox(height: 16,),
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 16),
                 child: Row(
