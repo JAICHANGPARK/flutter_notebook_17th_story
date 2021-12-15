@@ -90,15 +90,23 @@ class NftMainPage extends ConsumerWidget {
                               color: Colors.white,
                               borderRadius: BorderRadius.circular(16),
                             ),
-                            padding: EdgeInsets.all(16),
+                            padding: const EdgeInsets.all(16),
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                const Expanded(child: const Placeholder()),
-                                const Text(
-                                  "REX#001",
+                                const Expanded(flex: 8, child: const Placeholder()),
+                                const Padding(
+                                  padding: EdgeInsets.symmetric(vertical: 12),
+                                  child: Text(
+                                    "REX#001",
+                                    style: TextStyle(
+                                      fontSize: 18,
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
                                 ),
                                 Expanded(
+                                  flex: 3,
                                   child: Row(
                                     children: [
                                       Column(
@@ -106,22 +114,22 @@ class NftMainPage extends ConsumerWidget {
                                         children: [
                                           const Text("Current bid"),
                                           Row(
-                                            children: [
-                                              const Icon(Ionicons.logo_bitcoin),
-                                              const Text("10.01"),
+                                            children: const [
+                                              Icon(Ionicons.logo_bitcoin),
+                                              Text("10.01"),
                                             ],
                                           ),
                                         ],
                                       ),
-                                      SizedBox(
+                                      const SizedBox(
                                         width: 12,
                                       ),
                                       Expanded(
                                           child: Container(
-                                        decoration: BoxDecoration(
+                                        decoration: const BoxDecoration(
                                           color: Colors.black,
                                         ),
-                                        child: Center(
+                                        child: const Center(
                                           child: Text(
                                             "Place Bid",
                                             style: TextStyle(
@@ -221,15 +229,15 @@ class NftMainPage extends ConsumerWidget {
                           Column(
                             children: [
                               Row(
-                                children: [
-                                  const Icon(
+                                children: const [
+                                  Icon(
                                     Ionicons.logo_bitcoin,
                                     size: 14,
                                   ),
-                                  const SizedBox(
+                                  SizedBox(
                                     width: 4,
                                   ),
-                                  const Text(
+                                  Text(
                                     "4,218",
                                     style: TextStyle(
                                       fontWeight: FontWeight.bold,
