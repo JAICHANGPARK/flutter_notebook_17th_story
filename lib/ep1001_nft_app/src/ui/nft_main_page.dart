@@ -86,33 +86,52 @@ class NftMainPage extends ConsumerWidget {
                           padding: const EdgeInsets.only(right: 16),
                           child: Container(
                             width: 240,
-
                             decoration: BoxDecoration(
                               color: Colors.white,
                               borderRadius: BorderRadius.circular(16),
                             ),
+                            padding: EdgeInsets.all(16),
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 const Expanded(child: const Placeholder()),
-                                const Text("REX#001",),
-                                Row(
-                                  children: [
-                                    Column(
-                                      crossAxisAlignment: CrossAxisAlignment.start,
-                                      children: [
-                                        const Text("Current bid"),
-                                        Row(
-                                          children: [
-                                            const Icon(Ionicons.logo_bitcoin),
-                                            const Text("10.01"),
-
-                                          ],
-                                        )
-                                      ],
-                                    ),
-
-                                  ],
+                                const Text(
+                                  "REX#001",
+                                ),
+                                Expanded(
+                                  child: Row(
+                                    children: [
+                                      Column(
+                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                        children: [
+                                          const Text("Current bid"),
+                                          Row(
+                                            children: [
+                                              const Icon(Ionicons.logo_bitcoin),
+                                              const Text("10.01"),
+                                            ],
+                                          ),
+                                        ],
+                                      ),
+                                      SizedBox(
+                                        width: 12,
+                                      ),
+                                      Expanded(
+                                          child: Container(
+                                        decoration: BoxDecoration(
+                                          color: Colors.black,
+                                        ),
+                                        child: Center(
+                                          child: Text(
+                                            "Place Bid",
+                                            style: TextStyle(
+                                              color: Colors.white,
+                                            ),
+                                          ),
+                                        ),
+                                      ))
+                                    ],
+                                  ),
                                 )
                               ],
                             ),
