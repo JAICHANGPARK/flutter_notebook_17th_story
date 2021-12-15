@@ -111,8 +111,18 @@ class NftMainPage extends ConsumerWidget {
                                     children: [
                                       Column(
                                         crossAxisAlignment: CrossAxisAlignment.start,
+                                        mainAxisAlignment: MainAxisAlignment.center,
                                         children: [
-                                          const Text("Current bid"),
+                                          const Text(
+                                            "Current bid",
+                                            style: TextStyle(
+                                              fontSize: 12,
+                                              color: Colors.grey,
+                                            ),
+                                          ),
+                                          SizedBox(
+                                            height: 4,
+                                          ),
                                           Row(
                                             children: const [
                                               Icon(Ionicons.logo_bitcoin),
@@ -126,8 +136,9 @@ class NftMainPage extends ConsumerWidget {
                                       ),
                                       Expanded(
                                           child: Container(
-                                        decoration: const BoxDecoration(
+                                        decoration: BoxDecoration(
                                           color: Colors.black,
+                                          borderRadius: BorderRadius.circular(12),
                                         ),
                                         child: const Center(
                                           child: Text(
@@ -148,7 +159,9 @@ class NftMainPage extends ConsumerWidget {
                       }),
                 ),
               ),
-              SizedBox(height: 16,),
+              SizedBox(
+                height: 16,
+              ),
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 16),
                 child: Row(
