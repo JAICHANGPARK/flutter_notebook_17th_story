@@ -14,8 +14,13 @@ class _FinanceHomePageState extends State<FinanceHomePage> {
     return Scaffold(
       body: Column(
         children: [
-          
+
         ],
+      ),
+      bottomNavigationBar: BottomNavigationBar(
+        showUnselectedLabels: false,
+        showSelectedLabels: false,
+        
       ),
     );
   }
