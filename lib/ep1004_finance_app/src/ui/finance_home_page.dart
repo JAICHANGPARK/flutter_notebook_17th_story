@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class FinanceHomePage extends StatefulWidget {
   const FinanceHomePage({Key? key}) : super(key: key);
 
@@ -13,14 +12,14 @@ class _FinanceHomePageState extends State<FinanceHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(
-        children: [
-
-        ],
+        children: [],
       ),
       bottomNavigationBar: BottomNavigationBar(
         showUnselectedLabels: false,
         showSelectedLabels: false,
-        
+        items: [
+          
+        ],
       ),
     );
   }
