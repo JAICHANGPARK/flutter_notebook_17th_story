@@ -24,6 +24,10 @@ class _FinanceHomePageState extends ConsumerState<FinanceHomePage> {
             showUnselectedLabels: false,
             showSelectedLabels: false,
             type: BottomNavigationBarType.fixed,
+            currentIndex: index,
+            onTap: (idx) {
+              ref.read(btmTapProvider.notifier).state = idx;
+            },
             items: const [
               BottomNavigationBarItem(icon: Icon(Icons.home), label: ""),
               BottomNavigationBarItem(icon: Icon(Icons.home), label: ""),
