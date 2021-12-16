@@ -3,6 +3,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 final btmTapProvider = StateProvider((ref) => 0);
 
+Color financeMainColor = const Color(0xff3859e1);
+
 class FinanceHomePage extends ConsumerStatefulWidget {
   const FinanceHomePage({Key? key}) : super(key: key);
 
@@ -11,11 +13,20 @@ class FinanceHomePage extends ConsumerStatefulWidget {
 }
 
 class _FinanceHomePageState extends ConsumerState<FinanceHomePage> {
+  /// 56 89 225
+  /// 38 59 e1
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: const [],
+      body: Consumer(
+        builder: (context ,ref, _){
+          final pageIndex = ref.watch(btmTapProvider);
+          return Column(
+            children: [
+
+            ],
+          );
+        },
       ),
       bottomNavigationBar: Consumer(
         builder: (context, ref, _) {
@@ -25,14 +36,15 @@ class _FinanceHomePageState extends ConsumerState<FinanceHomePage> {
             showSelectedLabels: false,
             type: BottomNavigationBarType.fixed,
             currentIndex: index,
+            selectedItemColor: const Color(0xff3859e1),
             onTap: (idx) {
               ref.read(btmTapProvider.notifier).state = idx;
             },
             items: const [
               BottomNavigationBarItem(icon: Icon(Icons.home), label: ""),
-              BottomNavigationBarItem(icon: Icon(Icons.home), label: ""),
-              BottomNavigationBarItem(icon: Icon(Icons.home), label: ""),
-              BottomNavigationBarItem(icon: Icon(Icons.home), label: ""),
+              BottomNavigationBarItem(icon: Icon(Icons.calculate), label: ""),
+              BottomNavigationBarItem(icon: Icon(Icons.account_balance_wallet), label: ""),
+              BottomNavigationBarItem(icon: Icon(Icons.signal_cellular_alt), label: ""),
             ],
           );
         },
