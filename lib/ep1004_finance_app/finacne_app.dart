@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'src/ui/finance_home_page.dart';
+
 
 class FinanceApp extends StatelessWidget {
   const FinanceApp({Key? key}) : super(key: key);
@@ -7,7 +9,7 @@ class FinanceApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-
+    home: FinanceHomePage(),
     );
   }
 }
