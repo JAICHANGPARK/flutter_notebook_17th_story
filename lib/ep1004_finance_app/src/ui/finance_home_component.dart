@@ -87,7 +87,7 @@ class FinanceHomeComponent extends StatelessWidget {
                       color: Colors.white,
                       borderRadius: BorderRadius.circular(4),
                     ),
-                    padding: EdgeInsets.all(8),
+                    padding: const EdgeInsets.all(8),
                     child: Row(
                       children: [
                         Expanded(
@@ -100,10 +100,16 @@ class FinanceHomeComponent extends StatelessWidget {
                                 borderRadius: BorderRadius.circular(8),
                                 color: Colors.green[50],
                               ),
-                              child: Icon(
+                              child: const Icon(
                                 Icons.arrow_downward,
                                 color: Colors.green,
                               ),
+                            ),
+                            Column(
+                              children: const [
+                                Text("Income"),
+                                Text("500.000")
+                              ],
                             )
                           ],
                         )),
@@ -113,7 +119,29 @@ class FinanceHomeComponent extends StatelessWidget {
                           color: Colors.grey[300],
                           thickness: 1,
                         ),
-                        Expanded(child: Placeholder()),
+                        Expanded(
+                            child: Row(
+                              children: [
+                                Container(
+                                  height: 36,
+                                  width: 36,
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(8),
+                                    color: Colors.red[50],
+                                  ),
+                                  child: const Icon(
+                                    Icons.arrow_downward,
+                                    color: Colors.red,
+                                  ),
+                                ),
+                                Column(
+                                  children: const [
+                                    Text("Outcome"),
+                                    Text("300.000")
+                                  ],
+                                )
+                              ],
+                            )),
                       ],
                     ),
                   )
