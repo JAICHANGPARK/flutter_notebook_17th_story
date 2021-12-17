@@ -1,3 +1,4 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 
 class FinanceHomeComponent extends StatelessWidget {
@@ -21,8 +22,16 @@ class FinanceHomeComponent extends StatelessWidget {
                         color: Colors.grey,
                       ),
                     ),
-                    SizedBox(height: 4,),
-                    const Text("Welcome to Mumet"),
+                    SizedBox(
+                      height: 4,
+                    ),
+                    const Text(
+                      "Welcome to Mumet",
+                      style: TextStyle(
+                        fontSize: 16,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
                   ],
                 ),
                 const Spacer(),
@@ -32,7 +41,10 @@ class FinanceHomeComponent extends StatelessWidget {
                     shape: BoxShape.circle,
                   ),
                   padding: const EdgeInsets.all(2),
-                  child: const CircleAvatar(),
+                  child: const CircleAvatar(
+                    backgroundImage: CachedNetworkImageProvider(
+                        "https://cdn.pixabay.com/photo/2017/04/06/19/34/girl-2209147__340.jpg"),
+                  ),
                 )
               ],
             ),
