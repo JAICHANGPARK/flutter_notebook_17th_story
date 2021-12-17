@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_17th/ep1004_finance_app/src/ui/finance_home_component.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 final btmTapProvider = StateProvider((ref) => 0);
@@ -23,9 +24,7 @@ class _FinanceHomePageState extends ConsumerState<FinanceHomePage> {
           final pageIndex = ref.watch(btmTapProvider);
           switch(pageIndex){
             case 0:
-              return Column(
-                children: [],
-              );
+              return FinanceHomeComponent();
             case 1:
               return const Center(child: Text("Page 1"),);
             case 2:
