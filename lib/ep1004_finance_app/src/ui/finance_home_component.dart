@@ -15,8 +15,8 @@ class FinanceHomeComponent extends StatelessWidget {
               children: [
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    const Text(
+                  children: const [
+                    Text(
                       "Hi, Dreamwalker",
                       style: TextStyle(
                         color: Colors.grey,
@@ -25,7 +25,7 @@ class FinanceHomeComponent extends StatelessWidget {
                     SizedBox(
                       height: 4,
                     ),
-                    const Text(
+                    Text(
                       "Welcome to Mumet",
                       style: TextStyle(
                         fontSize: 16,
@@ -49,7 +49,8 @@ class FinanceHomeComponent extends StatelessWidget {
                 )
               ],
             ),
-          )
+          ),
+
         ],
       ),
     );
