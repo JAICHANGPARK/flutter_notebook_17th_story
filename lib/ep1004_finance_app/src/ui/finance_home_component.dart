@@ -67,10 +67,11 @@ class FinanceHomeComponent extends StatelessWidget {
                     style: TextStyle(
                       color: Colors.white.withOpacity(0.5),
                       fontSize: 12,
-
                     ),
                   ),
-                  const SizedBox(height: 8,),
+                  const SizedBox(
+                    height: 8,
+                  ),
                   const Text(
                     "IDR 1.500.000",
                     style: const TextStyle(
@@ -89,7 +90,23 @@ class FinanceHomeComponent extends StatelessWidget {
                     padding: EdgeInsets.all(8),
                     child: Row(
                       children: [
-                        Expanded(child: Placeholder()),
+                        Expanded(
+                            child: Row(
+                          children: [
+                            Container(
+                              height: 36,
+                              width: 36,
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(8),
+                                color: Colors.green[50],
+                              ),
+                              child: Icon(
+                                Icons.arrow_downward,
+                                color: Colors.green,
+                              ),
+                            )
+                          ],
+                        )),
                         VerticalDivider(
                           indent: 12,
                           endIndent: 12,
