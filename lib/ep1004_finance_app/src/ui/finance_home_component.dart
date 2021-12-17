@@ -1,5 +1,6 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_17th/ep1004_finance_app/src/ui/finance_home_page.dart';
 
 class FinanceHomeComponent extends StatelessWidget {
   const FinanceHomeComponent({Key? key}) : super(key: key);
@@ -50,7 +51,41 @@ class FinanceHomeComponent extends StatelessWidget {
               ],
             ),
           ),
-
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 16),
+            child: Container(
+              height: 160,
+              decoration: BoxDecoration(
+                color: financeMainColor,
+                borderRadius: BorderRadius.circular(8),
+              ),
+              padding: EdgeInsets.all(16),
+              child: Column(
+                children: [
+                  Text(
+                    "Balance this month",
+                    style: TextStyle(
+                      color: Colors.white.withOpacity(0.5),
+                    ),
+                  ),
+                  Text(
+                    "IDR 1.500.000",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  Spacer(),
+                  Container(
+                    height: 72,
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                    ),
+                  )
+                ],
+              ),
+            ),
+          ),
         ],
       ),
     );
