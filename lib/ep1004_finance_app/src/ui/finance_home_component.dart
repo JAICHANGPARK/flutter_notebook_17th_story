@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 class FinanceHomeComponent extends StatelessWidget {
@@ -7,7 +6,26 @@ class FinanceHomeComponent extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
-      children: [],
+      children: [
+        Row(
+          children: [
+            Column(
+              children: [
+                Text("Hi, Dreamwalker"),
+                Text("Welcome to Mumet"),
+              ],
+            ),
+            Container(
+              decoration: BoxDecoration(
+                color: Colors.blueAccent[100],
+                shape: BoxShape.circle,
+              ),
+              padding: EdgeInsets.all(2),
+              child: CircleAvatar(),
+            )
+          ],
+        )
+      ],
     );
   }
 }
