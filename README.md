@@ -1,16 +1,22 @@
 # flutter_notebook_17th
 
 
-### EP1004
-
+## EP1004
+### UI Source
 - Mumet Finance Management - UI Kit
 - https://dribbble.com/shots/17074229/attachments/12163304?mode=media
 - https://ui8.net/erdeo/products/mumet-mobile-ui-kit
 
-### EP1001-1003
+### State Management
+- Riverpod
 
+## EP1001-1003
+### UI Source
 - Nifty - NFT Marketplace App UI Kit
 - https://dribbble.com/shots/17046370/attachments/12131716?mode=media
+
+### State Management
+- Riverpod
 
 ## Getting Started
 
