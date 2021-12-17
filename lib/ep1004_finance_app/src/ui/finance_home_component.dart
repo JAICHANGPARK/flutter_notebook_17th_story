@@ -66,13 +66,17 @@ class FinanceHomeComponent extends StatelessWidget {
                     "Balance this month",
                     style: TextStyle(
                       color: Colors.white.withOpacity(0.5),
+                      fontSize: 12,
+
                     ),
                   ),
+                  SizedBox(height: 8,),
                   Text(
                     "IDR 1.500.000",
                     style: TextStyle(
                       color: Colors.white,
                       fontWeight: FontWeight.bold,
+                      fontSize: 20,
                     ),
                   ),
                   Spacer(),
@@ -80,6 +84,8 @@ class FinanceHomeComponent extends StatelessWidget {
                     height: 72,
                     decoration: BoxDecoration(
                       color: Colors.white,
+                      borderRadius: BorderRadius.circular(4),
+
                     ),
                   )
                 ],
