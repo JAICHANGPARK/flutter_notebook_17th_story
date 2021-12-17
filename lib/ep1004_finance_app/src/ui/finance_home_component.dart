@@ -5,27 +5,40 @@ class FinanceHomeComponent extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Row(
-          children: [
-            Column(
+    return SafeArea(
+      child: Column(
+        children: [
+          Padding(
+            padding: const EdgeInsets.all(16.0),
+            child: Row(
               children: [
-                Text("Hi, Dreamwalker"),
-                Text("Welcome to Mumet"),
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    const Text(
+                      "Hi, Dreamwalker",
+                      style: TextStyle(
+                        color: Colors.grey,
+                      ),
+                    ),
+                    SizedBox(height: 4,),
+                    const Text("Welcome to Mumet"),
+                  ],
+                ),
+                const Spacer(),
+                Container(
+                  decoration: BoxDecoration(
+                    color: Colors.blueAccent[100],
+                    shape: BoxShape.circle,
+                  ),
+                  padding: const EdgeInsets.all(2),
+                  child: const CircleAvatar(),
+                )
               ],
             ),
-            Container(
-              decoration: BoxDecoration(
-                color: Colors.blueAccent[100],
-                shape: BoxShape.circle,
-              ),
-              padding: EdgeInsets.all(2),
-              child: CircleAvatar(),
-            )
-          ],
-        )
-      ],
+          )
+        ],
+      ),
     );
   }
 }
