@@ -198,10 +198,61 @@ class FinanceHomeComponent extends StatelessWidget {
             child: Container(
               height: 92,
               decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(8),
-                  border: Border.all(
-                    color: Colors.grey,
-                  )),
+                borderRadius: BorderRadius.circular(8),
+                border: Border.all(
+                  color: Colors.grey[300]!,
+                ),
+              ),
+              padding: const EdgeInsets.symmetric(horizontal: 16),
+              child: Row(
+                children: [
+                  Container(
+                    height: 36,
+                    width: 36,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(8),
+                      color: Colors.orange[50],
+                    ),
+                    child: const Icon(
+                      Icons.account_balance_wallet,
+                      color: Colors.orange,
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(
+                      left: 16,
+                    ),
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: const [
+                        Text(
+                          "Cash Balance",
+                          style: TextStyle(
+                            color: Colors.grey,
+                            fontSize: 13,
+                          ),
+                        ),
+                        SizedBox(
+                          height: 8,
+                        ),
+                        Text(
+                          "IDR 20.000.000",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 15,
+                          ),
+                        )
+                      ],
+                    ),
+                  ),
+                  const Spacer(),
+                  IconButton(
+                    onPressed: () {},
+                    icon: const Icon(Icons.keyboard_arrow_right),
+                  )
+                ],
+              ),
             ),
           )
         ],
