@@ -54,7 +54,7 @@ class FinanceHomeComponent extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 16),
             child: Container(
-              height: 160,
+              height: 180,
               decoration: BoxDecoration(
                 color: financeMainColor,
                 borderRadius: BorderRadius.circular(8),
@@ -82,12 +82,12 @@ class FinanceHomeComponent extends StatelessWidget {
                   ),
                   const Spacer(),
                   Container(
-                    height: 72,
+                    height: 68,
                     decoration: BoxDecoration(
                       color: Colors.white,
                       borderRadius: BorderRadius.circular(4),
                     ),
-                    padding: const EdgeInsets.all(8),
+                    padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                     child: Row(
                       children: [
                         Expanded(
@@ -111,6 +111,7 @@ class FinanceHomeComponent extends StatelessWidget {
                               ),
                               child: Column(
                                 mainAxisAlignment: MainAxisAlignment.center,
+                                crossAxisAlignment: CrossAxisAlignment.start,
                                 children: const [
                                   Text(
                                     "Income",
@@ -126,7 +127,7 @@ class FinanceHomeComponent extends StatelessWidget {
                                     "500.000",
                                     style: TextStyle(
                                       fontWeight: FontWeight.bold,
-                                      fontSize: 16,
+                                      fontSize: 15,
                                     ),
                                   )
                                 ],
