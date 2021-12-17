@@ -156,8 +156,33 @@ class FinanceHomeComponent extends StatelessWidget {
                                 color: Colors.red,
                               ),
                             ),
-                            Column(
-                              children: const [Text("Outcome"), Text("300.000")],
+                            Padding(
+                              padding: const EdgeInsets.only(
+                                left: 16,
+                              ),
+                              child: Column(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: const [
+                                  Text(
+                                    "outcome",
+                                    style: TextStyle(
+                                      color: Colors.grey,
+                                      fontSize: 13,
+                                    ),
+                                  ),
+                                  SizedBox(
+                                    height: 4,
+                                  ),
+                                  Text(
+                                    "300.000",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 15,
+                                    ),
+                                  )
+                                ],
+                              ),
                             )
                           ],
                         )),
@@ -168,6 +193,17 @@ class FinanceHomeComponent extends StatelessWidget {
               ),
             ),
           ),
+          Padding(
+            padding: const EdgeInsets.all(16.0),
+            child: Container(
+              height: 92,
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(8),
+                  border: Border.all(
+                    color: Colors.grey,
+                  )),
+            ),
+          )
         ],
       ),
     );
