@@ -43,6 +43,12 @@ class _FinanceHomePageState extends ConsumerState<FinanceHomePage> {
           );
         },
       ),
+      floatingActionButton: FloatingActionButton(
+        child: Icon(Icons.add),
+        foregroundColor: Colors.white,
+        backgroundColor: financeMainColor,
+        onPressed: () {},
+      ),
       bottomNavigationBar: Consumer(
         builder: (context, ref, _) {
           final index = ref.watch(btmTapProvider);
