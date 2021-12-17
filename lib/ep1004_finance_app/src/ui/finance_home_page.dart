@@ -21,6 +21,18 @@ class _FinanceHomePageState extends ConsumerState<FinanceHomePage> {
       body: Consumer(
         builder: (context ,ref, _){
           final pageIndex = ref.watch(btmTapProvider);
+          switch(pageIndex){
+            case 0:
+              return Column(
+                children: [],
+              );
+            case 1:
+              return const Center(child: Text("Page 1"),);
+            case 2:
+              return const Center(child: Text("Page 2"),);
+            case 3:
+              return const Center(child: Text("Page 3"),);
+          }
           return Column(
             children: [
 
