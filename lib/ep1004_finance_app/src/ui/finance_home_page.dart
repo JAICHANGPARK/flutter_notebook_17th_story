@@ -44,7 +44,7 @@ class _FinanceHomePageState extends ConsumerState<FinanceHomePage> {
         },
       ),
       floatingActionButton: FloatingActionButton(
-        child: Icon(Icons.add),
+        child: const Icon(Icons.add),
         foregroundColor: Colors.white,
         backgroundColor: financeMainColor,
         onPressed: () {},
