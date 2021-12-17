@@ -105,11 +105,32 @@ class FinanceHomeComponent extends StatelessWidget {
                                 color: Colors.green,
                               ),
                             ),
-                            Column(
-                              children: const [
-                                Text("Income"),
-                                Text("500.000")
-                              ],
+                            Padding(
+                              padding: const EdgeInsets.only(
+                                left: 16,
+                              ),
+                              child: Column(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: const [
+                                  Text(
+                                    "Income",
+                                    style: TextStyle(
+                                      color: Colors.grey,
+                                      fontSize: 13,
+                                    ),
+                                  ),
+                                  SizedBox(
+                                    height: 4,
+                                  ),
+                                  Text(
+                                    "500.000",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 16,
+                                    ),
+                                  )
+                                ],
+                              ),
                             )
                           ],
                         )),
@@ -121,27 +142,24 @@ class FinanceHomeComponent extends StatelessWidget {
                         ),
                         Expanded(
                             child: Row(
-                              children: [
-                                Container(
-                                  height: 36,
-                                  width: 36,
-                                  decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(8),
-                                    color: Colors.red[50],
-                                  ),
-                                  child: const Icon(
-                                    Icons.arrow_downward,
-                                    color: Colors.red,
-                                  ),
-                                ),
-                                Column(
-                                  children: const [
-                                    Text("Outcome"),
-                                    Text("300.000")
-                                  ],
-                                )
-                              ],
-                            )),
+                          children: [
+                            Container(
+                              height: 36,
+                              width: 36,
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(8),
+                                color: Colors.red[50],
+                              ),
+                              child: const Icon(
+                                Icons.arrow_downward,
+                                color: Colors.red,
+                              ),
+                            ),
+                            Column(
+                              children: const [Text("Outcome"), Text("300.000")],
+                            )
+                          ],
+                        )),
                       ],
                     ),
                   )
