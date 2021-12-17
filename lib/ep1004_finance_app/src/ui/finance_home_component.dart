@@ -40,8 +40,9 @@ class FinanceHomeComponent extends StatelessWidget {
                     color: Colors.blueAccent[100],
                     shape: BoxShape.circle,
                   ),
-                  padding: const EdgeInsets.all(2),
+                  padding: const EdgeInsets.all(1),
                   child: const CircleAvatar(
+                    radius: 24,
                     backgroundImage: CachedNetworkImageProvider(
                         "https://cdn.pixabay.com/photo/2017/04/06/19/34/girl-2209147__340.jpg"),
                   ),
