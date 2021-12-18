@@ -270,6 +270,30 @@ class FinanceHomeComponent extends StatelessWidget {
                 )
               ],
             ),
+          ),
+          Expanded(
+            child: ListView.builder(
+              itemCount: 10,
+              scrollDirection: Axis.horizontal,
+              itemBuilder: (context, index) {
+                return Container(
+                  width: 210,
+                  child: Column(
+                    children: [
+                      Row(
+                        children: [
+                          Container(
+                            height: 38,
+                            width: 38,
+                            decoration: BoxDecoration(color: Colors.grey[100]),
+                          )
+                        ],
+                      )
+                    ],
+                  ),
+                );
+              },
+            ),
           )
         ],
       ),
