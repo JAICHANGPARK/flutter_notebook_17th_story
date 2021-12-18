@@ -55,7 +55,7 @@ class FinanceHomeComponent extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 16),
             child: Container(
-              height: 180,
+              height: 190,
               decoration: BoxDecoration(
                 color: financeMainColor,
                 borderRadius: BorderRadius.circular(8),
@@ -71,14 +71,14 @@ class FinanceHomeComponent extends StatelessWidget {
                     ),
                   ),
                   const SizedBox(
-                    height: 8,
+                    height: 16,
                   ),
                   const Text(
                     "IDR 1.500.000",
                     style: TextStyle(
                       color: Colors.white,
                       fontWeight: FontWeight.bold,
-                      fontSize: 20,
+                      fontSize: 24,
                     ),
                   ),
                   const Spacer(),
