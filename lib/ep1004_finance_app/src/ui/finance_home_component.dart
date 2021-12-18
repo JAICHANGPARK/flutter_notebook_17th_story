@@ -283,7 +283,7 @@ class FinanceHomeComponent extends StatelessWidget {
                   padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                   child: Container(
                     width: 240,
-                    padding: EdgeInsets.all(16),
+                    padding: const EdgeInsets.all(16),
                     decoration: BoxDecoration(
                       border: Border.all(
                         color: Colors.grey[300]!,
@@ -291,6 +291,7 @@ class FinanceHomeComponent extends StatelessWidget {
                       borderRadius: BorderRadius.circular(8),
                     ),
                     child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Row(
                           crossAxisAlignment: CrossAxisAlignment.start,
@@ -299,33 +300,37 @@ class FinanceHomeComponent extends StatelessWidget {
                               height: 42,
                               width: 42,
                               decoration: BoxDecoration(color: Colors.grey[100]),
-                              child: Center(
+                              child: const Center(
                                   child: Text(
                                 "🏝",
                                 style: TextStyle(fontSize: 18),
                               )),
                             ),
-                            Spacer(),
-                            Text(
+                            const Spacer(),
+                            const Text(
                               "20 days ago",
-                              style: TextStyle(
+                              style: const TextStyle(
                                 fontSize: 12,
                                 color: Colors.grey,
                               ),
                             )
                           ],
                         ),
-                        Text("Liburan ke Beli"),
-                        Text.rich(TextSpan(
+                        Padding(
+                          padding: const EdgeInsets.symmetric(vertical: 16),
+                          child: const Text("Liburan ke Beli"),
+                        ),
+                        const Text.rich(const TextSpan(
                           children: [
                             TextSpan(
                               text: "50%",
                             ),
-                            TextSpan(
+                            const TextSpan(
                               text: "of accumulated sacings"
                             )
                           ]
-                        ))
+                        )),
+                        Lineper
                       ],
                     ),
                   ),
