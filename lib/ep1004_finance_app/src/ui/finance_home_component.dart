@@ -310,23 +310,23 @@ class FinanceHomeComponent extends StatelessWidget {
                             const Spacer(),
                             const Text(
                               "20 days ago",
-                              style: const TextStyle(
+                              style: TextStyle(
                                 fontSize: 12,
                                 color: Colors.grey,
                               ),
                             )
                           ],
                         ),
-                        Padding(
-                          padding: const EdgeInsets.symmetric(vertical: 16),
-                          child: const Text("Liburan ke Beli"),
+                        const Padding(
+                          padding: EdgeInsets.symmetric(vertical: 16),
+                          child: Text("Liburan ke Beli"),
                         ),
-                        const Text.rich(const TextSpan(
+                        const Text.rich(TextSpan(
                           children: [
                             TextSpan(
                               text: "50%",
                             ),
-                            const TextSpan(
+                            TextSpan(
                               text: "of accumulated sacings"
                             )
                           ]
