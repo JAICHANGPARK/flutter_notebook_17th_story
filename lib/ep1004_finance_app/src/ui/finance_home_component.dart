@@ -349,6 +349,20 @@ class FinanceHomeComponent extends StatelessWidget {
                             width: 200,
                             progressColor: financeMainColor,
                           ),
+                        ),
+                        const SizedBox(
+                          height: 16,
+                        ),
+                        Row(
+                          children: [
+                            CircleAvatar(
+                              radius: 8,
+                              backgroundColor: Colors.green,
+                              child: Icon(Icons.check, size: 12,),
+                            ),
+                            SizedBox(width: 8,),
+                            Text("This plan on track",)
+                          ],
                         )
                       ],
                     ),
