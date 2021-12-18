@@ -276,20 +276,29 @@ class FinanceHomeComponent extends StatelessWidget {
               itemCount: 10,
               scrollDirection: Axis.horizontal,
               itemBuilder: (context, index) {
-                return Container(
-                  width: 210,
-                  child: Column(
-                    children: [
-                      Row(
-                        children: [
-                          Container(
-                            height: 38,
-                            width: 38,
-                            decoration: BoxDecoration(color: Colors.grey[100]),
-                          )
-                        ],
-                      )
-                    ],
+                return Padding(
+                  padding: const EdgeInsets.all(16.0),
+                  child: Container(
+                    width: 240,
+                    decoration: BoxDecoration(
+                      border: Border.all(
+                        color: Colors.grey[300]!,
+                      ),
+                      borderRadius: BorderRadius.circular(8),
+                    ),
+                    child: Column(
+                      children: [
+                        Row(
+                          children: [
+                            Container(
+                              height: 38,
+                              width: 38,
+                              decoration: BoxDecoration(color: Colors.grey[100]),
+                            )
+                          ],
+                        )
+                      ],
+                    ),
                   ),
                 );
               },
