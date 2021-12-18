@@ -39,6 +39,7 @@ dependencies:
 
   ionicons: any
   coolicons: any
+  percent_indicator: any
 
 
 dev_dependencies:
