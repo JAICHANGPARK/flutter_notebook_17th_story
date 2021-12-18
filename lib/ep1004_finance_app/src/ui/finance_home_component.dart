@@ -255,11 +255,21 @@ class FinanceHomeComponent extends StatelessWidget {
               ),
             ),
           ),
-          Row(
-            children: [
-              Text("Financial Goals"),
-              TextButton(onPressed: (){}, child: Text("See all"))
-            ],
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 16),
+            child: Row(
+              children: [
+                const Text("Financial Goals"),
+                const Spacer(),
+                TextButton(
+                  onPressed: () {},
+                  child: const Text("See all"),
+                  style: TextButton.styleFrom(
+                    primary: financeMainColor,
+                  ),
+                )
+              ],
+            ),
           )
         ],
       ),
