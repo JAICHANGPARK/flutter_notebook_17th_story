@@ -254,6 +254,12 @@ class FinanceHomeComponent extends StatelessWidget {
                 ],
               ),
             ),
+          ),
+          Row(
+            children: [
+              Text("Financial Goals"),
+              TextButton(onPressed: (){}, child: Text("See all"))
+            ],
           )
         ],
       ),
