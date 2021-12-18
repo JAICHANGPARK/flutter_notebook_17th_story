@@ -74,7 +74,7 @@ class FinanceHomeComponent extends StatelessWidget {
                   ),
                   const Text(
                     "IDR 1.500.000",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: Colors.white,
                       fontWeight: FontWeight.bold,
                       fontSize: 20,
