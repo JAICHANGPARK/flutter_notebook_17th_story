@@ -319,22 +319,36 @@ class FinanceHomeComponent extends StatelessWidget {
                         ),
                         const Padding(
                           padding: EdgeInsets.symmetric(vertical: 16),
-                          child: Text("Liburan ke Beli"),
+                          child: Text("Liburan ke Beli",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 16
+                              )),
                         ),
-                        const Text.rich(TextSpan(
-                          children: [
-                            TextSpan(
-                              text: "50%",
-                            ),
-                            TextSpan(
-                              text: "of accumulated sacings"
-                            )
-                          ]
-                        )),
-                        LinearPercentIndicator(
-                          width: double.infinity,
-                          lineHeight: 24,
-                          percent: 0.6,
+                        Text.rich(TextSpan(children: [
+                          TextSpan(
+                              text: "50% ",
+                              style: TextStyle(
+                                color: financeMainColor,
+                              )),
+                          const TextSpan(
+                              text: "of accumulated sacings",
+                              style: const TextStyle(
+                                color: Colors.grey,
+                              ))
+                        ])),
+                        const SizedBox(
+                          height: 16,
+                        ),
+                        SizedBox(
+                          height: 16,
+                          width: 200,
+                          child: LinearPercentIndicator(
+                            lineHeight: 16,
+                            percent: 0.6,
+                            width: 200,
+                            progressColor: financeMainColor,
+                          ),
                         )
                       ],
                     ),
