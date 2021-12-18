@@ -259,7 +259,10 @@ class FinanceHomeComponent extends StatelessWidget {
             padding: const EdgeInsets.symmetric(horizontal: 16),
             child: Row(
               children: [
-                const Text("Financial Goals"),
+                const Text("Financial Goals",style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 16
+                ),),
                 const Spacer(),
                 TextButton(
                   onPressed: () {},
@@ -277,7 +280,7 @@ class FinanceHomeComponent extends StatelessWidget {
               scrollDirection: Axis.horizontal,
               itemBuilder: (context, index) {
                 return Padding(
-                  padding: const EdgeInsets.all(16.0),
+                  padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                   child: Container(
                     width: 240,
                     decoration: BoxDecoration(
