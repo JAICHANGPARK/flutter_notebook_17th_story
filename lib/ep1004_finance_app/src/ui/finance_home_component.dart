@@ -259,10 +259,10 @@ class FinanceHomeComponent extends StatelessWidget {
             padding: const EdgeInsets.symmetric(horizontal: 16),
             child: Row(
               children: [
-                const Text("Financial Goals",style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  fontSize: 16
-                ),),
+                const Text(
+                  "Financial Goals",
+                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+                ),
                 const Spacer(),
                 TextButton(
                   onPressed: () {},
@@ -283,6 +283,7 @@ class FinanceHomeComponent extends StatelessWidget {
                   padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                   child: Container(
                     width: 240,
+                    padding: EdgeInsets.all(16),
                     decoration: BoxDecoration(
                       border: Border.all(
                         color: Colors.grey[300]!,
@@ -292,14 +293,39 @@ class FinanceHomeComponent extends StatelessWidget {
                     child: Column(
                       children: [
                         Row(
+                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Container(
-                              height: 38,
-                              width: 38,
+                              height: 42,
+                              width: 42,
                               decoration: BoxDecoration(color: Colors.grey[100]),
+                              child: Center(
+                                  child: Text(
+                                "🏝",
+                                style: TextStyle(fontSize: 18),
+                              )),
+                            ),
+                            Spacer(),
+                            Text(
+                              "20 days ago",
+                              style: TextStyle(
+                                fontSize: 12,
+                                color: Colors.grey,
+                              ),
                             )
                           ],
-                        )
+                        ),
+                        Text("Liburan ke Beli"),
+                        Text.rich(TextSpan(
+                          children: [
+                            TextSpan(
+                              text: "50%",
+                            ),
+                            TextSpan(
+                              text: "of accumulated sacings"
+                            )
+                          ]
+                        ))
                       ],
                     ),
                   ),
