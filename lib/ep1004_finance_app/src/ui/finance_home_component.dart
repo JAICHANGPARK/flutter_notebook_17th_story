@@ -1,6 +1,7 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_notebook_17th/ep1004_finance_app/src/ui/finance_home_page.dart';
+import 'package:percent_indicator/linear_percent_indicator.dart';
 
 class FinanceHomeComponent extends StatelessWidget {
   const FinanceHomeComponent({Key? key}) : super(key: key);
@@ -330,7 +331,11 @@ class FinanceHomeComponent extends StatelessWidget {
                             )
                           ]
                         )),
-                        Lineper
+                        LinearPercentIndicator(
+                          width: double.infinity,
+                          lineHeight: 24,
+                          percent: 0.6,
+                        )
                       ],
                     ),
                   ),
