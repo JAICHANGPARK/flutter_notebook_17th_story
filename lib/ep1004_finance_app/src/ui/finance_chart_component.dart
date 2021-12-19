@@ -16,7 +16,7 @@ class _FinanceChartComponentState extends State<FinanceChartComponent> {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           const Padding(
-            padding: EdgeInsets.all(8.0),
+            padding: EdgeInsets.only(top: 20, bottom: 16),
             child: Align(
               alignment: Alignment.center,
               child: const Text(
@@ -35,21 +35,52 @@ class _FinanceChartComponentState extends State<FinanceChartComponent> {
               decoration: BoxDecoration(
                 color: financeMainColor,
                 borderRadius: BorderRadius.circular(8),
-
               ),
-              padding: EdgeInsets.all(16),
+              padding: const EdgeInsets.all(16),
               child: Column(
                 children: [
                   Container(
-                    height: 64,
+                    height: 52,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(8),
+                      color: Colors.white.withOpacity(0.2),
+                      
+                    ),
                   ),
-                  Expanded(child: Placeholder()),
+                  const Expanded(child: Padding(
+                    padding: EdgeInsets.symmetric(vertical: 12),
+                    child: Placeholder(),
+                  )),
                   Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      CircleAvatar(backgroundColor: Colors.white.withOpacity(0.5),radius: 10,),
-                      Text("INCOME"),
-                      CircleAvatar(backgroundColor: Colors.black26,radius: 10,),
-                      Text("INCOME"),
+                      CircleAvatar(
+                        backgroundColor: Colors.white.withOpacity(0.5),
+                        radius: 6,
+                      ),
+                      const SizedBox(
+                        width: 4,
+                      ),
+                      Text(
+                        "INCOME",
+                        style: TextStyle(color: Colors.white.withOpacity(0.5),
+                        fontSize: 12),
+                      ),
+                      const SizedBox(
+                        width: 12,
+                      ),
+                      const CircleAvatar(
+                        backgroundColor: Colors.black26,
+                        radius: 6,
+                      ),
+                      const SizedBox(
+                        width: 4,
+                      ),
+                      Text(
+                        "OUTCOME",
+                        style: TextStyle(color: Colors.white.withOpacity(0.5),
+                        fontSize: 12),
+                      ),
                     ],
                   )
                 ],
