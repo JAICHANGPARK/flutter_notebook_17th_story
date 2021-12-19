@@ -49,12 +49,12 @@ class _FinanceChartComponentState extends State<FinanceChartComponent> {
               child: Column(
                 children: [
                   Container(
-                    height: 42,
+                    height: 46,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(8),
-                      color: Colors.white.withOpacity(0.2),
+                      color: Colors.white.withOpacity(0.1),
                     ),
-                    padding: const EdgeInsets.all(4),
+                    padding: const EdgeInsets.all(6),
                     child: Consumer(
                       builder: (context, ref, _) {
                         final tabIndex = ref.watch(chartTabProvider);
@@ -69,7 +69,7 @@ class _FinanceChartComponentState extends State<FinanceChartComponent> {
                                   ? Container(
                                       decoration: BoxDecoration(
                                         color: Colors.white,
-                                        borderRadius: BorderRadius.circular(4),
+                                        borderRadius: BorderRadius.circular(6),
                                       ),
                                       child: Center(
                                         child: Text(
@@ -114,7 +114,33 @@ class _FinanceChartComponentState extends State<FinanceChartComponent> {
                                     ),
                                   ),
                                 )),
-                            const Expanded(child: Placeholder()),
+                            Expanded(
+                                child: GestureDetector(
+                                  onTap: () {
+                                    ref.read(chartTabProvider.notifier).state = ChartDay.custom;
+                                  },
+                                  child: tabIndex == ChartDay.custom
+                                      ? Container(
+                                    decoration: BoxDecoration(
+                                      color: Colors.white,
+                                      borderRadius: BorderRadius.circular(4),
+                                    ),
+                                    child: Center(
+                                      child: Text(
+                                        "Custom",
+                                        style: TextStyle(
+                                          color: financeMainColor,
+                                        ),
+                                      ),
+                                    ),
+                                  )
+                                      : const Center(
+                                    child: Text(
+                                      "Custom",
+                                      style: TextStyle(color: Colors.white),
+                                    ),
+                                  ),
+                                )),
                           ],
                         );
                       },
