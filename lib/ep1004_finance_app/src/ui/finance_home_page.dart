@@ -35,7 +35,7 @@ class _FinanceHomePageState extends ConsumerState<FinanceHomePage> {
               );
             case 3:
               return const Center(
-                child: Text("Page 3"),
+                child:FinanceChartComponent(),
               );
           }
           return Column(
