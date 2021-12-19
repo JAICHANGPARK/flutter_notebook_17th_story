@@ -37,6 +37,7 @@ class _FinanceChartComponentState extends State<FinanceChartComponent> {
                 borderRadius: BorderRadius.circular(8),
 
               ),
+              padding: EdgeInsets.all(16),
               child: Column(
                 children: [
                   Container(
