@@ -8,7 +8,7 @@ enum ChartDay {
   custom,
 }
 
-final chartTabProvider = StateProvider((ref) => ChartDay.monthly);
+final chartTabProvider = StateProvider<ChartDay>((ref) => ChartDay.monthly);
 
 class FinanceChartComponent extends StatefulWidget {
   const FinanceChartComponent({Key? key}) : super(key: key);
@@ -54,17 +54,36 @@ class _FinanceChartComponentState extends State<FinanceChartComponent> {
                       borderRadius: BorderRadius.circular(8),
                       color: Colors.white.withOpacity(0.2),
                     ),
+                    padding: EdgeInsets.all(4),
                     child: Consumer(
-                        builder: (context, ref, _){
-                          return Row(
-                            children: [
-                              Expanded(child: Placeholder()),
-                              Expanded(child: Placeholder()),
-                              Expanded(child: Placeholder()),
-                            ],
-                          );
-                        },
-                        ),
+                      builder: (context, ref, _) {
+                        final tabIndex = ref.watch(chartTabProvider);
+                        return Row(
+                          children: [
+                            Expanded(
+                                child: GestureDetector(
+                              onTap: () {
+                                ref.read(chartTabProvider.notifier).state = ChartDay.monthly;
+                              },
+                              child: tabIndex == ChartDay.monthly
+                                  ? Container(
+                                      decoration: BoxDecoration(
+                                        color: Colors.white,
+                                      ),
+                                    )
+                                  : Center(
+                                      child: Text(
+                                        "Monthly",
+                                        style: TextStyle(color: Colors.white),
+                                      ),
+                                    ),
+                            )),
+                            Expanded(child: Placeholder()),
+                            Expanded(child: Placeholder()),
+                          ],
+                        );
+                      },
+                    ),
                   ),
                   const Expanded(
                       child: Padding(
