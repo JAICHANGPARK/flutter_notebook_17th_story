@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_17th/ep1004_finance_app/src/ui/finance_home_page.dart';
 
 class FinanceChartComponent extends StatefulWidget {
   const FinanceChartComponent({Key? key}) : super(key: key);
@@ -14,16 +15,28 @@ class _FinanceChartComponentState extends State<FinanceChartComponent> {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Padding(
-            padding: const EdgeInsets.all(8.0),
+          const Padding(
+            padding: EdgeInsets.all(8.0),
             child: Align(
               alignment: Alignment.center,
-              child: Text(
+              child: const Text(
                 "Analysis",
-                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 16,
+                ),
               ),
             ),
           ),
+          Padding(
+            padding: const EdgeInsets.all(16.0),
+            child: Container(
+              height: 380,
+              decoration: BoxDecoration(
+                color: financeMainColor,
+              ),
+            ),
+          )
         ],
       ),
     );
