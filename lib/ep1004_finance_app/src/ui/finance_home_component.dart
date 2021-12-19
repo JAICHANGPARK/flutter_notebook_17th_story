@@ -355,13 +355,13 @@ class FinanceHomeComponent extends StatelessWidget {
                         ),
                         Row(
                           children: [
-                            CircleAvatar(
+                            const CircleAvatar(
                               radius: 8,
                               backgroundColor: Colors.green,
-                              child: Icon(Icons.check, size: 12,),
+                              child: const Icon(Icons.check, size: 12,),
                             ),
-                            SizedBox(width: 8,),
-                            Text("This plan on track",)
+                            const SizedBox(width: 8,),
+                            const Text("This plan on track",)
                           ],
                         )
                       ],
