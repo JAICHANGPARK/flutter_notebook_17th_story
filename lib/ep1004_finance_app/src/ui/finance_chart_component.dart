@@ -49,7 +49,7 @@ class _FinanceChartComponentState extends State<FinanceChartComponent> {
               child: Column(
                 children: [
                   Container(
-                    height: 52,
+                    height: 42,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(8),
                       color: Colors.white.withOpacity(0.2),
