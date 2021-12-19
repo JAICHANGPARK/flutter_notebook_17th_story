@@ -34,6 +34,24 @@ class _FinanceChartComponentState extends State<FinanceChartComponent> {
               height: 380,
               decoration: BoxDecoration(
                 color: financeMainColor,
+                borderRadius: BorderRadius.circular(8),
+
+              ),
+              child: Column(
+                children: [
+                  Container(
+                    height: 64,
+                  ),
+                  Expanded(child: Placeholder()),
+                  Row(
+                    children: [
+                      CircleAvatar(backgroundColor: Colors.white.withOpacity(0.5),radius: 10,),
+                      Text("INCOME"),
+                      CircleAvatar(backgroundColor: Colors.black26,radius: 10,),
+                      Text("INCOME"),
+                    ],
+                  )
+                ],
               ),
             ),
           )
