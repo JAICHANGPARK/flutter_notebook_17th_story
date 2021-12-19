@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_17th/ep1004_finance_app/src/ui/finance_chart_component.dart';
 import 'package:flutter_notebook_17th/ep1004_finance_app/src/ui/finance_home_component.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
