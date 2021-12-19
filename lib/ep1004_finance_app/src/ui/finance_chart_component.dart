@@ -1,5 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_notebook_17th/ep1004_finance_app/src/ui/finance_home_page.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+
+enum ChartDay {
+  monthly,
+  weekly,
+  custom,
+}
+
+final chartTabProvider = StateProvider((ref) => ChartDay.monthly);
 
 class FinanceChartComponent extends StatefulWidget {
   const FinanceChartComponent({Key? key}) : super(key: key);
@@ -44,10 +53,21 @@ class _FinanceChartComponentState extends State<FinanceChartComponent> {
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(8),
                       color: Colors.white.withOpacity(0.2),
-                      
                     ),
+                    child: Consumer(
+                        builder: (context, ref, _){
+                          return Row(
+                            children: [
+                              Expanded(child: Placeholder()),
+                              Expanded(child: Placeholder()),
+                              Expanded(child: Placeholder()),
+                            ],
+                          );
+                        },
+                        ),
                   ),
-                  const Expanded(child: Padding(
+                  const Expanded(
+                      child: Padding(
                     padding: EdgeInsets.symmetric(vertical: 12),
                     child: Placeholder(),
                   )),
@@ -63,8 +83,7 @@ class _FinanceChartComponentState extends State<FinanceChartComponent> {
                       ),
                       Text(
                         "INCOME",
-                        style: TextStyle(color: Colors.white.withOpacity(0.5),
-                        fontSize: 12),
+                        style: TextStyle(color: Colors.white.withOpacity(0.5), fontSize: 12),
                       ),
                       const SizedBox(
                         width: 12,
@@ -78,8 +97,7 @@ class _FinanceChartComponentState extends State<FinanceChartComponent> {
                       ),
                       Text(
                         "OUTCOME",
-                        style: TextStyle(color: Colors.white.withOpacity(0.5),
-                        fontSize: 12),
+                        style: TextStyle(color: Colors.white.withOpacity(0.5), fontSize: 12),
                       ),
                     ],
                   )
