@@ -28,7 +28,7 @@ class _FinanceChartComponentState extends State<FinanceChartComponent> {
             padding: EdgeInsets.only(top: 20, bottom: 16),
             child: Align(
               alignment: Alignment.center,
-              child: const Text(
+              child: Text(
                 "Analysis",
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
@@ -54,7 +54,7 @@ class _FinanceChartComponentState extends State<FinanceChartComponent> {
                       borderRadius: BorderRadius.circular(8),
                       color: Colors.white.withOpacity(0.2),
                     ),
-                    padding: EdgeInsets.all(4),
+                    padding: const EdgeInsets.all(4),
                     child: Consumer(
                       builder: (context, ref, _) {
                         final tabIndex = ref.watch(chartTabProvider);
@@ -69,17 +69,26 @@ class _FinanceChartComponentState extends State<FinanceChartComponent> {
                                   ? Container(
                                       decoration: BoxDecoration(
                                         color: Colors.white,
+                                        borderRadius: BorderRadius.circular(4),
+                                      ),
+                                      child: Center(
+                                        child: Text(
+                                          "Monthly",
+                                          style: TextStyle(
+                                            color: financeMainColor,
+                                          ),
+                                        ),
                                       ),
                                     )
-                                  : Center(
+                                  : const Center(
                                       child: Text(
                                         "Monthly",
                                         style: TextStyle(color: Colors.white),
                                       ),
                                     ),
                             )),
-                            Expanded(child: Placeholder()),
-                            Expanded(child: Placeholder()),
+                            const Expanded(child: Placeholder()),
+                            const Expanded(child: Placeholder()),
                           ],
                         );
                       },
