@@ -87,7 +87,33 @@ class _FinanceChartComponentState extends State<FinanceChartComponent> {
                                       ),
                                     ),
                             )),
-                            const Expanded(child: Placeholder()),
+                            Expanded(
+                                child: GestureDetector(
+                                  onTap: () {
+                                    ref.read(chartTabProvider.notifier).state = ChartDay.weekly;
+                                  },
+                                  child: tabIndex == ChartDay.weekly
+                                      ? Container(
+                                    decoration: BoxDecoration(
+                                      color: Colors.white,
+                                      borderRadius: BorderRadius.circular(4),
+                                    ),
+                                    child: Center(
+                                      child: Text(
+                                        "Weekly",
+                                        style: TextStyle(
+                                          color: financeMainColor,
+                                        ),
+                                      ),
+                                    ),
+                                  )
+                                      : const Center(
+                                    child: Text(
+                                      "Weekly",
+                                      style: TextStyle(color: Colors.white),
+                                    ),
+                                  ),
+                                )),
                             const Expanded(child: Placeholder()),
                           ],
                         );
