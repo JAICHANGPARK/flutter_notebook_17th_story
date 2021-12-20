@@ -12,6 +12,12 @@ class _BabylonMainPageState extends State<BabylonMainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.black,
+      body: Column(
+        children: [
+
+        ],
+      ),
 
     );
   }
