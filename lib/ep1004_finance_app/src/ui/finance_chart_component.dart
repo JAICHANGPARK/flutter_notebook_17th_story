@@ -305,43 +305,26 @@ class _FinanceChartComponentState extends State<FinanceChartComponent> {
                       color: Colors.red[50],
                     ),
                     child: const Icon(
-                      Icons.chart,
-                      color: Colors.orange,
+                      Icons.multiline_chart,
+                      color: Colors.red,
                     ),
                   ),
                   Padding(
                     padding: const EdgeInsets.only(
                       left: 16,
                     ),
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: const [
-                        Text(
-                          "Cash Balance",
-                          style: TextStyle(
-                            color: Colors.grey,
-                            fontSize: 13,
-                          ),
+                    child:Text.rich(TextSpan(
+                      children: [
+                        TextSpan(
+                          text: "On average, you spend IDR"
                         ),
-                        SizedBox(
-                          height: 8,
+                        TextSpan(
+                            text: "On average, you spend IDR"
                         ),
-                        Text(
-                          "IDR 20.000.000",
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 15,
-                          ),
-                        )
-                      ],
-                    ),
+
+                      ]
+                    )),
                   ),
-                  const Spacer(),
-                  IconButton(
-                    onPressed: () {},
-                    icon: const Icon(Icons.keyboard_arrow_right),
-                  )
                 ],
               ),
             ),
