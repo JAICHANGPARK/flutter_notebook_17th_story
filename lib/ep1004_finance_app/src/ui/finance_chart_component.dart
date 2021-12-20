@@ -287,7 +287,7 @@ class _FinanceChartComponentState extends State<FinanceChartComponent> {
           Padding(
             padding: const EdgeInsets.all(16.0),
             child: Container(
-              height: 92,
+              height: 72,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(8),
                 border: Border.all(
@@ -309,21 +309,23 @@ class _FinanceChartComponentState extends State<FinanceChartComponent> {
                       color: Colors.red,
                     ),
                   ),
-                  Padding(
-                    padding: const EdgeInsets.only(
-                      left: 16,
-                    ),
-                    child:Text.rich(TextSpan(
-                      children: [
-                        TextSpan(
-                          text: "On average, you spend IDR"
-                        ),
-                        TextSpan(
+                  Expanded(
+                    child: Padding(
+                      padding: const EdgeInsets.only(
+                        left: 16,
+                      ),
+                      child:Text.rich(TextSpan(
+                        children: [
+                          TextSpan(
                             text: "On average, you spend IDR"
-                        ),
+                          ),
+                          TextSpan(
+                              text: "On average, you spend IDR"
+                          ),
 
-                      ]
-                    )),
+                        ]
+                      )),
+                    ),
                   ),
                 ],
               ),
