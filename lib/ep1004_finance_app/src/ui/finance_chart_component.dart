@@ -152,27 +152,30 @@ class _FinanceChartComponentState extends State<FinanceChartComponent> {
                     padding: const EdgeInsets.symmetric(vertical: 12),
                     child: BarChart(BarChartData(
                         barGroups: [
-                          BarChartGroupData(x: 0, barRods: [
+                          BarChartGroupData(x: 0,
+                              barsSpace: 8,
+                              barRods: [
                             BarChartRodData(y: 40, colors: [Colors.white.withOpacity(0.5)]),
+
                             BarChartRodData(y: 35, colors: [Colors.black26])
                           ]),
-                          BarChartGroupData(x: 1, barRods: [
+                          BarChartGroupData(x: 1,    barsSpace: 8,barRods: [
                             BarChartRodData(y: 40, colors: [Colors.white.withOpacity(0.5)]),
                             BarChartRodData(y: 45, colors: [Colors.black26])
                           ]),
-                          BarChartGroupData(x: 2, barRods: [
+                          BarChartGroupData(x: 2,    barsSpace: 8,barRods: [
                             BarChartRodData(y: 40, colors: [Colors.white.withOpacity(0.5)]),
                             BarChartRodData(y: 35, colors: [Colors.black26])
                           ]),
-                          BarChartGroupData(x: 3, barRods: [
+                          BarChartGroupData(x: 3,   barsSpace: 8, barRods: [
                             BarChartRodData(y: 20, colors: [Colors.white.withOpacity(0.5)]),
                             BarChartRodData(y: 36, colors: [Colors.black26])
                           ]),
-                          BarChartGroupData(x: 4, barRods: [
+                          BarChartGroupData(x: 4,   barsSpace: 8, barRods: [
                             BarChartRodData(y: 30, colors: [Colors.white.withOpacity(0.5)]),
                             BarChartRodData(y: 40, colors: [Colors.black26])
                           ]),
-                          BarChartGroupData(x: 5, barRods: [
+                          BarChartGroupData(x: 5,    barsSpace: 8,barRods: [
                             BarChartRodData(y: 30, colors: [Colors.white.withOpacity(0.5)]),
                             BarChartRodData(y: 28, colors: [Colors.black26])
                           ])
