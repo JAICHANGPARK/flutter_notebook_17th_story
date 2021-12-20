@@ -184,7 +184,21 @@ class _FinanceChartComponentState extends State<FinanceChartComponent> {
                         axisTitleData: FlAxisTitleData(
                           topTitle: AxisTitle(
                             showTitle: false,
-                          )
+                          ),
+                          rightTitle: AxisTitle(
+                            showTitle: false,
+                          ),
+                          leftTitle: AxisTitle(
+                            showTitle: false,
+                          ),
+                        ),
+                        titlesData: FlTitlesData(show: true,
+                        bottomTitles: SideTitles(
+
+                        ),
+                        leftTitles: SideTitles(
+                          showTitles: false
+                        )
                         )
                       ),
                     ),
