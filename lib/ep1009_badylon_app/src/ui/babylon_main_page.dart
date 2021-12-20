@@ -60,16 +60,29 @@ class _BabylonMainPageState extends State<BabylonMainPage> {
                               bottom: 16,
                               right: 36,
                               child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
                                 children: const [
                                   Text(
                                     "25.02.2021",
                                     style: TextStyle(fontSize: 14, color: Colors.white),
                                   ),
                                   Spacer(),
-                                  Text("Babylon"),
-                                  Text("on the loop"),
-                                  Text("Lorem ipsum dolor sit amet, consectetur adipisicing elit, "
-                                      "sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.")
+                                  Text(
+                                    "Babylon",
+                                    style: TextStyle(fontSize: 36, fontWeight: FontWeight.bold, color: Colors.white),
+                                  ),
+                                  Text(
+                                    "on the loop",
+                                    style: TextStyle(fontSize: 36, fontWeight: FontWeight.bold, color: Colors.white),
+                                  ),
+                                  SizedBox(
+                                    height: 4,
+                                  ),
+                                  Text(
+                                    "Lorem ipsum dolor sit amet, consectetur adipisicing elit, "
+                                    "sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                                    style: TextStyle(color: Colors.white, fontSize: 12),
+                                  )
                                 ],
                               )),
                           Positioned(
@@ -109,7 +122,68 @@ class _BabylonMainPageState extends State<BabylonMainPage> {
                       child: Container(
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(12),
-                      color: Colors.white.withOpacity(0.3),
+                      color: Colors.white.withOpacity(0.15),
+                    ),
+                    child: Stack(
+                      children: [
+                        Positioned(
+                            left: 16,
+                            top: 24,
+                            bottom: 16,
+                            right: 36,
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: const [
+                                Text(
+                                  "08.06.2021",
+                                  style: TextStyle(fontSize: 14, color: Colors.white),
+                                ),
+                                Spacer(),
+                                Text(
+                                  "Oldies but",
+                                  style: TextStyle(fontSize: 36, fontWeight: FontWeight.bold, color: Colors.white),
+                                ),
+                                Text(
+                                  "Goldies",
+                                  style: TextStyle(fontSize: 36, fontWeight: FontWeight.bold, color: Colors.white),
+                                ),
+                                SizedBox(
+                                  height: 4,
+                                ),
+                                Text(
+                                  "Lorem ipsum dolor sit amet, consectetur adipisicing elit, "
+                                  "sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                                  style: TextStyle(color: Colors.white, fontSize: 12),
+                                )
+                              ],
+                            )),
+                        Positioned(
+                            right: 16,
+                            top: 16,
+                            child: Column(
+                              children: [
+                                CircleAvatar(
+                                  radius: 24,
+                                  backgroundColor: Colors.white.withOpacity(0.1),
+                                  foregroundColor: Colors.white,
+                                  child: Transform.rotate(
+                                    angle: -0.8,
+                                    child: const Icon(
+                                      Icons.arrow_forward,
+                                      size: 28,
+                                    ),
+                                  ),
+                                ),
+                                IconButton(
+                                  onPressed: () {},
+                                  icon: const Icon(
+                                    Icons.star_border,
+                                    color: Colors.white,
+                                  ),
+                                )
+                              ],
+                            ))
+                      ],
                     ),
                   )),
                 ],
