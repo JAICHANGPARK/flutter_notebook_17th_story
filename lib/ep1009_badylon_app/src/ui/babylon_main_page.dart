@@ -58,12 +58,18 @@ class _BabylonMainPageState extends State<BabylonMainPage> {
                               left: 16,
                               top: 24,
                               bottom: 16,
+                              right: 36,
                               child: Column(
                                 children: const [
                                   Text(
                                     "25.02.2021",
                                     style: TextStyle(fontSize: 14, color: Colors.white),
-                                  )
+                                  ),
+                                  Spacer(),
+                                  Text("Babylon"),
+                                  Text("on the loop"),
+                                  Text("Lorem ipsum dolor sit amet, consectetur adipisicing elit, "
+                                      "sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.")
                                 ],
                               )),
                           Positioned(
