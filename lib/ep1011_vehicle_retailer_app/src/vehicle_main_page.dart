@@ -57,14 +57,19 @@ class _VehicleMainPageState extends State<VehicleMainPage> {
                             });
                           }, icon: const Icon(Icons.favorite_border),
                             color: _btmTabIndex == 1 ? Colors.black : Colors.grey,),
-                          const CircleAvatar(
-                            radius: 24,
-                            backgroundColor: Colors.black,
-                            child: Icon(
-                              Icons.add,
-                              size: 32,
+                          GestureDetector(
+                            onTap: (){
+                              ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text("Hello")));
+                            },
+                            child: const CircleAvatar(
+                              radius: 24,
+                              backgroundColor: Colors.black,
+                              child: Icon(
+                                Icons.add,
+                                size: 32,
+                              ),
+                              foregroundColor: Colors.white,
                             ),
-                            foregroundColor: Colors.white,
                           ),
                           IconButton(onPressed: () {
                             setState(() {
