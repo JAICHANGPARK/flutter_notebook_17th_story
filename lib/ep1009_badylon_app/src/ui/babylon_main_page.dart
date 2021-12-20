@@ -44,6 +44,7 @@ class _BabylonMainPageState extends State<BabylonMainPage> {
                       color: Colors.greenAccent
                     ),
                   )),
+                  SizedBox(height: 16,),
                   Expanded(child: Container(
                     decoration: BoxDecoration(
                         color: Colors.white.withOpacity(0.3)
