@@ -24,6 +24,7 @@ class _VehicleMainPageState extends State<VehicleMainPage> {
                   topLeft: Radius.circular(24),
                   topRight: Radius.circular(24),
                 ),
+                elevation: 12,
                 child: Container(
                   height: 84,
                   decoration: const BoxDecoration(
