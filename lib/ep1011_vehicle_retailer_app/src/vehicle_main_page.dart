@@ -50,27 +50,30 @@ class _VehicleMainPageState extends State<VehicleMainPage> {
                             ],
                           ),
                         ),
-                        Expanded(child: ListView.builder(
-                            scrollDirection: Axis.horizontal,
-                            itemBuilder: (context, index) {
-                          return Container(
-                            width: 120,
-                            decoration: BoxDecoration(
-                              color: Colors.blue,
-                              borderRadius: BorderRadius.circular(16),
-
-                            ),
-                            padding: const EdgeInsets.all(8),
-                            child: Column(
-                              children: const [
-                                Spacer(),
-                                Text("World news of the week",style: TextStyle(
-                                  color: Colors.white,
-                                ),)
-                              ],
-                            ),
-                          );
-                        })),
+                        Expanded(
+                            child: ListView.builder(
+                                scrollDirection: Axis.horizontal,
+                                itemBuilder: (context, index) {
+                                  return Container(
+                                    width: 120,
+                                    decoration: BoxDecoration(
+                                      color: Colors.blue,
+                                      borderRadius: BorderRadius.circular(16),
+                                    ),
+                                    padding: const EdgeInsets.all(8),
+                                    child: Column(
+                                      children: const [
+                                        Spacer(),
+                                        Text(
+                                          "World news of the week",
+                                          style: TextStyle(
+                                            color: Colors.white,
+                                          ),
+                                        )
+                                      ],
+                                    ),
+                                  );
+                                })),
                         const Text(
                           'Last seen',
                           style: TextStyle(
@@ -92,19 +95,31 @@ class _VehicleMainPageState extends State<VehicleMainPage> {
                                 ),
                               ),
                               Column(
-                                children: const [
-                                  Text("BMW X1 II(F48) 2019"),
-                                  Text("\$35,400")
-                                ],
+                                children: const [Text("BMW X1 II(F48) 2019"), Text("\$35,400")],
                               ),
-
                             ],
                           ),
                         )
                       ],
                     ),
                   )),
-                  const Expanded(child: Placeholder()),
+                   Expanded(child: SingleChildScrollView(
+                     child: Column(
+                       crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text("Recommended"),
+                        Container(
+                          height: 300,
+                          child: Column(
+                            children: [
+
+                            ],
+                          ),
+                        )
+
+                      ],
+                  ),
+                   )),
                 ],
               )),
           Positioned(
