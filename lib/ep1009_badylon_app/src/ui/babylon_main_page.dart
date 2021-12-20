@@ -46,7 +46,7 @@ class _BabylonMainPageState extends State<BabylonMainPage> {
                   )),
                   Expanded(child: Container(
                     decoration: BoxDecoration(
-                        color: Colors.white.withOpacity(0.5)
+                        color: Colors.white.withOpacity(0.3)
                     ),
                   )),
                 ],
