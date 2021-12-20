@@ -13,34 +13,38 @@ class _BabylonMainPageState extends State<BabylonMainPage> {
     return Scaffold(
       backgroundColor: Colors.black,
       body: SafeArea(
-        child: Column(
-          children: [
-            Row(
-              children: [
-                Icon(
-                  Icons.person_outline,
-                  color: Colors.white,
-                ),
-                Text(
-                  "Babylon'la Ac Kendini",
-                  style: TextStyle(
+        child: Padding(
+          padding: const EdgeInsets.all(16.0),
+          child: Column(
+            children: [
+              Row(
+                children: [
+                  Icon(
+                    Icons.person_outline,
                     color: Colors.white,
                   ),
-                ),
-                Spacer(),
-                IconButton(
-                  icon: Icon(Icons.search),
-                  onPressed: () {},
-                )
-              ],
-            ),
-            Expanded(child: Column(
-              children: [
-                Expanded(child: Placeholder()),
-                Expanded(child: Placeholder()),
-              ],
-            )),
-          ],
+                  Text(
+                    "Babylon'la Ac Kendini",
+                    style: TextStyle(
+                      color: Colors.white,
+                    ),
+                  ),
+                  Spacer(),
+                  IconButton(
+                    icon: Icon(Icons.search),
+                    color: Colors.white,
+                    onPressed: () {},
+                  )
+                ],
+              ),
+              Expanded(child: Column(
+                children: [
+                  Expanded(child: Placeholder()),
+                  Expanded(child: Placeholder()),
+                ],
+              )),
+            ],
+          ),
         ),
       ),
     );
