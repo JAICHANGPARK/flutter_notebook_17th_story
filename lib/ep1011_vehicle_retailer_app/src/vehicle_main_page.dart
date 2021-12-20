@@ -9,6 +9,8 @@ class VehicleMainPage extends StatefulWidget {
 }
 
 class _VehicleMainPageState extends State<VehicleMainPage> {
+  int _btmTabIndex = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -39,16 +41,41 @@ class _VehicleMainPageState extends State<VehicleMainPage> {
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          IconButton(onPressed: () {}, icon: const Icon(Icons.home)),
-                          IconButton(onPressed: () {}, icon: const Icon(Icons.favorite_border)),
+                          IconButton(
+                            onPressed: () {
+                              setState(() {
+                                _btmTabIndex = 0;
+                              });
+
+                            },
+                            icon: const Icon(Icons.home),
+                            color: _btmTabIndex == 0 ? Colors.black : Colors.grey,
+                          ),
+                          IconButton(onPressed: () {
+                            setState(() {
+                              _btmTabIndex = 1;
+                            });
+                          }, icon: const Icon(Icons.favorite_border),
+                            color: _btmTabIndex == 1 ? Colors.black : Colors.grey,),
                           const CircleAvatar(
                             radius: 24,
                             backgroundColor: Colors.black,
-                            child: Icon(Icons.add, size: 32,),
+                            child: Icon(
+                              Icons.add,
+                              size: 32,
+                            ),
                             foregroundColor: Colors.white,
                           ),
-                          IconButton(onPressed: () {}, icon: const Icon(Icons.attach_email_outlined)),
-                          IconButton(onPressed: () {}, icon: const Icon(Icons.settings_outlined))
+                          IconButton(onPressed: () {
+                            setState(() {
+                              _btmTabIndex = 2;
+                            });
+                          }, icon: const Icon(Icons.attach_email_outlined)),
+                          IconButton(onPressed: () {
+                            setState(() {
+                              _btmTabIndex = 3;
+                            });
+                          }, icon: const Icon(Icons.settings_outlined))
                         ],
                       ),
                       const SizedBox(
