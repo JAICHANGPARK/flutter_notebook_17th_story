@@ -29,21 +29,21 @@ class _VehicleMainPageState extends State<VehicleMainPage> {
                       color: Colors.black,
                       borderRadius: BorderRadius.circular(28),
                     ),
-                    padding: EdgeInsets.all(16),
+                    padding: const EdgeInsets.all(16),
                     child: Column(
                       children: [
                         Padding(
                           padding: const EdgeInsets.only(top: 24),
                           child: Row(
                             children: [
-                              Text(
+                              const Text(
                                 "Explore",
                                 style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 28),
                               ),
-                              Spacer(),
+                              const Spacer(),
                               IconButton(
                                 onPressed: () {},
-                                icon: Icon(Icons.search),
+                                icon: const Icon(Icons.search),
                                 color: Colors.white,
                               )
                             ],
@@ -52,7 +52,7 @@ class _VehicleMainPageState extends State<VehicleMainPage> {
                         Expanded(child: ListView.builder(itemBuilder: (context, index) {
                           return Container();
                         })),
-                        Text(
+                        const Text(
                           'Last seen',
                           style: TextStyle(
                             color: Colors.white,
@@ -64,13 +64,28 @@ class _VehicleMainPageState extends State<VehicleMainPage> {
                             color: Colors.white.withOpacity(0.2),
                           ),
                           child: Row(
-                            children: [],
+                            children: [
+                              Container(
+                                height: 42,
+                                width: 42,
+                                decoration: BoxDecoration(
+                                  color: Colors.green,
+                                ),
+                              ),
+                              Column(
+                                children: [
+                                  Text("BMW X1 II(F48) 2019"),
+                                  Text("\$35,400")
+                                ],
+                              ),
+
+                            ],
                           ),
                         )
                       ],
                     ),
                   )),
-                  Expanded(child: Placeholder()),
+                  const Expanded(child: Placeholder()),
                 ],
               )),
           Positioned(
@@ -118,7 +133,7 @@ class _VehicleMainPageState extends State<VehicleMainPage> {
                           ),
                           GestureDetector(
                             onTap: () {
-                              ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text("Hello")));
+                              ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text("Hello")));
                             },
                             child: const CircleAvatar(
                               radius: 24,
