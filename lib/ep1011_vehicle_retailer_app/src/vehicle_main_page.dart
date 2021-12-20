@@ -108,8 +108,8 @@ class _VehicleMainPageState extends State<VehicleMainPage> {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text("Recommended"),
-                        Container(
+                        const Text("Recommended"),
+                        SizedBox(
                           height: 300,
                           child: Column(
                             children: [],
