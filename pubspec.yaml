@@ -40,6 +40,7 @@ dependencies:
   ionicons: any
   coolicons: any
   percent_indicator: any
+  fl_chart: any
 
 
 dev_dependencies:
