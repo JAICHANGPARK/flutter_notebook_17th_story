@@ -17,6 +17,17 @@ class _VehicleMainPageState extends State<VehicleMainPage> {
       body: Stack(
         children: [
           Positioned(
+              left: 0,
+              right: 0,
+              bottom: 0,
+              top: 0,
+              child: Column(
+                children: [
+                  Expanded(child: Placeholder()),
+                  Expanded(child: Placeholder()),
+                ],
+              )),
+          Positioned(
               bottom: 0,
               left: 0,
               right: 0,
