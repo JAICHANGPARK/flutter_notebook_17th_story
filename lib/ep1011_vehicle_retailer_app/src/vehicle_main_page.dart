@@ -42,8 +42,9 @@ class _VehicleMainPageState extends State<VehicleMainPage> {
                           IconButton(onPressed: () {}, icon: const Icon(Icons.home)),
                           IconButton(onPressed: () {}, icon: const Icon(Icons.favorite_border)),
                           const CircleAvatar(
+                            radius: 24,
                             backgroundColor: Colors.black,
-                            child: Icon(Icons.add),
+                            child: Icon(Icons.add, size: 32,),
                             foregroundColor: Colors.white,
                           ),
                           IconButton(onPressed: () {}, icon: const Icon(Icons.attach_email_outlined)),
