@@ -149,9 +149,15 @@ class _FinanceChartComponentState extends State<FinanceChartComponent> {
                   ),
                    Expanded(
                       child: Padding(
-                    padding: EdgeInsets.symmetric(vertical: 12),
+                    padding: const EdgeInsets.symmetric(vertical: 12),
                     child: BarChart(BarChartData(
-
+                        barGroups: [
+                          BarChartGroupData(x: 0, barRods: [
+                            BarChartRodData(y: 40),
+                            BarChartRodData(y: 35)
+                          ])
+                        ],
+                      
                     )),
                   )),
                   Row(
