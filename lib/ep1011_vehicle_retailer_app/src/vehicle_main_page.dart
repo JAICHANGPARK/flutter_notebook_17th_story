@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class VehicleMainPage extends StatefulWidget {
@@ -18,21 +19,35 @@ class _VehicleMainPageState extends State<VehicleMainPage> {
               left: 0,
               right: 0,
               child: PhysicalModel(
-                
                 color: Colors.black.withOpacity(0.5),
                 borderRadius: BorderRadius.only(
                   topLeft: Radius.circular(24),
                   topRight: Radius.circular(24),
                 ),
-                elevation: 12,
+                elevation: 24,
                 child: Container(
-                  height: 84,
+                  height: 100,
                   decoration: const BoxDecoration(
                       color: Colors.white,
                       borderRadius: BorderRadius.only(
                         topLeft: Radius.circular(24),
                         topRight: Radius.circular(24),
                       )),
+                  child: Column(
+                    children: [
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [IconButton(onPressed: () {}, icon: Icon(Icons.home)),
+                          IconButton(onPressed: () {}, icon: Icon(Icons.home)),
+                        CircleAvatar(),
+                          IconButton(onPressed: () {}, icon: Icon(Icons.home)),
+                          IconButton(onPressed: () {}, icon: Icon(Icons.home))],
+                      ),
+                      SizedBox(
+                        height: 24,
+                      ),
+                    ],
+                  ),
                 ),
               )),
         ],
