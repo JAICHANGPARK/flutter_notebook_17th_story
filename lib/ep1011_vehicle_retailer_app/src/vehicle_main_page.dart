@@ -23,7 +23,19 @@ class _VehicleMainPageState extends State<VehicleMainPage> {
               top: 0,
               child: Column(
                 children: [
-                  Expanded(child: Placeholder()),
+                  Expanded(child: Container(
+                    decoration: BoxDecoration(
+                      color: Colors.black,
+                      borderRadius: BorderRadius.circular(24)
+                    ),
+                    child: Column(
+                      children: [
+                          Row(
+                            children: [],
+                          )
+                      ],
+                    ),
+                  )),
                   Expanded(child: Placeholder()),
                 ],
               )),
