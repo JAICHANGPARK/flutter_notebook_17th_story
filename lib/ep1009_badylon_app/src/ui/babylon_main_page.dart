@@ -39,8 +39,16 @@ class _BabylonMainPageState extends State<BabylonMainPage> {
               ),
               Expanded(child: Column(
                 children: [
-                  Expanded(child: Placeholder()),
-                  Expanded(child: Placeholder()),
+                  Expanded(child: Container(
+                    decoration: BoxDecoration(
+                      color: Colors.greenAccent
+                    ),
+                  )),
+                  Expanded(child: Container(
+                    decoration: BoxDecoration(
+                        color: Colors.white.withOpacity(0.5)
+                    ),
+                  )),
                 ],
               )),
             ],
