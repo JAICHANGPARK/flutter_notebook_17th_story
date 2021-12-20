@@ -334,6 +334,11 @@ class _FinanceChartComponentState extends State<FinanceChartComponent> {
               ),
             ),
           ),
+          Expanded(
+            child: Container(
+              color: Colors.grey[200],
+            ),
+          )
         ],
       ),
     );
