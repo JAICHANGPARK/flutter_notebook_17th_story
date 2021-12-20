@@ -20,7 +20,7 @@ class _VehicleMainPageState extends State<VehicleMainPage> {
               right: 0,
               child: PhysicalModel(
                 color: Colors.black.withOpacity(0.5),
-                borderRadius: BorderRadius.only(
+                borderRadius: const BorderRadius.only(
                   topLeft: Radius.circular(24),
                   topRight: Radius.circular(24),
                 ),
@@ -33,17 +33,18 @@ class _VehicleMainPageState extends State<VehicleMainPage> {
                         topLeft: Radius.circular(24),
                         topRight: Radius.circular(24),
                       )),
+                  padding: const EdgeInsets.only(top: 16, left: 16, right: 16),
                   child: Column(
                     children: [
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [IconButton(onPressed: () {}, icon: Icon(Icons.home)),
-                          IconButton(onPressed: () {}, icon: Icon(Icons.home)),
-                        CircleAvatar(),
-                          IconButton(onPressed: () {}, icon: Icon(Icons.home)),
-                          IconButton(onPressed: () {}, icon: Icon(Icons.home))],
+                        children: [IconButton(onPressed: () {}, icon: const Icon(Icons.home)),
+                          IconButton(onPressed: () {}, icon: const Icon(Icons.home)),
+                        const CircleAvatar(),
+                          IconButton(onPressed: () {}, icon: const Icon(Icons.home)),
+                          IconButton(onPressed: () {}, icon: const Icon(Icons.home))],
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 24,
                       ),
                     ],
