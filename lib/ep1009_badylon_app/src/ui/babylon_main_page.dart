@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class BabylonMainPage extends StatefulWidget {
   const BabylonMainPage({Key? key}) : super(key: key);
 
@@ -13,12 +12,37 @@ class _BabylonMainPageState extends State<BabylonMainPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.black,
-      body: Column(
-        children: [
-
-        ],
+      body: SafeArea(
+        child: Column(
+          children: [
+            Row(
+              children: [
+                Icon(
+                  Icons.person_outline,
+                  color: Colors.white,
+                ),
+                Text(
+                  "Babylon'la Ac Kendini",
+                  style: TextStyle(
+                    color: Colors.white,
+                  ),
+                ),
+                Spacer(),
+                IconButton(
+                  icon: Icon(Icons.search),
+                  onPressed: () {},
+                )
+              ],
+            ),
+            Expanded(child: Column(
+              children: [
+                Expanded(child: Placeholder()),
+                Expanded(child: Placeholder()),
+              ],
+            )),
+          ],
+        ),
       ),
-
     );
   }
 }
