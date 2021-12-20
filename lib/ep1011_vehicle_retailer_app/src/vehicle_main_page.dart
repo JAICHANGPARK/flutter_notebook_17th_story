@@ -103,23 +103,21 @@ class _VehicleMainPageState extends State<VehicleMainPage> {
                       ],
                     ),
                   )),
-                   Expanded(child: SingleChildScrollView(
-                     child: Column(
-                       crossAxisAlignment: CrossAxisAlignment.start,
+                  Expanded(
+                      child: SingleChildScrollView(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text("Recommended"),
                         Container(
                           height: 300,
                           child: Column(
-                            children: [
-
-                            ],
+                            children: [],
                           ),
                         )
-
                       ],
-                  ),
-                   )),
+                    ),
+                  )),
                 ],
               )),
           Positioned(
