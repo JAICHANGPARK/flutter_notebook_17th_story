@@ -25,7 +25,10 @@ class _VehicleMainPageState extends State<VehicleMainPage> {
                 children: [
                   Expanded(
                       child: Container(
-                    decoration: BoxDecoration(color: Colors.black, borderRadius: BorderRadius.circular(28),),
+                    decoration: BoxDecoration(
+                      color: Colors.black,
+                      borderRadius: BorderRadius.circular(28),
+                    ),
                     padding: EdgeInsets.all(16),
                     child: Column(
                       children: [
@@ -33,11 +36,10 @@ class _VehicleMainPageState extends State<VehicleMainPage> {
                           padding: const EdgeInsets.only(top: 24),
                           child: Row(
                             children: [
-                              Text("Explore",style: TextStyle(
-                                color: Colors.white,
-                                fontWeight: FontWeight.bold,
-                                fontSize: 28
-                              ),),
+                              Text(
+                                "Explore",
+                                style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 28),
+                              ),
                               Spacer(),
                               IconButton(
                                 onPressed: () {},
@@ -45,6 +47,24 @@ class _VehicleMainPageState extends State<VehicleMainPage> {
                                 color: Colors.white,
                               )
                             ],
+                          ),
+                        ),
+                        Expanded(child: ListView.builder(itemBuilder: (context, index) {
+                          return Container();
+                        })),
+                        Text(
+                          'Last seen',
+                          style: TextStyle(
+                            color: Colors.white,
+                          ),
+                        ),
+                        Container(
+                          height: 64,
+                          decoration: BoxDecoration(
+                            color: Colors.white.withOpacity(0.2),
+                          ),
+                          child: Row(
+                            children: [],
                           ),
                         )
                       ],
