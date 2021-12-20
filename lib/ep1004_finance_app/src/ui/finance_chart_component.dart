@@ -152,55 +152,55 @@ class _FinanceChartComponentState extends State<FinanceChartComponent> {
                     padding: const EdgeInsets.symmetric(vertical: 12),
                     child: BarChart(
                       BarChartData(
-                        barGroups: [
-                          BarChartGroupData(x: 0, barsSpace: 8, barRods: [
-                            BarChartRodData(y: 40, colors: [Colors.white.withOpacity(0.5)]),
-                            BarChartRodData(y: 35, colors: [Colors.black26])
-                          ]),
-                          BarChartGroupData(x: 1, barsSpace: 8, barRods: [
-                            BarChartRodData(y: 40, colors: [Colors.white.withOpacity(0.5)]),
-                            BarChartRodData(y: 45, colors: [Colors.black26])
-                          ]),
-                          BarChartGroupData(x: 2, barsSpace: 8, barRods: [
-                            BarChartRodData(y: 40, colors: [Colors.white.withOpacity(0.5)]),
-                            BarChartRodData(y: 35, colors: [Colors.black26])
-                          ]),
-                          BarChartGroupData(x: 3, barsSpace: 8, barRods: [
-                            BarChartRodData(y: 20, colors: [Colors.white.withOpacity(0.5)]),
-                            BarChartRodData(y: 36, colors: [Colors.black26])
-                          ]),
-                          BarChartGroupData(x: 4, barsSpace: 8, barRods: [
-                            BarChartRodData(y: 30, colors: [Colors.white.withOpacity(0.5)]),
-                            BarChartRodData(y: 40, colors: [Colors.black26])
-                          ]),
-                          BarChartGroupData(x: 5, barsSpace: 8, barRods: [
-                            BarChartRodData(y: 30, colors: [Colors.white.withOpacity(0.5)]),
-                            BarChartRodData(y: 28, colors: [Colors.black26])
-                          ])
-                        ],
-                        gridData: FlGridData(
-                          show: false,
-                        ),
-                        axisTitleData: FlAxisTitleData(
-                          topTitle: AxisTitle(
-                            showTitle: false,
+                          barGroups: [
+                            BarChartGroupData(x: 0, barsSpace: 8, barRods: [
+                              BarChartRodData(y: 40, colors: [Colors.white.withOpacity(0.5)]),
+                              BarChartRodData(y: 35, colors: [Colors.black26])
+                            ]),
+                            BarChartGroupData(x: 1, barsSpace: 8, barRods: [
+                              BarChartRodData(y: 40, colors: [Colors.white.withOpacity(0.5)]),
+                              BarChartRodData(y: 45, colors: [Colors.black26])
+                            ]),
+                            BarChartGroupData(x: 2, barsSpace: 8, barRods: [
+                              BarChartRodData(y: 40, colors: [Colors.white.withOpacity(0.5)]),
+                              BarChartRodData(y: 35, colors: [Colors.black26])
+                            ]),
+                            BarChartGroupData(x: 3, barsSpace: 8, barRods: [
+                              BarChartRodData(y: 20, colors: [Colors.white.withOpacity(0.5)]),
+                              BarChartRodData(y: 36, colors: [Colors.black26])
+                            ]),
+                            BarChartGroupData(x: 4, barsSpace: 8, barRods: [
+                              BarChartRodData(y: 30, colors: [Colors.white.withOpacity(0.5)]),
+                              BarChartRodData(y: 40, colors: [Colors.black26])
+                            ]),
+                            BarChartGroupData(x: 5, barsSpace: 8, barRods: [
+                              BarChartRodData(y: 30, colors: [Colors.white.withOpacity(0.5)]),
+                              BarChartRodData(y: 28, colors: [Colors.black26])
+                            ])
+                          ],
+                          gridData: FlGridData(
+                            show: false,
                           ),
-                          rightTitle: AxisTitle(
-                            showTitle: false,
+                          axisTitleData: FlAxisTitleData(
+                            topTitle: AxisTitle(
+                              showTitle: false,
+                            ),
+                            rightTitle: AxisTitle(
+                              showTitle: false,
+                            ),
+                            leftTitle: AxisTitle(
+                              showTitle: false,
+                            ),
                           ),
-                          leftTitle: AxisTitle(
-                            showTitle: false,
+                          borderData: FlBorderData(
+                            show: false
                           ),
-                        ),
-                        titlesData: FlTitlesData(show: true,
-                        bottomTitles: SideTitles(
-
-                        ),
-                        leftTitles: SideTitles(
-                          showTitles: false
-                        )
-                        )
-                      ),
+                          titlesData: FlTitlesData(
+                              show: true,
+                              bottomTitles: SideTitles(),
+                              leftTitles: SideTitles(showTitles: false),
+                              topTitles: SideTitles(showTitles: false),
+                              rightTitles: SideTitles(showTitles: false))),
                     ),
                   )),
                   Row(
