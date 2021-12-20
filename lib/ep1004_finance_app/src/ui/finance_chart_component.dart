@@ -239,11 +239,7 @@ class _FinanceChartComponentState extends State<FinanceChartComponent> {
                                   }
                                 },
                                 margin: 8,
-                                getTextStyles: (context, value) => TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 12
-
-                                ),
+                                getTextStyles: (context, value) => const TextStyle(color: Colors.white, fontSize: 12),
                               ),
                               leftTitles: SideTitles(showTitles: false),
                               topTitles: SideTitles(showTitles: false),
@@ -311,20 +307,27 @@ class _FinanceChartComponentState extends State<FinanceChartComponent> {
                   ),
                   Expanded(
                     child: Padding(
-                      padding: const EdgeInsets.only(
+                      padding: EdgeInsets.only(
                         left: 16,
                       ),
-                      child:Text.rich(TextSpan(
-                        children: [
-                          TextSpan(
-                            text: "On average, you spend IDR"
+                      child: Text.rich(TextSpan(children: [
+                        TextSpan(
+                            text: "On average, you spend IDR",
+                            style: TextStyle(
+                              color: Colors.black,
+                            )),
+                        TextSpan(
+                            text: "30.000",
+                            style: TextStyle(
+                              color: financeMainColor,
+                            )),
+                        TextSpan(
+                          text: "per day to meet your needs",
+                          style: TextStyle(
+                            color: Colors.black,
                           ),
-                          TextSpan(
-                              text: "On average, you spend IDR"
-                          ),
-
-                        ]
-                      )),
+                        ),
+                      ])),
                     ),
                   ),
                 ],
