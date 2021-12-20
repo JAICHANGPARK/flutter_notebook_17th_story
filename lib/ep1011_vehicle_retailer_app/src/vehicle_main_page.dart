@@ -11,6 +11,12 @@ class VehicleMainPage extends StatefulWidget {
 class _VehicleMainPageState extends State<VehicleMainPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: Stack(
+        children: [
+
+        ],
+      ),
+    );
   }
 }
