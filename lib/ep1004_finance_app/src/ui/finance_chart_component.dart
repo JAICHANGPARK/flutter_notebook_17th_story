@@ -151,7 +151,9 @@ class _FinanceChartComponentState extends State<FinanceChartComponent> {
                       child: Padding(
                     padding: const EdgeInsets.symmetric(vertical: 12),
                     child: BarChart(
+
                       BarChartData(
+                        maxY: 50,
                           barGroups: [
                             BarChartGroupData(x: 0, barsSpace: 8, barRods: [
                               BarChartRodData(y: 40, colors: [Colors.white.withOpacity(0.5)]),
