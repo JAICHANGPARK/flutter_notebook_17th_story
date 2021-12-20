@@ -70,12 +70,15 @@ class _VehicleMainPageState extends State<VehicleMainPage> {
                             setState(() {
                               _btmTabIndex = 2;
                             });
-                          }, icon: const Icon(Icons.attach_email_outlined)),
+                          }, icon: const Icon(Icons.attach_email_outlined),
+                            color: _btmTabIndex == 2 ? Colors.black : Colors.grey,
+                          ),
                           IconButton(onPressed: () {
                             setState(() {
                               _btmTabIndex = 3;
                             });
-                          }, icon: const Icon(Icons.settings_outlined))
+                          }, icon: const Icon(Icons.settings_outlined),
+                            color: _btmTabIndex == 3 ? Colors.black : Colors.grey,)
                         ],
                       ),
                       const SizedBox(
