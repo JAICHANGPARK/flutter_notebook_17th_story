@@ -151,9 +151,8 @@ class _FinanceChartComponentState extends State<FinanceChartComponent> {
                       child: Padding(
                     padding: const EdgeInsets.symmetric(vertical: 12),
                     child: BarChart(
-
                       BarChartData(
-                        maxY: 50,
+                          maxY: 50,
                           barGroups: [
                             BarChartGroupData(x: 0, barsSpace: 8, barRods: [
                               BarChartRodData(y: 40, colors: [Colors.white.withOpacity(0.5)]),
@@ -193,13 +192,53 @@ class _FinanceChartComponentState extends State<FinanceChartComponent> {
                             leftTitle: AxisTitle(
                               showTitle: false,
                             ),
+                            bottomTitle: AxisTitle(
+                              showTitle: true,
+                              // titleText: (context, value){
+                              //   var i = value.toInt();
+                              //   switch (i) {
+                              //     case 0:
+                              //       return "Mar";
+                              //     case 1:
+                              //       return "Apr";
+                              //     case 2:
+                              //       return "May";
+                              //     case 3:
+                              //       return "Jun";
+                              //     case 4:
+                              //       return "Jul";
+                              //     case 5:
+                              //       return "Agt";
+                              //     default:
+                              //       return "Mar";
+                              //   }
+                              // }
+                            )
                           ),
-                          borderData: FlBorderData(
-                            show: false
-                          ),
+                          borderData: FlBorderData(show: false),
                           titlesData: FlTitlesData(
                               show: true,
-                              bottomTitles: SideTitles(),
+                              bottomTitles: SideTitles(
+                                  showTitles: true,
+                                  getTitles: (value) {
+                                var i = value.toInt();
+                                switch (i) {
+                                  case 0:
+                                    return "Mar";
+                                  case 1:
+                                    return "Apr";
+                                  case 2:
+                                    return "May";
+                                  case 3:
+                                    return "Jun";
+                                  case 4:
+                                    return "Jul";
+                                  case 5:
+                                    return "Agt";
+                                  default:
+                                    return "Mar";
+                                }
+                              }),
                               leftTitles: SideTitles(showTitles: false),
                               topTitles: SideTitles(showTitles: false),
                               rightTitles: SideTitles(showTitles: false))),
