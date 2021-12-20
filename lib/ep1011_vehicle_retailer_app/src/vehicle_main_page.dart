@@ -23,16 +23,30 @@ class _VehicleMainPageState extends State<VehicleMainPage> {
               top: 0,
               child: Column(
                 children: [
-                  Expanded(child: Container(
-                    decoration: BoxDecoration(
-                      color: Colors.black,
-                      borderRadius: BorderRadius.circular(24)
-                    ),
+                  Expanded(
+                      child: Container(
+                    decoration: BoxDecoration(color: Colors.black, borderRadius: BorderRadius.circular(28),),
+                    padding: EdgeInsets.all(16),
                     child: Column(
                       children: [
-                          Row(
-                            children: [],
-                          )
+                        Padding(
+                          padding: const EdgeInsets.only(top: 24),
+                          child: Row(
+                            children: [
+                              Text("Explore",style: TextStyle(
+                                color: Colors.white,
+                                fontWeight: FontWeight.bold,
+                                fontSize: 28
+                              ),),
+                              Spacer(),
+                              IconButton(
+                                onPressed: () {},
+                                icon: Icon(Icons.search),
+                                color: Colors.white,
+                              )
+                            ],
+                          ),
+                        )
                       ],
                     ),
                   )),
@@ -69,19 +83,21 @@ class _VehicleMainPageState extends State<VehicleMainPage> {
                               setState(() {
                                 _btmTabIndex = 0;
                               });
-
                             },
                             icon: const Icon(Icons.home),
                             color: _btmTabIndex == 0 ? Colors.black : Colors.grey,
                           ),
-                          IconButton(onPressed: () {
-                            setState(() {
-                              _btmTabIndex = 1;
-                            });
-                          }, icon: const Icon(Icons.favorite_border),
-                            color: _btmTabIndex == 1 ? Colors.black : Colors.grey,),
+                          IconButton(
+                            onPressed: () {
+                              setState(() {
+                                _btmTabIndex = 1;
+                              });
+                            },
+                            icon: const Icon(Icons.favorite_border),
+                            color: _btmTabIndex == 1 ? Colors.black : Colors.grey,
+                          ),
                           GestureDetector(
-                            onTap: (){
+                            onTap: () {
                               ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text("Hello")));
                             },
                             child: const CircleAvatar(
@@ -94,19 +110,24 @@ class _VehicleMainPageState extends State<VehicleMainPage> {
                               foregroundColor: Colors.white,
                             ),
                           ),
-                          IconButton(onPressed: () {
-                            setState(() {
-                              _btmTabIndex = 2;
-                            });
-                          }, icon: const Icon(Icons.attach_email_outlined),
+                          IconButton(
+                            onPressed: () {
+                              setState(() {
+                                _btmTabIndex = 2;
+                              });
+                            },
+                            icon: const Icon(Icons.attach_email_outlined),
                             color: _btmTabIndex == 2 ? Colors.black : Colors.grey,
                           ),
-                          IconButton(onPressed: () {
-                            setState(() {
-                              _btmTabIndex = 3;
-                            });
-                          }, icon: const Icon(Icons.settings_outlined),
-                            color: _btmTabIndex == 3 ? Colors.black : Colors.grey,)
+                          IconButton(
+                            onPressed: () {
+                              setState(() {
+                                _btmTabIndex = 3;
+                              });
+                            },
+                            icon: const Icon(Icons.settings_outlined),
+                            color: _btmTabIndex == 3 ? Colors.black : Colors.grey,
+                          )
                         ],
                       ),
                       const SizedBox(
