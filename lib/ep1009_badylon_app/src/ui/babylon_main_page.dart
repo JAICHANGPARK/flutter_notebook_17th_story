@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 
+/// 99 224 126
+Color babylonGreenColor = const Color.fromRGBO(99, 224, 126, 1.0);
+
 class BabylonMainPage extends StatefulWidget {
   const BabylonMainPage({Key? key}) : super(key: key);
 
@@ -19,35 +22,88 @@ class _BabylonMainPageState extends State<BabylonMainPage> {
             children: [
               Row(
                 children: [
-                  Icon(
+                  const Icon(
                     Icons.person_outline,
                     color: Colors.white,
                   ),
-                  Text(
+                  const Text(
                     "Babylon'la Ac Kendini",
                     style: TextStyle(
                       color: Colors.white,
                     ),
                   ),
-                  Spacer(),
+                  const Spacer(),
                   IconButton(
-                    icon: Icon(Icons.search),
+                    icon: const Icon(Icons.search),
                     color: Colors.white,
                     onPressed: () {},
                   )
                 ],
               ),
-              Expanded(child: Column(
+              const SizedBox(
+                height: 16,
+              ),
+              Expanded(
+                  child: Column(
                 children: [
-                  Expanded(child: Container(
-                    decoration: BoxDecoration(
-                      color: Colors.greenAccent
+                  Expanded(
+                    child: Container(
+                      decoration: BoxDecoration(
+                        color: babylonGreenColor,
+                        borderRadius: BorderRadius.circular(12),
+                      ),
+                      child: Stack(
+                        children: [
+                          Positioned(
+                              left: 16,
+                              top: 24,
+                              bottom: 16,
+                              child: Column(
+                                children: const [
+                                  Text(
+                                    "25.02.2021",
+                                    style: TextStyle(fontSize: 14, color: Colors.white),
+                                  )
+                                ],
+                              )),
+                          Positioned(
+                              right: 16,
+                              top: 16,
+                              child: Column(
+                                children: [
+                                  CircleAvatar(
+                                    radius: 24,
+                                    backgroundColor: Colors.white,
+                                    foregroundColor: babylonGreenColor,
+                                    child: Transform.rotate(
+                                      angle: -0.8,
+                                      child: const Icon(
+                                        Icons.arrow_forward,
+                                        size: 28,
+                                      ),
+                                    ),
+                                  ),
+                                  IconButton(
+                                    onPressed: () {},
+                                    icon: const Icon(
+                                      Icons.star_border,
+                                      color: Colors.white,
+                                    ),
+                                  )
+                                ],
+                              ))
+                        ],
+                      ),
                     ),
-                  )),
-                  SizedBox(height: 16,),
-                  Expanded(child: Container(
+                  ),
+                  const SizedBox(
+                    height: 16,
+                  ),
+                  Expanded(
+                      child: Container(
                     decoration: BoxDecoration(
-                        color: Colors.white.withOpacity(0.3)
+                      borderRadius: BorderRadius.circular(12),
+                      color: Colors.white.withOpacity(0.3),
                     ),
                   )),
                 ],
