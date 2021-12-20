@@ -153,8 +153,8 @@ class _FinanceChartComponentState extends State<FinanceChartComponent> {
                     child: BarChart(BarChartData(
                         barGroups: [
                           BarChartGroupData(x: 0, barRods: [
-                            BarChartRodData(y: 40),
-                            BarChartRodData(y: 35)
+                            BarChartRodData(y: 40, colors: [Colors.white.withOpacity(0.5)]),
+                            BarChartRodData(y: 35, colors: [Colors.black26])
                           ])
                         ],
                       
