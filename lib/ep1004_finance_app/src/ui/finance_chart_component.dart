@@ -183,62 +183,67 @@ class _FinanceChartComponentState extends State<FinanceChartComponent> {
                             show: false,
                           ),
                           axisTitleData: FlAxisTitleData(
-                            topTitle: AxisTitle(
-                              showTitle: false,
-                            ),
-                            rightTitle: AxisTitle(
-                              showTitle: false,
-                            ),
-                            leftTitle: AxisTitle(
-                              showTitle: false,
-                            ),
-                            bottomTitle: AxisTitle(
-                              showTitle: true,
-                              // titleText: (context, value){
-                              //   var i = value.toInt();
-                              //   switch (i) {
-                              //     case 0:
-                              //       return "Mar";
-                              //     case 1:
-                              //       return "Apr";
-                              //     case 2:
-                              //       return "May";
-                              //     case 3:
-                              //       return "Jun";
-                              //     case 4:
-                              //       return "Jul";
-                              //     case 5:
-                              //       return "Agt";
-                              //     default:
-                              //       return "Mar";
-                              //   }
-                              // }
-                            )
-                          ),
+                              topTitle: AxisTitle(
+                                showTitle: false,
+                              ),
+                              rightTitle: AxisTitle(
+                                showTitle: false,
+                              ),
+                              leftTitle: AxisTitle(
+                                showTitle: false,
+                              ),
+                              bottomTitle: AxisTitle(
+                                showTitle: true,
+                                // titleText: (context, value){
+                                //   var i = value.toInt();
+                                //   switch (i) {
+                                //     case 0:
+                                //       return "Mar";
+                                //     case 1:
+                                //       return "Apr";
+                                //     case 2:
+                                //       return "May";
+                                //     case 3:
+                                //       return "Jun";
+                                //     case 4:
+                                //       return "Jul";
+                                //     case 5:
+                                //       return "Agt";
+                                //     default:
+                                //       return "Mar";
+                                //   }
+                                // }
+                              )),
                           borderData: FlBorderData(show: false),
                           titlesData: FlTitlesData(
                               show: true,
                               bottomTitles: SideTitles(
-                                  showTitles: true,
-                                  getTitles: (value) {
-                                var i = value.toInt();
-                                switch (i) {
-                                  case 0:
-                                    return "Mar";
-                                  case 1:
-                                    return "Apr";
-                                  case 2:
-                                    return "May";
-                                  case 3:
-                                    return "Jun";
-                                  case 4:
-                                    return "Jul";
-                                  case 5:
-                                    return "Agt";
-                                  default:
-                                    return "Mar";
-                                }
-                              }),
+                                showTitles: true,
+                                getTitles: (value) {
+                                  var i = value.toInt();
+                                  switch (i) {
+                                    case 0:
+                                      return "Mar";
+                                    case 1:
+                                      return "Apr";
+                                    case 2:
+                                      return "May";
+                                    case 3:
+                                      return "Jun";
+                                    case 4:
+                                      return "Jul";
+                                    case 5:
+                                      return "Agt";
+                                    default:
+                                      return "Mar";
+                                  }
+                                },
+                                margin: 0,
+                                getTextStyles: (context, value) => TextStyle(
+                                  color: Colors.white,
+
+                                ),
+                              ),
                               leftTitles: SideTitles(showTitles: false),
                               topTitles: SideTitles(showTitles: false),
                               rightTitles: SideTitles(showTitles: false))),
