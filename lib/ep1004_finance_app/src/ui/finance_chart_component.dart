@@ -238,9 +238,10 @@ class _FinanceChartComponentState extends State<FinanceChartComponent> {
                                       return "Mar";
                                   }
                                 },
-                                margin: 0,
+                                margin: 8,
                                 getTextStyles: (context, value) => TextStyle(
                                   color: Colors.white,
+                                  fontSize: 12
 
                                 ),
                               ),
@@ -301,10 +302,10 @@ class _FinanceChartComponentState extends State<FinanceChartComponent> {
                     width: 36,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(8),
-                      color: Colors.orange[50],
+                      color: Colors.red[50],
                     ),
                     child: const Icon(
-                      Icons.account_balance_wallet,
+                      Icons.chart,
                       color: Colors.orange,
                     ),
                   ),
