@@ -155,6 +155,26 @@ class _FinanceChartComponentState extends State<FinanceChartComponent> {
                           BarChartGroupData(x: 0, barRods: [
                             BarChartRodData(y: 40, colors: [Colors.white.withOpacity(0.5)]),
                             BarChartRodData(y: 35, colors: [Colors.black26])
+                          ]),
+                          BarChartGroupData(x: 1, barRods: [
+                            BarChartRodData(y: 40, colors: [Colors.white.withOpacity(0.5)]),
+                            BarChartRodData(y: 45, colors: [Colors.black26])
+                          ]),
+                          BarChartGroupData(x: 2, barRods: [
+                            BarChartRodData(y: 40, colors: [Colors.white.withOpacity(0.5)]),
+                            BarChartRodData(y: 35, colors: [Colors.black26])
+                          ]),
+                          BarChartGroupData(x: 3, barRods: [
+                            BarChartRodData(y: 20, colors: [Colors.white.withOpacity(0.5)]),
+                            BarChartRodData(y: 36, colors: [Colors.black26])
+                          ]),
+                          BarChartGroupData(x: 4, barRods: [
+                            BarChartRodData(y: 30, colors: [Colors.white.withOpacity(0.5)]),
+                            BarChartRodData(y: 40, colors: [Colors.black26])
+                          ]),
+                          BarChartGroupData(x: 5, barRods: [
+                            BarChartRodData(y: 30, colors: [Colors.white.withOpacity(0.5)]),
+                            BarChartRodData(y: 28, colors: [Colors.black26])
                           ])
                         ],
                       
