@@ -14,15 +14,26 @@ class _VehicleMainPageState extends State<VehicleMainPage> {
       body: Stack(
         children: [
           Positioned(
-              child: Container(
-            height: 84,
-            decoration: const BoxDecoration(
-                color: Colors.white,
+              bottom: 0,
+              left: 0,
+              right: 0,
+              child: PhysicalModel(
+                
+                color: Colors.black.withOpacity(0.5),
                 borderRadius: BorderRadius.only(
                   topLeft: Radius.circular(24),
                   topRight: Radius.circular(24),
-                )),
-          )),
+                ),
+                child: Container(
+                  height: 84,
+                  decoration: const BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.only(
+                        topLeft: Radius.circular(24),
+                        topRight: Radius.circular(24),
+                      )),
+                ),
+              )),
         ],
       ),
     );
