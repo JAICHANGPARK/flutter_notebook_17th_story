@@ -38,11 +38,17 @@ class _VehicleMainPageState extends State<VehicleMainPage> {
                     children: [
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [IconButton(onPressed: () {}, icon: const Icon(Icons.home)),
+                        children: [
                           IconButton(onPressed: () {}, icon: const Icon(Icons.home)),
-                        const CircleAvatar(),
-                          IconButton(onPressed: () {}, icon: const Icon(Icons.home)),
-                          IconButton(onPressed: () {}, icon: const Icon(Icons.home))],
+                          IconButton(onPressed: () {}, icon: const Icon(Icons.favorite_border)),
+                          const CircleAvatar(
+                            backgroundColor: Colors.black,
+                            child: Icon(Icons.add),
+                            foregroundColor: Colors.white,
+                          ),
+                          IconButton(onPressed: () {}, icon: const Icon(Icons.attach_email_outlined)),
+                          IconButton(onPressed: () {}, icon: const Icon(Icons.settings_outlined))
+                        ],
                       ),
                       const SizedBox(
                         height: 24,
