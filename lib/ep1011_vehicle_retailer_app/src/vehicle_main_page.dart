@@ -14,6 +14,7 @@ class _VehicleMainPageState extends State<VehicleMainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.grey[100],
       body: Stack(
         children: [
           Positioned(
@@ -49,8 +50,26 @@ class _VehicleMainPageState extends State<VehicleMainPage> {
                             ],
                           ),
                         ),
-                        Expanded(child: ListView.builder(itemBuilder: (context, index) {
-                          return Container();
+                        Expanded(child: ListView.builder(
+                            scrollDirection: Axis.horizontal,
+                            itemBuilder: (context, index) {
+                          return Container(
+                            width: 120,
+                            decoration: BoxDecoration(
+                              color: Colors.blue,
+                              borderRadius: BorderRadius.circular(16),
+
+                            ),
+                            padding: const EdgeInsets.all(8),
+                            child: Column(
+                              children: const [
+                                Spacer(),
+                                Text("World news of the week",style: TextStyle(
+                                  color: Colors.white,
+                                ),)
+                              ],
+                            ),
+                          );
                         })),
                         const Text(
                           'Last seen',
@@ -68,12 +87,12 @@ class _VehicleMainPageState extends State<VehicleMainPage> {
                               Container(
                                 height: 42,
                                 width: 42,
-                                decoration: BoxDecoration(
+                                decoration: const BoxDecoration(
                                   color: Colors.green,
                                 ),
                               ),
                               Column(
-                                children: [
+                                children: const [
                                   Text("BMW X1 II(F48) 2019"),
                                   Text("\$35,400")
                                 ],
