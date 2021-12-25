@@ -97,7 +97,7 @@ class _VehicleMainPageState extends State<VehicleMainPage> {
                                 height: 12,
                               ),
                               Container(
-                                height: 64,
+                                // height: 64,
                                 decoration: BoxDecoration(
                                   color: Colors.white.withOpacity(0.2),
                                   borderRadius: BorderRadius.circular(12),
@@ -117,8 +117,16 @@ class _VehicleMainPageState extends State<VehicleMainPage> {
                                       child: Column(
                                         crossAxisAlignment: CrossAxisAlignment.start,
                                         children: const [
-                                          Text("BMW X1 II(F48) 2019"),
-                                          Text("\$35,400"),
+                                          Text(
+                                            "BMW X1 II(F48) 2019",
+                                            style: TextStyle(
+                                              fontSize: 16,
+                                              color: Colors.white,
+                                              fontWeight: FontWeight.bold,
+                                            ),
+                                          ),
+                                          SizedBox(height: 12,),
+                                          Text("\$35,400",style: TextStyle(),),
                                         ],
                                       ),
                                     ),
