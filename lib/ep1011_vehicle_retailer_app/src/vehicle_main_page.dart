@@ -1,3 +1,4 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -169,7 +170,21 @@ class _VehicleMainPageState extends State<VehicleMainPage> {
                                 borderRadius: BorderRadius.circular(16),
                               ),
                               child: Column(
-                                children: [Container()],
+                                children: [
+                                  Container(
+                                    height: 160,
+                                    decoration: BoxDecoration(
+                                      color: Colors.red,
+                                      borderRadius: BorderRadius.circular(16),
+                                      image: DecorationImage(
+                                        image: CachedNetworkImageProvider(
+                                          "https://cdn.pixabay.com/photo/2015/01/19/13/51/car-604019_960_720.jpg",
+                                        ),
+                                        fit: BoxFit.cover,
+                                      ),
+                                    ),
+                                  )
+                                ],
                               ),
                             ),
                           )
