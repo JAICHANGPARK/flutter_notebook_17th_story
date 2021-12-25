@@ -51,55 +51,68 @@ class _VehicleMainPageState extends State<VehicleMainPage> {
                               ),
                             ),
                             Expanded(
+                              flex: 5,
                                 child: ListView.builder(
                                     scrollDirection: Axis.horizontal,
                                     itemBuilder: (context, index) {
-                                      return Container(
-                                        width: 120,
-                                        decoration: BoxDecoration(
-                                          color: Colors.blue,
-                                          borderRadius: BorderRadius.circular(16),
-                                        ),
-                                        padding: const EdgeInsets.all(8),
-                                        child: Column(
-                                          children: const [
-                                            Spacer(),
-                                            Text(
-                                              "World news of the week",
-                                              style: TextStyle(
-                                                color: Colors.white,
-                                              ),
-                                            )
-                                          ],
+                                      return Padding(
+                                        padding: const EdgeInsets.only(bottom: 8, top: 8,
+                                        right: 16),
+                                        child: Container(
+                                          width: 120,
+                                          decoration: BoxDecoration(
+                                            color: Colors.blue,
+                                            borderRadius: BorderRadius.circular(16),
+                                          ),
+                                          padding: const EdgeInsets.all(8),
+                                          child: Column(
+                                            children: const [
+                                              Spacer(),
+                                              Text(
+                                                "World news of the week",
+                                                style: TextStyle(
+                                                  color: Colors.white,
+                                                ),
+                                              )
+                                            ],
+                                          ),
                                         ),
                                       );
                                     })),
-                            const Text(
-                              'Last seen',
-                              style: TextStyle(
-                                color: Colors.white,
-                              ),
-                            ),
-                            Container(
-                              height: 64,
-                              decoration: BoxDecoration(
-                                color: Colors.white.withOpacity(0.2),
-                              ),
-                              child: Row(
+                            Expanded(
+                              flex: 4,
+                              child: Column(
                                 children: [
-                                  Container(
-                                    height: 42,
-                                    width: 42,
-                                    decoration: const BoxDecoration(
-                                      color: Colors.green,
+                                  const Text(
+                                    'Last seen',
+                                    style: TextStyle(
+                                      color: Colors.white,
                                     ),
                                   ),
-                                  Column(
-                                    children: const [Text("BMW X1 II(F48) 2019"), Text("\$35,400")],
-                                  ),
+                                  Container(
+                                    height: 64,
+                                    decoration: BoxDecoration(
+                                      color: Colors.white.withOpacity(0.2),
+                                    ),
+                                    child: Row(
+                                      children: [
+                                        Container(
+                                          height: 42,
+                                          width: 42,
+                                          decoration: const BoxDecoration(
+                                            color: Colors.green,
+                                          ),
+                                        ),
+                                        Column(
+                                          children: const [Text("BMW X1 II(F48) 2019"), Text("\$35,400")],
+                                        ),
+                                      ],
+                                    ),
+                                  )
                                 ],
                               ),
-                            )
+                            ),
+
                           ],
                         ),
                       )),
