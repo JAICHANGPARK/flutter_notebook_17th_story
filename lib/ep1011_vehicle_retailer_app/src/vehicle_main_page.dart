@@ -154,19 +154,22 @@ class _VehicleMainPageState extends State<VehicleMainPage> {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          const Text("Recommended"),
+                          const Text(
+                            "Recommended",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
                           Padding(
                             padding: const EdgeInsets.only(top: 16),
                             child: Container(
                               height: 300,
                               decoration: BoxDecoration(
                                 color: Colors.white,
-                                borderRadius: BorderRadius.circular(16)
+                                borderRadius: BorderRadius.circular(16),
                               ),
                               child: Column(
-                                children: [
-                                  Container()
-                                ],
+                                children: [Container()],
                               ),
                             ),
                           )
