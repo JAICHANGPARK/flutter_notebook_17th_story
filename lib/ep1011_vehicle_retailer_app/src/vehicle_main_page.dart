@@ -108,8 +108,9 @@ class _VehicleMainPageState extends State<VehicleMainPage> {
                                     Container(
                                       height: 42,
                                       width: 42,
-                                      decoration: const BoxDecoration(
+                                      decoration: BoxDecoration(
                                         color: Colors.green,
+                                        borderRadius: BorderRadius.circular(4),
                                       ),
                                     ),
                                     Padding(
@@ -125,8 +126,15 @@ class _VehicleMainPageState extends State<VehicleMainPage> {
                                               fontWeight: FontWeight.bold,
                                             ),
                                           ),
-                                          SizedBox(height: 12,),
-                                          Text("\$35,400",style: TextStyle(),),
+                                          SizedBox(
+                                            height: 8,
+                                          ),
+                                          Text(
+                                            "\$35,400",
+                                            style: TextStyle(
+                                              color: Colors.grey,
+                                            ),
+                                          ),
                                         ],
                                       ),
                                     ),
@@ -141,17 +149,29 @@ class _VehicleMainPageState extends State<VehicleMainPage> {
                   )),
                   Expanded(
                       child: SingleChildScrollView(
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        const Text("Recommended"),
-                        SizedBox(
-                          height: 300,
-                          child: Column(
-                            children: [],
-                          ),
-                        )
-                      ],
+                    child: Padding(
+                      padding: const EdgeInsets.all(16.0),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          const Text("Recommended"),
+                          Padding(
+                            padding: const EdgeInsets.only(top: 16),
+                            child: Container(
+                              height: 300,
+                              decoration: BoxDecoration(
+                                color: Colors.white,
+                                borderRadius: BorderRadius.circular(16)
+                              ),
+                              child: Column(
+                                children: [
+                                  Container()
+                                ],
+                              ),
+                            ),
+                          )
+                        ],
+                      ),
                     ),
                   )),
                 ],
