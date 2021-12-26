@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_notebook_17th/ep1011_vehicle_retailer_app/vehicle_retailer_app.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'ep1014_movie_finder_app/movie_finder_app.dart';
 
 void main() {
-  runApp(ProviderScope(child: VehicleRetailerApp()));
+  runApp(ProviderScope(child: MovieFinderApp()));
 }
