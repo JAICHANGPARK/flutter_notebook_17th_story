@@ -19,7 +19,9 @@ class MovieFinderHomePage extends StatelessWidget {
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              SizedBox(height: 12,),
+              SizedBox(
+                height: 12,
+              ),
               Container(
                 height: 52,
                 decoration: BoxDecoration(
@@ -28,7 +30,24 @@ class MovieFinderHomePage extends StatelessWidget {
                     ),
                     borderRadius: BorderRadius.circular(24)),
               ),
-              SizedBox(height: 12,),
+              SizedBox(
+                height: 12,
+              ),
+              Expanded(
+                  child: SingleChildScrollView(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text("❤ For you"),
+                    SizedBox(
+                      height: 160,
+                      child: Container(
+                        color: Colors.blue,
+                      ),
+                    )
+                  ],
+                ),
+              )),
             ],
           ),
         ),
