@@ -44,6 +44,15 @@ class MovieFinderHomePage extends StatelessWidget {
                       child: Container(
                         color: Colors.blue,
                       ),
+                    ),
+                    Text("🔥 Popular movies"),
+                    GridView.builder(
+                      itemCount: 10,
+                      shrinkWrap: true,
+                      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 3),
+                      itemBuilder: (context, index) {
+                        return Card();
+                      },
                     )
                   ],
                 ),
