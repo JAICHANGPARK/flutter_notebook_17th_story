@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_17th/ep1014_movie_finder_app/src/riverpod/movie_search_provider.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 class MovieFinderHomePage extends StatelessWidget {
   const MovieFinderHomePage({Key? key}) : super(key: key);
@@ -25,13 +27,19 @@ class MovieFinderHomePage extends StatelessWidget {
               Container(
                 height: 48,
                 decoration: BoxDecoration(
-                    border: Border.all(
-                      color: Colors.grey[300]!,
-                    ),
-                    borderRadius: BorderRadius.circular(24),
+                  border: Border.all(
+                    color: Colors.grey[300]!,
+                  ),
+                  borderRadius: BorderRadius.circular(24),
                 ),
-                child: TextField(
-                  decoration: InputDecoration(),
+                child: Consumer(
+                  builder: (BuildContext context, WidgetRef ref, Widget? child) {
+                    final _controller = ref.watch(movieSearchProvider);
+                    return TextField(
+                      controller: _controller,
+                      decoration: InputDecoration(),
+                    );
+                  },
                 ),
               ),
               const SizedBox(
@@ -64,9 +72,8 @@ class MovieFinderHomePage extends StatelessWidget {
                       child: GridView.builder(
                         itemCount: 10,
                         shrinkWrap: true,
-
-                        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 3,
-                        childAspectRatio: 6/8),
+                        gridDelegate:
+                            const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 3, childAspectRatio: 6 / 8),
                         itemBuilder: (context, index) {
                           return const Card();
                         },
