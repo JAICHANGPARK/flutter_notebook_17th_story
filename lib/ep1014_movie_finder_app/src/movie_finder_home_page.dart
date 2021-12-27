@@ -12,25 +12,27 @@ class MovieFinderHomePage extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text(
+              const Text(
                 "Find movies like",
                 style: TextStyle(
                   fontSize: 32,
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 12,
               ),
               Container(
-                height: 52,
+                height: 48,
                 decoration: BoxDecoration(
                     border: Border.all(
                       color: Colors.grey[300]!,
                     ),
-                    borderRadius: BorderRadius.circular(24)),
+                    borderRadius: BorderRadius.circular(24),
+                ),
+                child: ,
               ),
-              SizedBox(
+              const SizedBox(
                 height: 24,
               ),
               Expanded(
@@ -38,8 +40,8 @@ class MovieFinderHomePage extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text("❤ For you"),
-                    SizedBox(
+                    const Text("❤ For you"),
+                    const SizedBox(
                       height: 12,
                     ),
                     SizedBox(
@@ -48,11 +50,11 @@ class MovieFinderHomePage extends StatelessWidget {
                         color: Colors.blue,
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 24,
                     ),
-                    Text("🔥 Popular movies"),
-                    SizedBox(
+                    const Text("🔥 Popular movies"),
+                    const SizedBox(
                       height: 12,
                     ),
                     Padding(
@@ -61,10 +63,10 @@ class MovieFinderHomePage extends StatelessWidget {
                         itemCount: 10,
                         shrinkWrap: true,
 
-                        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 3,
+                        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 3,
                         childAspectRatio: 6/8),
                         itemBuilder: (context, index) {
-                          return Card();
+                          return const Card();
                         },
                       ),
                     )
