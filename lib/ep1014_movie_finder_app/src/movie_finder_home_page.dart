@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_notebook_17th/ep1014_movie_finder_app/src/movie_api.dart';
+import 'package:flutter_notebook_17th/ep1014_movie_finder_app/src/api/movie_api.dart';
 import 'package:flutter_notebook_17th/ep1014_movie_finder_app/src/riverpod/movie_search_provider.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
