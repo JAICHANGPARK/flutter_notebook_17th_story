@@ -31,7 +31,7 @@ class MovieFinderHomePage extends StatelessWidget {
                     borderRadius: BorderRadius.circular(24)),
               ),
               SizedBox(
-                height: 12,
+                height: 24,
               ),
               Expanded(
                   child: SingleChildScrollView(
@@ -40,19 +40,33 @@ class MovieFinderHomePage extends StatelessWidget {
                   children: [
                     Text("❤ For you"),
                     SizedBox(
+                      height: 12,
+                    ),
+                    SizedBox(
                       height: 160,
                       child: Container(
                         color: Colors.blue,
                       ),
                     ),
+                    SizedBox(
+                      height: 24,
+                    ),
                     Text("🔥 Popular movies"),
-                    GridView.builder(
-                      itemCount: 10,
-                      shrinkWrap: true,
-                      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 3),
-                      itemBuilder: (context, index) {
-                        return Card();
-                      },
+                    SizedBox(
+                      height: 12,
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(right: 16),
+                      child: GridView.builder(
+                        itemCount: 10,
+                        shrinkWrap: true,
+
+                        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 3,
+                        childAspectRatio: 6/8),
+                        itemBuilder: (context, index) {
+                          return Card();
+                        },
+                      ),
                     )
                   ],
                 ),
