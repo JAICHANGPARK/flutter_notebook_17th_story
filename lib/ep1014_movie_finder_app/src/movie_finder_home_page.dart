@@ -34,13 +34,19 @@ class MovieFinderHomePage extends StatelessWidget {
                     ),
                     borderRadius: BorderRadius.circular(24),
                   ),
-                  padding: EdgeInsets.symmetric(horizontal: 16),
+                  padding: const EdgeInsets.symmetric(horizontal: 16),
                   child: Consumer(
                     builder: (BuildContext context, WidgetRef ref, Widget? child) {
                       final _controller = ref.watch(movieSearchProvider);
                       return TextField(
                         controller: _controller,
-                        decoration: InputDecoration(
+                        onSubmitted: (s) {
+                          print("onSubmitted: ${s}");
+                        },
+                        onEditingComplete: () {
+                          print("onEditingComplete: ${_controller.text}");
+                        },
+                        decoration: const InputDecoration(
                           border: InputBorder.none,
                           icon: Icon(Icons.search),
                           hintText: "try \"Lucy\"",
@@ -68,10 +74,11 @@ class MovieFinderHomePage extends StatelessWidget {
                         color: Colors.blue,
                         child: ListView.builder(
                           itemBuilder: (context, index) {
-                            return Container(
-                              width: 120,
-                              decoration: BoxDecoration(
-                                color: Colors.red,
+                            return Padding(
+                              padding: const EdgeInsets.only(right: 8),
+                              child: Container(
+                                width: 100,
+                                decoration: BoxDecoration(color: Colors.red, borderRadius: BorderRadius.circular(8)),
                               ),
                             );
                           },
