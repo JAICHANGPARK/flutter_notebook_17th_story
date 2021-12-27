@@ -24,22 +24,30 @@ class MovieFinderHomePage extends StatelessWidget {
               const SizedBox(
                 height: 12,
               ),
-              Container(
-                height: 48,
-                decoration: BoxDecoration(
-                  border: Border.all(
-                    color: Colors.grey[300]!,
+              Padding(
+                padding: const EdgeInsets.only(right: 16),
+                child: Container(
+                  height: 48,
+                  decoration: BoxDecoration(
+                    border: Border.all(
+                      color: Colors.grey[300]!,
+                    ),
+                    borderRadius: BorderRadius.circular(24),
                   ),
-                  borderRadius: BorderRadius.circular(24),
-                ),
-                child: Consumer(
-                  builder: (BuildContext context, WidgetRef ref, Widget? child) {
-                    final _controller = ref.watch(movieSearchProvider);
-                    return TextField(
-                      controller: _controller,
-                      decoration: InputDecoration(),
-                    );
-                  },
+                  padding: EdgeInsets.symmetric(horizontal: 16),
+                  child: Consumer(
+                    builder: (BuildContext context, WidgetRef ref, Widget? child) {
+                      final _controller = ref.watch(movieSearchProvider);
+                      return TextField(
+                        controller: _controller,
+                        decoration: InputDecoration(
+                          border: InputBorder.none,
+                          icon: Icon(Icons.search),
+                          hintText: "try \"Lucy\"",
+                        ),
+                      );
+                    },
+                  ),
                 ),
               ),
               const SizedBox(
@@ -58,6 +66,18 @@ class MovieFinderHomePage extends StatelessWidget {
                       height: 160,
                       child: Container(
                         color: Colors.blue,
+                        child: ListView.builder(
+                          itemBuilder: (context, index) {
+                            return Container(
+                              width: 120,
+                              decoration: BoxDecoration(
+                                color: Colors.red,
+                              ),
+                            );
+                          },
+                          itemCount: 10,
+                          scrollDirection: Axis.horizontal,
+                        ),
                       ),
                     ),
                     const SizedBox(
