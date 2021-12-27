@@ -30,7 +30,9 @@ class MovieFinderHomePage extends StatelessWidget {
                     ),
                     borderRadius: BorderRadius.circular(24),
                 ),
-                child: ,
+                child: TextField(
+                  decoration: InputDecoration(),
+                ),
               ),
               const SizedBox(
                 height: 24,
