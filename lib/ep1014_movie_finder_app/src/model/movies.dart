@@ -5,15 +5,16 @@ part 'movies.freezed.dart';
 part 'movies.g.dart';
 
 @freezed
-class Movies with _$Movies{
-  factory Movies({
+class Movie with _$Movie{
+  factory Movie({
     int? id,
     String? url,
     String? title,
     String? titleEnglish,
     String? titleLong,
     String? slug,
-}) = _Movies;
+  }) = _Movie;
+  factory Movie.fromJson(Map<String, dynamic> json)=> _$MovieFromJson(json);
 }
 
 ///
