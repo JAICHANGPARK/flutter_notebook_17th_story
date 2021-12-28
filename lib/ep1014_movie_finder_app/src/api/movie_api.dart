@@ -7,10 +7,12 @@ Future getMovies() async {
   var response = await http.get(Uri.parse("https://yts.mx/api/v2/list_movies.json"));
   if (response.statusCode == 200) {
     print(response.body);
+    print(jsonDecode(response.body));
     Movies movies = Movies.fromJson(json.decode(response.body));
+
     print(movies.status);
     print(movies.statusMessage);
-    print(movies.data?.length);
+    // print(movies.data?.length);
   } else {
     print(response.statusCode);
   }
