@@ -1,11 +1,11 @@
-
 import 'package:freezed_annotation/freezed_annotation.dart';
 
 part 'movies.freezed.dart';
+
 part 'movies.g.dart';
 
 @freezed
-class Movie with _$Movie{
+class Movie with _$Movie {
   factory Movie({
     int? id,
     String? url,
@@ -14,7 +14,26 @@ class Movie with _$Movie{
     String? titleLong,
     String? slug,
   }) = _Movie;
-  factory Movie.fromJson(Map<String, dynamic> json)=> _$MovieFromJson(json);
+
+  factory Movie.fromJson(Map<String, dynamic> json) => _$MovieFromJson(json);
+}
+
+@freezed
+class MovieDatas with _$MovieDatas {
+  factory MovieDatas({
+    int? movieCount,
+    int? limit,
+    int? pageNumber,
+    List<Movie>? movies,
+  }) = _MovieDatas;
+}
+
+@freezed
+class Movies with _$Movies {
+  factory Movies({
+    String? status,
+    String? statusMessage,
+  }) = _Movies;
 }
 
 ///
