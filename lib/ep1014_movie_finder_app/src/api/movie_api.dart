@@ -1,6 +1,5 @@
 import 'package:flutter_notebook_17th/ep1014_movie_finder_app/src/model/movies.dart';
 import 'package:http/http.dart' as http;
-import 'package:convert/convert.dart';
 import 'dart:convert';
 
 Future getMovies() async {
