@@ -12,6 +12,11 @@ Future getMovies() async {
 
     print(movies.status);
     print(movies.statusMessage);
+    print(movies.data?.movies?.length);
+    int len = movies.data?.movies?.length ?? 0;
+    for(int i =0; i<len; i++){
+      print(movies.data?.movies?[i].backgroundImage);
+    }
     // print(movies.data?.length);
   } else {
     print(response.statusCode);
