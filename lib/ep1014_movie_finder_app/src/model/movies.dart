@@ -10,9 +10,11 @@ class Movie with _$Movie {
     int? id,
     String? url,
     String? title,
-    String? titleEnglish,
-    String? titleLong,
+    @JsonKey(name: "title_english") String? titleEnglish,
+    @JsonKey(name: "title_long") String? titleLong,
     String? slug,
+    @JsonKey(name: "background_image") String? backgroundImage,
+    @JsonKey(name: "small_cover_image") String? smallCoverImage,
   }) = _Movie;
 
   factory Movie.fromJson(Map<String, dynamic> json) => _$MovieFromJson(json);
@@ -21,10 +23,10 @@ class Movie with _$Movie {
 @freezed
 class MovieDatas with _$MovieDatas {
   factory MovieDatas({
-    int? movieCount,
-    int? limit,
-    int? pageNumber,
-    List<Movie>? movies,
+    @JsonKey(name: "movie_count") int? movieCount,
+    @JsonKey(name: "limit") int? limit,
+    @JsonKey(name: "page_number") int? pageNumber,
+    @JsonKey(name: "movies") List<Movie>? movies,
   }) = _MovieDatas;
 
   factory MovieDatas.fromJson(Map<String, dynamic> json) => _$MovieDatasFromJson(json);
@@ -33,9 +35,9 @@ class MovieDatas with _$MovieDatas {
 @freezed
 class Movies with _$Movies {
   factory Movies({
-    String? status,
-    String? statusMessage,
-    List<MovieDatas>? data,
+    @JsonKey(name: "status") String? status,
+    @JsonKey(name: "status_message") String? statusMessage,
+    @JsonKey(name: "data") MovieDatas? data,
   }) = _Movies;
 
   factory Movies.fromJson(Map<String, dynamic> json) => _$MoviesFromJson(json);
