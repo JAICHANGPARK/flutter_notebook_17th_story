@@ -26,6 +26,8 @@ class MovieDatas with _$MovieDatas {
     int? pageNumber,
     List<Movie>? movies,
   }) = _MovieDatas;
+
+  factory MovieDatas.fromJson(Map<String, dynamic> json) => _$MovieDatasFromJson(json);
 }
 
 @freezed
@@ -33,10 +35,13 @@ class Movies with _$Movies {
   factory Movies({
     String? status,
     String? statusMessage,
+    List<MovieDatas>? data,
   }) = _Movies;
+
+  factory Movies.fromJson(Map<String, dynamic> json) => _$MoviesFromJson(json);
 }
 
-///
+///s
 /// {
 //    "status":"ok",
 //    "status_message":"Query was successful",
