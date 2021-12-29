@@ -1,5 +1,8 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_notebook_17th/ep1014_movie_finder_app/src/api/movie_api.dart';
+import 'package:flutter_notebook_17th/ep1014_movie_finder_app/src/model/movies.dart';
+import 'package:flutter_notebook_17th/ep1014_movie_finder_app/src/riverpod/movie_provider.dart';
 import 'package:flutter_notebook_17th/ep1014_movie_finder_app/src/riverpod/movie_search_provider.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
@@ -8,7 +11,7 @@ class MovieFinderHomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    getMovies();
+    // getMovies();
     return Scaffold(
       body: SafeArea(
         child: Padding(
@@ -72,21 +75,38 @@ class MovieFinderHomePage extends StatelessWidget {
                     ),
                     SizedBox(
                       height: 160,
-                      child: Container(
-                        color: Colors.blue,
-                        child: ListView.builder(
-                          itemBuilder: (context, index) {
-                            return Padding(
-                              padding: const EdgeInsets.only(right: 8),
-                              child: Container(
-                                width: 100,
-                                decoration: BoxDecoration(color: Colors.red, borderRadius: BorderRadius.circular(8)),
-                              ),
-                            );
-                          },
-                          itemCount: 10,
-                          scrollDirection: Axis.horizontal,
-                        ),
+                      child: Consumer(
+                        builder: (BuildContext context, WidgetRef ref, Widget? child) {
+                          final items = ref.watch(movieProvider);
+                          return items.when(
+                              data: (movies) {
+                                var item = movies?.data?.movies;
+                                return ListView.builder(
+                                  itemBuilder: (context, index) {
+                                    return Padding(
+                                      padding: const EdgeInsets.only(right: 8),
+                                      child: Container(
+                                        width: 100,
+                                        decoration: BoxDecoration(
+                                            color: Colors.red,
+                                            borderRadius: BorderRadius.circular(8),
+                                            image: DecorationImage(
+                                                image: CachedNetworkImageProvider(
+                                                  item?[index].mediumCoverImage ?? "",
+                                                ),
+                                                fit: BoxFit.cover)),
+                                      ),
+                                    );
+                                  },
+                                  itemCount: item?.length,
+                                  scrollDirection: Axis.horizontal,
+                                );
+                              },
+                              error: (error, stack) {
+                                return Text("error");
+                              },
+                              loading: () => CircularProgressIndicator());
+                        },
                       ),
                     ),
                     const SizedBox(
