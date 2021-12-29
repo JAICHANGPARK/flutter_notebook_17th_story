@@ -119,13 +119,39 @@ class MovieFinderHomePage extends StatelessWidget {
                     ),
                     Padding(
                       padding: const EdgeInsets.only(right: 16),
-                      child: GridView.builder(
-                        itemCount: 10,
-                        shrinkWrap: true,
-                        gridDelegate:
-                            const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 3, childAspectRatio: 6 / 8),
-                        itemBuilder: (context, index) {
-                          return const Card();
+                      child: Consumer(
+                        builder: (BuildContext context, WidgetRef ref, Widget? child) {
+                          Future<Movies?> futureItems = ref.watch(movieProvider.future);
+                          return FutureBuilder<Movies?>(
+                            future: futureItems,
+                            builder: (context, snapshot) {
+                              if (snapshot.hasData) {
+                                var item = snapshot.data?.data?.movies;
+
+                                return GridView.builder(
+                                  itemCount: item?.length,
+                                  shrinkWrap: true,
+                                  gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                                    crossAxisCount: 3,
+                                    childAspectRatio: 6 / 8,
+                                  ),
+                                  itemBuilder: (context, index) {
+                                    return Container(
+                                      decoration: BoxDecoration(
+                                          image: DecorationImage(
+                                              image: CachedNetworkImageProvider(
+                                                item?[index].backgroundImage ?? "",
+                                              ),
+                                              fit: BoxFit.cover)),
+                                    );
+                                  },
+                                );
+                              }
+                              return const Center(
+                                child: const CircularProgressIndicator(),
+                              );
+                            },
+                          );
                         },
                       ),
                     )
