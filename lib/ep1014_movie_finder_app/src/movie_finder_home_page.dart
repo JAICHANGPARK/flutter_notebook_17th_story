@@ -134,13 +134,16 @@ class MovieFinderHomePage extends StatelessWidget {
                                   gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                                     crossAxisCount: 3,
                                     childAspectRatio: 6 / 8,
+                                    crossAxisSpacing: 8,
+                                    mainAxisSpacing: 8
                                   ),
                                   itemBuilder: (context, index) {
                                     return Container(
                                       decoration: BoxDecoration(
+                                          borderRadius: BorderRadius.circular(12),
                                           image: DecorationImage(
                                               image: CachedNetworkImageProvider(
-                                                item?[index].backgroundImage ?? "",
+                                                item?[index].mediumCoverImage ?? "",
                                               ),
                                               fit: BoxFit.cover)),
                                     );
