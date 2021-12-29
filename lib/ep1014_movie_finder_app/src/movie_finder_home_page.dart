@@ -78,34 +78,35 @@ class MovieFinderHomePage extends StatelessWidget {
                       child: Consumer(
                         builder: (BuildContext context, WidgetRef ref, Widget? child) {
                           final items = ref.watch(movieProvider);
-                          return items.when(
-                              data: (movies) {
-                                var item = movies?.data?.movies;
-                                return ListView.builder(
-                                  itemBuilder: (context, index) {
-                                    return Padding(
-                                      padding: const EdgeInsets.only(right: 8),
-                                      child: Container(
-                                        width: 100,
-                                        decoration: BoxDecoration(
-                                            color: Colors.red,
-                                            borderRadius: BorderRadius.circular(8),
-                                            image: DecorationImage(
-                                                image: CachedNetworkImageProvider(
-                                                  item?[index].mediumCoverImage ?? "",
-                                                ),
-                                                fit: BoxFit.cover)),
-                                      ),
-                                    );
-                                  },
-                                  itemCount: item?.length,
-                                  scrollDirection: Axis.horizontal,
+                          return items.when(data: (movies) {
+                            var item = movies?.data?.movies;
+                            return ListView.builder(
+                              itemBuilder: (context, index) {
+                                return Padding(
+                                  padding: const EdgeInsets.only(right: 8),
+                                  child: Container(
+                                    width: 100,
+                                    decoration: BoxDecoration(
+                                        color: Colors.red,
+                                        borderRadius: BorderRadius.circular(8),
+                                        image: DecorationImage(
+                                            image: CachedNetworkImageProvider(
+                                              item?[index].mediumCoverImage ?? "",
+                                            ),
+                                            fit: BoxFit.cover)),
+                                  ),
                                 );
                               },
-                              error: (error, stack) {
-                                return Text("error");
-                              },
-                              loading: () => CircularProgressIndicator());
+                              itemCount: item?.length,
+                              scrollDirection: Axis.horizontal,
+                            );
+                          }, error: (error, stack) {
+                            print("is error");
+                            return Text("error");
+                          }, loading: () {
+                            print("is Loading");
+                            return CircularProgressIndicator();
+                          });
                         },
                       ),
                     ),
