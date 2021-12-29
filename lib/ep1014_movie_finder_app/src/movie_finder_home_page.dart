@@ -102,10 +102,10 @@ class MovieFinderHomePage extends StatelessWidget {
                             );
                           }, error: (error, stack) {
                             print("is error");
-                            return Text("error");
+                            return const Text("error");
                           }, loading: () {
                             print("is Loading");
-                            return Center(child: CircularProgressIndicator());
+                            return const Center(child: CircularProgressIndicator());
                           });
                         },
                       ),
