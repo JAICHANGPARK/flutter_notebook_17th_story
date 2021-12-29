@@ -15,6 +15,7 @@ class Movie with _$Movie {
     String? slug,
     @JsonKey(name: "background_image") String? backgroundImage,
     @JsonKey(name: "small_cover_image") String? smallCoverImage,
+    @JsonKey(name: "medium_cover_image") String? mediumCoverImage,
   }) = _Movie;
 
   factory Movie.fromJson(Map<String, dynamic> json) => _$MovieFromJson(json);
