@@ -25,9 +25,12 @@ class _$MovieTearOff {
       {int? id,
       String? url,
       String? title,
-      String? titleEnglish,
-      String? titleLong,
-      String? slug}) {
+      @JsonKey(name: "title_english") String? titleEnglish,
+      @JsonKey(name: "title_long") String? titleLong,
+      String? slug,
+      @JsonKey(name: "background_image") String? backgroundImage,
+      @JsonKey(name: "small_cover_image") String? smallCoverImage,
+      @JsonKey(name: "medium_cover_image") String? mediumCoverImage}) {
     return _Movie(
       id: id,
       url: url,
@@ -35,6 +38,9 @@ class _$MovieTearOff {
       titleEnglish: titleEnglish,
       titleLong: titleLong,
       slug: slug,
+      backgroundImage: backgroundImage,
+      smallCoverImage: smallCoverImage,
+      mediumCoverImage: mediumCoverImage,
     );
   }
 
@@ -51,9 +57,17 @@ mixin _$Movie {
   int? get id => throw _privateConstructorUsedError;
   String? get url => throw _privateConstructorUsedError;
   String? get title => throw _privateConstructorUsedError;
+  @JsonKey(name: "title_english")
   String? get titleEnglish => throw _privateConstructorUsedError;
+  @JsonKey(name: "title_long")
   String? get titleLong => throw _privateConstructorUsedError;
   String? get slug => throw _privateConstructorUsedError;
+  @JsonKey(name: "background_image")
+  String? get backgroundImage => throw _privateConstructorUsedError;
+  @JsonKey(name: "small_cover_image")
+  String? get smallCoverImage => throw _privateConstructorUsedError;
+  @JsonKey(name: "medium_cover_image")
+  String? get mediumCoverImage => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -68,9 +82,12 @@ abstract class $MovieCopyWith<$Res> {
       {int? id,
       String? url,
       String? title,
-      String? titleEnglish,
-      String? titleLong,
-      String? slug});
+      @JsonKey(name: "title_english") String? titleEnglish,
+      @JsonKey(name: "title_long") String? titleLong,
+      String? slug,
+      @JsonKey(name: "background_image") String? backgroundImage,
+      @JsonKey(name: "small_cover_image") String? smallCoverImage,
+      @JsonKey(name: "medium_cover_image") String? mediumCoverImage});
 }
 
 /// @nodoc
@@ -89,6 +106,9 @@ class _$MovieCopyWithImpl<$Res> implements $MovieCopyWith<$Res> {
     Object? titleEnglish = freezed,
     Object? titleLong = freezed,
     Object? slug = freezed,
+    Object? backgroundImage = freezed,
+    Object? smallCoverImage = freezed,
+    Object? mediumCoverImage = freezed,
   }) {
     return _then(_value.copyWith(
       id: id == freezed
@@ -115,6 +135,18 @@ class _$MovieCopyWithImpl<$Res> implements $MovieCopyWith<$Res> {
           ? _value.slug
           : slug // ignore: cast_nullable_to_non_nullable
               as String?,
+      backgroundImage: backgroundImage == freezed
+          ? _value.backgroundImage
+          : backgroundImage // ignore: cast_nullable_to_non_nullable
+              as String?,
+      smallCoverImage: smallCoverImage == freezed
+          ? _value.smallCoverImage
+          : smallCoverImage // ignore: cast_nullable_to_non_nullable
+              as String?,
+      mediumCoverImage: mediumCoverImage == freezed
+          ? _value.mediumCoverImage
+          : mediumCoverImage // ignore: cast_nullable_to_non_nullable
+              as String?,
     ));
   }
 }
@@ -128,9 +160,12 @@ abstract class _$MovieCopyWith<$Res> implements $MovieCopyWith<$Res> {
       {int? id,
       String? url,
       String? title,
-      String? titleEnglish,
-      String? titleLong,
-      String? slug});
+      @JsonKey(name: "title_english") String? titleEnglish,
+      @JsonKey(name: "title_long") String? titleLong,
+      String? slug,
+      @JsonKey(name: "background_image") String? backgroundImage,
+      @JsonKey(name: "small_cover_image") String? smallCoverImage,
+      @JsonKey(name: "medium_cover_image") String? mediumCoverImage});
 }
 
 /// @nodoc
@@ -150,6 +185,9 @@ class __$MovieCopyWithImpl<$Res> extends _$MovieCopyWithImpl<$Res>
     Object? titleEnglish = freezed,
     Object? titleLong = freezed,
     Object? slug = freezed,
+    Object? backgroundImage = freezed,
+    Object? smallCoverImage = freezed,
+    Object? mediumCoverImage = freezed,
   }) {
     return _then(_Movie(
       id: id == freezed
@@ -176,6 +214,18 @@ class __$MovieCopyWithImpl<$Res> extends _$MovieCopyWithImpl<$Res>
           ? _value.slug
           : slug // ignore: cast_nullable_to_non_nullable
               as String?,
+      backgroundImage: backgroundImage == freezed
+          ? _value.backgroundImage
+          : backgroundImage // ignore: cast_nullable_to_non_nullable
+              as String?,
+      smallCoverImage: smallCoverImage == freezed
+          ? _value.smallCoverImage
+          : smallCoverImage // ignore: cast_nullable_to_non_nullable
+              as String?,
+      mediumCoverImage: mediumCoverImage == freezed
+          ? _value.mediumCoverImage
+          : mediumCoverImage // ignore: cast_nullable_to_non_nullable
+              as String?,
     ));
   }
 }
@@ -187,9 +237,12 @@ class _$_Movie implements _Movie {
       {this.id,
       this.url,
       this.title,
-      this.titleEnglish,
-      this.titleLong,
-      this.slug});
+      @JsonKey(name: "title_english") this.titleEnglish,
+      @JsonKey(name: "title_long") this.titleLong,
+      this.slug,
+      @JsonKey(name: "background_image") this.backgroundImage,
+      @JsonKey(name: "small_cover_image") this.smallCoverImage,
+      @JsonKey(name: "medium_cover_image") this.mediumCoverImage});
 
   factory _$_Movie.fromJson(Map<String, dynamic> json) =>
       _$$_MovieFromJson(json);
@@ -201,15 +254,26 @@ class _$_Movie implements _Movie {
   @override
   final String? title;
   @override
+  @JsonKey(name: "title_english")
   final String? titleEnglish;
   @override
+  @JsonKey(name: "title_long")
   final String? titleLong;
   @override
   final String? slug;
+  @override
+  @JsonKey(name: "background_image")
+  final String? backgroundImage;
+  @override
+  @JsonKey(name: "small_cover_image")
+  final String? smallCoverImage;
+  @override
+  @JsonKey(name: "medium_cover_image")
+  final String? mediumCoverImage;
 
   @override
   String toString() {
-    return 'Movie(id: $id, url: $url, title: $title, titleEnglish: $titleEnglish, titleLong: $titleLong, slug: $slug)';
+    return 'Movie(id: $id, url: $url, title: $title, titleEnglish: $titleEnglish, titleLong: $titleLong, slug: $slug, backgroundImage: $backgroundImage, smallCoverImage: $smallCoverImage, mediumCoverImage: $mediumCoverImage)';
   }
 
   @override
@@ -223,7 +287,13 @@ class _$_Movie implements _Movie {
             const DeepCollectionEquality()
                 .equals(other.titleEnglish, titleEnglish) &&
             const DeepCollectionEquality().equals(other.titleLong, titleLong) &&
-            const DeepCollectionEquality().equals(other.slug, slug));
+            const DeepCollectionEquality().equals(other.slug, slug) &&
+            const DeepCollectionEquality()
+                .equals(other.backgroundImage, backgroundImage) &&
+            const DeepCollectionEquality()
+                .equals(other.smallCoverImage, smallCoverImage) &&
+            const DeepCollectionEquality()
+                .equals(other.mediumCoverImage, mediumCoverImage));
   }
 
   @override
@@ -234,7 +304,10 @@ class _$_Movie implements _Movie {
       const DeepCollectionEquality().hash(title),
       const DeepCollectionEquality().hash(titleEnglish),
       const DeepCollectionEquality().hash(titleLong),
-      const DeepCollectionEquality().hash(slug));
+      const DeepCollectionEquality().hash(slug),
+      const DeepCollectionEquality().hash(backgroundImage),
+      const DeepCollectionEquality().hash(smallCoverImage),
+      const DeepCollectionEquality().hash(mediumCoverImage));
 
   @JsonKey(ignore: true)
   @override
@@ -249,12 +322,16 @@ class _$_Movie implements _Movie {
 
 abstract class _Movie implements Movie {
   factory _Movie(
-      {int? id,
-      String? url,
-      String? title,
-      String? titleEnglish,
-      String? titleLong,
-      String? slug}) = _$_Movie;
+          {int? id,
+          String? url,
+          String? title,
+          @JsonKey(name: "title_english") String? titleEnglish,
+          @JsonKey(name: "title_long") String? titleLong,
+          String? slug,
+          @JsonKey(name: "background_image") String? backgroundImage,
+          @JsonKey(name: "small_cover_image") String? smallCoverImage,
+          @JsonKey(name: "medium_cover_image") String? mediumCoverImage}) =
+      _$_Movie;
 
   factory _Movie.fromJson(Map<String, dynamic> json) = _$_Movie.fromJson;
 
@@ -265,11 +342,22 @@ abstract class _Movie implements Movie {
   @override
   String? get title;
   @override
+  @JsonKey(name: "title_english")
   String? get titleEnglish;
   @override
+  @JsonKey(name: "title_long")
   String? get titleLong;
   @override
   String? get slug;
+  @override
+  @JsonKey(name: "background_image")
+  String? get backgroundImage;
+  @override
+  @JsonKey(name: "small_cover_image")
+  String? get smallCoverImage;
+  @override
+  @JsonKey(name: "medium_cover_image")
+  String? get mediumCoverImage;
   @override
   @JsonKey(ignore: true)
   _$MovieCopyWith<_Movie> get copyWith => throw _privateConstructorUsedError;
@@ -284,7 +372,10 @@ class _$MovieDatasTearOff {
   const _$MovieDatasTearOff();
 
   _MovieDatas call(
-      {int? movieCount, int? limit, int? pageNumber, List<Movie>? movies}) {
+      {@JsonKey(name: "movie_count") int? movieCount,
+      @JsonKey(name: "limit") int? limit,
+      @JsonKey(name: "page_number") int? pageNumber,
+      @JsonKey(name: "movies") List<Movie>? movies}) {
     return _MovieDatas(
       movieCount: movieCount,
       limit: limit,
@@ -303,9 +394,13 @@ const $MovieDatas = _$MovieDatasTearOff();
 
 /// @nodoc
 mixin _$MovieDatas {
+  @JsonKey(name: "movie_count")
   int? get movieCount => throw _privateConstructorUsedError;
+  @JsonKey(name: "limit")
   int? get limit => throw _privateConstructorUsedError;
+  @JsonKey(name: "page_number")
   int? get pageNumber => throw _privateConstructorUsedError;
+  @JsonKey(name: "movies")
   List<Movie>? get movies => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
@@ -320,7 +415,10 @@ abstract class $MovieDatasCopyWith<$Res> {
           MovieDatas value, $Res Function(MovieDatas) then) =
       _$MovieDatasCopyWithImpl<$Res>;
   $Res call(
-      {int? movieCount, int? limit, int? pageNumber, List<Movie>? movies});
+      {@JsonKey(name: "movie_count") int? movieCount,
+      @JsonKey(name: "limit") int? limit,
+      @JsonKey(name: "page_number") int? pageNumber,
+      @JsonKey(name: "movies") List<Movie>? movies});
 }
 
 /// @nodoc
@@ -366,7 +464,10 @@ abstract class _$MovieDatasCopyWith<$Res> implements $MovieDatasCopyWith<$Res> {
       __$MovieDatasCopyWithImpl<$Res>;
   @override
   $Res call(
-      {int? movieCount, int? limit, int? pageNumber, List<Movie>? movies});
+      {@JsonKey(name: "movie_count") int? movieCount,
+      @JsonKey(name: "limit") int? limit,
+      @JsonKey(name: "page_number") int? pageNumber,
+      @JsonKey(name: "movies") List<Movie>? movies});
 }
 
 /// @nodoc
@@ -410,18 +511,26 @@ class __$MovieDatasCopyWithImpl<$Res> extends _$MovieDatasCopyWithImpl<$Res>
 /// @nodoc
 @JsonSerializable()
 class _$_MovieDatas implements _MovieDatas {
-  _$_MovieDatas({this.movieCount, this.limit, this.pageNumber, this.movies});
+  _$_MovieDatas(
+      {@JsonKey(name: "movie_count") this.movieCount,
+      @JsonKey(name: "limit") this.limit,
+      @JsonKey(name: "page_number") this.pageNumber,
+      @JsonKey(name: "movies") this.movies});
 
   factory _$_MovieDatas.fromJson(Map<String, dynamic> json) =>
       _$$_MovieDatasFromJson(json);
 
   @override
+  @JsonKey(name: "movie_count")
   final int? movieCount;
   @override
+  @JsonKey(name: "limit")
   final int? limit;
   @override
+  @JsonKey(name: "page_number")
   final int? pageNumber;
   @override
+  @JsonKey(name: "movies")
   final List<Movie>? movies;
 
   @override
@@ -463,21 +572,25 @@ class _$_MovieDatas implements _MovieDatas {
 
 abstract class _MovieDatas implements MovieDatas {
   factory _MovieDatas(
-      {int? movieCount,
-      int? limit,
-      int? pageNumber,
-      List<Movie>? movies}) = _$_MovieDatas;
+      {@JsonKey(name: "movie_count") int? movieCount,
+      @JsonKey(name: "limit") int? limit,
+      @JsonKey(name: "page_number") int? pageNumber,
+      @JsonKey(name: "movies") List<Movie>? movies}) = _$_MovieDatas;
 
   factory _MovieDatas.fromJson(Map<String, dynamic> json) =
       _$_MovieDatas.fromJson;
 
   @override
+  @JsonKey(name: "movie_count")
   int? get movieCount;
   @override
+  @JsonKey(name: "limit")
   int? get limit;
   @override
+  @JsonKey(name: "page_number")
   int? get pageNumber;
   @override
+  @JsonKey(name: "movies")
   List<Movie>? get movies;
   @override
   @JsonKey(ignore: true)
@@ -494,7 +607,9 @@ class _$MoviesTearOff {
   const _$MoviesTearOff();
 
   _Movies call(
-      {String? status, String? statusMessage, List<MovieDatas>? data}) {
+      {@JsonKey(name: "status") String? status,
+      @JsonKey(name: "status_message") String? statusMessage,
+      @JsonKey(name: "data") MovieDatas? data}) {
     return _Movies(
       status: status,
       statusMessage: statusMessage,
@@ -512,9 +627,12 @@ const $Movies = _$MoviesTearOff();
 
 /// @nodoc
 mixin _$Movies {
+  @JsonKey(name: "status")
   String? get status => throw _privateConstructorUsedError;
+  @JsonKey(name: "status_message")
   String? get statusMessage => throw _privateConstructorUsedError;
-  List<MovieDatas>? get data => throw _privateConstructorUsedError;
+  @JsonKey(name: "data")
+  MovieDatas? get data => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -525,7 +643,12 @@ mixin _$Movies {
 abstract class $MoviesCopyWith<$Res> {
   factory $MoviesCopyWith(Movies value, $Res Function(Movies) then) =
       _$MoviesCopyWithImpl<$Res>;
-  $Res call({String? status, String? statusMessage, List<MovieDatas>? data});
+  $Res call(
+      {@JsonKey(name: "status") String? status,
+      @JsonKey(name: "status_message") String? statusMessage,
+      @JsonKey(name: "data") MovieDatas? data});
+
+  $MovieDatasCopyWith<$Res>? get data;
 }
 
 /// @nodoc
@@ -554,8 +677,19 @@ class _$MoviesCopyWithImpl<$Res> implements $MoviesCopyWith<$Res> {
       data: data == freezed
           ? _value.data
           : data // ignore: cast_nullable_to_non_nullable
-              as List<MovieDatas>?,
+              as MovieDatas?,
     ));
+  }
+
+  @override
+  $MovieDatasCopyWith<$Res>? get data {
+    if (_value.data == null) {
+      return null;
+    }
+
+    return $MovieDatasCopyWith<$Res>(_value.data!, (value) {
+      return _then(_value.copyWith(data: value));
+    });
   }
 }
 
@@ -564,7 +698,13 @@ abstract class _$MoviesCopyWith<$Res> implements $MoviesCopyWith<$Res> {
   factory _$MoviesCopyWith(_Movies value, $Res Function(_Movies) then) =
       __$MoviesCopyWithImpl<$Res>;
   @override
-  $Res call({String? status, String? statusMessage, List<MovieDatas>? data});
+  $Res call(
+      {@JsonKey(name: "status") String? status,
+      @JsonKey(name: "status_message") String? statusMessage,
+      @JsonKey(name: "data") MovieDatas? data});
+
+  @override
+  $MovieDatasCopyWith<$Res>? get data;
 }
 
 /// @nodoc
@@ -594,7 +734,7 @@ class __$MoviesCopyWithImpl<$Res> extends _$MoviesCopyWithImpl<$Res>
       data: data == freezed
           ? _value.data
           : data // ignore: cast_nullable_to_non_nullable
-              as List<MovieDatas>?,
+              as MovieDatas?,
     ));
   }
 }
@@ -602,17 +742,23 @@ class __$MoviesCopyWithImpl<$Res> extends _$MoviesCopyWithImpl<$Res>
 /// @nodoc
 @JsonSerializable()
 class _$_Movies implements _Movies {
-  _$_Movies({this.status, this.statusMessage, this.data});
+  _$_Movies(
+      {@JsonKey(name: "status") this.status,
+      @JsonKey(name: "status_message") this.statusMessage,
+      @JsonKey(name: "data") this.data});
 
   factory _$_Movies.fromJson(Map<String, dynamic> json) =>
       _$$_MoviesFromJson(json);
 
   @override
+  @JsonKey(name: "status")
   final String? status;
   @override
+  @JsonKey(name: "status_message")
   final String? statusMessage;
   @override
-  final List<MovieDatas>? data;
+  @JsonKey(name: "data")
+  final MovieDatas? data;
 
   @override
   String toString() {
@@ -650,18 +796,21 @@ class _$_Movies implements _Movies {
 
 abstract class _Movies implements Movies {
   factory _Movies(
-      {String? status,
-      String? statusMessage,
-      List<MovieDatas>? data}) = _$_Movies;
+      {@JsonKey(name: "status") String? status,
+      @JsonKey(name: "status_message") String? statusMessage,
+      @JsonKey(name: "data") MovieDatas? data}) = _$_Movies;
 
   factory _Movies.fromJson(Map<String, dynamic> json) = _$_Movies.fromJson;
 
   @override
+  @JsonKey(name: "status")
   String? get status;
   @override
+  @JsonKey(name: "status_message")
   String? get statusMessage;
   @override
-  List<MovieDatas>? get data;
+  @JsonKey(name: "data")
+  MovieDatas? get data;
   @override
   @JsonKey(ignore: true)
   _$MoviesCopyWith<_Movies> get copyWith => throw _privateConstructorUsedError;
