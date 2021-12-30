@@ -1,26 +1,12 @@
 import 'package:flutter/material.dart';
-
-class RealEstateMainPage extends StatefulWidget {
-  const RealEstateMainPage({Key? key}) : super(key: key);
-
-  @override
-  _RealEstateMainPageState createState() => _RealEstateMainPageState();
-}
-
-class _RealEstateMainPageState extends State<RealEstateMainPage> {
-  @override
-  Widget build(BuildContext context) {
-    return Container();
-  }
-}
-
+import 'package:flutter_notebook_17th/ep1018_real_estate_app/src/ui/real_estate_main_page.dart';
 
 class RealEstateApp extends StatelessWidget {
   const RealEstateApp({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       home: RealEstateMainPage(),
     );
   }
