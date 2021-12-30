@@ -79,7 +79,7 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: Container(
-                height: 82,
+                height: 68,
                 decoration: BoxDecoration(
                   color: Colors.blue,
                   borderRadius: BorderRadius.circular(12),
@@ -93,6 +93,46 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                     begin: Alignment.topCenter,
                     end: Alignment.bottomCenter,
                   ),
+                ),
+                child: Row(
+                  children: [
+                    Expanded(
+                        child: Container(
+                      decoration: BoxDecoration(
+                        color: Colors.blueAccent,
+                      ),
+                    )),
+                    Expanded(
+                      child: Container(
+                        decoration: BoxDecoration(
+                          color: Colors.transparent,
+                        ),
+                        child: Center(
+                          child: Text(
+                            "Buy",
+                            style: TextStyle(
+                              color: Colors.white,
+                            ),
+                          ),
+                        ),
+                      ),
+                    ),
+                    Expanded(
+                      child: Container(
+                        decoration: BoxDecoration(
+                          color: Colors.transparent,
+                        ),
+                        child: Center(
+                          child: Text(
+                            "Sell",
+                            style: TextStyle(
+                              color: Colors.white,
+                            ),
+                          ),
+                        ),
+                      ),
+                    )
+                  ],
                 ),
               ),
             ),
