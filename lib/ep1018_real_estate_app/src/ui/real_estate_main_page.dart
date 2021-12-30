@@ -14,6 +14,7 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
       backgroundColor: Colors.black,
       body: SafeArea(
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Padding(
               padding: const EdgeInsets.all(8.0),
@@ -23,14 +24,31 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                 child: Row(
                   children: [
                     Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Row(
-                          children: [
+                          children: const [
                             Text("You're located here"),
                             Icon(
                               Icons.keyboard_arrow_down,
                               color: Colors.grey,
                             ),
+                          ],
+                        ),
+                        Row(
+                          children: const [
+                            Icon(
+                              Icons.location_on_outlined,
+                              color: Colors.white,
+                            ),
+                            Text(
+                              "London",
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 24,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            )
                           ],
                         )
                       ],
