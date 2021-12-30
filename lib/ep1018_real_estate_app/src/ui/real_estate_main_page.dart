@@ -66,10 +66,13 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                         border: Border.all(color: Colors.grey),
                         shape: BoxShape.circle,
                       ),
-                      child: Icon(
-                        Icons.search,
-                        size: 32,
-                        color: Colors.grey,
+                      child: Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Icon(
+                          Icons.search,
+                          size: 32,
+                          color: Colors.grey,
+                        ),
                       ),
                     )
                   ],
@@ -136,7 +139,10 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                 ),
               ),
             ),
-            const Text("newly Added"),
+            const Text("Newly Added",style: TextStyle(
+              color: Colors.white,
+              fontSize: 24
+            ),),
             Expanded(
                 child: Container(
               color: Colors.pink,
