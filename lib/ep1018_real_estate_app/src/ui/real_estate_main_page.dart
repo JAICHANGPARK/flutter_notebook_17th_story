@@ -25,6 +25,7 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                   children: [
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
+                      mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Row(
                           children: const [
