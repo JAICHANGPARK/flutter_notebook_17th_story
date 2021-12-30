@@ -22,6 +22,7 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                 height: 72,
                 decoration: const BoxDecoration(color: Colors.blue),
                 child: Row(
+                  crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
@@ -29,7 +30,9 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                       children: [
                         Row(
                           children: const [
-                            Text("You're located here"),
+                            Text("You're located here",style: TextStyle(
+                              color: Colors.grey, fontSize: 12
+                            ),),
                             Icon(
                               Icons.keyboard_arrow_down,
                               color: Colors.grey,
@@ -58,8 +61,8 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                     Spacer(
                     ),
                     Container(
-                      height: 64,
-                      width: 64,
+                      height: 58,
+                      width: 58,
                       decoration: BoxDecoration(
                         border: Border.all(color: Colors.grey),
                         shape: BoxShape.circle
