@@ -50,8 +50,20 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                               ),
                             )
                           ],
-                        )
+                        ),
+
                       ],
+                    ),
+                    Spacer(
+                    ),
+                    Container(
+                      height: 64,
+                      width: 64,
+                      decoration: BoxDecoration(
+                        border: Border.all(color: Colors.grey),
+                        shape: BoxShape.circle
+                      ),
+                      child: Icon(Icons.search, size: 32,),
                     )
                   ],
                 ),
