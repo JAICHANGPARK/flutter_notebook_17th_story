@@ -16,16 +16,16 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
         children: [
           Container(
             height: 72,
-            decoration: BoxDecoration(color: Colors.blue),
+            decoration: const BoxDecoration(color: Colors.blue),
           ),
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: Container(
               height: 82,
-              decoration: BoxDecoration(color: Colors.blue),
+              decoration: const BoxDecoration(color: Colors.blue),
             ),
           ),
-          Text("newly Added"),
+          const Text("newly Added"),
           Expanded(
               child: Container(
             color: Colors.pink,
