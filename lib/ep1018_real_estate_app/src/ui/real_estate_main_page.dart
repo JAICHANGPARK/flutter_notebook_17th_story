@@ -80,13 +80,20 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
               padding: const EdgeInsets.all(8.0),
               child: Container(
                 height: 82,
-                decoration: const BoxDecoration(
-                    color: Colors.blue,
-                    gradient: LinearGradient(
-                      colors: [],
-                      begin: Alignment.topCenter,
-                      end: Alignment.bottomCenter,
-                    )),
+                decoration: BoxDecoration(
+                  color: Colors.blue,
+                  borderRadius: BorderRadius.circular(12),
+                  gradient: LinearGradient(
+                    colors: [
+                      Colors.white.withOpacity(0.2),
+                      Colors.black12,
+                      Colors.black26,
+                      Colors.black54,
+                    ],
+                    begin: Alignment.topCenter,
+                    end: Alignment.bottomCenter,
+                  ),
+                ),
               ),
             ),
             const Text("newly Added"),
