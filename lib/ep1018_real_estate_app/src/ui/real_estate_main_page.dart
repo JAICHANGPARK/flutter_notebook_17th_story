@@ -160,12 +160,36 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                     borderRadius: BorderRadius.circular(8)
                 ),
                 child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                     Container(
                       height: 42,
                       width: 42,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(4)
+                      ),
+                      child: Center(child: Icon(Icons.home)),
+                    ),
+                    Container(
+                      height: 42,
+                      width: 42,
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(4)
+                      ),
+                      child: Center(child: Icon(Icons.favorite_outlined)),
+                    ),
+                    Container(
+                      height: 42,
+                      width: 42,
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(4)
+                      ),
+                    ),
+                    Container(
+                      height: 42,
+                      width: 42,
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(4)
                       ),
                     )
                   ],
