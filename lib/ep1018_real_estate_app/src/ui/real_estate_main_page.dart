@@ -162,26 +162,38 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                     Container(
                       height: 42,
                       width: 42,
-                      decoration: BoxDecoration(borderRadius: BorderRadius.circular(4), color: Colors.black),
-                      child: Center(child: Icon(Icons.home)),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(4),
+                        color: Colors.black,
+                      ),
+                      child: Center(child: Icon(Icons.home, color: Colors.blueAccent,)),
                     ),
                     Container(
                       height: 42,
                       width: 42,
-                      decoration: BoxDecoration(borderRadius: BorderRadius.circular(4), color: Colors.black),
-                      child: Center(child: Icon(Icons.favorite_outlined)),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(4),
+                        color: Colors.black,
+                      ),
+                      child: Center(child: Icon(Icons.favorite_outlined, color: Colors.grey,)),
                     ),
                     Container(
                       height: 42,
                       width: 42,
-                      decoration: BoxDecoration(borderRadius: BorderRadius.circular(4), color: Colors.black),
-                      child: Center(child: Icon(Icons.favorite_outlined)),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(4),
+                        color: Colors.black,
+                      ),
+                      child: Center(child: Icon(Icons.shopping_basket_outlined, color: Colors.grey,)),
                     ),
                     Container(
                       height: 42,
                       width: 42,
-                      decoration: BoxDecoration(borderRadius: BorderRadius.circular(4), color: Colors.black),
-                      child: Center(child: Icon(Icons.favorite_outlined)),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(4),
+                        color: Colors.black,
+                      ),
+                      child: Center(child: Icon(Icons.person_outlined, color: Colors.grey,)),
                     )
                   ],
                 ),
