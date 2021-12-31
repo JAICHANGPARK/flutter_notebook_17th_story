@@ -157,10 +157,17 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                 height: 72,
                 decoration: BoxDecoration(
                   color: Colors.orange,
+                    borderRadius: BorderRadius.circular(8)
                 ),
                 child: Row(
                   children: [
-
+                    Container(
+                      height: 42,
+                      width: 42,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(4)
+                      ),
+                    )
                   ],
                 ),
               ),
