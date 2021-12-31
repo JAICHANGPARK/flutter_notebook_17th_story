@@ -155,7 +155,14 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
               padding: const EdgeInsets.all(8.0),
               child: Container(
                 height: 72,
-                color: Colors.orange,
+                decoration: BoxDecoration(
+                  color: Colors.orange,
+                ),
+                child: Row(
+                  children: [
+
+                  ],
+                ),
               ),
             )
           ],
