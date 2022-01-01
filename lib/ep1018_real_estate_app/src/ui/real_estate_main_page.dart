@@ -181,25 +181,32 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                           borderRadius: BorderRadius.circular(4),
                           color: const Color.fromRGBO(20, 22, 25, 1),
                         ),
-                        child:  Center(
+                        child: Center(
                             child: Icon(
-                          Icons.home,
+                              _menuIndex == 0 ? Icons.home : Icons.home_outlined,
                           color: _menuIndex == 0 ? const Color.fromRGBO(37, 98, 249, 1) : Colors.grey,
                         )),
                       ),
                     ),
-                    Container(
-                      height: 42,
-                      width: 42,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(4),
-                        color: const Color.fromRGBO(20, 22, 25, 1),
+                    GestureDetector(
+                      onTap: () {
+                        setState(() {
+                          _menuIndex = 1;
+                        });
+                      },
+                      child: Container(
+                        height: 42,
+                        width: 42,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(4),
+                          color: const Color.fromRGBO(20, 22, 25, 1),
+                        ),
+                        child: Center(
+                            child: Icon(
+                          Icons.favorite_border,
+                          color: _menuIndex == 1 ? const Color.fromRGBO(37, 98, 249, 1) : Colors.grey,
+                        )),
                       ),
-                      child: const Center(
-                          child: Icon(
-                        Icons.favorite_border,
-                        color: Colors.grey,
-                      )),
                     ),
                     Container(
                       height: 42,
