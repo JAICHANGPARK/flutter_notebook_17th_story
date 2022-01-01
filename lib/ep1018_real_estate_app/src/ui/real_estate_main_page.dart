@@ -68,7 +68,7 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                           height: 54,
                           width: 54,
                           decoration: BoxDecoration(
-                            border: Border.all(color: Colors.grey,width: 0.8),
+                            border: Border.all(color: Colors.grey, width: 0.8),
                             shape: BoxShape.circle,
                           ),
                           child: const Icon(
@@ -90,10 +90,11 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                       borderRadius: BorderRadius.circular(12),
                       gradient: LinearGradient(
                         colors: [
-                          Colors.white.withOpacity(0.2),
-                          Colors.black12,
-                          Colors.black26,
-                          Colors.black54,
+
+                          Color.fromRGBO(32, 41, 50, 1),
+                          Color.fromRGBO(32, 41, 50, 1),
+                          Color.fromRGBO(26, 29, 34, 1),
+
                         ],
                         begin: Alignment.topCenter,
                         end: Alignment.bottomCenter,
@@ -250,7 +251,6 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                 )
               ],
             ),
-
           ],
         ),
       ),
