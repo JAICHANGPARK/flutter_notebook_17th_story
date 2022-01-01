@@ -9,6 +9,7 @@ class RealEstateMainPage extends StatefulWidget {
 
 class _RealEstateMainPageState extends State<RealEstateMainPage> {
   int _menuIndex = 0;
+  ValueNotifier<int> _tabIndex = ValueNotifier(0);
 
   @override
   Widget build(BuildContext context) {
