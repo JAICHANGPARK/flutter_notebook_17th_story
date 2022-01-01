@@ -108,7 +108,7 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                           color: Colors.transparent,
                         ),
                         child: const Center(
-                          child: const Text(
+                          child: Text(
                             "Buy",
                             style: TextStyle(
                               color: Colors.white,
@@ -123,9 +123,9 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                           color: Colors.transparent,
                         ),
                         child: const Center(
-                          child: const Text(
+                          child: Text(
                             "Sell",
-                            style: const TextStyle(
+                            style: TextStyle(
                               color: Colors.white,
                             ),
                           ),
@@ -157,9 +157,9 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                 height: 72,
                 decoration: BoxDecoration(
                   gradient: const LinearGradient(colors: [
-                    const Color.fromRGBO(34, 43, 52, 1),
-                    const Color.fromRGBO(29, 36, 44, 1),
-                    const Color.fromRGBO(25, 28, 32, 1),
+                    Color.fromRGBO(34, 43, 52, 1),
+                    Color.fromRGBO(29, 36, 44, 1),
+                    Color.fromRGBO(25, 28, 32, 1),
                   ]),
                   borderRadius: BorderRadius.circular(8),
                 ),
@@ -171,7 +171,7 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                       width: 42,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(4),
-                        color: Color.fromRGBO(20, 22, 25, 1),
+                        color: const Color.fromRGBO(20, 22, 25, 1),
                       ),
                       child: const Center(
                           child: Icon(
@@ -184,11 +184,11 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                       width: 42,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(4),
-                        color: Colors.black,
+                        color: const Color.fromRGBO(20, 22, 25, 1),
                       ),
                       child: const Center(
                           child: Icon(
-                        Icons.favorite_outlined,
+                        Icons.favorite_border,
                         color: Colors.grey,
                       )),
                     ),
@@ -197,7 +197,7 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                       width: 42,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(4),
-                        color: Colors.black,
+                        color: const Color.fromRGBO(20, 22, 25, 1),
                       ),
                       child: const Center(
                           child: Icon(
@@ -210,7 +210,7 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                       width: 42,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(4),
-                        color: Colors.black,
+                        color: const Color.fromRGBO(20, 22, 25, 1),
                       ),
                       child: const Center(
                           child: Icon(
