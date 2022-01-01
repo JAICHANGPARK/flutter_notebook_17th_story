@@ -104,9 +104,13 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                       children: [
                         Expanded(
                             child: Container(
-                          decoration: const BoxDecoration(
-                            color: Colors.blueAccent,
+                          decoration:  BoxDecoration(
+                            color: Color.fromRGBO(39, 97, 255, 1),
+                            borderRadius: BorderRadius.circular(12)
                           ),
+                              child: Center(
+                                child: Text("Rent"),
+                              ),
                         )),
                         Expanded(
                           child: Container(
