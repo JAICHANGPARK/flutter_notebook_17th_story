@@ -65,10 +65,10 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                         ),
                         const Spacer(),
                         Container(
-                          height: 58,
-                          width: 58,
+                          height: 54,
+                          width: 54,
                           decoration: BoxDecoration(
-                            border: Border.all(color: Colors.grey),
+                            border: Border.all(color: Colors.grey,width: 0.8),
                             shape: BoxShape.circle,
                           ),
                           child: const Icon(
