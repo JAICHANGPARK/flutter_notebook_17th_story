@@ -102,19 +102,29 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                     child: Row(
                       children: [
                         Expanded(
-                            child: Container(
-                          decoration: BoxDecoration(
-                            color: const Color.fromRGBO(39, 97, 255, 1),
-                            borderRadius: BorderRadius.circular(12),
-                          ),
-                          child: const Center(
-                            child: Text(
-                              "Rent",
-                              style: TextStyle(
-                                color: Colors.white,
+                            child: ValueListenableBuilder(
+                          valueListenable: _tabIndex,
+                          builder: (context, value, _) {
+                            return GestureDetector(
+                              onTap: () {
+                                _tabIndex.value = 0;
+                              },
+                              child: Container(
+                                decoration: BoxDecoration(
+                                  color: value == 0 ? const Color.fromRGBO(39, 97, 255, 1) : Colors.transparent,
+                                  borderRadius: BorderRadius.circular(12),
+                                ),
+                                child: const Center(
+                                  child: Text(
+                                    "Rent",
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                    ),
+                                  ),
+                                ),
                               ),
-                            ),
-                          ),
+                            );
+                          },
                         )),
                         Expanded(
                           child: Container(
