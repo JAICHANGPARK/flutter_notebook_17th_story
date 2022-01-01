@@ -103,10 +103,10 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                       children: [
                         Expanded(
                             child: Container(
-                              decoration: const BoxDecoration(
-                                color: Colors.blueAccent,
-                              ),
-                            )),
+                          decoration: const BoxDecoration(
+                            color: Colors.blueAccent,
+                          ),
+                        )),
                         Expanded(
                           child: Container(
                             decoration: const BoxDecoration(
@@ -186,9 +186,9 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                             ),
                             child: Center(
                                 child: Icon(
-                                  _menuIndex == 0 ? Icons.home : Icons.home_outlined,
-                                  color: _menuIndex == 0 ? const Color.fromRGBO(37, 98, 249, 1) : Colors.grey,
-                                )),
+                              _menuIndex == 0 ? Icons.home : Icons.home_outlined,
+                              color: _menuIndex == 0 ? const Color.fromRGBO(37, 98, 249, 1) : Colors.grey,
+                            )),
                           ),
                         ),
                         GestureDetector(
@@ -206,9 +206,29 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                             ),
                             child: Center(
                                 child: Icon(
-                                  _menuIndex == 1 ? Icons.favorite : Icons.favorite_border,
-                                  color: _menuIndex == 1 ? const Color.fromRGBO(37, 98, 249, 1) : Colors.grey,
-                                )),
+                              _menuIndex == 1 ? Icons.favorite : Icons.favorite_border,
+                              color: _menuIndex == 1 ? const Color.fromRGBO(37, 98, 249, 1) : Colors.grey,
+                            )),
+                          ),
+                        ),
+                        GestureDetector(
+                          onTap: () {
+                            setState(() {
+                              _menuIndex = 2;
+                            });
+                          },
+                          child: Container(
+                            height: 42,
+                            width: 42,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(4),
+                              color: const Color.fromRGBO(20, 22, 25, 1),
+                            ),
+                            child: Center(
+                                child: Icon(
+                              _menuIndex == 2 ? Icons.shopping_basket : Icons.shopping_basket_outlined,
+                              color: _menuIndex == 2 ? const Color.fromRGBO(37, 98, 249, 1) : Colors.grey,
+                            )),
                           ),
                         ),
                         Container(
@@ -220,217 +240,15 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                           ),
                           child: const Center(
                               child: Icon(
-                                Icons.shopping_basket_outlined,
-                                color: Colors.grey,
-                              )),
-                        ),
-                        Container(
-                          height: 42,
-                          width: 42,
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(4),
-                            color: const Color.fromRGBO(20, 22, 25, 1),
-                          ),
-                          child: const Center(
-                              child: Icon(
-                                Icons.person_outlined,
-                                color: Colors.grey,
-                              )),
+                            Icons.person_outlined,
+                            color: Colors.grey,
+                          )),
                         )
                       ],
                     ),
                   ),
                 )
               ],
-            ),
-            Column(
-              children: [
-                const Center(
-                  child: Text("Page 1", style: TextStyle(color: Colors.white),),
-                ),
-                Spacer(),
-                Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Container(
-                    height: 72,
-                    decoration: BoxDecoration(
-                      gradient: const LinearGradient(colors: [
-                        Color.fromRGBO(34, 43, 52, 1),
-                        Color.fromRGBO(29, 36, 44, 1),
-                        Color.fromRGBO(25, 28, 32, 1),
-                      ]),
-                      borderRadius: BorderRadius.circular(8),
-                    ),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      children: [
-                        GestureDetector(
-                          onTap: () {
-                            setState(() {
-                              _menuIndex = 0;
-                            });
-                          },
-                          child: Container(
-                            height: 42,
-                            width: 42,
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(4),
-                              color: const Color.fromRGBO(20, 22, 25, 1),
-                            ),
-                            child: Center(
-                                child: Icon(
-                                  _menuIndex == 0 ? Icons.home : Icons.home_outlined,
-                                  color: _menuIndex == 0 ? const Color.fromRGBO(37, 98, 249, 1) : Colors.grey,
-                                )),
-                          ),
-                        ),
-                        GestureDetector(
-                          onTap: () {
-                            setState(() {
-                              _menuIndex = 1;
-                            });
-                          },
-                          child: Container(
-                            height: 42,
-                            width: 42,
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(4),
-                              color: const Color.fromRGBO(20, 22, 25, 1),
-                            ),
-                            child: Center(
-                                child: Icon(
-                                  _menuIndex == 1 ? Icons.favorite : Icons.favorite_border,
-                                  color: _menuIndex == 1 ? const Color.fromRGBO(37, 98, 249, 1) : Colors.grey,
-                                )),
-                          ),
-                        ),
-                        Container(
-                          height: 42,
-                          width: 42,
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(4),
-                            color: const Color.fromRGBO(20, 22, 25, 1),
-                          ),
-                          child: const Center(
-                              child: Icon(
-                                Icons.shopping_basket_outlined,
-                                color: Colors.grey,
-                              )),
-                        ),
-                        Container(
-                          height: 42,
-                          width: 42,
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(4),
-                            color: const Color.fromRGBO(20, 22, 25, 1),
-                          ),
-                          child: const Center(
-                              child: Icon(
-                                Icons.person_outlined,
-                                color: Colors.grey,
-                              )),
-                        )
-                      ],
-                    ),
-                  ),
-                )
-              ],
-            ),
-            Column(
-              children: [
-                const Center(
-                  child: Text("Page 2", style: TextStyle(color: Colors.white),),
-                ),
-                Spacer(),
-                Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Container(
-                    height: 72,
-                    decoration: BoxDecoration(
-                      gradient: const LinearGradient(colors: [
-                        Color.fromRGBO(34, 43, 52, 1),
-                        Color.fromRGBO(29, 36, 44, 1),
-                        Color.fromRGBO(25, 28, 32, 1),
-                      ]),
-                      borderRadius: BorderRadius.circular(8),
-                    ),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      children: [
-                        GestureDetector(
-                          onTap: () {
-                            setState(() {
-                              _menuIndex = 0;
-                            });
-                          },
-                          child: Container(
-                            height: 42,
-                            width: 42,
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(4),
-                              color: const Color.fromRGBO(20, 22, 25, 1),
-                            ),
-                            child: Center(
-                                child: Icon(
-                                  _menuIndex == 0 ? Icons.home : Icons.home_outlined,
-                                  color: _menuIndex == 0 ? const Color.fromRGBO(37, 98, 249, 1) : Colors.grey,
-                                )),
-                          ),
-                        ),
-                        GestureDetector(
-                          onTap: () {
-                            setState(() {
-                              _menuIndex = 1;
-                            });
-                          },
-                          child: Container(
-                            height: 42,
-                            width: 42,
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(4),
-                              color: const Color.fromRGBO(20, 22, 25, 1),
-                            ),
-                            child: Center(
-                                child: Icon(
-                                  _menuIndex == 1 ? Icons.favorite : Icons.favorite_border,
-                                  color: _menuIndex == 1 ? const Color.fromRGBO(37, 98, 249, 1) : Colors.grey,
-                                )),
-                          ),
-                        ),
-                        Container(
-                          height: 42,
-                          width: 42,
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(4),
-                            color: const Color.fromRGBO(20, 22, 25, 1),
-                          ),
-                          child: const Center(
-                              child: Icon(
-                                Icons.shopping_basket_outlined,
-                                color: Colors.grey,
-                              )),
-                        ),
-                        Container(
-                          height: 42,
-                          width: 42,
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(4),
-                            color: const Color.fromRGBO(20, 22, 25, 1),
-                          ),
-                          child: const Center(
-                              child: Icon(
-                                Icons.person_outlined,
-                                color: Colors.grey,
-                              )),
-                        )
-                      ],
-                    ),
-                  ),
-                )
-              ],
-            ),
-            const Center(
-              child: Text("Page 3", style: TextStyle(color: Colors.white),),
             ),
 
           ],
