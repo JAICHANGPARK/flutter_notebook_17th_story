@@ -88,13 +88,11 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                     decoration: BoxDecoration(
                       color: Colors.blue,
                       borderRadius: BorderRadius.circular(12),
-                      gradient: LinearGradient(
+                      gradient: const LinearGradient(
                         colors: [
-
                           Color.fromRGBO(32, 41, 50, 1),
                           Color.fromRGBO(32, 41, 50, 1),
                           Color.fromRGBO(26, 29, 34, 1),
-
                         ],
                         begin: Alignment.topCenter,
                         end: Alignment.bottomCenter,
@@ -104,13 +102,18 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                       children: [
                         Expanded(
                             child: Container(
-                          decoration:  BoxDecoration(
-                            color: Color.fromRGBO(39, 97, 255, 1),
-                            borderRadius: BorderRadius.circular(12)
+                          decoration: BoxDecoration(
+                            color: const Color.fromRGBO(39, 97, 255, 1),
+                            borderRadius: BorderRadius.circular(12),
                           ),
-                              child: Center(
-                                child: Text("Rent"),
+                          child: const Center(
+                            child: Text(
+                              "Rent",
+                              style: TextStyle(
+                                color: Colors.white,
                               ),
+                            ),
+                          ),
                         )),
                         Expanded(
                           child: Container(
