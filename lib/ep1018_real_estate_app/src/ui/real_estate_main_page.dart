@@ -11,7 +11,7 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.black,
+      backgroundColor: Color.fromRGBO(19, 20, 22, 255),
       body: SafeArea(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
