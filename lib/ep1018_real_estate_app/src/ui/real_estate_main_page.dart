@@ -155,7 +155,12 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
               padding: const EdgeInsets.all(8.0),
               child: Container(
                 height: 72,
-                decoration: BoxDecoration(color: Colors.orange, borderRadius: BorderRadius.circular(8)),
+                decoration: BoxDecoration(
+                  gradient: LinearGradient(colors: [
+                    
+                  ]),
+                  borderRadius: BorderRadius.circular(8),
+                ),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
@@ -166,7 +171,11 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                         borderRadius: BorderRadius.circular(4),
                         color: Colors.black,
                       ),
-                      child: Center(child: Icon(Icons.home, color: Colors.blueAccent,)),
+                      child: Center(
+                          child: Icon(
+                        Icons.home,
+                        color: Colors.blueAccent,
+                      )),
                     ),
                     Container(
                       height: 42,
@@ -175,7 +184,11 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                         borderRadius: BorderRadius.circular(4),
                         color: Colors.black,
                       ),
-                      child: Center(child: Icon(Icons.favorite_outlined, color: Colors.grey,)),
+                      child: Center(
+                          child: Icon(
+                        Icons.favorite_outlined,
+                        color: Colors.grey,
+                      )),
                     ),
                     Container(
                       height: 42,
@@ -184,7 +197,11 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                         borderRadius: BorderRadius.circular(4),
                         color: Colors.black,
                       ),
-                      child: Center(child: Icon(Icons.shopping_basket_outlined, color: Colors.grey,)),
+                      child: Center(
+                          child: Icon(
+                        Icons.shopping_basket_outlined,
+                        color: Colors.grey,
+                      )),
                     ),
                     Container(
                       height: 42,
@@ -193,7 +210,11 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                         borderRadius: BorderRadius.circular(4),
                         color: Colors.black,
                       ),
-                      child: Center(child: Icon(Icons.person_outlined, color: Colors.grey,)),
+                      child: Center(
+                          child: Icon(
+                        Icons.person_outlined,
+                        color: Colors.grey,
+                      )),
                     )
                   ],
                 ),
