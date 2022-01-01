@@ -8,6 +8,8 @@ class RealEstateMainPage extends StatefulWidget {
 }
 
 class _RealEstateMainPageState extends State<RealEstateMainPage> {
+  int _menuIndex = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -166,18 +168,25 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
-                    Container(
-                      height: 42,
-                      width: 42,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(4),
-                        color: const Color.fromRGBO(20, 22, 25, 1),
+                    GestureDetector(
+                      onTap: () {
+                        setState(() {
+                          _menuIndex = 0;
+                        });
+                      },
+                      child: Container(
+                        height: 42,
+                        width: 42,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(4),
+                          color: const Color.fromRGBO(20, 22, 25, 1),
+                        ),
+                        child:  Center(
+                            child: Icon(
+                          Icons.home,
+                          color: _menuIndex == 0 ? const Color.fromRGBO(37, 98, 249, 1) : Colors.grey,
+                        )),
                       ),
-                      child: const Center(
-                          child: Icon(
-                        Icons.home,
-                        color: Color.fromRGBO(37, 98, 249, 1),
-                      )),
                     ),
                     Container(
                       height: 42,
