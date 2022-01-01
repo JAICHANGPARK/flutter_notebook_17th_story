@@ -243,14 +243,14 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                 )
               ],
             ),
-            Center(
-              child: Text("Page 1"),
+            const Center(
+              child: Text("Page 1", style: TextStyle(color: Colors.white),),
             ),
-            Center(
-              child: Text("Page 2"),
+            const Center(
+              child: Text("Page 2", style: TextStyle(color: Colors.white),),
             ),
-            Center(
-              child: Text("Page 3"),
+            const Center(
+              child: Text("Page 3", style: TextStyle(color: Colors.white),),
             ),
 
           ],
