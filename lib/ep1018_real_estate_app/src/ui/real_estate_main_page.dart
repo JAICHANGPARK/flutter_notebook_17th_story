@@ -183,7 +183,7 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                         ),
                         child: Center(
                             child: Icon(
-                              _menuIndex == 0 ? Icons.home : Icons.home_outlined,
+                          _menuIndex == 0 ? Icons.home : Icons.home_outlined,
                           color: _menuIndex == 0 ? const Color.fromRGBO(37, 98, 249, 1) : Colors.grey,
                         )),
                       ),
@@ -203,7 +203,7 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                         ),
                         child: Center(
                             child: Icon(
-                          Icons.favorite_border,
+                          _menuIndex == 1 ? Icons.favorite : Icons.favorite_border,
                           color: _menuIndex == 1 ? const Color.fromRGBO(37, 98, 249, 1) : Colors.grey,
                         )),
                       ),
