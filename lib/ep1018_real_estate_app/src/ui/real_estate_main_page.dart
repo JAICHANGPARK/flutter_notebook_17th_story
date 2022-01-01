@@ -11,14 +11,14 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromRGBO(19, 20, 22, 255),
+      backgroundColor: const Color.fromRGBO(19, 20, 22, 1),
       body: SafeArea(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Padding(
               padding: const EdgeInsets.all(8.0),
-              child: Container(
+              child: SizedBox(
                 height: 72,
                 // decoration: const BoxDecoration(color: Colors.blue),
                 child: Row(
@@ -58,7 +58,7 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                         ),
                       ],
                     ),
-                    Spacer(),
+                    const Spacer(),
                     Container(
                       height: 58,
                       width: 58,
@@ -66,7 +66,7 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                         border: Border.all(color: Colors.grey),
                         shape: BoxShape.circle,
                       ),
-                      child: Icon(
+                      child: const Icon(
                         Icons.search,
                         size: 32,
                         color: Colors.grey,
@@ -98,17 +98,17 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                   children: [
                     Expanded(
                         child: Container(
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         color: Colors.blueAccent,
                       ),
                     )),
                     Expanded(
                       child: Container(
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                           color: Colors.transparent,
                         ),
-                        child: Center(
-                          child: Text(
+                        child: const Center(
+                          child: const Text(
                             "Buy",
                             style: TextStyle(
                               color: Colors.white,
@@ -119,13 +119,13 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                     ),
                     Expanded(
                       child: Container(
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                           color: Colors.transparent,
                         ),
-                        child: Center(
-                          child: Text(
+                        child: const Center(
+                          child: const Text(
                             "Sell",
-                            style: TextStyle(
+                            style: const TextStyle(
                               color: Colors.white,
                             ),
                           ),
@@ -136,9 +136,9 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                 ),
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: const Text(
+            const Padding(
+              padding: EdgeInsets.all(8.0),
+              child: Text(
                 "Newly Added",
                 style: TextStyle(color: Colors.white, fontSize: 24),
               ),
@@ -156,8 +156,10 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
               child: Container(
                 height: 72,
                 decoration: BoxDecoration(
-                  gradient: LinearGradient(colors: [
-                    
+                  gradient: const LinearGradient(colors: [
+                    const Color.fromRGBO(34, 43, 52, 1),
+                    const Color.fromRGBO(29, 36, 44, 1),
+                    const Color.fromRGBO(25, 28, 32, 1),
                   ]),
                   borderRadius: BorderRadius.circular(8),
                 ),
@@ -169,12 +171,12 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                       width: 42,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(4),
-                        color: Colors.black,
+                        color: Color.fromRGBO(20, 22, 25, 1),
                       ),
-                      child: Center(
+                      child: const Center(
                           child: Icon(
                         Icons.home,
-                        color: Colors.blueAccent,
+                        color: Color.fromRGBO(37, 98, 249, 1),
                       )),
                     ),
                     Container(
@@ -184,7 +186,7 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                         borderRadius: BorderRadius.circular(4),
                         color: Colors.black,
                       ),
-                      child: Center(
+                      child: const Center(
                           child: Icon(
                         Icons.favorite_outlined,
                         color: Colors.grey,
@@ -197,7 +199,7 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                         borderRadius: BorderRadius.circular(4),
                         color: Colors.black,
                       ),
-                      child: Center(
+                      child: const Center(
                           child: Icon(
                         Icons.shopping_basket_outlined,
                         color: Colors.grey,
@@ -210,7 +212,7 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                         borderRadius: BorderRadius.circular(4),
                         color: Colors.black,
                       ),
-                      child: Center(
+                      child: const Center(
                           child: Icon(
                         Icons.person_outlined,
                         color: Colors.grey,
