@@ -127,35 +127,55 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                           },
                         )),
                         Expanded(
-                          child: Container(
-                            decoration: const BoxDecoration(
-                              color: Colors.transparent,
-                            ),
-                            child: const Center(
-                              child: Text(
-                                "Buy",
-                                style: TextStyle(
-                                  color: Colors.white,
+                            child: ValueListenableBuilder(
+                          valueListenable: _tabIndex,
+                          builder: (context, value, _) {
+                            return GestureDetector(
+                              onTap: () {
+                                _tabIndex.value = 1;
+                              },
+                              child: Container(
+                                decoration: BoxDecoration(
+                                  color: value == 1 ? const Color.fromRGBO(39, 97, 255, 1) : Colors.transparent,
+                                  borderRadius: BorderRadius.circular(12),
+                                ),
+                                child: const Center(
+                                  child: Text(
+                                    "Buy",
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                    ),
+                                  ),
                                 ),
                               ),
-                            ),
-                          ),
-                        ),
+                            );
+                          },
+                        )),
                         Expanded(
-                          child: Container(
-                            decoration: const BoxDecoration(
-                              color: Colors.transparent,
-                            ),
-                            child: const Center(
-                              child: Text(
-                                "Sell",
-                                style: TextStyle(
-                                  color: Colors.white,
+                            child: ValueListenableBuilder(
+                          valueListenable: _tabIndex,
+                          builder: (context, value, _) {
+                            return GestureDetector(
+                              onTap: () {
+                                _tabIndex.value = 2;
+                              },
+                              child: Container(
+                                decoration: BoxDecoration(
+                                  color: value == 2 ? const Color.fromRGBO(39, 97, 255, 1) : Colors.transparent,
+                                  borderRadius: BorderRadius.circular(12),
+                                ),
+                                child: const Center(
+                                  child: Text(
+                                    "Sell",
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                    ),
+                                  ),
                                 ),
                               ),
-                            ),
-                          ),
-                        )
+                            );
+                          },
+                        )),
                       ],
                     ),
                   ),
