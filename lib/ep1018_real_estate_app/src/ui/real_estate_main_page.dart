@@ -264,7 +264,12 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                                           ),
                                           const Padding(
                                             padding: EdgeInsets.symmetric(vertical: 16.0),
-                                            child: Text("8 Room villa - 4350 Sqft"),
+                                            child: Text(
+                                              "8 Room villa - 4350 Sqft",
+                                              style: TextStyle(
+                                                color: Colors.grey,
+                                              ),
+                                            ),
                                           ),
                                           const Spacer(),
                                           Row(
@@ -280,6 +285,9 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                                                     Text(
                                                       "\$",
                                                       style: TextStyle(color: Colors.white, fontSize: 10),
+                                                    ),
+                                                    SizedBox(
+                                                      width: 4,
                                                     ),
                                                     Text(
                                                       "2899",
