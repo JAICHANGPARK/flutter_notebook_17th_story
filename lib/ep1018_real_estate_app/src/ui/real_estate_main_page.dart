@@ -222,7 +222,22 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                                         child: Stack(
                                           children: [
                                             Positioned(
-                                              child: Container(),
+                                              right: 16,
+                                              top: 16,
+                                              child: Container(
+                                                decoration: BoxDecoration(
+                                                  color: Colors.black26,
+                                                  borderRadius: BorderRadius.circular(12)
+                                                ),
+                                                padding: EdgeInsets.symmetric(horizontal: 4, vertical: 4),
+                                                child: Row(
+                                                  children: [
+                                                    Text("📌"),
+                                                    SizedBox(width: 4,),
+                                                    Text("Maps",)
+                                                  ],
+                                                ),
+                                              ),
                                             ),
                                           ],
                                         ),
