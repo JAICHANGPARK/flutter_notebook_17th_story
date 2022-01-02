@@ -201,22 +201,42 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                               child: Container(
                                 padding: const EdgeInsets.all(16),
                                 decoration: BoxDecoration(
-                                  color: const Color.fromRGBO(29, 36, 44, 1),
-                                  borderRadius:BorderRadius.circular(8)
-                                ),
+                                    color: const Color.fromRGBO(29, 36, 44, 1), borderRadius: BorderRadius.circular(8)),
                                 width: 280,
                                 child: Column(
                                   children: [
                                     Expanded(
-                                      flex: 8,
+                                      flex: 10,
                                       child: Container(
-                                        decoration:  BoxDecoration(
-                                          color: Colors.blueAccent,
-                                          borderRadius: BorderRadius.circular(12)
-                                        ),
+                                        decoration: BoxDecoration(
+                                            color: Colors.blueAccent, borderRadius: BorderRadius.circular(12)),
                                       ),
                                     ),
-                                    Expanded(child: Column(),flex: 6,)
+                                    Expanded(
+                                      child: Column(
+                                        children: [
+                                          Text("Roundy Lane"),
+                                          Text("8 Room villa - 4350 Sqft"),
+                                          Row(
+                                            children: [
+                                              Container(
+                                                width: 140,
+                                                decoration: BoxDecoration(),
+                                                child: Row(
+                                                  children: [],
+                                                ),
+                                              ),
+                                              IconButton(
+                                                onPressed: () {},
+                                                icon: Icon(Icons.star),
+                                                color: Colors.yellow,
+                                              )
+                                            ],
+                                          )
+                                        ],
+                                      ),
+                                      flex: 6,
+                                    )
                                   ],
                                 ),
                               ),
