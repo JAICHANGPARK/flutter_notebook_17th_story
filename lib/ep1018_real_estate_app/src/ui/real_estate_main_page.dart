@@ -212,32 +212,34 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                                             color: Colors.blueAccent, borderRadius: BorderRadius.circular(12)),
                                       ),
                                     ),
+
                                     Expanded(
                                       child: Column(
                                         crossAxisAlignment: CrossAxisAlignment.start,
                                         children: [
-                                          Text(
+                                          SizedBox(height: 16,),
+                                          const Text(
                                             "Roundy Lane",
                                             style: TextStyle(
                                               color: Colors.white,
                                             ),
                                           ),
-                                          Padding(
-                                            padding: const EdgeInsets.symmetric(vertical: 16.0),
+                                          const Padding(
+                                            padding: EdgeInsets.symmetric(vertical: 16.0),
                                             child: Text("8 Room villa - 4350 Sqft"),
                                           ),
                                           Row(
                                             children: [
                                               Container(
                                                 width: 140,
-                                                decoration: BoxDecoration(),
+                                                decoration: const BoxDecoration(),
                                                 child: Row(
                                                   children: [],
                                                 ),
                                               ),
                                               IconButton(
                                                 onPressed: () {},
-                                                icon: Icon(Icons.star),
+                                                icon: const Icon(Icons.star),
                                                 color: Colors.yellow,
                                               )
                                             ],
