@@ -212,8 +212,8 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                                         decoration: BoxDecoration(
                                           color: Colors.blueAccent,
                                           borderRadius: BorderRadius.circular(12),
-                                          image: DecorationImage(
-                                            image: CachedNetworkImageProvider(
+                                          image: const DecorationImage(
+                                            image: const CachedNetworkImageProvider(
                                               "https://cdn.pixabay.com/photo/2016/11/18/17/46/house-1836070_960_720.jpg",
                                             ),
                                             fit: BoxFit.cover,
@@ -227,7 +227,7 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                                               child: Container(
                                                 decoration: BoxDecoration(
                                                     color: Colors.black26, borderRadius: BorderRadius.circular(12)),
-                                                padding: EdgeInsets.symmetric(horizontal: 4, vertical: 4),
+                                                padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 4),
                                                 child: Row(
                                                   children: const [
                                                     Text("📌"),
@@ -253,7 +253,7 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                                       child: Column(
                                         crossAxisAlignment: CrossAxisAlignment.start,
                                         children: [
-                                          SizedBox(
+                                          const SizedBox(
                                             height: 16,
                                           ),
                                           const Text(
@@ -266,25 +266,39 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                                             padding: EdgeInsets.symmetric(vertical: 16.0),
                                             child: Text("8 Room villa - 4350 Sqft"),
                                           ),
-                                          Spacer(),
+                                          const Spacer(),
                                           Row(
                                             children: [
                                               Container(
-                                                width: 140,
-                                                padding: EdgeInsets.symmetric(horizontal: 16, vertical: 12),
-                                                decoration:
-                                                    const BoxDecoration(color: const Color.fromRGBO(39, 97, 255, 1)),
+                                                // width: 140,
+                                                padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+                                                decoration: BoxDecoration(
+                                                    borderRadius: BorderRadius.circular(8),
+                                                    color: const Color.fromRGBO(39, 97, 255, 1)),
                                                 child: Row(
                                                   children: const [
                                                     Text(
                                                       "\$",
+                                                      style: TextStyle(color: Colors.white, fontSize: 10),
                                                     ),
-                                                    Text("2899"),
-                                                    Text("For Month")
+                                                    Text(
+                                                      "2899",
+                                                      style: TextStyle(color: Colors.white, fontSize: 18),
+                                                    ),
+                                                    SizedBox(
+                                                      width: 12,
+                                                    ),
+                                                    Text(
+                                                      "For Month",
+                                                      style: TextStyle(
+                                                        fontSize: 12,
+                                                        color: Colors.grey,
+                                                      ),
+                                                    )
                                                   ],
                                                 ),
                                               ),
-                                              Spacer(),
+                                              const Spacer(),
                                               IconButton(
                                                 onPressed: () {},
                                                 icon: const Icon(Icons.star),
