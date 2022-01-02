@@ -214,9 +214,18 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                                     ),
                                     Expanded(
                                       child: Column(
+                                        crossAxisAlignment: CrossAxisAlignment.start,
                                         children: [
-                                          Text("Roundy Lane"),
-                                          Text("8 Room villa - 4350 Sqft"),
+                                          Text(
+                                            "Roundy Lane",
+                                            style: TextStyle(
+                                              color: Colors.white,
+                                            ),
+                                          ),
+                                          Padding(
+                                            padding: const EdgeInsets.symmetric(vertical: 16.0),
+                                            child: Text("8 Room villa - 4350 Sqft"),
+                                          ),
                                           Row(
                                             children: [
                                               Container(
