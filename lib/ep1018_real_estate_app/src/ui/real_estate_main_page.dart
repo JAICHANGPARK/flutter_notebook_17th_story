@@ -228,15 +228,24 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                                             padding: EdgeInsets.symmetric(vertical: 16.0),
                                             child: Text("8 Room villa - 4350 Sqft"),
                                           ),
+                                          Spacer(),
                                           Row(
                                             children: [
                                               Container(
                                                 width: 140,
-                                                decoration: const BoxDecoration(),
+                                                padding: EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+                                                decoration: const BoxDecoration(
+                                                  color: const Color.fromRGBO(39, 97, 255, 1)
+                                                ),
                                                 child: Row(
-                                                  children: [],
+                                                  children: [
+                                                    Text("\$", ),
+                                                    Text("2899"),
+                                                    Text("For Month")
+                                                  ],
                                                 ),
                                               ),
+                                              Spacer(),
                                               IconButton(
                                                 onPressed: () {},
                                                 icon: const Icon(Icons.star),
