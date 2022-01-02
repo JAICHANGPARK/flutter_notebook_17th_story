@@ -226,15 +226,21 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                                               top: 16,
                                               child: Container(
                                                 decoration: BoxDecoration(
-                                                  color: Colors.black26,
-                                                  borderRadius: BorderRadius.circular(12)
-                                                ),
+                                                    color: Colors.black26, borderRadius: BorderRadius.circular(12)),
                                                 padding: EdgeInsets.symmetric(horizontal: 4, vertical: 4),
                                                 child: Row(
-                                                  children: [
+                                                  children: const [
                                                     Text("📌"),
-                                                    SizedBox(width: 4,),
-                                                    Text("Maps",)
+                                                    SizedBox(
+                                                      width: 4,
+                                                    ),
+                                                    Text(
+                                                      "Maps",
+                                                      style: TextStyle(
+                                                        fontSize: 12,
+                                                        color: Colors.white,
+                                                      ),
+                                                    )
                                                   ],
                                                 ),
                                               ),
@@ -269,7 +275,7 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                                                 decoration:
                                                     const BoxDecoration(color: const Color.fromRGBO(39, 97, 255, 1)),
                                                 child: Row(
-                                                  children: [
+                                                  children: const [
                                                     Text(
                                                       "\$",
                                                     ),
