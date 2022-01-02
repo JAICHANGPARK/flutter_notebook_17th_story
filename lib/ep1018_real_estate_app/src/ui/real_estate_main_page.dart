@@ -1,3 +1,4 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 
 class RealEstateMainPage extends StatefulWidget {
@@ -209,15 +210,31 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                                       flex: 10,
                                       child: Container(
                                         decoration: BoxDecoration(
-                                            color: Colors.blueAccent, borderRadius: BorderRadius.circular(12)),
+                                          color: Colors.blueAccent,
+                                          borderRadius: BorderRadius.circular(12),
+                                          image: DecorationImage(
+                                            image: CachedNetworkImageProvider(
+                                              "https://cdn.pixabay.com/photo/2016/11/18/17/46/house-1836070_960_720.jpg",
+                                            ),
+                                            fit: BoxFit.cover,
+                                          ),
+                                        ),
+                                        child: Stack(
+                                          children: [
+                                            Positioned(
+                                              child: Container(),
+                                            ),
+                                          ],
+                                        ),
                                       ),
                                     ),
-
                                     Expanded(
                                       child: Column(
                                         crossAxisAlignment: CrossAxisAlignment.start,
                                         children: [
-                                          SizedBox(height: 16,),
+                                          SizedBox(
+                                            height: 16,
+                                          ),
                                           const Text(
                                             "Roundy Lane",
                                             style: TextStyle(
@@ -234,12 +251,13 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                                               Container(
                                                 width: 140,
                                                 padding: EdgeInsets.symmetric(horizontal: 16, vertical: 12),
-                                                decoration: const BoxDecoration(
-                                                  color: const Color.fromRGBO(39, 97, 255, 1)
-                                                ),
+                                                decoration:
+                                                    const BoxDecoration(color: const Color.fromRGBO(39, 97, 255, 1)),
                                                 child: Row(
                                                   children: [
-                                                    Text("\$", ),
+                                                    Text(
+                                                      "\$",
+                                                    ),
                                                     Text("2899"),
                                                     Text("For Month")
                                                   ],
