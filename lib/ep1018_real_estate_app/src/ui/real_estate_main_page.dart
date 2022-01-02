@@ -199,18 +199,22 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                             return Padding(
                               padding: const EdgeInsets.only(right: 12),
                               child: Container(
+                                padding: EdgeInsets.all(16),
                                 decoration: BoxDecoration(
                                   color: Color.fromRGBO(29, 36, 44, 1),
                                 ),
                                 width: 280,
                                 child: Column(
                                   children: [
-                                    Container(
-                                      height: 140,
-                                      decoration: BoxDecoration(
-                                        color: Colors.blueAccent,
+                                    Expanded(
+                                      flex: 8,
+                                      child: Container(
+                                        decoration: BoxDecoration(
+                                          color: Colors.blueAccent,
+                                        ),
                                       ),
-                                    )
+                                    ),
+                                    Expanded(child: Column(),flex: 6,)
                                   ],
                                 ),
                               ),
