@@ -191,18 +191,32 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                   child: Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: Container(
-                      color: Colors.pink,
+                      // color: Colors.pink,
                       child: ListView.builder(
-
                           itemCount: 3,
                           scrollDirection: Axis.horizontal,
-                          itemBuilder: (context, index){
-                        return Container(
-                          width: 280,
-                        );
-                      }),
+                          itemBuilder: (context, index) {
+                            return Padding(
+                              padding: const EdgeInsets.only(right: 12),
+                              child: Container(
+                                decoration: BoxDecoration(
+                                  color: Color.fromRGBO(29, 36, 44, 1),
+                                ),
+                                width: 280,
+                                child: Column(
+                                  children: [
+                                    Container(
+                                      height: 140,
+                                      decoration: BoxDecoration(
+                                        color: Colors.blueAccent,
+                                      ),
+                                    )
+                                  ],
+                                ),
+                              ),
+                            );
+                          }),
                     ),
-
                   ),
                 ),
                 Padding(
@@ -329,9 +343,9 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                         ),
                         child: Center(
                             child: Icon(
-                              _menuIndex == 0 ? Icons.home : Icons.home_outlined,
-                              color: _menuIndex == 0 ? const Color.fromRGBO(37, 98, 249, 1) : Colors.grey,
-                            )),
+                          _menuIndex == 0 ? Icons.home : Icons.home_outlined,
+                          color: _menuIndex == 0 ? const Color.fromRGBO(37, 98, 249, 1) : Colors.grey,
+                        )),
                       ),
                     ),
                     GestureDetector(
@@ -349,9 +363,9 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                         ),
                         child: Center(
                             child: Icon(
-                              _menuIndex == 1 ? Icons.favorite : Icons.favorite_border,
-                              color: _menuIndex == 1 ? const Color.fromRGBO(37, 98, 249, 1) : Colors.grey,
-                            )),
+                          _menuIndex == 1 ? Icons.favorite : Icons.favorite_border,
+                          color: _menuIndex == 1 ? const Color.fromRGBO(37, 98, 249, 1) : Colors.grey,
+                        )),
                       ),
                     ),
                     GestureDetector(
@@ -369,9 +383,9 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                         ),
                         child: Center(
                             child: Icon(
-                              _menuIndex == 2 ? Icons.shopping_basket : Icons.shopping_basket_outlined,
-                              color: _menuIndex == 2 ? const Color.fromRGBO(37, 98, 249, 1) : Colors.grey,
-                            )),
+                          _menuIndex == 2 ? Icons.shopping_basket : Icons.shopping_basket_outlined,
+                          color: _menuIndex == 2 ? const Color.fromRGBO(37, 98, 249, 1) : Colors.grey,
+                        )),
                       ),
                     ),
                     Container(
@@ -383,9 +397,9 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                       ),
                       child: const Center(
                           child: Icon(
-                            Icons.person_outlined,
-                            color: Colors.grey,
-                          )),
+                        Icons.person_outlined,
+                        color: Colors.grey,
+                      )),
                     )
                   ],
                 ),
@@ -421,9 +435,9 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                         ),
                         child: Center(
                             child: Icon(
-                              _menuIndex == 0 ? Icons.home : Icons.home_outlined,
-                              color: _menuIndex == 0 ? const Color.fromRGBO(37, 98, 249, 1) : Colors.grey,
-                            )),
+                          _menuIndex == 0 ? Icons.home : Icons.home_outlined,
+                          color: _menuIndex == 0 ? const Color.fromRGBO(37, 98, 249, 1) : Colors.grey,
+                        )),
                       ),
                     ),
                     GestureDetector(
@@ -441,9 +455,9 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                         ),
                         child: Center(
                             child: Icon(
-                              _menuIndex == 1 ? Icons.favorite : Icons.favorite_border,
-                              color: _menuIndex == 1 ? const Color.fromRGBO(37, 98, 249, 1) : Colors.grey,
-                            )),
+                          _menuIndex == 1 ? Icons.favorite : Icons.favorite_border,
+                          color: _menuIndex == 1 ? const Color.fromRGBO(37, 98, 249, 1) : Colors.grey,
+                        )),
                       ),
                     ),
                     GestureDetector(
@@ -461,9 +475,9 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                         ),
                         child: Center(
                             child: Icon(
-                              _menuIndex == 2 ? Icons.shopping_basket : Icons.shopping_basket_outlined,
-                              color: _menuIndex == 2 ? const Color.fromRGBO(37, 98, 249, 1) : Colors.grey,
-                            )),
+                          _menuIndex == 2 ? Icons.shopping_basket : Icons.shopping_basket_outlined,
+                          color: _menuIndex == 2 ? const Color.fromRGBO(37, 98, 249, 1) : Colors.grey,
+                        )),
                       ),
                     ),
                     Container(
@@ -475,9 +489,9 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                       ),
                       child: const Center(
                           child: Icon(
-                            Icons.person_outlined,
-                            color: Colors.grey,
-                          )),
+                        Icons.person_outlined,
+                        color: Colors.grey,
+                      )),
                     )
                   ],
                 ),
@@ -513,9 +527,9 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                         ),
                         child: Center(
                             child: Icon(
-                              _menuIndex == 0 ? Icons.home : Icons.home_outlined,
-                              color: _menuIndex == 0 ? const Color.fromRGBO(37, 98, 249, 1) : Colors.grey,
-                            )),
+                          _menuIndex == 0 ? Icons.home : Icons.home_outlined,
+                          color: _menuIndex == 0 ? const Color.fromRGBO(37, 98, 249, 1) : Colors.grey,
+                        )),
                       ),
                     ),
                     GestureDetector(
@@ -533,9 +547,9 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                         ),
                         child: Center(
                             child: Icon(
-                              _menuIndex == 1 ? Icons.favorite : Icons.favorite_border,
-                              color: _menuIndex == 1 ? const Color.fromRGBO(37, 98, 249, 1) : Colors.grey,
-                            )),
+                          _menuIndex == 1 ? Icons.favorite : Icons.favorite_border,
+                          color: _menuIndex == 1 ? const Color.fromRGBO(37, 98, 249, 1) : Colors.grey,
+                        )),
                       ),
                     ),
                     GestureDetector(
@@ -553,9 +567,9 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                         ),
                         child: Center(
                             child: Icon(
-                              _menuIndex == 2 ? Icons.shopping_basket : Icons.shopping_basket_outlined,
-                              color: _menuIndex == 2 ? const Color.fromRGBO(37, 98, 249, 1) : Colors.grey,
-                            )),
+                          _menuIndex == 2 ? Icons.shopping_basket : Icons.shopping_basket_outlined,
+                          color: _menuIndex == 2 ? const Color.fromRGBO(37, 98, 249, 1) : Colors.grey,
+                        )),
                       ),
                     ),
                     Container(
@@ -567,9 +581,9 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                       ),
                       child: const Center(
                           child: Icon(
-                            Icons.person_outlined,
-                            color: Colors.grey,
-                          )),
+                        Icons.person_outlined,
+                        color: Colors.grey,
+                      )),
                     )
                   ],
                 ),
