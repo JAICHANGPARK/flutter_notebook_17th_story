@@ -20,6 +20,7 @@ class AlphanectMainPage extends StatelessWidget {
                   ),
                   Expanded(
                     child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         const Icon(
                           Icons.camera,
