@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class AlphanectMainPage extends StatelessWidget {
@@ -26,16 +27,20 @@ class AlphanectMainPage extends StatelessWidget {
                           Icons.camera,
                           color: Colors.blueAccent,
                         ),
+                        SizedBox(
+                          width: 4,
+                        ),
                         const Text(
                           "Whitelabel",
                           style: TextStyle(
                             color: Colors.blueAccent,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 18
                           ),
                         ),
                       ],
                     ),
                   ),
-
                   IconButton(
                     onPressed: () {},
                     icon: const Icon(Icons.notifications_outlined),
