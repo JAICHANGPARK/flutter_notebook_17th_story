@@ -79,13 +79,21 @@ class AlphanectMainPage extends StatelessWidget {
                     ),
                   ),
                 ),
-                TabBar(tabs: []),
+                TabBar(tabs: [
+                  Tab(text: "",),
+                  Tab(text: "",),
+                  Tab(text: "",),
+                  Tab(text: "",),
+                ]),
                 Divider(
                   height: 0,
                   color: Colors.grey,
                 ),
                 Expanded(child: TabBarView(
                   children: [
+                    Container(),
+                    Container(),
+                    Container(),
                     Container(),
                   ],
                 )),
