@@ -24,15 +24,15 @@ class AlphanectMainPage extends StatelessWidget {
                     Expanded(
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          const Icon(
+                        children: const [
+                          Icon(
                             Icons.camera,
                             color: Colors.blueAccent,
                           ),
                           SizedBox(
                             width: 4,
                           ),
-                          const Text(
+                          Text(
                             "Whitelabel",
                             style: TextStyle(
                               color: Colors.blueAccent,
@@ -59,7 +59,7 @@ class AlphanectMainPage extends StatelessWidget {
                             child: Container(
                           color: Colors.grey,
                         )),
-                        SizedBox(
+                        const SizedBox(
                           width: 6,
                         ),
                         Container(
@@ -67,7 +67,7 @@ class AlphanectMainPage extends StatelessWidget {
                           width: 58,
                           color: Colors.grey,
                         ),
-                        SizedBox(
+                        const SizedBox(
                           width: 6,
                         ),
                         Container(
@@ -79,13 +79,13 @@ class AlphanectMainPage extends StatelessWidget {
                     ),
                   ),
                 ),
-                TabBar(tabs: [
+                const TabBar(tabs: [
                   Tab(text: "",),
                   Tab(text: "",),
                   Tab(text: "",),
                   Tab(text: "",),
                 ]),
-                Divider(
+                const Divider(
                   height: 0,
                   color: Colors.grey,
                 ),
