@@ -13,14 +13,14 @@ class AlphanectMainPage extends StatelessWidget {
               children: [
                 IconButton(
                   onPressed: () {},
-                  icon: Icon(Icons.menu),
+                  icon: const Icon(Icons.menu),
                   color: Colors.grey,
                 ),
-                Icon(
+                const Icon(
                   Icons.camera,
                   color: Colors.blueAccent,
                 ),
-                Text(
+                const Text(
                   "Whitelabel",
                   style: TextStyle(
                     color: Colors.blueAccent,
@@ -28,9 +28,36 @@ class AlphanectMainPage extends StatelessWidget {
                 ),
                 IconButton(
                   onPressed: () {},
-                  icon: Icon(Icons.notifications_outlined),
+                  icon: const Icon(Icons.notifications_outlined),
                 ),
               ],
+            ),
+            SizedBox(
+              height: 64,
+              child: Row(
+                children: [
+                  Expanded(
+                      child: Container(
+                    color: Colors.grey,
+                  )),
+                  SizedBox(
+                    width: 6,
+                  ),
+                  Container(
+                    height: 64,
+                    width: 64,
+                    color: Colors.grey,
+                  ),
+                  SizedBox(
+                    width: 6,
+                  ),
+                  Container(
+                    height: 64,
+                    width: 64,
+                    color: Colors.grey,
+                  ),
+                ],
+              ),
             )
           ],
         ),
