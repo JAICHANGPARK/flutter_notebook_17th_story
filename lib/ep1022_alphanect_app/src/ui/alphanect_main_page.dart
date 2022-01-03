@@ -7,59 +7,72 @@ class AlphanectMainPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-        child: Column(
-          children: [
-            Row(
-              children: [
-                IconButton(
-                  onPressed: () {},
-                  icon: const Icon(Icons.menu),
-                  color: Colors.grey,
-                ),
-                const Icon(
-                  Icons.camera,
-                  color: Colors.blueAccent,
-                ),
-                const Text(
-                  "Whitelabel",
-                  style: TextStyle(
-                    color: Colors.blueAccent,
-                  ),
-                ),
-                IconButton(
-                  onPressed: () {},
-                  icon: const Icon(Icons.notifications_outlined),
-                ),
-              ],
-            ),
-            SizedBox(
-              height: 64,
-              child: Row(
+        child: Padding(
+          padding: const EdgeInsets.symmetric(vertical: 16),
+          child: Column(
+            children: [
+              Row(
                 children: [
+                  IconButton(
+                    onPressed: () {},
+                    icon: const Icon(Icons.menu),
+                    color: Colors.grey,
+                  ),
                   Expanded(
-                      child: Container(
-                    color: Colors.grey,
-                  )),
-                  SizedBox(
-                    width: 6,
+                    child: Row(
+                      children: [
+                        const Icon(
+                          Icons.camera,
+                          color: Colors.blueAccent,
+                        ),
+                        const Text(
+                          "Whitelabel",
+                          style: TextStyle(
+                            color: Colors.blueAccent,
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
-                  Container(
-                    height: 64,
-                    width: 64,
-                    color: Colors.grey,
-                  ),
-                  SizedBox(
-                    width: 6,
-                  ),
-                  Container(
-                    height: 64,
-                    width: 64,
-                    color: Colors.grey,
+
+                  IconButton(
+                    onPressed: () {},
+                    icon: const Icon(Icons.notifications_outlined),
                   ),
                 ],
               ),
-            )
-          ],
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: SizedBox(
+                  height: 64,
+                  child: Row(
+                    children: [
+                      Expanded(
+                          child: Container(
+                        color: Colors.grey,
+                      )),
+                      SizedBox(
+                        width: 6,
+                      ),
+                      Container(
+                        height: 64,
+                        width: 64,
+                        color: Colors.grey,
+                      ),
+                      SizedBox(
+                        width: 6,
+                      ),
+                      Container(
+                        height: 64,
+                        width: 64,
+                        color: Colors.grey,
+                      ),
+                    ],
+                  ),
+                ),
+              )
+            ],
+          ),
         ),
       ),
     );
