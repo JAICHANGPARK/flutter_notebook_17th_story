@@ -91,10 +91,12 @@ class AlphanectMainPage extends StatelessWidget {
                 ),
                 Expanded(child: TabBarView(
                   children: [
-                    Container(),
-                    Container(),
-                    Container(),
-                    Container(),
+                    Container(
+                      color: Colors.red,
+                    ),
+                    Container( color: Colors.blue,),
+                    Container( color: Colors.green,),
+                    Container( color: Colors.orange,),
                   ],
                 )),
               ],
