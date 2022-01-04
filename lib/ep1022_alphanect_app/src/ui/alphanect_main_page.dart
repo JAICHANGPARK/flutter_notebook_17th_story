@@ -141,7 +141,7 @@ class AlphanectMainPage extends StatelessWidget {
                         child: ListView.builder(
                           itemBuilder: (context, index) {
                             return Container(
-                              height: MediaQuery.of(context).size.width / 2.3,
+                              height: MediaQuery.of(context).size.width / 2.1,
                               decoration: BoxDecoration(
                                   border: Border.all(
                                 color: Colors.grey,
