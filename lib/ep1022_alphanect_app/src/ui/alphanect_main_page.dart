@@ -60,13 +60,13 @@ class AlphanectMainPage extends StatelessWidget {
                               color: Colors.grey[200],
                               borderRadius: BorderRadius.circular(5),
                             ),
-                            padding: EdgeInsets.symmetric(horizontal: 8),
+                            padding: const EdgeInsets.symmetric(horizontal: 8),
                             child: Consumer(
                               builder: (BuildContext context, WidgetRef ref, Widget? child) {
                                 final controller = ref.watch(searchTextControlProvider);
                                 return TextField(
                                   controller: controller,
-                                  decoration: InputDecoration(
+                                  decoration: const InputDecoration(
                                     hintText: "Search..",
                                     border: InputBorder.none,
                                   ),
@@ -111,6 +111,7 @@ class AlphanectMainPage extends StatelessWidget {
                     indicatorColor: Colors.blueAccent,
                     labelColor: Colors.blueAccent,
                     unselectedLabelColor: Colors.black,
+                    indicatorWeight: 2,
                     tabs: [
                       Tab(
                         text: "All",
