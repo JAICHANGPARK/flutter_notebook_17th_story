@@ -87,7 +87,8 @@ class AlphanectMainPage extends StatelessWidget {
                             borderRadius: BorderRadius.circular(5),
                           ),
                           child: const Center(
-                            child: Icon(Icons.import_export, color: Colors.grey,),
+                            child: RotatedBox(quarterTurns: 1,
+                            child: Icon(Icons.import_export, color: Colors.grey,)),
                           ),
                         ),
                         const SizedBox(
