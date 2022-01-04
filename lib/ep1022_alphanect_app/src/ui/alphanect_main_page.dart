@@ -69,6 +69,7 @@ class AlphanectMainPage extends StatelessWidget {
                                   decoration: const InputDecoration(
                                     hintText: "Search..",
                                     border: InputBorder.none,
+                                    icon: Icon(Icons.search),
                                   ),
                                 );
                               },
@@ -79,8 +80,8 @@ class AlphanectMainPage extends StatelessWidget {
                           width: 6,
                         ),
                         Container(
-                          height: 58,
-                          width: 58,
+                          height: 48,
+                          width: 48,
                           decoration: BoxDecoration(
                             color: Colors.grey[200],
                             borderRadius: BorderRadius.circular(5),
@@ -93,8 +94,8 @@ class AlphanectMainPage extends StatelessWidget {
                           width: 6,
                         ),
                         Container(
-                          height: 58,
-                          width: 58,
+                          height: 48,
+                          width: 48,
                           decoration: BoxDecoration(
                             color: Colors.grey[200],
                             borderRadius: BorderRadius.circular(5),
