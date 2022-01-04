@@ -1,5 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+
+final searchTextControlProvider = Provider((ref)=> TextEditingController());
 
 class AlphanectMainPage extends StatelessWidget {
   const AlphanectMainPage({Key? key}) : super(key: key);
@@ -75,7 +78,9 @@ class AlphanectMainPage extends StatelessWidget {
                     ),
                   ),
                 ),
-                const TabBar(indicatorColor: Colors.blueAccent, unselectedLabelColor: Colors.black, tabs: [
+                const TabBar(indicatorColor: Colors.blueAccent,
+                    labelColor: Colors.blueAccent,
+                    unselectedLabelColor: Colors.black, tabs: [
                   Tab(
                     text: "All",
                   ),
