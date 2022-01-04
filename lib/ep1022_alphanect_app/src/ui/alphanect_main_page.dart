@@ -60,6 +60,12 @@ class AlphanectMainPage extends StatelessWidget {
                               color: Colors.grey[200],
                               borderRadius: BorderRadius.circular(5),
                             ),
+                            child: Consumer(
+                              builder: (BuildContext context, WidgetRef ref, Widget? child) {
+                                return TextField();
+                              },
+
+                            ),
                           ),
                         ),
                         const SizedBox(
@@ -72,7 +78,7 @@ class AlphanectMainPage extends StatelessWidget {
                             color: Colors.grey[200],
                             borderRadius: BorderRadius.circular(5),
                           ),
-                          child: Center(
+                          child: const Center(
                             child: Icon(Icons.import_export),
                           ),
                         ),
@@ -86,7 +92,7 @@ class AlphanectMainPage extends StatelessWidget {
                             color: Colors.grey[200],
                             borderRadius: BorderRadius.circular(5),
                           ),
-                          child: Center(
+                          child: const Center(
                             child: Icon(Icons.filter_list),
                           ),
                         ),
