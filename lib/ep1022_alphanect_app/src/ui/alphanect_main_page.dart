@@ -137,15 +137,18 @@ class AlphanectMainPage extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: Container(
-                        color: Colors.red,
+                        
                         child: ListView.builder(
                           itemBuilder: (context, index) {
-                            return Container(
-                              height: MediaQuery.of(context).size.width / 2.1,
-                              decoration: BoxDecoration(
-                                  border: Border.all(
-                                color: Colors.grey,
-                              )),
+                            return Padding(
+                              padding: const EdgeInsets.only(bottom: 8),
+                              child: Container(
+                                height: MediaQuery.of(context).size.width / 1.5,
+                                decoration: BoxDecoration(
+                                    border: Border.all(
+                                  color: Colors.grey,
+                                )),
+                              ),
                             );
                           },
                         ),
