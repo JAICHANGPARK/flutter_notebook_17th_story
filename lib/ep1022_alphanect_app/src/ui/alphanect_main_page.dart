@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-final searchTextControlProvider = Provider((ref)=> TextEditingController());
+final searchTextControlProvider = Provider((ref) => TextEditingController());
 
 class AlphanectMainPage extends StatelessWidget {
   const AlphanectMainPage({Key? key}) : super(key: key);
@@ -55,16 +55,12 @@ class AlphanectMainPage extends StatelessWidget {
                     child: Row(
                       children: [
                         Expanded(
-                            child: Container(
-                          color: Colors.grey,
-                        )),
-                        const SizedBox(
-                          width: 6,
-                        ),
-                        Container(
-                          height: 58,
-                          width: 58,
-                          color: Colors.grey,
+                          child: Container(
+                            decoration: BoxDecoration(
+                              color: Colors.grey[200],
+                              borderRadius: BorderRadius.circular(5),
+                            ),
+                          ),
                         ),
                         const SizedBox(
                           width: 6,
@@ -72,28 +68,50 @@ class AlphanectMainPage extends StatelessWidget {
                         Container(
                           height: 58,
                           width: 58,
-                          color: Colors.grey,
+                          decoration: BoxDecoration(
+                            color: Colors.grey[200],
+                            borderRadius: BorderRadius.circular(5),
+                          ),
+                          child: Center(
+                            child: Icon(Icons.import_export),
+                          ),
+                        ),
+                        const SizedBox(
+                          width: 6,
+                        ),
+                        Container(
+                          height: 58,
+                          width: 58,
+                          decoration: BoxDecoration(
+                            color: Colors.grey[200],
+                            borderRadius: BorderRadius.circular(5),
+                          ),
+                          child: Center(
+                            child: Icon(Icons.filter_list),
+                          ),
                         ),
                       ],
                     ),
                   ),
                 ),
-                const TabBar(indicatorColor: Colors.blueAccent,
+                const TabBar(
+                    indicatorColor: Colors.blueAccent,
                     labelColor: Colors.blueAccent,
-                    unselectedLabelColor: Colors.black, tabs: [
-                  Tab(
-                    text: "All",
-                  ),
-                  Tab(
-                    text: "Open (32)",
-                  ),
-                  Tab(
-                    text: "Upcoming (8)",
-                  ),
-                  Tab(
-                    text: "Closed (9)",
-                  ),
-                ]),
+                    unselectedLabelColor: Colors.black,
+                    tabs: [
+                      Tab(
+                        text: "All",
+                      ),
+                      Tab(
+                        text: "Open (32)",
+                      ),
+                      Tab(
+                        text: "Upcoming (8)",
+                      ),
+                      Tab(
+                        text: "Closed (9)",
+                      ),
+                    ]),
                 const Divider(
                   height: 0,
                   color: Colors.grey,
