@@ -87,7 +87,7 @@ class AlphanectMainPage extends StatelessWidget {
                             borderRadius: BorderRadius.circular(5),
                           ),
                           child: const Center(
-                            child: Icon(Icons.import_export),
+                            child: Icon(Icons.import_export, color: Colors.grey,),
                           ),
                         ),
                         const SizedBox(
@@ -101,7 +101,7 @@ class AlphanectMainPage extends StatelessWidget {
                             borderRadius: BorderRadius.circular(5),
                           ),
                           child: const Center(
-                            child: Icon(Icons.filter_list),
+                            child: Icon(Icons.filter_list, color: Colors.grey,),
                           ),
                         ),
                       ],
