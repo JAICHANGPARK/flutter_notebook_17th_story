@@ -134,8 +134,22 @@ class AlphanectMainPage extends StatelessWidget {
                 Expanded(
                     child: TabBarView(
                   children: [
-                    Container(
-                      color: Colors.red,
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Container(
+                        color: Colors.red,
+                        child: ListView.builder(
+                          itemBuilder: (context, index) {
+                            return Container(
+                              height: MediaQuery.of(context).size.width / 2.3,
+                              decoration: BoxDecoration(
+                                  border: Border.all(
+                                color: Colors.grey,
+                              )),
+                            );
+                          },
+                        ),
+                      ),
                     ),
                     Container(
                       color: Colors.blue,
