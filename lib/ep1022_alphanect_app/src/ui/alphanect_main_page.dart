@@ -137,7 +137,6 @@ class AlphanectMainPage extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: Container(
-                        
                         child: ListView.builder(
                           itemBuilder: (context, index) {
                             return Padding(
@@ -145,9 +144,10 @@ class AlphanectMainPage extends StatelessWidget {
                               child: Container(
                                 height: MediaQuery.of(context).size.width / 1.5,
                                 decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(8),
                                     border: Border.all(
-                                  color: Colors.grey,
-                                )),
+                                      color: Colors.grey,
+                                    )),
                               ),
                             );
                           },
