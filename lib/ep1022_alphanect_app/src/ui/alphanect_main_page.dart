@@ -34,11 +34,7 @@ class AlphanectMainPage extends StatelessWidget {
                           ),
                           Text(
                             "Whitelabel",
-                            style: TextStyle(
-                              color: Colors.blueAccent,
-                              fontWeight: FontWeight.bold,
-                              fontSize: 18
-                            ),
+                            style: TextStyle(color: Colors.blueAccent, fontWeight: FontWeight.bold, fontSize: 18),
                           ),
                         ],
                       ),
@@ -79,24 +75,39 @@ class AlphanectMainPage extends StatelessWidget {
                     ),
                   ),
                 ),
-                const TabBar(tabs: [
-                  Tab(text: "",),
-                  Tab(text: "",),
-                  Tab(text: "",),
-                  Tab(text: "",),
+                const TabBar(indicatorColor: Colors.blueAccent, unselectedLabelColor: Colors.black, tabs: [
+                  Tab(
+                    text: "All",
+                  ),
+                  Tab(
+                    text: "Open (32)",
+                  ),
+                  Tab(
+                    text: "Upcoming (8)",
+                  ),
+                  Tab(
+                    text: "Closed (9)",
+                  ),
                 ]),
                 const Divider(
                   height: 0,
                   color: Colors.grey,
                 ),
-                Expanded(child: TabBarView(
+                Expanded(
+                    child: TabBarView(
                   children: [
                     Container(
                       color: Colors.red,
                     ),
-                    Container( color: Colors.blue,),
-                    Container( color: Colors.green,),
-                    Container( color: Colors.orange,),
+                    Container(
+                      color: Colors.blue,
+                    ),
+                    Container(
+                      color: Colors.green,
+                    ),
+                    Container(
+                      color: Colors.orange,
+                    ),
                   ],
                 )),
               ],
