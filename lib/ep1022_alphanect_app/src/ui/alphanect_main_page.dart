@@ -62,7 +62,11 @@ class AlphanectMainPage extends StatelessWidget {
                             ),
                             child: Consumer(
                               builder: (BuildContext context, WidgetRef ref, Widget? child) {
-                                return TextField();
+                                return const TextField(
+                                  decoration: InputDecoration(
+                                    hintText: "Search.."
+                                  ),
+                                );
                               },
 
                             ),
