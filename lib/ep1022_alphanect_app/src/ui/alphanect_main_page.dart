@@ -196,6 +196,26 @@ class AlphanectMainPage extends StatelessWidget {
                                                   ),
                                                 ),
                                               ),
+                                            ),
+                                            Positioned(child: Container(
+                                              child: Center(
+                                                child: Text("Upcoming",style: TextStyle(
+                                                  color: Colors.blueAccent
+                                                ),),
+                                              ),
+                                            )),
+                                            Positioned(
+                                              bottom: 12,
+                                              right: 12,
+                                              child: Card(
+                                                child: Row(
+                                                  children: [
+                                                    Icon(Icons.notifications_outlined),
+                                                    Text("Notify on launch"),
+                                                  ],
+                                                ),
+                                              ),
+
                                             )
                                           ],
                                         )),
