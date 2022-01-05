@@ -4,6 +4,7 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:percent_indicator/circular_percent_indicator.dart';
 
 final searchTextControlProvider = Provider((ref) => TextEditingController());
 
@@ -205,7 +206,7 @@ class AlphanectMainPage extends StatelessWidget {
                                                     color: Colors.white,
                                                     borderRadius: BorderRadius.circular(12),
                                                   ),
-                                                  padding: EdgeInsets.symmetric(horizontal: 8, vertical: 2),
+                                                  padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
                                                   child: const Center(
                                                     child: Text(
                                                       "Upcoming",
@@ -242,7 +243,42 @@ class AlphanectMainPage extends StatelessWidget {
                                             )
                                           ],
                                         )),
-                                    const Expanded(flex: 4, child: Placeholder()),
+                                    Expanded(
+                                        flex: 4,
+                                        child: Padding(
+                                          padding: const EdgeInsets.all(8.0),
+                                          child: Column(
+                                            children: [
+                                              Row(
+                                                children: [
+                                                  const Text(
+                                                    "Senior Living",
+                                                    style: TextStyle(
+                                                      fontSize: 16,
+                                                    ),
+                                                  ),
+                                                  const Spacer(),
+                                                  const Text(
+                                                    "80% funded",
+                                                    style: TextStyle(
+                                                      fontSize: 12,
+                                                    ),
+                                                  ),
+                                                  SizedBox(
+                                                    width: 4,
+                                                  ),
+                                                  CircularPercentIndicator(
+                                                    radius: 12,
+                                                    lineWidth: 2,
+                                                    backgroundWidth: 2,
+                                                    progressColor: Colors.blueAccent,
+                                                    percent: 0.8,
+                                                  )
+                                                ],
+                                              )
+                                            ],
+                                          ),
+                                        )),
                                     const Expanded(flex: 3, child: Placeholder()),
                                   ],
                                 ),
