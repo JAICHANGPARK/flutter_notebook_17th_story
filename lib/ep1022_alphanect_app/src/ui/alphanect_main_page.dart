@@ -275,11 +275,50 @@ class AlphanectMainPage extends StatelessWidget {
                                                     percent: 0.8,
                                                   )
                                                 ],
-                                              )
+                                              ),
+                                              SizedBox(
+                                                height: 12,
+                                              ),
+                                              Text(
+                                                "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                                                style: TextStyle(fontSize: 12),
+                                              ),
                                             ],
                                           ),
                                         )),
-                                    const Expanded(flex: 3, child: Placeholder()),
+                                    Divider(
+                                      height: 8,
+                                    ),
+                                    Expanded(
+                                        flex: 3,
+                                        child: Padding(
+                                          padding: const EdgeInsets.all(8.0),
+                                          child: Row(
+                                            children: [
+                                              Expanded(
+                                                  child: Column(
+                                                crossAxisAlignment: CrossAxisAlignment.start,
+                                                children: [Text("Target size",style: TextStyle(
+                                                  fontSize: 12
+                                                ),), Text("\$ 500M")],
+                                              )),
+                                              Expanded(
+                                                  child: Column(
+                                                crossAxisAlignment: CrossAxisAlignment.start,
+                                                children: [Text("IRR",style: TextStyle(
+                                                    fontSize: 12
+                                                ),), Text("7.0 %")],
+                                              )),
+                                              Expanded(
+                                                  child: Column(
+                                                crossAxisAlignment: CrossAxisAlignment.start,
+                                                children: [Text("Cash on cash",style: TextStyle(
+                                                    fontSize: 12
+                                                ),), Text("5.0%")],
+                                              )),
+                                            ],
+                                          ),
+                                        )),
                                   ],
                                 ),
                               ),
