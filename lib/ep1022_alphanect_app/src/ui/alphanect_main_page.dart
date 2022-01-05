@@ -87,8 +87,12 @@ class AlphanectMainPage extends StatelessWidget {
                             borderRadius: BorderRadius.circular(5),
                           ),
                           child: const Center(
-                            child: RotatedBox(quarterTurns: 1,
-                            child: Icon(Icons.import_export, color: Colors.grey,)),
+                            child: RotatedBox(
+                                quarterTurns: 1,
+                                child: Icon(
+                                  Icons.import_export,
+                                  color: Colors.grey,
+                                )),
                           ),
                         ),
                         const SizedBox(
@@ -102,7 +106,10 @@ class AlphanectMainPage extends StatelessWidget {
                             borderRadius: BorderRadius.circular(5),
                           ),
                           child: const Center(
-                            child: Icon(Icons.filter_list, color: Colors.grey,),
+                            child: Icon(
+                              Icons.filter_list,
+                              color: Colors.grey,
+                            ),
                           ),
                         ),
                       ],
@@ -145,10 +152,18 @@ class AlphanectMainPage extends StatelessWidget {
                               child: Container(
                                 height: MediaQuery.of(context).size.width / 1.5,
                                 decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(8),
-                                    border: Border.all(
-                                      color: Colors.grey,
-                                    )),
+                                  borderRadius: BorderRadius.circular(8),
+                                  border: Border.all(
+                                    color: Colors.grey,
+                                  ),
+                                ),
+                                child: Column(
+                                  children: [
+                                    Expanded(flex: 4,child: Placeholder()),
+                                    Expanded(flex: 4,child: Placeholder()),
+                                    Expanded(flex: 3,child: Placeholder()),
+                                  ],
+                                ),
                               ),
                             );
                           },
