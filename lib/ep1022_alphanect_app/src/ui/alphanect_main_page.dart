@@ -1,3 +1,6 @@
+import 'dart:ui';
+
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -159,9 +162,45 @@ class AlphanectMainPage extends StatelessWidget {
                                 ),
                                 child: Column(
                                   children: [
-                                    Expanded(flex: 4,child: Placeholder()),
-                                    Expanded(flex: 4,child: Placeholder()),
-                                    Expanded(flex: 3,child: Placeholder()),
+                                    Expanded(
+                                        flex: 4,
+                                        child: Stack(
+                                          children: [
+                                            Positioned(
+                                              left: 0,
+                                              right: 0,
+                                              top: 0,
+                                              bottom: 0,
+                                              child: ClipRect(
+                                                child: Container(
+                                                  decoration: const BoxDecoration(
+                                                    borderRadius: BorderRadius.only(
+                                                      topRight: Radius.circular(8),
+                                                      topLeft: Radius.circular(8),
+                                                    ),
+                                                    image: DecorationImage(
+                                                      image: CachedNetworkImageProvider(
+                                                        "https://cdn.pixabay.com/photo/2017/08/27/10/16/interior-2685521__340.jpg",
+                                                      ),
+                                                      fit: BoxFit.cover,
+                                                    ),
+                                                  ),
+                                                  child: BackdropFilter(
+                                                    filter: ImageFilter.blur(
+                                                      sigmaX: 2,
+                                                      sigmaY: 2,
+                                                    ),
+                                                    child: Container(
+                                                      color: Colors.white.withOpacity(0.1),
+                                                    ),
+                                                  ),
+                                                ),
+                                              ),
+                                            )
+                                          ],
+                                        )),
+                                    const Expanded(flex: 4, child: Placeholder()),
+                                    const Expanded(flex: 3, child: Placeholder()),
                                   ],
                                 ),
                               ),
