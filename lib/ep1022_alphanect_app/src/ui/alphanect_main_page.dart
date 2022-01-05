@@ -163,7 +163,7 @@ class AlphanectMainPage extends StatelessWidget {
                                 child: Column(
                                   children: [
                                     Expanded(
-                                        flex: 4,
+                                        flex: 5,
                                         child: Stack(
                                           children: [
                                             Positioned(
@@ -204,14 +204,15 @@ class AlphanectMainPage extends StatelessWidget {
                                                   decoration: BoxDecoration(
                                                     color: Colors.white,
                                                     borderRadius: BorderRadius.circular(12),
-
                                                   ),
                                                   padding: EdgeInsets.symmetric(horizontal: 8, vertical: 2),
                                                   child: const Center(
                                                     child: Text(
                                                       "Upcoming",
-                                                      style: TextStyle(color: Colors.blueAccent,
-                                                      fontSize: 12, ),
+                                                      style: TextStyle(
+                                                        color: Colors.blueAccent,
+                                                        fontSize: 12,
+                                                      ),
                                                     ),
                                                   ),
                                                 )),
@@ -219,11 +220,23 @@ class AlphanectMainPage extends StatelessWidget {
                                               bottom: 12,
                                               right: 12,
                                               child: Card(
-                                                child: Row(
-                                                  children: const [
-                                                    Icon(Icons.notifications_outlined),
-                                                    Text("Notify on launch"),
-                                                  ],
+                                                child: Padding(
+                                                  padding: const EdgeInsets.symmetric(
+                                                    horizontal: 12,
+                                                    vertical: 7,
+                                                  ),
+                                                  child: Row(
+                                                    children: const [
+                                                      Icon(
+                                                        Icons.notifications_outlined,
+                                                        color: Colors.grey,
+                                                      ),
+                                                      SizedBox(
+                                                        width: 8,
+                                                      ),
+                                                      Text("Notify on launch"),
+                                                    ],
+                                                  ),
                                                 ),
                                               ),
                                             )
