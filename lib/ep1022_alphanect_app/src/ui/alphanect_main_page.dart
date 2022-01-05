@@ -298,23 +298,38 @@ class AlphanectMainPage extends StatelessWidget {
                                               Expanded(
                                                   child: Column(
                                                 crossAxisAlignment: CrossAxisAlignment.start,
-                                                children: const [Text("Target size",style: TextStyle(
-                                                  fontSize: 12
-                                                ),), Text("\$ 500M")],
+                                                children: const [
+                                                  Text(
+                                                    "Target size",
+                                                    style: TextStyle(fontSize: 12),
+                                                  ),
+                                                  SizedBox(height: 4,),
+                                                  Text("\$ 500M")
+                                                ],
                                               )),
                                               Expanded(
                                                   child: Column(
                                                 crossAxisAlignment: CrossAxisAlignment.start,
-                                                children: const [Text("IRR",style: TextStyle(
-                                                    fontSize: 12
-                                                ),), Text("7.0 %")],
+                                                children: const [
+                                                  Text(
+                                                    "IRR",
+                                                    style: TextStyle(fontSize: 12),
+                                                  ),
+                                                  SizedBox(height: 4,),
+                                                  Text("7.0 %")
+                                                ],
                                               )),
                                               Expanded(
                                                   child: Column(
                                                 crossAxisAlignment: CrossAxisAlignment.start,
-                                                children: const [Text("Cash on cash",style: TextStyle(
-                                                    fontSize: 12
-                                                ),), Text("5.0%")],
+                                                children: const [
+                                                  Text(
+                                                    "Cash on cash",
+                                                    style: TextStyle(fontSize: 12),
+                                                  ),
+                                                  SizedBox(height: 4,),
+                                                  Text("5.0%")
+                                                ],
                                               )),
                                             ],
                                           ),
