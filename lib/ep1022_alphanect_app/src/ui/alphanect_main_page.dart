@@ -197,25 +197,35 @@ class AlphanectMainPage extends StatelessWidget {
                                                 ),
                                               ),
                                             ),
-                                            Positioned(child: Container(
-                                              child: Center(
-                                                child: Text("Upcoming",style: TextStyle(
-                                                  color: Colors.blueAccent
-                                                ),),
-                                              ),
-                                            )),
+                                            Positioned(
+                                                right: 12,
+                                                top: 12,
+                                                child: Container(
+                                                  decoration: BoxDecoration(
+                                                    color: Colors.white,
+                                                    borderRadius: BorderRadius.circular(12),
+
+                                                  ),
+                                                  padding: EdgeInsets.symmetric(horizontal: 8, vertical: 2),
+                                                  child: const Center(
+                                                    child: Text(
+                                                      "Upcoming",
+                                                      style: TextStyle(color: Colors.blueAccent,
+                                                      fontSize: 12, ),
+                                                    ),
+                                                  ),
+                                                )),
                                             Positioned(
                                               bottom: 12,
                                               right: 12,
                                               child: Card(
                                                 child: Row(
-                                                  children: [
+                                                  children: const [
                                                     Icon(Icons.notifications_outlined),
                                                     Text("Notify on launch"),
                                                   ],
                                                 ),
                                               ),
-
                                             )
                                           ],
                                         )),
