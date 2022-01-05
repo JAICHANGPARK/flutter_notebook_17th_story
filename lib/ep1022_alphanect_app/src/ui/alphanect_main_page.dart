@@ -298,21 +298,21 @@ class AlphanectMainPage extends StatelessWidget {
                                               Expanded(
                                                   child: Column(
                                                 crossAxisAlignment: CrossAxisAlignment.start,
-                                                children: [Text("Target size",style: TextStyle(
+                                                children: const [Text("Target size",style: TextStyle(
                                                   fontSize: 12
                                                 ),), Text("\$ 500M")],
                                               )),
                                               Expanded(
                                                   child: Column(
                                                 crossAxisAlignment: CrossAxisAlignment.start,
-                                                children: [Text("IRR",style: TextStyle(
+                                                children: const [Text("IRR",style: TextStyle(
                                                     fontSize: 12
                                                 ),), Text("7.0 %")],
                                               )),
                                               Expanded(
                                                   child: Column(
                                                 crossAxisAlignment: CrossAxisAlignment.start,
-                                                children: [Text("Cash on cash",style: TextStyle(
+                                                children: const [Text("Cash on cash",style: TextStyle(
                                                     fontSize: 12
                                                 ),), Text("5.0%")],
                                               )),
