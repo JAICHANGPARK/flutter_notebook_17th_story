@@ -303,8 +303,15 @@ class AlphanectMainPage extends StatelessWidget {
                                                     "Target size",
                                                     style: TextStyle(fontSize: 12),
                                                   ),
-                                                  SizedBox(height: 4,),
-                                                  Text("\$ 500M")
+                                                  SizedBox(
+                                                    height: 4,
+                                                  ),
+                                                  Text(
+                                                    "\$ 500M",
+                                                    style: TextStyle(
+                                                      fontWeight: FontWeight.bold,
+                                                    ),
+                                                  )
                                                 ],
                                               )),
                                               Expanded(
@@ -315,8 +322,15 @@ class AlphanectMainPage extends StatelessWidget {
                                                     "IRR",
                                                     style: TextStyle(fontSize: 12),
                                                   ),
-                                                  SizedBox(height: 4,),
-                                                  Text("7.0 %")
+                                                  SizedBox(
+                                                    height: 4,
+                                                  ),
+                                                  Text(
+                                                    "7.0 %",
+                                                    style: TextStyle(
+                                                      fontWeight: FontWeight.bold,
+                                                    ),
+                                                  )
                                                 ],
                                               )),
                                               Expanded(
@@ -327,8 +341,15 @@ class AlphanectMainPage extends StatelessWidget {
                                                     "Cash on cash",
                                                     style: TextStyle(fontSize: 12),
                                                   ),
-                                                  SizedBox(height: 4,),
-                                                  Text("5.0%")
+                                                  SizedBox(
+                                                    height: 4,
+                                                  ),
+                                                  Text(
+                                                    "5.0%",
+                                                    style: TextStyle(
+                                                      fontWeight: FontWeight.bold,
+                                                    ),
+                                                  )
                                                 ],
                                               )),
                                             ],
