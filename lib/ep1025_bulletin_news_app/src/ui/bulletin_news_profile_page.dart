@@ -15,7 +15,12 @@ class BulletinNewsProfilePage extends StatelessWidget {
               right: 0,
               left: 0,
               child: Container(
-                
+                height: 84,
+                child: Row(
+                  children: [
+
+                  ],
+                ),
               ),
             )
           ],
