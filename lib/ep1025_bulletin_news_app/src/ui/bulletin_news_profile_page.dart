@@ -64,6 +64,7 @@ class BulletinNewsProfilePage extends StatelessWidget {
                   color: Colors.white,
                 ),
                 child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                     SizedBox(
                       width: 48,
@@ -78,9 +79,9 @@ class BulletinNewsProfilePage extends StatelessWidget {
                             height: 3,
                             decoration: const BoxDecoration(
                               color: Colors.black,
-                              borderRadius: const BorderRadius.only(
-                                topLeft: const Radius.circular(4),
-                                topRight: const Radius.circular(4),
+                              borderRadius: BorderRadius.only(
+                                topLeft: Radius.circular(4),
+                                topRight: Radius.circular(4),
                               ),
                             ),
                           )
@@ -94,15 +95,15 @@ class BulletinNewsProfilePage extends StatelessWidget {
                           Expanded(
                             child: Container(),
                           ),
-                          IconButton(onPressed: () {}, icon: const Icon(Icons.home)),
+                          IconButton(onPressed: () {}, icon: const Icon(Icons.location_searching)),
                           const Spacer(),
                           Container(
                             height: 3,
                             decoration: const BoxDecoration(
                               color: Colors.black,
-                              borderRadius: const BorderRadius.only(
-                                topLeft: const Radius.circular(4),
-                                topRight: const Radius.circular(4),
+                              borderRadius: BorderRadius.only(
+                                topLeft: Radius.circular(4),
+                                topRight: Radius.circular(4),
                               ),
                             ),
                           )
@@ -116,15 +117,15 @@ class BulletinNewsProfilePage extends StatelessWidget {
                           Expanded(
                             child: Container(),
                           ),
-                          IconButton(onPressed: () {}, icon: const Icon(Icons.home)),
+                          IconButton(onPressed: () {}, icon: const Icon(Icons.all_inbox)),
                           const Spacer(),
                           Container(
                             height: 3,
                             decoration: const BoxDecoration(
                               color: Colors.black,
-                              borderRadius: const BorderRadius.only(
-                                topLeft: const Radius.circular(4),
-                                topRight: const Radius.circular(4),
+                              borderRadius: BorderRadius.only(
+                                topLeft: Radius.circular(4),
+                                topRight: Radius.circular(4),
                               ),
                             ),
                           )
@@ -138,15 +139,15 @@ class BulletinNewsProfilePage extends StatelessWidget {
                           Expanded(
                             child: Container(),
                           ),
-                          IconButton(onPressed: () {}, icon: const Icon(Icons.home)),
+                          IconButton(onPressed: () {}, icon: const Icon(Icons.person)),
                           const Spacer(),
                           Container(
                             height: 3,
                             decoration: const BoxDecoration(
                               color: Colors.black,
-                              borderRadius: const BorderRadius.only(
-                                topLeft: const Radius.circular(4),
-                                topRight: const Radius.circular(4),
+                              borderRadius: BorderRadius.only(
+                                topLeft: Radius.circular(4),
+                                topRight: Radius.circular(4),
                               ),
                             ),
                           )
