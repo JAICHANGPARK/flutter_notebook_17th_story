@@ -13,7 +13,7 @@ class BulletinNewsProfilePage extends StatelessWidget {
         child: Stack(
           children: [
             Positioned(
-              top: 0,
+              top: 16,
               right: 16,
               left: 16,
               bottom: 100,
@@ -79,6 +79,12 @@ class BulletinNewsProfilePage extends StatelessWidget {
                       decoration: BoxDecoration(
                         color: Colors.grey[200],
                       ),
+                    ),
+                    Row(
+                      children: [
+                        Text("Your Collections"),
+                        TextButton(onPressed: (){}, child: Text("Show all"),)
+                      ],
                     )
                   ],
                 ),
