@@ -71,6 +71,15 @@ class BulletinNewsProfilePage extends StatelessWidget {
                         ],
                       ),
                     ),
+                    SizedBox(
+                      height: 24,
+                    ),
+                    Container(
+                      height: 72,
+                      decoration: BoxDecoration(
+                        color: Colors.grey[200],
+                      ),
+                    )
                   ],
                 ),
               ),
