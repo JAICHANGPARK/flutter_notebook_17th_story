@@ -24,13 +24,25 @@ class BulletinNewsProfilePage extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Container(
-                      decoration: BoxDecoration(color: Colors.grey[200], borderRadius: BorderRadius.circular(24),),
-                      padding: EdgeInsets.symmetric(horizontal: 12, vertical: 8,),
+                      decoration: BoxDecoration(
+                        color: Colors.grey[200],
+                        borderRadius: BorderRadius.circular(24),
+                      ),
+                      padding: EdgeInsets.symmetric(
+                        horizontal: 12,
+                        vertical: 8,
+                      ),
                       child: Row(
                         mainAxisSize: MainAxisSize.min,
                         children: const [
-                          Icon(Icons.arrow_back, color: Colors.black, size: 18,),
-                          SizedBox(width: 8,),
+                          Icon(
+                            Icons.arrow_back,
+                            color: Colors.black,
+                            size: 18,
+                          ),
+                          SizedBox(
+                            width: 8,
+                          ),
                           Text("Profile",
                               style: TextStyle(
                                 color: Colors.black,
@@ -52,11 +64,22 @@ class BulletinNewsProfilePage extends StatelessWidget {
                   color: Colors.white,
                 ),
                 child: Row(
-                  children:  [
-                    Column(
-                      children: [
-                        IconButton(onPressed: (){}, icon: Icon(Icons.home))
-                      ],
+                  children: [
+                    SizedBox(
+                      width: 48,
+                      child: Column(
+                        children: [
+                          IconButton(onPressed: () {}, icon: Icon(Icons.home)),
+                          Spacer(),
+                          Container(
+                            height: 4,
+
+                            decoration: BoxDecoration(
+                              color: Colors.black,
+                            ),
+                          )
+                        ],
+                      ),
                     )
                   ],
                 ),
