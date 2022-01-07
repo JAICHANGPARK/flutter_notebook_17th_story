@@ -27,7 +27,7 @@ class BulletinNewsProfilePage extends StatelessWidget {
                       decoration: BoxDecoration(color: Colors.grey[200], borderRadius: BorderRadius.circular(16)),
                       child: Row(
                         mainAxisSize: MainAxisSize.min,
-                        children: [
+                        children: const [
                           Icon(Icons.arrow_back, color: Colors.black),
                           Text("Profile",
                               style: TextStyle(
@@ -50,7 +50,7 @@ class BulletinNewsProfilePage extends StatelessWidget {
                   color: Colors.white,
                 ),
                 child: Row(
-                  children: [],
+                  children: const [],
                 ),
               ),
             )
