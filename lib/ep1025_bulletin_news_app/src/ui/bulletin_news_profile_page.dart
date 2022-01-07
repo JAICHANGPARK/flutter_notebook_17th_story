@@ -75,10 +75,13 @@ class BulletinNewsProfilePage extends StatelessWidget {
                           IconButton(onPressed: () {}, icon: const Icon(Icons.home)),
                           const Spacer(),
                           Container(
-                            height: 4,
-
-                            decoration: const BoxDecoration(
+                            height: 3,
+                            decoration: BoxDecoration(
                               color: Colors.black,
+                              borderRadius: BorderRadius.only(
+                                topLeft: Radius.circular(4),
+                                topRight: Radius.circular(4),
+                              ),
                             ),
                           )
                         ],
