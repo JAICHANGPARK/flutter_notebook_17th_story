@@ -17,7 +17,7 @@ class BulletinNewsProfilePage extends StatelessWidget {
               bottom: 100,
               child: Container(
                 height: 84,
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                   color: Colors.blue,
                 ),
                 child: Column(
@@ -28,7 +28,7 @@ class BulletinNewsProfilePage extends StatelessWidget {
                         color: Colors.grey[200],
                         borderRadius: BorderRadius.circular(24),
                       ),
-                      padding: EdgeInsets.symmetric(
+                      padding: const EdgeInsets.symmetric(
                         horizontal: 12,
                         vertical: 8,
                       ),
@@ -60,7 +60,7 @@ class BulletinNewsProfilePage extends StatelessWidget {
               left: 0,
               child: Container(
                 height: 84,
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                   color: Colors.white,
                 ),
                 child: Row(
@@ -69,12 +69,15 @@ class BulletinNewsProfilePage extends StatelessWidget {
                       width: 48,
                       child: Column(
                         children: [
-                          IconButton(onPressed: () {}, icon: Icon(Icons.home)),
-                          Spacer(),
+                          Expanded(
+                            child: Container(),
+                          ),
+                          IconButton(onPressed: () {}, icon: const Icon(Icons.home)),
+                          const Spacer(),
                           Container(
                             height: 4,
 
-                            decoration: BoxDecoration(
+                            decoration: const BoxDecoration(
                               color: Colors.black,
                             ),
                           )
