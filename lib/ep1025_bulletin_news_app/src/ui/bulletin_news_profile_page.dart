@@ -51,7 +51,26 @@ class BulletinNewsProfilePage extends StatelessWidget {
                               )),
                         ],
                       ),
-                    )
+                    ),
+                    const SizedBox(
+                      height: 8,
+                    ),
+                    SizedBox(
+                      height: 200,
+                      child: Container(
+                        color: Colors.red,
+                      ),
+                    ),
+                    SizedBox(
+                      width: double.infinity,
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Text("Dreamwalker"),
+                          Text("@dreamwalker_flutter"),
+                        ],
+                      ),
+                    ),
                   ],
                 ),
               ),
@@ -78,7 +97,11 @@ class BulletinNewsProfilePage extends StatelessWidget {
                               Expanded(
                                 child: Container(),
                               ),
-                              IconButton(onPressed: () {}, icon: const Icon(Icons.home)),
+                              IconButton(
+                                  onPressed: () {
+                                    ref.read(bulletinNewsTabProvider.notifier).state = 0;
+                                  },
+                                  icon: const Icon(Icons.home)),
                               const Spacer(),
                               Container(
                                 height: 3,
@@ -100,7 +123,11 @@ class BulletinNewsProfilePage extends StatelessWidget {
                               Expanded(
                                 child: Container(),
                               ),
-                              IconButton(onPressed: () {}, icon: const Icon(Icons.location_searching)),
+                              IconButton(
+                                  onPressed: () {
+                                    ref.read(bulletinNewsTabProvider.notifier).state = 1;
+                                  },
+                                  icon: const Icon(Icons.location_searching)),
                               const Spacer(),
                               Container(
                                 height: 3,
@@ -122,7 +149,11 @@ class BulletinNewsProfilePage extends StatelessWidget {
                               Expanded(
                                 child: Container(),
                               ),
-                              IconButton(onPressed: () {}, icon: const Icon(Icons.all_inbox)),
+                              IconButton(
+                                  onPressed: () {
+                                    ref.read(bulletinNewsTabProvider.notifier).state = 2;
+                                  },
+                                  icon: const Icon(Icons.all_inbox)),
                               const Spacer(),
                               Container(
                                 height: 3,
@@ -144,7 +175,11 @@ class BulletinNewsProfilePage extends StatelessWidget {
                               Expanded(
                                 child: Container(),
                               ),
-                              IconButton(onPressed: () {}, icon: const Icon(Icons.person)),
+                              IconButton(
+                                  onPressed: () {
+                                    ref.read(bulletinNewsTabProvider.notifier).state = 3;
+                                  },
+                                  icon: const Icon(Icons.person)),
                               const Spacer(),
                               Container(
                                 height: 3,
