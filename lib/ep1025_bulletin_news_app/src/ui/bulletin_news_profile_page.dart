@@ -82,9 +82,9 @@ class BulletinNewsProfilePage extends StatelessWidget {
                               const Spacer(),
                               Container(
                                 height: 3,
-                                decoration: const BoxDecoration(
-                                  color: Colors.black,
-                                  borderRadius: BorderRadius.only(
+                                decoration: BoxDecoration(
+                                  color: index == 0 ? Colors.black : Colors.transparent,
+                                  borderRadius: const BorderRadius.only(
                                     topLeft: Radius.circular(4),
                                     topRight: Radius.circular(4),
                                   ),
@@ -104,9 +104,9 @@ class BulletinNewsProfilePage extends StatelessWidget {
                               const Spacer(),
                               Container(
                                 height: 3,
-                                decoration: const BoxDecoration(
-                                  color: Colors.black,
-                                  borderRadius: BorderRadius.only(
+                                decoration: BoxDecoration(
+                                  color: index == 1 ? Colors.black : Colors.transparent,
+                                  borderRadius: const BorderRadius.only(
                                     topLeft: Radius.circular(4),
                                     topRight: Radius.circular(4),
                                   ),
@@ -126,9 +126,9 @@ class BulletinNewsProfilePage extends StatelessWidget {
                               const Spacer(),
                               Container(
                                 height: 3,
-                                decoration: const BoxDecoration(
-                                  color: Colors.black,
-                                  borderRadius: BorderRadius.only(
+                                decoration: BoxDecoration(
+                                  color: index == 2 ? Colors.black : Colors.transparent,
+                                  borderRadius: const BorderRadius.only(
                                     topLeft: Radius.circular(4),
                                     topRight: Radius.circular(4),
                                   ),
@@ -148,9 +148,9 @@ class BulletinNewsProfilePage extends StatelessWidget {
                               const Spacer(),
                               Container(
                                 height: 3,
-                                decoration: const BoxDecoration(
-                                  color: Colors.black,
-                                  borderRadius: BorderRadius.only(
+                                decoration: BoxDecoration(
+                                  color: index == 3 ? Colors.black : Colors.transparent,
+                                  borderRadius: const BorderRadius.only(
                                     topLeft: Radius.circular(4),
                                     topRight: Radius.circular(4),
                                   ),
