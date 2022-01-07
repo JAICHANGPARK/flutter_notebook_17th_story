@@ -2,7 +2,13 @@
 
 # Index
 
-## EP1022
+## EP1025-
+### UI Source
+- Bulletin News · Articles and News Reading App by Keanu Gaurava
+- https://dribbble.com/shots/17204887/attachments/12306488?mode=media
+
+
+## EP1022-1024
 ### UI Source
 - Alphanect - Properties (Fintory)
 - https://dribbble.com/shots/17185658-Alphanect-Properties/attachments/12285030?mode=media
