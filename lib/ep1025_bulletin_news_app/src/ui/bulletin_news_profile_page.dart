@@ -76,11 +76,77 @@ class BulletinNewsProfilePage extends StatelessWidget {
                           const Spacer(),
                           Container(
                             height: 3,
-                            decoration: BoxDecoration(
+                            decoration: const BoxDecoration(
                               color: Colors.black,
-                              borderRadius: BorderRadius.only(
-                                topLeft: Radius.circular(4),
-                                topRight: Radius.circular(4),
+                              borderRadius: const BorderRadius.only(
+                                topLeft: const Radius.circular(4),
+                                topRight: const Radius.circular(4),
+                              ),
+                            ),
+                          )
+                        ],
+                      ),
+                    ),
+                    SizedBox(
+                      width: 48,
+                      child: Column(
+                        children: [
+                          Expanded(
+                            child: Container(),
+                          ),
+                          IconButton(onPressed: () {}, icon: const Icon(Icons.home)),
+                          const Spacer(),
+                          Container(
+                            height: 3,
+                            decoration: const BoxDecoration(
+                              color: Colors.black,
+                              borderRadius: const BorderRadius.only(
+                                topLeft: const Radius.circular(4),
+                                topRight: const Radius.circular(4),
+                              ),
+                            ),
+                          )
+                        ],
+                      ),
+                    ),
+                    SizedBox(
+                      width: 48,
+                      child: Column(
+                        children: [
+                          Expanded(
+                            child: Container(),
+                          ),
+                          IconButton(onPressed: () {}, icon: const Icon(Icons.home)),
+                          const Spacer(),
+                          Container(
+                            height: 3,
+                            decoration: const BoxDecoration(
+                              color: Colors.black,
+                              borderRadius: const BorderRadius.only(
+                                topLeft: const Radius.circular(4),
+                                topRight: const Radius.circular(4),
+                              ),
+                            ),
+                          )
+                        ],
+                      ),
+                    ),
+                    SizedBox(
+                      width: 48,
+                      child: Column(
+                        children: [
+                          Expanded(
+                            child: Container(),
+                          ),
+                          IconButton(onPressed: () {}, icon: const Icon(Icons.home)),
+                          const Spacer(),
+                          Container(
+                            height: 3,
+                            decoration: const BoxDecoration(
+                              color: Colors.black,
+                              borderRadius: const BorderRadius.only(
+                                topLeft: const Radius.circular(4),
+                                topRight: const Radius.circular(4),
                               ),
                             ),
                           )
