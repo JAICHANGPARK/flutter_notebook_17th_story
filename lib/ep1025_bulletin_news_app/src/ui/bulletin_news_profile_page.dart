@@ -80,7 +80,19 @@ class BulletinNewsProfilePage extends StatelessWidget {
                               ),
                             ),
                             Positioned(
-                              child: Container(),
+
+                              bottom: 0,
+                              left: 0,
+                              right: 0,
+                              child: Center(
+                                child: Container(
+                                  height: 120,
+                                  width: 120,
+                                  decoration: BoxDecoration(
+                                    color: Colors.yellow
+                                  ),
+                                ),
+                              ),
                             )
                           ],
                         ),
