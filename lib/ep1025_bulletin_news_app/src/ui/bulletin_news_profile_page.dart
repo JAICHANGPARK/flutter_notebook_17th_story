@@ -98,7 +98,16 @@ class BulletinNewsProfilePage extends StatelessWidget {
                                           color: Colors.white,
                                           shape: BoxShape.circle,
                                         ),
+                                      ),
+                                      const Center(
+                                        child: CircleAvatar(
+                                          radius: 54,
+                                          backgroundImage: CachedNetworkImageProvider(
+                                            "https://cdn.pixabay.com/photo/2021/06/15/16/11/man-6339003__340.jpg"
+                                          ),
+                                        ),
                                       )
+
                                     ],
                                   ),
                                 ),
