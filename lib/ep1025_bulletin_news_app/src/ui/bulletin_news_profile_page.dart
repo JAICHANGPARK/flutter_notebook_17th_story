@@ -20,9 +20,6 @@ class BulletinNewsProfilePage extends StatelessWidget {
               bottom: 100,
               child: Container(
                 height: 84,
-                decoration: const BoxDecoration(
-                  color: Colors.blue,
-                ),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -58,77 +55,73 @@ class BulletinNewsProfilePage extends StatelessWidget {
                     ),
                     SizedBox(
                       height: 200,
-                      child: Container(
-                        color: Colors.red,
-                        child: Stack(
-                          children: [
-                            Positioned(
-                              left: 0,
-                              right: 0,
-                              top: 0,
+                      child: Stack(
+                        children: [
+                          Positioned(
+                            left: 0,
+                            right: 0,
+                            top: 0,
+                            child: Container(
+                              height: 140,
+                              decoration: BoxDecoration(
+                                color: Colors.black,
+                                borderRadius: BorderRadius.circular(12),
+                                image: const DecorationImage(
+                                    image: CachedNetworkImageProvider(
+                                      "https://cdn.pixabay.com/photo/2021/12/21/14/47/castle-6885449__340.jpg",
+                                    ),
+                                    fit: BoxFit.cover),
+                              ),
+                            ),
+                          ),
+                          Positioned(
+                            bottom: 16,
+                            left: 0,
+                            right: 0,
+                            child: Center(
                               child: Container(
-                                height: 140,
-                                decoration: BoxDecoration(
-                                  color: Colors.black,
-                                  borderRadius: BorderRadius.circular(12),
-                                  image: const DecorationImage(
-                                      image: CachedNetworkImageProvider(
-                                        "https://cdn.pixabay.com/photo/2021/12/21/14/47/castle-6885449__340.jpg",
+                                height: 120,
+                                width: 120,
+                                child: Stack(
+                                  children: [
+                                    Container(
+                                      decoration: const BoxDecoration(
+                                        color: Colors.white,
+                                        shape: BoxShape.circle,
                                       ),
-                                      fit: BoxFit.cover),
+                                    ),
+                                    const Center(
+                                      child: CircleAvatar(
+                                        radius: 54,
+                                        backgroundImage: CachedNetworkImageProvider(
+                                            "https://cdn.pixabay.com/photo/2021/06/15/16/11/man-6339003__340.jpg"),
+                                      ),
+                                    ),
+                                    const Positioned(
+                                        right: 10,
+                                        bottom: 8,
+                                        child: CircleAvatar(
+                                          radius: 12,
+                                          backgroundColor: Colors.white,
+                                        )),
+                                    const Positioned(
+                                        right: 12,
+                                        bottom: 10,
+                                        child: CircleAvatar(
+                                          radius: 10,
+                                          backgroundColor: Colors.green,
+                                          foregroundColor: Colors.white,
+                                          child: Icon(
+                                            Icons.edit,
+                                            size: 12,
+                                          ),
+                                        ))
+                                  ],
                                 ),
                               ),
                             ),
-                            Positioned(
-                              bottom: 16,
-                              left: 0,
-                              right: 0,
-                              child: Center(
-                                child: Container(
-                                  height: 120,
-                                  width: 120,
-                                  decoration: const BoxDecoration(color: Colors.yellow),
-                                  child: Stack(
-                                    children: [
-                                      Container(
-                                        decoration: const BoxDecoration(
-                                          color: Colors.white,
-                                          shape: BoxShape.circle,
-                                        ),
-                                      ),
-                                      const Center(
-                                        child: CircleAvatar(
-                                          radius: 54,
-                                          backgroundImage: CachedNetworkImageProvider(
-                                              "https://cdn.pixabay.com/photo/2021/06/15/16/11/man-6339003__340.jpg"),
-                                        ),
-                                      ),
-                                      const Positioned(
-                                          right: 10,
-                                          bottom: 8,
-                                          child: CircleAvatar(
-                                            radius: 12,
-                                            backgroundColor: Colors.white,
-                                          )),
-                                      const Positioned(
-                                          right: 12,
-                                          bottom: 10,
-                                          child: CircleAvatar(
-                                            radius: 10,
-                                            backgroundColor: Colors.green,
-                                            foregroundColor: Colors.white,
-                                            child: Icon(
-                                              Icons.edit,
-                                              size: 12,
-                                            ),
-                                          ))
-                                    ],
-                                  ),
-                                ),
-                              ),
-                            )
-                          ],
-                        ),
+                          )
+                        ],
                       ),
                     ),
                     SizedBox(
