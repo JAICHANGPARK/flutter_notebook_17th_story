@@ -1,3 +1,4 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_notebook_17th/ep1025_bulletin_news_app/src/provider/bulletin_news_controller.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -70,9 +71,11 @@ class BulletinNewsProfilePage extends StatelessWidget {
                                 decoration: BoxDecoration(
                                   color: Colors.black,
                                   borderRadius: BorderRadius.circular(8),
-                                  image: DecorationImage(
-                                    image: CachedNetworkImageProvider()
-                                  )
+                                  image: const DecorationImage(
+                                      image: CachedNetworkImageProvider(
+                                        "https://cdn.pixabay.com/photo/2021/12/21/14/47/castle-6885449__340.jpg",
+                                      ),
+                                      fit: BoxFit.cover),
                                 ),
                               ),
                             )
@@ -84,13 +87,13 @@ class BulletinNewsProfilePage extends StatelessWidget {
                       width: double.infinity,
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
+                        children: const [
                           Text("Dreamwalker"),
                           Text("@dreamwalker_flutter"),
                         ],
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 24,
                     ),
                     Container(
@@ -101,8 +104,11 @@ class BulletinNewsProfilePage extends StatelessWidget {
                     ),
                     Row(
                       children: [
-                        Text("Your Collections"),
-                        TextButton(onPressed: (){}, child: Text("Show all"),)
+                        const Text("Your Collections"),
+                        TextButton(
+                          onPressed: () {},
+                          child: const Text("Show all"),
+                        )
                       ],
                     )
                   ],
