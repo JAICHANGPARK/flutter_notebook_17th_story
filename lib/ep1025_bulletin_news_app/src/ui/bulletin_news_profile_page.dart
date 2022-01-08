@@ -103,12 +103,24 @@ class BulletinNewsProfilePage extends StatelessWidget {
                                               "https://cdn.pixabay.com/photo/2021/06/15/16/11/man-6339003__340.jpg"),
                                         ),
                                       ),
-                                      Positioned(
+                                      const Positioned(
                                           right: 10,
                                           bottom: 8,
                                           child: CircleAvatar(
                                             radius: 12,
                                             backgroundColor: Colors.white,
+                                          )),
+                                      const Positioned(
+                                          right: 12,
+                                          bottom: 10,
+                                          child: CircleAvatar(
+                                            radius: 10,
+                                            backgroundColor: Colors.green,
+                                            foregroundColor: Colors.white,
+                                            child: Icon(
+                                              Icons.edit,
+                                              size: 12,
+                                            ),
                                           ))
                                     ],
                                   ),
@@ -124,7 +136,16 @@ class BulletinNewsProfilePage extends StatelessWidget {
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: const [
-                          Text("Dreamwalker"),
+                          Text(
+                            "Dreamwalker",
+                            style: TextStyle(
+                              fontSize: 18,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                          SizedBox(
+                            height: 12,
+                          ),
                           Text("@dreamwalker_flutter"),
                         ],
                       ),
