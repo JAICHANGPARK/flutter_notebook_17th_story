@@ -78,6 +78,9 @@ class BulletinNewsProfilePage extends StatelessWidget {
                                       fit: BoxFit.cover),
                                 ),
                               ),
+                            ),
+                            Positioned(
+                              child: Container(),
                             )
                           ],
                         ),
