@@ -67,10 +67,10 @@ class BulletinNewsProfilePage extends StatelessWidget {
                               right: 0,
                               top: 0,
                               child: Container(
-                                height: 120,
+                                height: 140,
                                 decoration: BoxDecoration(
                                   color: Colors.black,
-                                  borderRadius: BorderRadius.circular(8),
+                                  borderRadius: BorderRadius.circular(12),
                                   image: const DecorationImage(
                                       image: CachedNetworkImageProvider(
                                         "https://cdn.pixabay.com/photo/2021/12/21/14/47/castle-6885449__340.jpg",
