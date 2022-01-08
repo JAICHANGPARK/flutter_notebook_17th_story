@@ -158,23 +158,40 @@ class BulletinNewsProfilePage extends StatelessWidget {
                       ),
                       child: Row(
                         children: [
-                          Expanded(child: Column(
+                          Expanded(
+                              child: Column(
+                                mainAxisAlignment: MainAxisAlignment.center,
                             children: const [
-                              Text("1,419"),
-                              Text("Liked News")
+                              Text(
+                                "1,419",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                              SizedBox(height: 8,),
+                              Text(
+                                "Liked News",
+                                style: TextStyle(
+                                  fontSize: 12,
+                                  color: Colors.grey,
+                                ),
+                              )
                             ],
                           )),
-                          Expanded(child: Column(
-                            children: const [
-                              Text("12"),
-                              Text("Collections")
-                            ],
+                          Expanded(
+
+                              child: Column(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                            children: const [Text("12", style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                            ),), Text("Collections")],
                           )),
-                          Expanded(child: Column(
-                            children: const [
-                              Text("142"),
-                              Text("Following")
-                            ],
+                          Expanded(
+                              child: Column(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                            children: const [Text("142", style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                            ),), Text("Following")],
                           ))
                         ],
                       ),
