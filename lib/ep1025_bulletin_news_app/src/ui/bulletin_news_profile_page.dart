@@ -18,7 +18,7 @@ class BulletinNewsProfilePage extends StatelessWidget {
               right: 16,
               left: 16,
               bottom: 100,
-              child: Container(
+              child: SizedBox(
                 height: 84,
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -51,7 +51,7 @@ class BulletinNewsProfilePage extends StatelessWidget {
                       ),
                     ),
                     const SizedBox(
-                      height: 8,
+                      height: 16,
                     ),
                     SizedBox(
                       height: 200,
@@ -79,7 +79,7 @@ class BulletinNewsProfilePage extends StatelessWidget {
                             left: 0,
                             right: 0,
                             child: Center(
-                              child: Container(
+                              child: SizedBox(
                                 height: 120,
                                 width: 120,
                                 child: Stack(
