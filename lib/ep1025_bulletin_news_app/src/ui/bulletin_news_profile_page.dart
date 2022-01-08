@@ -59,6 +59,25 @@ class BulletinNewsProfilePage extends StatelessWidget {
                       height: 200,
                       child: Container(
                         color: Colors.red,
+                        child: Stack(
+                          children: [
+                            Positioned(
+                              left: 0,
+                              right: 0,
+                              top: 0,
+                              child: Container(
+                                height: 120,
+                                decoration: BoxDecoration(
+                                  color: Colors.black,
+                                  borderRadius: BorderRadius.circular(8),
+                                  image: DecorationImage(
+                                    image: CachedNetworkImageProvider()
+                                  )
+                                ),
+                              ),
+                            )
+                          ],
+                        ),
                       ),
                     ),
                     SizedBox(
