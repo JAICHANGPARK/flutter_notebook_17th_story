@@ -80,7 +80,6 @@ class BulletinNewsProfilePage extends StatelessWidget {
                               ),
                             ),
                             Positioned(
-
                               bottom: 16,
                               left: 0,
                               right: 0,
@@ -88,9 +87,7 @@ class BulletinNewsProfilePage extends StatelessWidget {
                                 child: Container(
                                   height: 120,
                                   width: 120,
-                                  decoration: const BoxDecoration(
-                                    color: Colors.yellow
-                                  ),
+                                  decoration: const BoxDecoration(color: Colors.yellow),
                                   child: Stack(
                                     children: [
                                       Container(
@@ -103,11 +100,16 @@ class BulletinNewsProfilePage extends StatelessWidget {
                                         child: CircleAvatar(
                                           radius: 54,
                                           backgroundImage: CachedNetworkImageProvider(
-                                            "https://cdn.pixabay.com/photo/2021/06/15/16/11/man-6339003__340.jpg"
-                                          ),
+                                              "https://cdn.pixabay.com/photo/2021/06/15/16/11/man-6339003__340.jpg"),
                                         ),
-                                      )
-
+                                      ),
+                                      Positioned(
+                                          right: 10,
+                                          bottom: 8,
+                                          child: CircleAvatar(
+                                            radius: 12,
+                                            backgroundColor: Colors.white,
+                                          ))
                                     ],
                                   ),
                                 ),
