@@ -152,15 +152,16 @@ class BulletinNewsProfilePage extends StatelessWidget {
                       height: 24,
                     ),
                     Container(
-                      height: 72,
+                      height: 68,
                       decoration: BoxDecoration(
                         color: Colors.grey[200],
                       ),
+                      padding: EdgeInsets.symmetric(horizontal: 8, vertical: 2),
                       child: Row(
                         children: [
                           Expanded(
                               child: Column(
-                                mainAxisAlignment: MainAxisAlignment.center,
+                            mainAxisAlignment: MainAxisAlignment.center,
                             children: const [
                               Text(
                                 "1,419",
@@ -168,7 +169,9 @@ class BulletinNewsProfilePage extends StatelessWidget {
                                   fontWeight: FontWeight.bold,
                                 ),
                               ),
-                              SizedBox(height: 8,),
+                              SizedBox(
+                                height: 8,
+                              ),
                               Text(
                                 "Liked News",
                                 style: TextStyle(
@@ -179,19 +182,50 @@ class BulletinNewsProfilePage extends StatelessWidget {
                             ],
                           )),
                           Expanded(
-
-                              child: Column(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                            children: const [Text("12", style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                            ),), Text("Collections")],
-                          )),
+                              child: Card(
+                                child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: const [
+                                Text(
+                                  "12",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                                SizedBox(
+                                  height: 8,
+                                ),
+                                Text(
+                                  "Collections",
+                                  style: TextStyle(
+                                    fontSize: 12,
+                                    color: Colors.grey,
+                                  ),
+                                )
+                            ],
+                          ),
+                              )),
                           Expanded(
                               child: Column(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                            children: const [Text("142", style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                            ),), Text("Following")],
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: const [
+                              Text(
+                                "142",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                              SizedBox(
+                                height: 8,
+                              ),
+                              Text(
+                                "Following",
+                                style: TextStyle(
+                                  fontSize: 12,
+                                  color: Colors.grey,
+                                ),
+                              )
+                            ],
                           ))
                         ],
                       ),
