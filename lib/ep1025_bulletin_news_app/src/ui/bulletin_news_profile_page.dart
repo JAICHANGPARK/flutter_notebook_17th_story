@@ -144,9 +144,14 @@ class BulletinNewsProfilePage extends StatelessWidget {
                             ),
                           ),
                           SizedBox(
-                            height: 12,
+                            height: 4,
                           ),
-                          Text("@dreamwalker_flutter"),
+                          Text(
+                            "@dreamwalker_flutter",
+                            style: TextStyle(
+                              color: Colors.grey,
+                            ),
+                          ),
                         ],
                       ),
                     ),
