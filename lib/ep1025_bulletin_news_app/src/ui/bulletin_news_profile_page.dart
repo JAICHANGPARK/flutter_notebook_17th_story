@@ -247,55 +247,55 @@ class BulletinNewsProfilePage extends StatelessWidget {
                     ),
                     SizedBox(
                       height: 160,
-                      child: Container(
-                          color: Colors.blue,
-                          child: Row(
-                            children: [
-                              Expanded(
-                                flex: 8,
-                                child: Container(
-                                  decoration: BoxDecoration(
-                                      borderRadius: BorderRadius.circular(8),
-                                      image: DecorationImage(
-                                          image: CachedNetworkImageProvider(
-                                            "https://cdn.pixabay.com/photo/2015/09/05/21/51/reading-925589__340.jpg",
-                                          ),
-                                          fit: BoxFit.cover)),
-                                ),
-                              ),
-                              SizedBox(
-                                width: 4,
-                              ),
-                              Expanded(
-                                  flex: 4,
-                                  child: Column(
-                                    children: [
-                                      Expanded(child:  Container(
-                                        decoration: BoxDecoration(
-                                            borderRadius: BorderRadius.circular(8),
-                                            image: DecorationImage(
-                                                image: CachedNetworkImageProvider(
-                                                  "https://cdn.pixabay.com/photo/2018/05/09/21/55/baby-3386242__340.jpg",
-                                                ),
-                                                fit: BoxFit.cover)),
-                                      ),),
-                                      SizedBox(
-                                        height: 4,
+                      child: Row(
+                        children: [
+                          Expanded(
+                            flex: 8,
+                            child: Container(
+                              decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(8),
+                                  image: DecorationImage(
+                                      image: CachedNetworkImageProvider(
+                                        "https://cdn.pixabay.com/photo/2015/09/05/21/51/reading-925589__340.jpg",
                                       ),
-                                      Expanded(child:  Container(
-                                        decoration: BoxDecoration(
-                                            borderRadius: BorderRadius.circular(8),
-                                            image: DecorationImage(
-                                                image: CachedNetworkImageProvider(
-                                                  "https://cdn.pixabay.com/photo/2020/05/19/20/01/integration-5192458__340.jpg",
-                                                ),
-                                                fit: BoxFit.cover)),
-                                      ),),
-                                    ],
-                                  )),
-                            ],
-                          )),
-                    )
+                                      fit: BoxFit.cover)),
+                            ),
+                          ),
+                          SizedBox(
+                            width: 8,
+                          ),
+                          Expanded(
+                              flex: 4,
+                              child: Column(
+                                children: [
+                                  Expanded(child:  Container(
+                                    decoration: BoxDecoration(
+                                        borderRadius: BorderRadius.circular(8),
+                                        image: DecorationImage(
+                                            image: CachedNetworkImageProvider(
+                                              "https://cdn.pixabay.com/photo/2018/05/09/21/55/baby-3386242__340.jpg",
+                                            ),
+                                            fit: BoxFit.cover)),
+                                  ),),
+                                  SizedBox(
+                                    height: 8,
+                                  ),
+                                  Expanded(child:  Container(
+                                    decoration: BoxDecoration(
+                                        borderRadius: BorderRadius.circular(8),
+                                        image: DecorationImage(
+                                            image: CachedNetworkImageProvider(
+                                              "https://cdn.pixabay.com/photo/2020/05/19/20/01/integration-5192458__340.jpg",
+                                            ),
+                                            fit: BoxFit.cover)),
+                                  ),),
+                                ],
+                              )),
+                        ],
+                      ),
+                    ),
+                    Text("Productivity Tips",),
+                    Text("42 Stories 21 Writers")
                   ],
                 ),
               ),
