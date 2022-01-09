@@ -287,7 +287,7 @@ class BulletinNewsProfilePage extends StatelessWidget {
                                             borderRadius: BorderRadius.circular(8),
                                             image: DecorationImage(
                                                 image: CachedNetworkImageProvider(
-                                                  "https://cdn.pixabay.com/photo/2015/09/05/21/51/reading-925589__340.jpg",
+                                                  "https://cdn.pixabay.com/photo/2020/05/19/20/01/integration-5192458__340.jpg",
                                                 ),
                                                 fit: BoxFit.cover)),
                                       ),),
