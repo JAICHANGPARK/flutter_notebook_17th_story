@@ -156,7 +156,7 @@ class BulletinNewsProfilePage extends StatelessWidget {
                       decoration: BoxDecoration(
                         color: Colors.grey[200],
                       ),
-                      padding: EdgeInsets.symmetric(horizontal: 8, vertical: 2),
+                      padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
                       child: Row(
                         children: [
                           Expanded(
