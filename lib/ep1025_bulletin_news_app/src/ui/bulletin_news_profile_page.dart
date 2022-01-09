@@ -253,12 +253,46 @@ class BulletinNewsProfilePage extends StatelessWidget {
                             children: [
                               Expanded(
                                 flex: 8,
-                                child: Placeholder(),
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(8),
+                                      image: DecorationImage(
+                                          image: CachedNetworkImageProvider(
+                                            "https://cdn.pixabay.com/photo/2015/09/05/21/51/reading-925589__340.jpg",
+                                          ),
+                                          fit: BoxFit.cover)),
+                                ),
                               ),
                               SizedBox(
                                 width: 4,
                               ),
-                              Expanded(flex: 4, child: Placeholder()),
+                              Expanded(
+                                  flex: 4,
+                                  child: Column(
+                                    children: [
+                                      Expanded(child:  Container(
+                                        decoration: BoxDecoration(
+                                            borderRadius: BorderRadius.circular(8),
+                                            image: DecorationImage(
+                                                image: CachedNetworkImageProvider(
+                                                  "https://cdn.pixabay.com/photo/2018/05/09/21/55/baby-3386242__340.jpg",
+                                                ),
+                                                fit: BoxFit.cover)),
+                                      ),),
+                                      SizedBox(
+                                        height: 4,
+                                      ),
+                                      Expanded(child:  Container(
+                                        decoration: BoxDecoration(
+                                            borderRadius: BorderRadius.circular(8),
+                                            image: DecorationImage(
+                                                image: CachedNetworkImageProvider(
+                                                  "https://cdn.pixabay.com/photo/2015/09/05/21/51/reading-925589__340.jpg",
+                                                ),
+                                                fit: BoxFit.cover)),
+                                      ),),
+                                    ],
+                                  )),
                             ],
                           )),
                     )
