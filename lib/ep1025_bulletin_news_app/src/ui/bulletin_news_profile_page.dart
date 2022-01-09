@@ -238,7 +238,7 @@ class BulletinNewsProfilePage extends StatelessWidget {
                             fontWeight: FontWeight.bold,
                           ),
                         ),
-                        Spacer(),
+                        const Spacer(),
                         TextButton(
                           onPressed: () {},
                           child: const Text("Show all"),
@@ -254,14 +254,14 @@ class BulletinNewsProfilePage extends StatelessWidget {
                             child: Container(
                               decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(8),
-                                  image: DecorationImage(
+                                  image: const DecorationImage(
                                       image: CachedNetworkImageProvider(
                                         "https://cdn.pixabay.com/photo/2015/09/05/21/51/reading-925589__340.jpg",
                                       ),
                                       fit: BoxFit.cover)),
                             ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             width: 8,
                           ),
                           Expanded(
@@ -272,21 +272,21 @@ class BulletinNewsProfilePage extends StatelessWidget {
                                     child: Container(
                                       decoration: BoxDecoration(
                                           borderRadius: BorderRadius.circular(8),
-                                          image: DecorationImage(
+                                          image: const DecorationImage(
                                               image: CachedNetworkImageProvider(
                                                 "https://cdn.pixabay.com/photo/2018/05/09/21/55/baby-3386242__340.jpg",
                                               ),
                                               fit: BoxFit.cover)),
                                     ),
                                   ),
-                                  SizedBox(
+                                  const SizedBox(
                                     height: 8,
                                   ),
                                   Expanded(
                                     child: Container(
                                       decoration: BoxDecoration(
                                           borderRadius: BorderRadius.circular(8),
-                                          image: DecorationImage(
+                                          image: const DecorationImage(
                                               image: CachedNetworkImageProvider(
                                                 "https://cdn.pixabay.com/photo/2020/05/19/20/01/integration-5192458__340.jpg",
                                               ),
@@ -298,15 +298,15 @@ class BulletinNewsProfilePage extends StatelessWidget {
                         ],
                       ),
                     ),
-                    SizedBox(height: 8,),
-                    Text(
+                    const SizedBox(height: 8,),
+                    const Text(
                       "Productivity Tips",
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
                       ),
                     ),
-                    SizedBox(height: 4,),
-                    Text("42 Stories 21 Writers",style: TextStyle(
+                    const SizedBox(height: 4,),
+                    const Text("42 Stories 21 Writers",style: TextStyle(
                       fontSize: 12
                     ),)
                   ],
