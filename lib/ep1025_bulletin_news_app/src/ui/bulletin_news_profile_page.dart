@@ -244,6 +244,19 @@ class BulletinNewsProfilePage extends StatelessWidget {
                           child: const Text("Show all"),
                         )
                       ],
+                    ),
+                    SizedBox(
+                      height: 160,
+                      child: Container(
+                          color: Colors.blue,
+                          child: Row(
+                            children: [
+                              Expanded(
+                                child: Placeholder(),
+                              ),
+                              Expanded(child: Placeholder()),
+                            ],
+                          )),
                     )
                   ],
                 ),
