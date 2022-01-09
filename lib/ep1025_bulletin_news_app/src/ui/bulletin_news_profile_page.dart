@@ -246,7 +246,7 @@ class BulletinNewsProfilePage extends StatelessWidget {
                       ],
                     ),
                     SizedBox(
-                      height: 140,
+                      height: 150,
                       child: Row(
                         children: [
                           Expanded(
