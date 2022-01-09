@@ -252,9 +252,13 @@ class BulletinNewsProfilePage extends StatelessWidget {
                           child: Row(
                             children: [
                               Expanded(
+                                flex: 8,
                                 child: Placeholder(),
                               ),
-                              Expanded(child: Placeholder()),
+                              SizedBox(
+                                width: 4,
+                              ),
+                              Expanded(flex: 4, child: Placeholder()),
                             ],
                           )),
                     )
