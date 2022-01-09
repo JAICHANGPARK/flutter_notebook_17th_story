@@ -183,9 +183,9 @@ class BulletinNewsProfilePage extends StatelessWidget {
                           )),
                           Expanded(
                               child: Card(
-                                child: Column(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: const [
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: const [
                                 Text(
                                   "12",
                                   style: TextStyle(
@@ -202,9 +202,9 @@ class BulletinNewsProfilePage extends StatelessWidget {
                                     color: Colors.grey,
                                   ),
                                 )
-                            ],
-                          ),
-                              )),
+                              ],
+                            ),
+                          )),
                           Expanded(
                               child: Column(
                             mainAxisAlignment: MainAxisAlignment.center,
@@ -232,7 +232,13 @@ class BulletinNewsProfilePage extends StatelessWidget {
                     ),
                     Row(
                       children: [
-                        const Text("Your Collections"),
+                        const Text(
+                          "Your Collections",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        Spacer(),
                         TextButton(
                           onPressed: () {},
                           child: const Text("Show all"),
