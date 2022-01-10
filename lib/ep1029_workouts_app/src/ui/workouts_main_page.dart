@@ -16,7 +16,7 @@ class _WorkoutsMainPageState extends State<WorkoutsMainPage> {
           Expanded(
             child: SingleChildScrollView(
               child: Column(
-                children: [],
+                children: const [],
               ),
             ),
           ),
@@ -30,7 +30,7 @@ class _WorkoutsMainPageState extends State<WorkoutsMainPage> {
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
+                    children: const [
                       Icon(Icons.feed_outlined),
                       SizedBox(
                         height: 8,
@@ -45,8 +45,8 @@ class _WorkoutsMainPageState extends State<WorkoutsMainPage> {
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
-                      Icon(Icons.feed_outlined),
+                    children: const [
+                      Icon(Icons.fitness_center),
                       SizedBox(
                         height: 8,
                       ),
@@ -57,17 +57,19 @@ class _WorkoutsMainPageState extends State<WorkoutsMainPage> {
                   ),
                 ),
                 Expanded(
-                  child: CircleAvatar(
-                    radius: 24,
-                    child: Icon(Icons.add),
+                  child: Center(
+                    child: CircleAvatar(
+                      radius: 24,
+                      child: Icon(Icons.add),
+                    ),
                   ),
                 ),
                 Expanded(
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
-                      Icon(Icons.feed_outlined),
+                    children: const [
+                      Icon(Icons.fastfood_outlined),
                       SizedBox(
                         height: 8,
                       ),
@@ -81,8 +83,8 @@ class _WorkoutsMainPageState extends State<WorkoutsMainPage> {
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
-                      Icon(Icons.feed_outlined),
+                    children: const [
+                      Icon(Icons.person),
                       SizedBox(
                         height: 8,
                       ),
