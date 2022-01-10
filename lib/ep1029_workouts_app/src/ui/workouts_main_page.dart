@@ -15,7 +15,7 @@ class _WorkoutsMainPageState extends State<WorkoutsMainPage> {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            
+
           ],
         ),
       ),
