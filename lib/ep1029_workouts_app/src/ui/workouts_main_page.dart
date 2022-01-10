@@ -21,46 +21,76 @@ class _WorkoutsMainPageState extends State<WorkoutsMainPage> {
             ),
           ),
           Container(
-            height: 64,
+            height: 72,
             child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                Column(
-                  children: [
-                    Icon(Icons.feed_outlined),
-                    SizedBox(
-                      height: 8,
-                    ),
-                    Text("Feed"),
-                  ],
+                Expanded(
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      Icon(Icons.feed_outlined),
+                      SizedBox(
+                        height: 8,
+                      ),
+                      Text("Feed",style: TextStyle(
+                        fontSize: 12
+                      ),),
+                    ],
+                  ),
                 ),
-                Column(
-                  children: [
-                    Icon(Icons.feed_outlined),
-                    SizedBox(
-                      height: 8,
-                    ),
-                    Text("Workouts"),
-                  ],
+                Expanded(
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      Icon(Icons.feed_outlined),
+                      SizedBox(
+                        height: 8,
+                      ),
+                      Text("Workouts",style: TextStyle(
+                          fontSize: 12
+                      ),),
+                    ],
+                  ),
                 ),
-                FloatingActionButton(onPressed: () {}),
-                Column(
-                  children: [
-                    Icon(Icons.feed_outlined),
-                    SizedBox(
-                      height: 8,
-                    ),
-                    Text("Meals"),
-                  ],
+                Expanded(
+                  child: CircleAvatar(
+                    radius: 24,
+                    child: Icon(Icons.add),
+                  ),
                 ),
-                Column(
-                  children: [
-                    Icon(Icons.feed_outlined),
-                    SizedBox(
-                      height: 8,
-                    ),
-                    Text("Profile"),
-                  ],
+                Expanded(
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      Icon(Icons.feed_outlined),
+                      SizedBox(
+                        height: 8,
+                      ),
+                      Text("Meals",style: TextStyle(
+                          fontSize: 12
+                      ),),
+                    ],
+                  ),
+                ),
+                Expanded(
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      Icon(Icons.feed_outlined),
+                      SizedBox(
+                        height: 8,
+                      ),
+                      Text("Profile",style: TextStyle(
+                          fontSize: 12
+                      ),),
+                    ],
+                  ),
                 )
               ],
             ),
