@@ -2,6 +2,11 @@
 
 # Index
 
+## EP1029-
+### UI Source
+- Workouts & Meditation IOS App Design by Khalifa Firdausy
+- https://dribbble.com/shots/17232563-Workouts-Meditation-IOS-App-Design/attachments/12337222?mode=media
+
 ## EP1025-1028
 ### UI Source
 - Bulletin News · Articles and News Reading App by Keanu Gaurava
