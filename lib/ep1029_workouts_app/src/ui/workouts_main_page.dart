@@ -23,7 +23,7 @@ class _WorkoutsMainPageState extends State<WorkoutsMainPage> {
                       height: 420,
                       width: double.infinity,
                       decoration: BoxDecoration(
-                        
+
                           color: Colors.red,
                           image: DecorationImage(
                               image: const CachedNetworkImageProvider(
@@ -31,17 +31,31 @@ class _WorkoutsMainPageState extends State<WorkoutsMainPage> {
                               ),
                               colorFilter: ColorFilter.mode(Colors.black.withOpacity(0.2), BlendMode.darken),
                               fit: BoxFit.cover)),
-                      padding: const EdgeInsets.only(top: 16, right: 8, left: 8),
+
                       child: Stack(
                         children: [
-                          Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text(
-                                "today pick".toUpperCase(),
-                              ),
-                              const Text("Need some\nmotivation for today?\nLets hear Jessica story"),
-                            ],
+                          Positioned(
+                            left: 8,
+                            top: 48,
+                            bottom: 0,
+                            right: 8,
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  "today pick".toUpperCase(),
+                                  style: TextStyle(
+                                    color: Colors.white
+                                  ),
+                                ),
+                                const Text("Need some\nmotivation for today?\nLets hear Jessica story",
+                                  style: TextStyle(
+                                      color: Colors.white,
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 24
+                                  ),),
+                              ],
+                            ),
                           ),
                           Positioned(
                               child: Container(
