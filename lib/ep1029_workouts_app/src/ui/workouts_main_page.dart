@@ -35,7 +35,7 @@ class _WorkoutsMainPageState extends State<WorkoutsMainPage> {
                       child: Stack(
                         children: [
                           Positioned(
-                            left: 8,
+                            left: 16,
                             top: 48,
                             bottom: 0,
                             right: 8,
@@ -44,42 +44,48 @@ class _WorkoutsMainPageState extends State<WorkoutsMainPage> {
                               children: [
                                 Text(
                                   "today pick".toUpperCase(),
-                                  style: TextStyle(
+                                  style: const TextStyle(
                                     color: Colors.white
                                   ),
                                 ),
-                                SizedBox(height: 8,),
+                                const SizedBox(height: 8,),
                                 const Text("Need some",
                                   style: TextStyle(
                                       color: Colors.white,
                                       fontWeight: FontWeight.bold,
-                                      fontSize: 24
+                                      fontSize: 28
                                   ),),
-                                SizedBox(height: 8,),
+                                const SizedBox(height: 8,),
                                 const Text("motivation for today?",
                                   style: TextStyle(
                                       color: Colors.white,
                                       fontWeight: FontWeight.bold,
-                                      fontSize: 24
+                                      fontSize: 28
                                   ),),
-                                SizedBox(height: 8,),
+                                const SizedBox(height: 8,),
                                 const Text("Lets hear",
                                   style: TextStyle(
                                       color: Colors.white,
                                       fontWeight: FontWeight.bold,
-                                      fontSize: 24
+                                      fontSize: 28
                                   ),),
-                                SizedBox(height: 8,),
+                                const SizedBox(height: 8,),
                                 const Text("Jessica story",
                                   style: TextStyle(
                                       color: Colors.white,
                                     fontWeight: FontWeight.bold,
-                                    fontSize: 24
+                                    fontSize: 28
                                   ),),
+                                Container(
+                                  decoration: const BoxDecoration(
+
+                                  ),
+                                )
                               ],
                             ),
                           ),
                           Positioned(
+                            top: 100,
                               child: Container(
                             decoration: BoxDecoration(
                               gradient: LinearGradient(begin: Alignment.bottomCenter,
