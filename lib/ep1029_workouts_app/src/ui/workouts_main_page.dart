@@ -1,3 +1,4 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 
 class WorkoutsMainPage extends StatefulWidget {
@@ -20,16 +21,23 @@ class _WorkoutsMainPageState extends State<WorkoutsMainPage> {
                   children: [
                     Container(
                       height: 420,
-                      decoration: const BoxDecoration(
+                      decoration:  const BoxDecoration(
                         color: Colors.red,
+                        image: DecorationImage(image: CachedNetworkImageProvider(
+                          "https://cdn.pixabay.com/photo/2017/04/22/10/15/woman-2250970__340.jpg",
+                        ),
+                        fit: BoxFit.cover
+                        )
                       ),
+                      padding: const EdgeInsets.only(top: 16, right: 8, left: 8),
+
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
                             "today pick".toUpperCase(),
                           ),
-                          Text("Need some\nmotivation for today?\nLets hear Jessica story"),
+                          const Text("Need some\nmotivation for today?\nLets hear Jessica story"),
                         ],
                       ),
                     ),
