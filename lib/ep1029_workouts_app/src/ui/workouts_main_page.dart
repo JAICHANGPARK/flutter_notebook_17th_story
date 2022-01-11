@@ -42,10 +42,11 @@ class _WorkoutsMainPageState extends State<WorkoutsMainPage> {
                               children: [
                                 Text(
                                   "today pick".toUpperCase(),
-                                  style: const TextStyle(color: Colors.white),
+                                  style: const TextStyle(color: Colors.white,
+                                  fontSize: 10),
                                 ),
                                 const SizedBox(
-                                  height: 8,
+                                  height: 16,
                                 ),
                                 const Text(
                                   "Need some",
@@ -84,7 +85,10 @@ class _WorkoutsMainPageState extends State<WorkoutsMainPage> {
                                   ),
                                   padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 12),
                                   child: const Center(
-                                    child: Text("READ"),
+                                    child: Text("READ",style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      color: Colors.white
+                                    ),),
                                   ),
                                 )
                               ],
