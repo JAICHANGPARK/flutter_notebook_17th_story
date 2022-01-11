@@ -48,7 +48,25 @@ class _WorkoutsMainPageState extends State<WorkoutsMainPage> {
                                     color: Colors.white
                                   ),
                                 ),
-                                const Text("Need some\nmotivation for today?\nLets hear Jessica story",
+                                const Text("Need some",
+                                  style: TextStyle(
+                                      color: Colors.white,
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 24
+                                  ),),
+                                const Text("motivation for today?",
+                                  style: TextStyle(
+                                      color: Colors.white,
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 24
+                                  ),),
+                                const Text("Lets hear",
+                                  style: TextStyle(
+                                      color: Colors.white,
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 24
+                                  ),),
+                                const Text("Jessica story",
                                   style: TextStyle(
                                       color: Colors.white,
                                     fontWeight: FontWeight.bold,
