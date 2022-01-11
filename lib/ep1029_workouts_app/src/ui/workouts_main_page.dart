@@ -21,16 +21,17 @@ class _WorkoutsMainPageState extends State<WorkoutsMainPage> {
                   children: [
                     Container(
                       height: 420,
-                      decoration:  const BoxDecoration(
-                        color: Colors.red,
-                        image: DecorationImage(image: CachedNetworkImageProvider(
-                          "https://cdn.pixabay.com/photo/2017/04/22/10/15/woman-2250970__340.jpg",
-                        ),
-                        fit: BoxFit.cover
-                        )
-                      ),
+                      width: double.infinity,
+                      decoration:  BoxDecoration(
+                        gradient: const LinearGradient(colors: []),
+                          color: Colors.red,
+                          image: DecorationImage(
+                              image: const CachedNetworkImageProvider(
+                                "https://cdn.pixabay.com/photo/2017/04/22/10/15/woman-2250970__340.jpg",
+                              ),
+                              colorFilter: ColorFilter.mode(Colors.black.withOpacity(0.2), BlendMode.darken),
+                              fit: BoxFit.cover)),
                       padding: const EdgeInsets.only(top: 16, right: 8, left: 8),
-
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
