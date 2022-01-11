@@ -48,24 +48,28 @@ class _WorkoutsMainPageState extends State<WorkoutsMainPage> {
                                     color: Colors.white
                                   ),
                                 ),
+                                SizedBox(height: 8,),
                                 const Text("Need some",
                                   style: TextStyle(
                                       color: Colors.white,
                                       fontWeight: FontWeight.bold,
                                       fontSize: 24
                                   ),),
+                                SizedBox(height: 8,),
                                 const Text("motivation for today?",
                                   style: TextStyle(
                                       color: Colors.white,
                                       fontWeight: FontWeight.bold,
                                       fontSize: 24
                                   ),),
+                                SizedBox(height: 8,),
                                 const Text("Lets hear",
                                   style: TextStyle(
                                       color: Colors.white,
                                       fontWeight: FontWeight.bold,
                                       fontSize: 24
                                   ),),
+                                SizedBox(height: 8,),
                                 const Text("Jessica story",
                                   style: TextStyle(
                                       color: Colors.white,
