@@ -24,13 +24,18 @@ class _WorkoutsMainPageState extends State<WorkoutsMainPage> {
                         color: Colors.red,
                       ),
                       child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text("today pick".toUpperCase(),),
+                          Text(
+                            "today pick".toUpperCase(),
+                          ),
                           Text("Need some\nmotivation for today?\nLets hear Jessica story"),
                         ],
                       ),
                     ),
-                    const SizedBox(height: 16,),
+                    const SizedBox(
+                      height: 16,
+                    ),
                     Container(
                       height: 360,
                       decoration: const BoxDecoration(
