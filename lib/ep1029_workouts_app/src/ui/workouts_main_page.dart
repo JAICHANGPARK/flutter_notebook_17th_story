@@ -22,8 +22,8 @@ class _WorkoutsMainPageState extends State<WorkoutsMainPage> {
                     Container(
                       height: 420,
                       width: double.infinity,
-                      decoration:  BoxDecoration(
-                        gradient: const LinearGradient(colors: []),
+                      decoration: BoxDecoration(
+                        
                           color: Colors.red,
                           image: DecorationImage(
                               image: const CachedNetworkImageProvider(
@@ -32,13 +32,29 @@ class _WorkoutsMainPageState extends State<WorkoutsMainPage> {
                               colorFilter: ColorFilter.mode(Colors.black.withOpacity(0.2), BlendMode.darken),
                               fit: BoxFit.cover)),
                       padding: const EdgeInsets.only(top: 16, right: 8, left: 8),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
+                      child: Stack(
                         children: [
-                          Text(
-                            "today pick".toUpperCase(),
+                          Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                "today pick".toUpperCase(),
+                              ),
+                              const Text("Need some\nmotivation for today?\nLets hear Jessica story"),
+                            ],
                           ),
-                          const Text("Need some\nmotivation for today?\nLets hear Jessica story"),
+                          Positioned(
+                              child: Container(
+                            decoration: BoxDecoration(
+                              gradient: LinearGradient(begin: Alignment.bottomCenter,
+                                  end: Alignment.center, colors: [
+                                Colors.black,
+                                Colors.black.withOpacity(0.7),
+                                Colors.black.withOpacity(0.5),
+                                Colors.black.withOpacity(0.2)
+                              ]),
+                            ),
+                          ))
                         ],
                       ),
                     ),
