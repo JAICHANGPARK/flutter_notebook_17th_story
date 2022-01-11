@@ -23,6 +23,12 @@ class _WorkoutsMainPageState extends State<WorkoutsMainPage> {
                       decoration: const BoxDecoration(
                         color: Colors.red,
                       ),
+                      child: Column(
+                        children: [
+                          Text("today pick".toUpperCase(),),
+                          Text("Need some\nmotivation for today?\nLets hear Jessica story"),
+                        ],
+                      ),
                     ),
                     const SizedBox(height: 16,),
                     Container(
