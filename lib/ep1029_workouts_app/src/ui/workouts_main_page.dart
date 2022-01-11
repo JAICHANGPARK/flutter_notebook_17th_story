@@ -12,6 +12,7 @@ class _WorkoutsMainPageState extends State<WorkoutsMainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.black,
       body: SafeArea(
         child: Column(
           children: [
@@ -42,8 +43,7 @@ class _WorkoutsMainPageState extends State<WorkoutsMainPage> {
                               children: [
                                 Text(
                                   "today pick".toUpperCase(),
-                                  style: const TextStyle(color: Colors.white,
-                                  fontSize: 10),
+                                  style: const TextStyle(color: Colors.white, fontSize: 10),
                                 ),
                                 const SizedBox(
                                   height: 16,
@@ -73,22 +73,21 @@ class _WorkoutsMainPageState extends State<WorkoutsMainPage> {
                                   "Jessica story",
                                   style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 28),
                                 ),
-                                SizedBox(height: 24,),
+                                SizedBox(
+                                  height: 24,
+                                ),
                                 Container(
-                                  constraints: const BoxConstraints(
-                                    minWidth: 120,
-                                    maxWidth: 120
-                                  ),
+                                  constraints: const BoxConstraints(minWidth: 120, maxWidth: 120),
                                   decoration: BoxDecoration(
                                     color: Colors.greenAccent,
                                     borderRadius: BorderRadius.circular(2),
                                   ),
                                   padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 12),
                                   child: const Center(
-                                    child: Text("READ",style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.white
-                                    ),),
+                                    child: Text(
+                                      "READ",
+                                      style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white),
+                                    ),
                                   ),
                                 )
                               ],
