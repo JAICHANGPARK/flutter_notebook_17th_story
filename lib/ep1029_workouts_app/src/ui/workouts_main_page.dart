@@ -23,7 +23,6 @@ class _WorkoutsMainPageState extends State<WorkoutsMainPage> {
                       height: 420,
                       width: double.infinity,
                       decoration: BoxDecoration(
-
                           color: Colors.red,
                           image: DecorationImage(
                               image: const CachedNetworkImageProvider(
@@ -31,7 +30,6 @@ class _WorkoutsMainPageState extends State<WorkoutsMainPage> {
                               ),
                               colorFilter: ColorFilter.mode(Colors.black.withOpacity(0.2), BlendMode.darken),
                               fit: BoxFit.cover)),
-
                       child: Stack(
                         children: [
                           Positioned(
@@ -44,59 +42,69 @@ class _WorkoutsMainPageState extends State<WorkoutsMainPage> {
                               children: [
                                 Text(
                                   "today pick".toUpperCase(),
-                                  style: const TextStyle(
-                                    color: Colors.white
-                                  ),
+                                  style: const TextStyle(color: Colors.white),
                                 ),
-                                const SizedBox(height: 8,),
-                                const Text("Need some",
-                                  style: TextStyle(
-                                      color: Colors.white,
-                                      fontWeight: FontWeight.bold,
-                                      fontSize: 28
-                                  ),),
-                                const SizedBox(height: 8,),
-                                const Text("motivation for today?",
-                                  style: TextStyle(
-                                      color: Colors.white,
-                                      fontWeight: FontWeight.bold,
-                                      fontSize: 28
-                                  ),),
-                                const SizedBox(height: 8,),
-                                const Text("Lets hear",
-                                  style: TextStyle(
-                                      color: Colors.white,
-                                      fontWeight: FontWeight.bold,
-                                      fontSize: 28
-                                  ),),
-                                const SizedBox(height: 8,),
-                                const Text("Jessica story",
-                                  style: TextStyle(
-                                      color: Colors.white,
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 28
-                                  ),),
+                                const SizedBox(
+                                  height: 8,
+                                ),
+                                const Text(
+                                  "Need some",
+                                  style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 28),
+                                ),
+                                const SizedBox(
+                                  height: 8,
+                                ),
+                                const Text(
+                                  "motivation for today?",
+                                  style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 28),
+                                ),
+                                const SizedBox(
+                                  height: 8,
+                                ),
+                                const Text(
+                                  "Lets hear",
+                                  style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 28),
+                                ),
+                                const SizedBox(
+                                  height: 8,
+                                ),
+                                const Text(
+                                  "Jessica story",
+                                  style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 28),
+                                ),
+                                SizedBox(height: 24,),
                                 Container(
-                                  decoration: const BoxDecoration(
-
+                                  constraints: const BoxConstraints(
+                                    minWidth: 120,
+                                    maxWidth: 120
+                                  ),
+                                  decoration: BoxDecoration(
+                                    color: Colors.greenAccent,
+                                    borderRadius: BorderRadius.circular(2),
+                                  ),
+                                  padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 12),
+                                  child: const Center(
+                                    child: Text("READ"),
                                   ),
                                 )
                               ],
                             ),
                           ),
                           Positioned(
-                            top: 100,
+                              top: 100,
                               child: Container(
-                            decoration: BoxDecoration(
-                              gradient: LinearGradient(begin: Alignment.bottomCenter,
-                                  end: Alignment.center, colors: [
-                                Colors.black,
-                                Colors.black.withOpacity(0.7),
-                                Colors.black.withOpacity(0.5),
-                                Colors.black.withOpacity(0.2)
-                              ]),
-                            ),
-                          ))
+                                decoration: BoxDecoration(
+                                  gradient: LinearGradient(
+                                      begin: Alignment.bottomCenter,
+                                      end: Alignment.center,
+                                      colors: [
+                                        Colors.black,
+                                        Colors.black.withOpacity(0.7),
+                                        Colors.black.withOpacity(0.5),
+                                        Colors.black.withOpacity(0.2)
+                                      ]),
+                                ),
+                              ))
                         ],
                       ),
                     ),
