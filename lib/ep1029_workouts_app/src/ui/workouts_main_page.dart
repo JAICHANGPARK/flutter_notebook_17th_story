@@ -20,14 +20,14 @@ class _WorkoutsMainPageState extends State<WorkoutsMainPage> {
                   children: [
                     Container(
                       height: 420,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         color: Colors.red,
                       ),
                     ),
-                    SizedBox(height: 16,),
+                    const SizedBox(height: 16,),
                     Container(
                       height: 360,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         color: Colors.blue,
                       ),
                     )
@@ -73,8 +73,8 @@ class _WorkoutsMainPageState extends State<WorkoutsMainPage> {
                       ],
                     ),
                   ),
-                  Expanded(
-                    child: Center(
+                  const Expanded(
+                    child: const Center(
                       child: CircleAvatar(
                         radius: 24,
                         child: Icon(Icons.add),
