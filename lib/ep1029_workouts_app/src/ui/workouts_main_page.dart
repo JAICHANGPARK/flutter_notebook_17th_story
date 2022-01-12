@@ -1,5 +1,6 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
+import 'package:percent_indicator/circular_percent_indicator.dart';
 
 class WorkoutsMainPage extends StatefulWidget {
   const WorkoutsMainPage({Key? key}) : super(key: key);
@@ -172,11 +173,9 @@ class _WorkoutsMainPageState extends State<WorkoutsMainPage> {
                                 ),
                                 Positioned(
                                   left: 16,
-                                  top: 160,
                                   bottom: 16,
                                   right: 0,
-                                  child: Column(crossAxisAlignment: CrossAxisAlignment.start,
-                                      children: const [
+                                  child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: const [
                                     Text(
                                       "Workouts",
                                       style: TextStyle(
@@ -198,6 +197,15 @@ class _WorkoutsMainPageState extends State<WorkoutsMainPage> {
                                     )
                                   ]),
                                 ),
+                                Positioned(
+                                  right: 16,
+                                  bottom: 16,
+                                  child: CircularPercentIndicator(
+                                    percent: 0.5, radius: 48,
+                                    reverse: true,
+                                    progressColor: Color(0xff25AB75),
+                                  ),
+                                )
                               ],
                             )),
                           ],
