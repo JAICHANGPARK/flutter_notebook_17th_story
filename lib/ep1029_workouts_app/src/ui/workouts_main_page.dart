@@ -141,14 +141,19 @@ class _WorkoutsMainPageState extends State<WorkoutsMainPage> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: const [
-                        Icon(Icons.feed_outlined, color: Color(0xff25AB75),),
+                        Icon(
+                          Icons.feed_outlined,
+                          color: Color(0xff25AB75),
+                        ),
                         SizedBox(
                           height: 8,
                         ),
                         Text(
                           "Feed",
-                          style: TextStyle(fontSize: 12,
-                            color: Color(0xff25AB75),),
+                          style: TextStyle(
+                            fontSize: 12,
+                            color: Color(0xff25AB75),
+                          ),
                         ),
                       ],
                     ),
@@ -158,13 +163,13 @@ class _WorkoutsMainPageState extends State<WorkoutsMainPage> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: const [
-                        Icon(Icons.fitness_center, color:Colors.grey),
+                        Icon(Icons.fitness_center, color: Colors.grey),
                         SizedBox(
                           height: 8,
                         ),
                         Text(
                           "Workouts",
-                          style: TextStyle(fontSize: 12,color:Colors.grey),
+                          style: TextStyle(fontSize: 12, color: Colors.grey),
                         ),
                       ],
                     ),
@@ -182,13 +187,13 @@ class _WorkoutsMainPageState extends State<WorkoutsMainPage> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: const [
-                        Icon(Icons.fastfood_outlined),
+                        Icon(Icons.fastfood_outlined, color: Colors.grey),
                         SizedBox(
                           height: 8,
                         ),
                         Text(
                           "Meals",
-                          style: TextStyle(fontSize: 12),
+                          style: TextStyle(fontSize: 12, color: Colors.grey),
                         ),
                       ],
                     ),
@@ -198,13 +203,13 @@ class _WorkoutsMainPageState extends State<WorkoutsMainPage> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: const [
-                        Icon(Icons.person),
+                        Icon(Icons.person, color: Colors.grey),
                         SizedBox(
                           height: 8,
                         ),
                         Text(
                           "Profile",
-                          style: TextStyle(fontSize: 12),
+                          style: TextStyle(fontSize: 12, color: Colors.grey),
                         ),
                       ],
                     ),
