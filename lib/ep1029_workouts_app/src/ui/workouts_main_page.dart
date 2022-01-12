@@ -121,12 +121,9 @@ class _WorkoutsMainPageState extends State<WorkoutsMainPage> {
                       height: 16,
                     ),
                     Padding(
-                      padding: const EdgeInsets.all(8.0),
+                      padding: const EdgeInsets.all(16.0),
                       child: Container(
-                        height: 360,
-                        decoration: const BoxDecoration(
-                          color: Colors.blue,
-                        ),
+                        height: 320,
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
@@ -134,6 +131,7 @@ class _WorkoutsMainPageState extends State<WorkoutsMainPage> {
                               "YOUR GOALS",
                               style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 12),
                             ),
+                            const SizedBox(height: 12,),
                             Expanded(
                                 child: Stack(
                               children: [
@@ -143,13 +141,31 @@ class _WorkoutsMainPageState extends State<WorkoutsMainPage> {
                                   bottom: 0,
                                   right: 0,
                                   child: Container(
-                                    decoration: BoxDecoration(
+                                    decoration: const BoxDecoration(
                                         image: DecorationImage(
                                       image: CachedNetworkImageProvider(
                                         "https://cdn.pixabay.com/photo/2016/11/22/22/24/adult-1850925__340.jpg",
                                       ),
                                       fit: BoxFit.cover,
                                     )),
+                                  ),
+                                ),
+                                Positioned(
+                                  left: 0,
+                                  top: 0,
+                                  bottom: 0,
+                                  right: 0,
+                                  child: Container(
+                                    decoration:  BoxDecoration(
+                                       gradient: LinearGradient(
+                                         colors: [
+                                           Colors.blue,
+                                           Colors.red,
+                                           Colors.orange,
+                                           Colors.green
+                                         ]
+                                       )
+                                       ),
                                   ),
                                 ),
                               ],
