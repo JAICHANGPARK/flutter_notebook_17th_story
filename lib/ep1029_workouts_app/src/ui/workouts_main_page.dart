@@ -76,13 +76,13 @@ class _WorkoutsMainPageState extends State<WorkoutsMainPage> {
                                   "Jessica story",
                                   style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 28),
                                 ),
-                                SizedBox(
+                                const SizedBox(
                                   height: 24,
                                 ),
                                 Container(
                                   constraints: const BoxConstraints(minWidth: 120, maxWidth: 120),
                                   decoration: BoxDecoration(
-                                    color: Color(0xff25AB75),
+                                    color: const Color(0xff25AB75),
                                     borderRadius: BorderRadius.circular(2),
                                   ),
                                   padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 12),
@@ -120,17 +120,49 @@ class _WorkoutsMainPageState extends State<WorkoutsMainPage> {
                     const SizedBox(
                       height: 16,
                     ),
-                    Container(
-                      height: 360,
-                      decoration: const BoxDecoration(
-                        color: Colors.blue,
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Container(
+                        height: 360,
+                        decoration: const BoxDecoration(
+                          color: Colors.blue,
+                        ),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            const Text(
+                              "YOUR GOALS",
+                              style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 12),
+                            ),
+                            Expanded(
+                                child: Stack(
+                              children: [
+                                Positioned(
+                                  left: 0,
+                                  top: 0,
+                                  bottom: 0,
+                                  right: 0,
+                                  child: Container(
+                                    decoration: BoxDecoration(
+                                        image: DecorationImage(
+                                      image: CachedNetworkImageProvider(
+                                        "https://cdn.pixabay.com/photo/2016/11/22/22/24/adult-1850925__340.jpg",
+                                      ),
+                                      fit: BoxFit.cover,
+                                    )),
+                                  ),
+                                ),
+                              ],
+                            )),
+                          ],
+                        ),
                       ),
                     )
                   ],
                 ),
               ),
             ),
-            Container(
+            SizedBox(
               height: 72,
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
