@@ -175,9 +175,10 @@ class _WorkoutsMainPageState extends State<WorkoutsMainPage> {
                     ),
                   ),
                   const Expanded(
-                    child: const Center(
+                    child: Center(
                       child: CircleAvatar(
                         backgroundColor: Color(0xff25AB75),
+                        foregroundColor: Colors.white,
                         radius: 24,
                         child: Icon(Icons.add),
                       ),
