@@ -175,9 +175,8 @@ class _WorkoutsMainPageState extends State<WorkoutsMainPage> {
                                   top: 160,
                                   bottom: 16,
                                   right: 0,
-                                  child: Column(
-                                      crossAxisAlignment: CrossAxisAlignment.start,
-                                      children: [
+                                  child: Column(crossAxisAlignment: CrossAxisAlignment.start,
+                                      children: const [
                                     Text(
                                       "Workouts",
                                       style: TextStyle(
@@ -186,13 +185,17 @@ class _WorkoutsMainPageState extends State<WorkoutsMainPage> {
                                         fontWeight: FontWeight.bold,
                                       ),
                                     ),
-                                    SizedBox(height: 28,),
-                                    Text("2 OUT 4 TASKS",
+                                    SizedBox(
+                                      height: 28,
+                                    ),
+                                    Text(
+                                      "2 OUT 4 TASKS",
                                       style: TextStyle(
                                         color: Colors.white,
                                         fontSize: 12,
                                         fontWeight: FontWeight.bold,
-                                      ),)
+                                      ),
+                                    )
                                   ]),
                                 ),
                               ],
