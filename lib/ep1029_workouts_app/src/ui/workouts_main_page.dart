@@ -186,7 +186,13 @@ class _WorkoutsMainPageState extends State<WorkoutsMainPage> {
                                         fontWeight: FontWeight.bold,
                                       ),
                                     ),
-                                    Text("2 OUT 4 TASKS")
+                                    SizedBox(height: 24,),
+                                    Text("2 OUT 4 TASKS",
+                                      style: TextStyle(
+                                        color: Colors.white,
+                                        fontSize: 12,
+                                        fontWeight: FontWeight.bold,
+                                      ),)
                                   ]),
                                 ),
                               ],
