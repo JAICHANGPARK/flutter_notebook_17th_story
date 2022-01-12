@@ -152,12 +152,14 @@ class _WorkoutsMainPageState extends State<WorkoutsMainPage> {
                                 ),
                                 Positioned(
                                   left: 0,
-                                  top: 0,
+                                  top: 180,
                                   bottom: 0,
                                   right: 0,
                                   child: Container(
                                     decoration:  BoxDecoration(
                                        gradient: LinearGradient(
+                                         begin: Alignment.bottomCenter,
+                                         end: Alignment.center,
                                          colors: [
                                            Colors.blue,
                                            Colors.red,
