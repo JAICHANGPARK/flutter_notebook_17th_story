@@ -201,9 +201,17 @@ class _WorkoutsMainPageState extends State<WorkoutsMainPage> {
                                   right: 16,
                                   bottom: 16,
                                   child: CircularPercentIndicator(
-                                    percent: 0.5, radius: 48,
+                                    percent: 0.5,
+                                    radius: 48,
                                     reverse: true,
                                     progressColor: Color(0xff25AB75),
+                                    center: Text(
+                                      "50 %",
+                                      style: TextStyle(
+                                        color: Colors.white,
+                                      ),
+                                    ),
+                                    lineWidth: 3,
                                   ),
                                 )
                               ],
