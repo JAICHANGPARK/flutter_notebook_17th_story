@@ -123,7 +123,7 @@ class _WorkoutsMainPageState extends State<WorkoutsMainPage> {
                     ),
                     Padding(
                       padding: const EdgeInsets.all(16.0),
-                      child: Container(
+                      child: SizedBox(
                         height: 320,
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
@@ -204,8 +204,8 @@ class _WorkoutsMainPageState extends State<WorkoutsMainPage> {
                                     percent: 0.5,
                                     radius: 48,
                                     reverse: true,
-                                    progressColor: Color(0xff25AB75),
-                                    center: Text(
+                                    progressColor: const Color(0xff25AB75),
+                                    center: const Text(
                                       "50 %",
                                       style: TextStyle(
                                         color: Colors.white,
