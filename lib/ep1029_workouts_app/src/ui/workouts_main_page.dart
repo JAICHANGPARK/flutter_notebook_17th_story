@@ -152,7 +152,7 @@ class _WorkoutsMainPageState extends State<WorkoutsMainPage> {
                                 ),
                                 Positioned(
                                   left: 0,
-                                  top: 180,
+                                  top: 160,
                                   bottom: 0,
                                   right: 0,
                                   child: Container(
@@ -161,13 +161,25 @@ class _WorkoutsMainPageState extends State<WorkoutsMainPage> {
                                          begin: Alignment.bottomCenter,
                                          end: Alignment.center,
                                          colors: [
-                                           Colors.blue,
-                                           Colors.red,
-                                           Colors.orange,
-                                           Colors.green
+                                           Colors.black,
+                                           Colors.black.withOpacity(0.6),
+                                           Colors.black.withOpacity(0.4),
+                                           Colors.black.withOpacity(0.2),
                                          ]
                                        )
                                        ),
+                                  ),
+                                ),
+                                Positioned(
+                                  left: 16,
+                                  top: 160,
+                                  bottom: 16,
+                                  right: 0,
+                                  child: Column(
+                                    children: [
+                                      Text("Workouts"),
+                                      Text("2 OUT 4 TASKS")
+                                    ]
                                   ),
                                 ),
                               ],
