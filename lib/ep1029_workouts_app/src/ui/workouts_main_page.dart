@@ -29,7 +29,10 @@ class _WorkoutsMainPageState extends State<WorkoutsMainPage> {
                               image: const CachedNetworkImageProvider(
                                 "https://cdn.pixabay.com/photo/2017/04/22/10/15/woman-2250970__340.jpg",
                               ),
-                              colorFilter: ColorFilter.mode(Colors.black.withOpacity(0.2), BlendMode.darken),
+                              colorFilter: ColorFilter.mode(
+                                Colors.black.withOpacity(0.2),
+                                BlendMode.darken,
+                              ),
                               fit: BoxFit.cover)),
                       child: Stack(
                         children: [
@@ -79,14 +82,17 @@ class _WorkoutsMainPageState extends State<WorkoutsMainPage> {
                                 Container(
                                   constraints: const BoxConstraints(minWidth: 120, maxWidth: 120),
                                   decoration: BoxDecoration(
-                                    color: Colors.greenAccent,
+                                    color: Color(0xff25AB75),
                                     borderRadius: BorderRadius.circular(2),
                                   ),
                                   padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 12),
                                   child: const Center(
                                     child: Text(
                                       "READ",
-                                      style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white),
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        color: Colors.white,
+                                      ),
                                     ),
                                   ),
                                 )
