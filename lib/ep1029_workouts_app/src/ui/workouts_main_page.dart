@@ -209,6 +209,7 @@ class _WorkoutsMainPageState extends State<WorkoutsMainPage> {
                                       "50 %",
                                       style: TextStyle(
                                         color: Colors.white,
+                                        fontSize: 12
                                       ),
                                     ),
                                     lineWidth: 3,
