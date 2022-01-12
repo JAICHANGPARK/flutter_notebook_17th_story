@@ -131,7 +131,9 @@ class _WorkoutsMainPageState extends State<WorkoutsMainPage> {
                               "YOUR GOALS",
                               style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 12),
                             ),
-                            const SizedBox(height: 12,),
+                            const SizedBox(
+                              height: 12,
+                            ),
                             Expanded(
                                 child: Stack(
                               children: [
@@ -156,18 +158,16 @@ class _WorkoutsMainPageState extends State<WorkoutsMainPage> {
                                   bottom: 0,
                                   right: 0,
                                   child: Container(
-                                    decoration:  BoxDecoration(
-                                       gradient: LinearGradient(
-                                         begin: Alignment.bottomCenter,
-                                         end: Alignment.center,
-                                         colors: [
-                                           Colors.black,
-                                           Colors.black.withOpacity(0.6),
-                                           Colors.black.withOpacity(0.4),
-                                           Colors.black.withOpacity(0.2),
-                                         ]
-                                       )
-                                       ),
+                                    decoration: BoxDecoration(
+                                        gradient: LinearGradient(
+                                            begin: Alignment.bottomCenter,
+                                            end: Alignment.center,
+                                            colors: [
+                                          Colors.black,
+                                          Colors.black.withOpacity(0.6),
+                                          Colors.black.withOpacity(0.4),
+                                          Colors.black.withOpacity(0.2),
+                                        ])),
                                   ),
                                 ),
                                 Positioned(
@@ -176,11 +176,18 @@ class _WorkoutsMainPageState extends State<WorkoutsMainPage> {
                                   bottom: 16,
                                   right: 0,
                                   child: Column(
-                                    children: [
-                                      Text("Workouts"),
-                                      Text("2 OUT 4 TASKS")
-                                    ]
-                                  ),
+                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      children: [
+                                    Text(
+                                      "Workouts",
+                                      style: TextStyle(
+                                        color: Colors.white,
+                                        fontSize: 24,
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
+                                    Text("2 OUT 4 TASKS")
+                                  ]),
                                 ),
                               ],
                             )),
