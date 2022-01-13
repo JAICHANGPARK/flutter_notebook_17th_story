@@ -12,14 +12,20 @@ class MedicalStartScreen extends StatelessWidget {
               right: -16,
               top: -24,
               child: Container(
-                height: 48,
-                width: 48,
+                height: 84,
+                width: 84,
                 decoration: BoxDecoration(
                     shape: BoxShape.circle,
                     border: Border.all(
-                      width: 4,
+                      width: 6,
                       color: Colors.grey,
                     )),
+              )),
+          const Positioned(
+              right: 100,
+              top: 48,
+              child: const CircleAvatar(
+                radius: 16,
               ))
         ],
       ),
