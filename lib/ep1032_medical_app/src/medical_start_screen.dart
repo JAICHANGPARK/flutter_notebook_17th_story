@@ -47,17 +47,23 @@ class MedicalStartScreen extends StatelessWidget {
                       fontWeight: FontWeight.bold,
                     ),
                   ),
-                  Text("Ecosystem",   style: TextStyle(
-                    fontSize: 32,
-                    fontWeight: FontWeight.bold,
-                  ),),
-                  SizedBox(height: 12,),
+                  Text(
+                    "Ecosystem",
+                    style: TextStyle(
+                      fontSize: 32,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  SizedBox(
+                    height: 12,
+                  ),
                   Text("Specializsed healthcare, on a single tech platform."),
-                  SizedBox(height: 4,),
+                  SizedBox(
+                    height: 4,
+                  ),
                   Text("simplifying access for anyone. anywhere")
                 ],
               )),
-
           Positioned(
               right: 0,
               bottom: 100,
@@ -74,7 +80,6 @@ class MedicalStartScreen extends StatelessWidget {
                       )),
                 ),
               )),
-
           Positioned(
               right: 0,
               bottom: 98,
@@ -89,6 +94,32 @@ class MedicalStartScreen extends StatelessWidget {
                         width: 1,
                         color: Colors.grey,
                       )),
+                ),
+              )),
+          Positioned(
+              bottom: 160,
+              left: 32,
+              child: Center(
+                child: Container(
+                  height: 240,
+                  width: 140,
+                  decoration: BoxDecoration(
+                    color: Colors.blue,
+                    borderRadius: BorderRadius.circular(8),
+                  ),
+                ),
+              )),
+          Positioned(
+              bottom: 84,
+              right: 32,
+              child: Center(
+                child: Container(
+                  height: 240,
+                  width: 140,
+                  decoration: BoxDecoration(
+                    color: Colors.blue,
+                    borderRadius: BorderRadius.circular(8),
+                  ),
                 ),
               )),
         ],
