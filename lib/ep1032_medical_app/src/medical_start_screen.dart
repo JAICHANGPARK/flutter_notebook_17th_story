@@ -57,8 +57,40 @@ class MedicalStartScreen extends StatelessWidget {
                   Text("simplifying access for anyone. anywhere")
                 ],
               )),
-          
-              Positioned(child: C)
+
+          Positioned(
+              right: 0,
+              bottom: 100,
+              left: 0,
+              child: Center(
+                child: Container(
+                  height: 240,
+                  width: 240,
+                  decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      border: Border.all(
+                        width: 1,
+                        color: Colors.grey,
+                      )),
+                ),
+              )),
+
+          Positioned(
+              right: 0,
+              bottom: 98,
+              left: 12,
+              child: Center(
+                child: Container(
+                  height: 240,
+                  width: 240,
+                  decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      border: Border.all(
+                        width: 1,
+                        color: Colors.grey,
+                      )),
+                ),
+              )),
         ],
       ),
     );
