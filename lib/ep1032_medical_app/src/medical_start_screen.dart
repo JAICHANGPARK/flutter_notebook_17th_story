@@ -35,19 +35,28 @@ class MedicalStartScreen extends StatelessWidget {
                 backgroundColor: Colors.greenAccent,
               )),
           Positioned(
-
               top: 200,
               left: 16,
               child: Column(
-
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-            Text("Virtual"),
-            Text("Ecosystem"),
-
-            Text("Specializsed healthcare, on a single tech platform."),
-            Text("simplifying access for anyone. anywhere")
-          ],))
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    "Virtual",
+                    style: TextStyle(
+                      fontSize: 32,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  Text("Ecosystem",   style: TextStyle(
+                    fontSize: 32,
+                    fontWeight: FontWeight.bold,
+                  ),),
+                  SizedBox(height: 12,),
+                  Text("Specializsed healthcare, on a single tech platform."),
+                  SizedBox(height: 4,),
+                  Text("simplifying access for anyone. anywhere")
+                ],
+              ))
         ],
       ),
     );
