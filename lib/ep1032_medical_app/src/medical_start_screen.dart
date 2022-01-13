@@ -129,7 +129,7 @@ class MedicalStartScreen extends StatelessWidget {
                 children: [
                   FloatingActionButton(onPressed: () {},
                   child: Icon(Icons.arrow_forward),
-                    
+
                   backgroundColor: Colors.greenAccent,),
                   SizedBox(
                     width: 8,
