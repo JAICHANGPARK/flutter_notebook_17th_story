@@ -123,19 +123,26 @@ class MedicalStartScreen extends StatelessWidget {
                 ),
               )),
           Positioned(
-            left: 32,
+              left: 32,
               bottom: 48,
               child: Row(
-            children: [
-              FloatingActionButton(onPressed: () {}),
-              Column(
                 children: [
-                  Text("Get"),
-                  Text("started"),
+                  FloatingActionButton(onPressed: () {},
+                  child: Icon(Icons.arrow_forward),
+                    
+                  backgroundColor: Colors.greenAccent,),
+                  SizedBox(
+                    width: 8,
+                  ),
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text("Get"),
+                      Text("started"),
+                    ],
+                  )
                 ],
-              )
-            ],
-          ))
+              ))
         ],
       ),
     );
