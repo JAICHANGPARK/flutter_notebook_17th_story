@@ -36,7 +36,7 @@ class MedicalStartScreen extends StatelessWidget {
               )),
           Positioned(
               top: 200,
-              left: 16,
+              left: 32,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -122,6 +122,20 @@ class MedicalStartScreen extends StatelessWidget {
                   ),
                 ),
               )),
+          Positioned(
+            left: 32,
+              bottom: 48,
+              child: Row(
+            children: [
+              FloatingActionButton(onPressed: () {}),
+              Column(
+                children: [
+                  Text("Get"),
+                  Text("started"),
+                ],
+              )
+            ],
+          ))
         ],
       ),
     );
