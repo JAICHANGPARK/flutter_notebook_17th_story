@@ -56,7 +56,9 @@ class MedicalStartScreen extends StatelessWidget {
                   SizedBox(height: 4,),
                   Text("simplifying access for anyone. anywhere")
                 ],
-              ))
+              )),
+          
+              Positioned(child: C)
         ],
       ),
     );
