@@ -17,7 +17,7 @@ class MedicalStartScreen extends StatelessWidget {
                 decoration: BoxDecoration(
                     shape: BoxShape.circle,
                     border: Border.all(
-                      width: 6,
+                      width: 8,
                       color: Colors.grey,
                     )),
               )),
@@ -26,7 +26,28 @@ class MedicalStartScreen extends StatelessWidget {
               top: 48,
               child: const CircleAvatar(
                 radius: 16,
-              ))
+              )),
+          const Positioned(
+              right: 72,
+              top: 84,
+              child: const CircleAvatar(
+                radius: 8,
+                backgroundColor: Colors.greenAccent,
+              )),
+          Positioned(
+
+              top: 200,
+              left: 16,
+              child: Column(
+
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+            Text("Virtual"),
+            Text("Ecosystem"),
+
+            Text("Specializsed healthcare, on a single tech platform."),
+            Text("simplifying access for anyone. anywhere")
+          ],))
         ],
       ),
     );
