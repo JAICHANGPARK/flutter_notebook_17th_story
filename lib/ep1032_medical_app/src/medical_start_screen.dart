@@ -1,5 +1,6 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_17th/ep1032_medical_app/src/medical_main_page.dart';
 
 class MedicalStartScreen extends StatelessWidget {
   const MedicalStartScreen({Key? key}) : super(key: key);
