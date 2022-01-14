@@ -45,11 +45,19 @@ class MedicalStartScreen extends StatelessWidget {
                 children: const [
                   Text(
                     "Virtual",
-                    style: TextStyle(fontSize: 32, fontWeight: FontWeight.bold, color: Color.fromRGBO(0, 219, 167, 1)),
+                    style: TextStyle(
+                      fontSize: 32,
+                      fontWeight: FontWeight.bold,
+                      color: Color.fromRGBO(0, 219, 167, 1),
+                    ),
                   ),
                   Text(
                     "Ecosystem",
-                    style: TextStyle(fontSize: 32, fontWeight: FontWeight.bold, color: Colors.white),
+                    style: TextStyle(
+                      fontSize: 32,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white,
+                    ),
                   ),
                   SizedBox(
                     height: 12,
