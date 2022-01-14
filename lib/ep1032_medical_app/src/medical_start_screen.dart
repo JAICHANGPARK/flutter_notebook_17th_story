@@ -6,6 +6,7 @@ class MedicalStartScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color.fromRGBO(7, 33, 60, 1),
       body: Stack(
         children: [
           Positioned(
@@ -45,6 +46,7 @@ class MedicalStartScreen extends StatelessWidget {
                     style: TextStyle(
                       fontSize: 32,
                       fontWeight: FontWeight.bold,
+                      color: Color.fromRGBO(0, 219, 167, 1)
                     ),
                   ),
                   Text(
