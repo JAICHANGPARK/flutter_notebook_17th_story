@@ -7,7 +7,7 @@ class MedicalStartScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromRGBO(7, 33, 60, 1),
+      backgroundColor: const Color.fromRGBO(7, 33, 60, 1),
       body: Stack(
         children: [
           Positioned(
@@ -41,7 +41,7 @@ class MedicalStartScreen extends StatelessWidget {
               left: 32,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
+                children: const [
                   Text(
                     "Virtual",
                     style: TextStyle(fontSize: 32, fontWeight: FontWeight.bold, color: Color.fromRGBO(0, 219, 167, 1)),
@@ -112,7 +112,7 @@ class MedicalStartScreen extends StatelessWidget {
                   decoration: BoxDecoration(
                       color: Colors.blue,
                       borderRadius: BorderRadius.circular(8),
-                      image: DecorationImage(
+                      image: const DecorationImage(
                         image: CachedNetworkImageProvider(
                             "https://cdn.pixabay.com/photo/2017/02/16/23/10/smile-2072907_960_720.jpg"),
                         fit: BoxFit.cover,
@@ -129,7 +129,7 @@ class MedicalStartScreen extends StatelessWidget {
                   decoration: BoxDecoration(
                       color: Colors.blue,
                       borderRadius: BorderRadius.circular(8),
-                      image: DecorationImage(
+                      image: const DecorationImage(
                         image: CachedNetworkImageProvider(
                             "https://cdn.pixabay.com/photo/2018/11/08/23/52/man-3803551__340.jpg"),
                         fit: BoxFit.cover,
@@ -142,16 +142,22 @@ class MedicalStartScreen extends StatelessWidget {
               child: Row(
                 children: [
                   FloatingActionButton(
-                    onPressed: () {},
-                    child: Icon(Icons.arrow_forward),
+                    onPressed: () {
+                      Navigator.of(context).pushReplacement(
+                        MaterialPageRoute(
+                          builder: (context) => MedicalMainPage(),
+                        ),
+                      );
+                    },
+                    child: const Icon(Icons.arrow_forward),
                     backgroundColor: Colors.greenAccent,
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 8,
                   ),
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
+                    children: const [
                       Text(
                         "Get",
                         style: TextStyle(
