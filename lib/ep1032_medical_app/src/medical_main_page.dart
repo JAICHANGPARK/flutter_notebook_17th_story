@@ -1,3 +1,4 @@
+import 'package:badges/badges.dart';
 import 'package:flutter/material.dart';
 
 class MedicalMainPage extends StatelessWidget {
@@ -67,13 +68,21 @@ class MedicalMainPage extends StatelessWidget {
                   )),
                    Expanded(
                       child: Center(
-                    child: IconButton(onPressed: () {}, icon: Icon(Icons.contact_mail_outlined)),
+                    child: IconButton(onPressed: () {}, icon: Icon(Icons.contact_mail_outlined),
+                    color: Colors.grey,),
                   )),
                   Expanded(
                       child: Center(
-                        child: IconButton(onPressed: () {}, icon: Icon(Icons.calendar_today)),
+                        child: IconButton(onPressed: () {}, icon: Icon(Icons.calendar_today), color: Colors.grey,),
                       )),
-                   Expanded(child: Badge()),
+                   Expanded(child: Center(
+                     child: Badge(
+                       badgeContent: Text('3'),
+                       child: Icon(Icons.notifications_outlined, color: Colors.grey,),
+
+
+                     ),
+                   )),
                 ],
               ),
               flex: 3,
