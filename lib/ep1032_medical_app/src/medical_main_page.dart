@@ -6,6 +6,9 @@ class MedicalMainPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return const Scaffold(
+      backgroundColor: Color.fromRGBO(7, 33, 60, 1),
+
+    );
   }
 }
