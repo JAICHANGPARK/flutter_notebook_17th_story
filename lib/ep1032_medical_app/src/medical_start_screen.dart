@@ -124,7 +124,7 @@ class MedicalStartScreen extends StatelessWidget {
               )),
           Positioned(
               left: 32,
-              bottom: 48,
+              bottom: 64,
               child: Row(
                 children: [
                   FloatingActionButton(onPressed: () {},
