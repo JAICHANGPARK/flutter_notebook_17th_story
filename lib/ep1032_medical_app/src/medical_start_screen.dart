@@ -1,3 +1,4 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 
 class MedicalStartScreen extends StatelessWidget {
@@ -43,27 +44,30 @@ class MedicalStartScreen extends StatelessWidget {
                 children: [
                   Text(
                     "Virtual",
-                    style: TextStyle(
-                      fontSize: 32,
-                      fontWeight: FontWeight.bold,
-                      color: Color.fromRGBO(0, 219, 167, 1)
-                    ),
+                    style: TextStyle(fontSize: 32, fontWeight: FontWeight.bold, color: Color.fromRGBO(0, 219, 167, 1)),
                   ),
                   Text(
                     "Ecosystem",
-                    style: TextStyle(
-                      fontSize: 32,
-                      fontWeight: FontWeight.bold,
-                    ),
+                    style: TextStyle(fontSize: 32, fontWeight: FontWeight.bold, color: Colors.white),
                   ),
                   SizedBox(
                     height: 12,
                   ),
-                  Text("Specializsed healthcare, on a single tech platform."),
+                  Text(
+                    "Specializsed healthcare, on a single tech platform.",
+                    style: TextStyle(
+                      color: Colors.grey,
+                    ),
+                  ),
                   SizedBox(
                     height: 4,
                   ),
-                  Text("simplifying access for anyone. anywhere")
+                  Text(
+                    "simplifying access for anyone. anywhere",
+                    style: TextStyle(
+                      color: Colors.grey,
+                    ),
+                  )
                 ],
               )),
           Positioned(
@@ -106,9 +110,13 @@ class MedicalStartScreen extends StatelessWidget {
                   height: 240,
                   width: 140,
                   decoration: BoxDecoration(
-                    color: Colors.blue,
-                    borderRadius: BorderRadius.circular(8),
-                  ),
+                      color: Colors.blue,
+                      borderRadius: BorderRadius.circular(8),
+                      image: DecorationImage(
+                        image: CachedNetworkImageProvider(
+                            "https://cdn.pixabay.com/photo/2017/02/16/23/10/smile-2072907_960_720.jpg"),
+                        fit: BoxFit.cover,
+                      )),
                 ),
               )),
           Positioned(
@@ -119,9 +127,13 @@ class MedicalStartScreen extends StatelessWidget {
                   height: 240,
                   width: 140,
                   decoration: BoxDecoration(
-                    color: Colors.blue,
-                    borderRadius: BorderRadius.circular(8),
-                  ),
+                      color: Colors.blue,
+                      borderRadius: BorderRadius.circular(8),
+                      image: DecorationImage(
+                        image: CachedNetworkImageProvider(
+                            "https://cdn.pixabay.com/photo/2018/11/08/23/52/man-3803551__340.jpg"),
+                        fit: BoxFit.cover,
+                      )),
                 ),
               )),
           Positioned(
@@ -129,18 +141,29 @@ class MedicalStartScreen extends StatelessWidget {
               bottom: 64,
               child: Row(
                 children: [
-                  FloatingActionButton(onPressed: () {},
-                  child: Icon(Icons.arrow_forward),
-
-                  backgroundColor: Colors.greenAccent,),
+                  FloatingActionButton(
+                    onPressed: () {},
+                    child: Icon(Icons.arrow_forward),
+                    backgroundColor: Colors.greenAccent,
+                  ),
                   SizedBox(
                     width: 8,
                   ),
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text("Get"),
-                      Text("started"),
+                      Text(
+                        "Get",
+                        style: TextStyle(
+                          color: Colors.white,
+                        ),
+                      ),
+                      Text(
+                        "started",
+                        style: TextStyle(
+                          color: Colors.white,
+                        ),
+                      ),
                     ],
                   )
                 ],
