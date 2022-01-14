@@ -24,13 +24,13 @@ class MedicalStartScreen extends StatelessWidget {
           const Positioned(
               right: 100,
               top: 48,
-              child: const CircleAvatar(
+              child: CircleAvatar(
                 radius: 16,
               )),
           const Positioned(
               right: 72,
               top: 84,
-              child: const CircleAvatar(
+              child: CircleAvatar(
                 radius: 8,
                 backgroundColor: Colors.greenAccent,
               )),
