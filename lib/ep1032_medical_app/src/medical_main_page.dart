@@ -91,6 +91,7 @@ class MedicalMainPage extends StatelessWidget {
                                 child: Padding(
                                   padding: const EdgeInsets.all(16.0),
                                   child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
                                       Row(
                                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -119,14 +120,17 @@ class MedicalMainPage extends StatelessWidget {
                                           )
                                         ],
                                       ),
+                                      SizedBox(height: 16,),
                                       Text("Dream", style: TextStyle(
                                         color: Colors.white,
                                         fontWeight: FontWeight.bold,
                                       ),),
+                                      SizedBox(height: 4,),
                                       Text("Walker", style: TextStyle(
                                         color: Colors.white,
                                         fontWeight: FontWeight.bold,
                                       ),),
+                                      SizedBox(height: 16,),
                                       Container(
                                         decoration: BoxDecoration(
                                           color: Colors.tealAccent,
