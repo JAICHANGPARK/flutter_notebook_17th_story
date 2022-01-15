@@ -121,30 +121,41 @@ class MedicalMainPage extends StatelessWidget {
                                           )
                                         ],
                                       ),
-                                      SizedBox(height: 16,),
-                                      Text("Dream", style: TextStyle(
-                                        color: Colors.white,
-                                        fontWeight: FontWeight.bold,
-                                      ),),
-                                      SizedBox(height: 4,),
-                                      Text("Walker", style: TextStyle(
-                                        color: Colors.white,
-                                        fontWeight: FontWeight.bold,
-                                      ),),
-                                      SizedBox(height: 16,),
+                                      SizedBox(
+                                        height: 16,
+                                      ),
+                                      Text(
+                                        "Dream",
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                          fontWeight: FontWeight.bold,
+                                        ),
+                                      ),
+                                      SizedBox(
+                                        height: 4,
+                                      ),
+                                      Text(
+                                        "Walker",
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                          fontWeight: FontWeight.bold,
+                                        ),
+                                      ),
+                                      SizedBox(
+                                        height: 16,
+                                      ),
                                       Container(
                                         decoration: BoxDecoration(
-                                          color: index == 0 ? Colors.tealAccent : Color.fromRGBO(7, 33, 60, 1),
+                                          color: index == 0
+                                              ? Color.fromRGBO(0, 219, 167, 1)
+                                              : Color.fromRGBO(7, 33, 60, 1),
                                           borderRadius: BorderRadius.circular(16),
                                         ),
                                         padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                                         child: Center(
                                           child: Text(
                                             "Join the call",
-                                            style: TextStyle(
-                                              color: Colors.white,
-                                              fontSize: 12
-                                            ),
+                                            style: TextStyle(color: Colors.white, fontSize: 12),
                                           ),
                                         ),
                                       )
