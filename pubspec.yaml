@@ -23,7 +23,7 @@ dependencies:
 
   freezed_annotation: any
   json_annotation: ^4.4.0
-  badge: any
+  badges: any
 
 
 dev_dependencies:
