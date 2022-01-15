@@ -87,21 +87,29 @@ class MedicalMainPage extends StatelessWidget {
                                 child: Padding(
                                   padding: const EdgeInsets.all(16.0),
                                   child: Column(
-
                                     children: [
                                       Row(
                                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                         children: [
                                           CircleAvatar(),
                                           Column(
-
                                             crossAxisAlignment: CrossAxisAlignment.end,
                                             children: [
                                               Text(
                                                 "5:45 PM",
+                                                style: TextStyle(
+                                                  color: Colors.white,
+                                                  fontSize: 12,
+                                                  fontWeight: FontWeight.bold,
+                                                ),
                                               ),
                                               Text(
                                                 "DEC 7",
+                                                style: TextStyle(
+                                                  color: Colors.white,
+                                                  fontSize: 12,
+                                                  fontWeight: FontWeight.bold,
+                                                ),
                                               ),
                                             ],
                                           )
