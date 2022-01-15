@@ -51,6 +51,18 @@ class MedicalMainPage extends StatelessWidget {
                         ),
                       ],
                     ),
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text("Upcoming consultations",style: TextStyle(
+                        color: Colors.white,
+                      ),),
+                      IconButton(
+                        onPressed: () {},
+                        icon: Icon(Icons.more_vert),
+                      ),
+                    ],
                   )
                 ],
               ),
