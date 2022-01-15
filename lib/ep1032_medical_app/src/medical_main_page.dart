@@ -216,7 +216,7 @@ class MedicalMainPage extends StatelessWidget {
                       ),
                     ),
                   ),
-                  SizedBox(height: 16,),
+                  const SizedBox(height: 16,),
                   Padding(
                     padding: const EdgeInsets.all(16.0),
                     child: Container(
@@ -225,6 +225,12 @@ class MedicalMainPage extends StatelessWidget {
                         border: Border.all(color: Colors.grey,
                         width: 0.7),
                         borderRadius: BorderRadius.circular(36)
+                      ),
+                      child: Row(
+                        children: const [
+                          Expanded(child: Placeholder()),
+                          Expanded(child: Placeholder()),
+                        ],
                       ),
                     ),
                   )
