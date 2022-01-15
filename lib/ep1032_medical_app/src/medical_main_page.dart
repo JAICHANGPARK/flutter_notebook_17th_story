@@ -77,102 +77,120 @@ class MedicalMainPage extends StatelessWidget {
                     padding: const EdgeInsets.only(left: 16),
                     child: SizedBox(
                       height: 190,
-                      child: Container(
-                        color: Colors.grey,
-                        child: ListView.builder(
-                          itemBuilder: (context, index) {
-                            return Padding(
-                              padding: const EdgeInsets.all(8.0),
-                              child: Container(
-                                width: 140,
-                                decoration: BoxDecoration(
-                                    color: index == 0
-                                        ? const Color.fromRGBO(0, 82, 168, 1)
-                                        : const Color.fromRGBO(37, 61, 87, 1),
-                                    borderRadius: BorderRadius.circular(8)),
-                                child: Padding(
-                                  padding: const EdgeInsets.all(16.0),
-                                  child: Column(
-                                    crossAxisAlignment: CrossAxisAlignment.start,
-                                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                    children: [
-                                      Row(
-                                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                        children: [
-                                          const CircleAvatar(),
-                                          Column(
-                                            crossAxisAlignment: CrossAxisAlignment.end,
-                                            children: const [
-                                              Text(
-                                                "5:45 PM",
-                                                style: TextStyle(
-                                                  color: Colors.white,
-                                                  fontSize: 12,
-                                                  fontWeight: FontWeight.bold,
-                                                ),
+                      child: ListView.builder(
+                        itemBuilder: (context, index) {
+                          return Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Container(
+                              width: 140,
+                              decoration: BoxDecoration(
+                                  color: index == 0
+                                      ? const Color.fromRGBO(0, 82, 168, 1)
+                                      : const Color.fromRGBO(37, 61, 87, 1),
+                                  borderRadius: BorderRadius.circular(8)),
+                              child: Padding(
+                                padding: const EdgeInsets.all(16.0),
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    Row(
+                                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                      children: [
+                                        const CircleAvatar(),
+                                        Column(
+                                          crossAxisAlignment: CrossAxisAlignment.end,
+                                          children: const [
+                                            Text(
+                                              "5:45 PM",
+                                              style: TextStyle(
+                                                color: Colors.white,
+                                                fontSize: 12,
+                                                fontWeight: FontWeight.bold,
                                               ),
-                                              Text(
-                                                "DEC 7",
-                                                style: TextStyle(
-                                                  color: Colors.white,
-                                                  fontSize: 12,
-                                                  fontWeight: FontWeight.bold,
-                                                ),
+                                            ),
+                                            Text(
+                                              "DEC 7",
+                                              style: TextStyle(
+                                                color: Colors.white,
+                                                fontSize: 12,
+                                                fontWeight: FontWeight.bold,
                                               ),
-                                            ],
-                                          )
-                                        ],
+                                            ),
+                                          ],
+                                        )
+                                      ],
+                                    ),
+                                    const SizedBox(
+                                      height: 16,
+                                    ),
+                                    const Text(
+                                      "Dream",
+                                      style: TextStyle(
+                                        color: Colors.white,
+                                        fontWeight: FontWeight.bold,
                                       ),
-                                      const SizedBox(
-                                        height: 16,
+                                    ),
+                                    const SizedBox(
+                                      height: 4,
+                                    ),
+                                    const Text(
+                                      "Walker",
+                                      style: TextStyle(
+                                        color: Colors.white,
+                                        fontWeight: FontWeight.bold,
                                       ),
-                                      const Text(
-                                        "Dream",
-                                        style: TextStyle(
-                                          color: Colors.white,
-                                          fontWeight: FontWeight.bold,
+                                    ),
+                                    const SizedBox(
+                                      height: 16,
+                                    ),
+                                    Container(
+                                      decoration: BoxDecoration(
+                                        color: index == 0
+                                            ? const Color.fromRGBO(0, 219, 167, 1)
+                                            : const Color.fromRGBO(7, 33, 60, 1),
+                                        borderRadius: BorderRadius.circular(16),
+                                      ),
+                                      padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                                      child: const Center(
+                                        child: Text(
+                                          "Join the call",
+                                          style: TextStyle(color: Colors.white, fontSize: 12),
                                         ),
                                       ),
-                                      const SizedBox(
-                                        height: 4,
-                                      ),
-                                      const Text(
-                                        "Walker",
-                                        style: TextStyle(
-                                          color: Colors.white,
-                                          fontWeight: FontWeight.bold,
-                                        ),
-                                      ),
-                                      const SizedBox(
-                                        height: 16,
-                                      ),
-                                      Container(
-                                        decoration: BoxDecoration(
-                                          color: index == 0
-                                              ? const Color.fromRGBO(0, 219, 167, 1)
-                                              : const Color.fromRGBO(7, 33, 60, 1),
-                                          borderRadius: BorderRadius.circular(16),
-                                        ),
-                                        padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
-                                        child: const Center(
-                                          child: Text(
-                                            "Join the call",
-                                            style: TextStyle(color: Colors.white, fontSize: 12),
-                                          ),
-                                        ),
-                                      )
-                                    ],
-                                  ),
+                                    )
+                                  ],
                                 ),
                               ),
-                            );
-                          },
-                          scrollDirection: Axis.horizontal,
-                          itemCount: 8,
-                        ),
+                            ),
+                          );
+                        },
+                        scrollDirection: Axis.horizontal,
+                        itemCount: 8,
                       ),
                     ),
-                  )
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(16.0),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        const Text(
+                          "Patient profiles",
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 16,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        IconButton(
+                          onPressed: () {},
+                          icon: const Icon(Icons.more_vert),
+                          color: Colors.grey,
+                        ),
+                      ],
+                    ),
+                  ),
                 ],
               ),
               flex: 20,
