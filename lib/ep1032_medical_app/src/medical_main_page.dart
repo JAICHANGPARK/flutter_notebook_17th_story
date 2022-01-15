@@ -57,15 +57,15 @@ class MedicalMainPage extends StatelessWidget {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Text(
+                        const Text(
                           "Upcoming consultations",
-                          style: TextStyle(
+                          style: const TextStyle(
                             color: Colors.white,
                           ),
                         ),
                         IconButton(
                           onPressed: () {},
-                          icon: Icon(Icons.more_vert),
+                          icon: const Icon(Icons.more_vert),
                           color: Colors.grey,
                         ),
                       ],
@@ -84,8 +84,8 @@ class MedicalMainPage extends StatelessWidget {
                               child: Container(
                                 width: 160,
                                 decoration: BoxDecoration(
-                                  color: index == 0 ? Color.fromRGBO(0, 82, 168, 1) :
-                                  Color.fromRGBO(37, 61, 87, 1),
+                                  color: index == 0 ? const Color.fromRGBO(0, 82, 168, 1) :
+                                  const Color.fromRGBO(37, 61, 87, 1),
                                   borderRadius: BorderRadius.circular(8)
                                 ),
                                 child: Padding(
@@ -95,10 +95,10 @@ class MedicalMainPage extends StatelessWidget {
                                       Row(
                                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                         children: [
-                                          CircleAvatar(),
+                                          const CircleAvatar(),
                                           Column(
                                             crossAxisAlignment: CrossAxisAlignment.end,
-                                            children: [
+                                            children: const [
                                               Text(
                                                 "5:45 PM",
                                                 style: TextStyle(
@@ -118,7 +118,8 @@ class MedicalMainPage extends StatelessWidget {
                                             ],
                                           )
                                         ],
-                                      )
+                                      ),
+
                                     ],
                                   ),
                                 ),
