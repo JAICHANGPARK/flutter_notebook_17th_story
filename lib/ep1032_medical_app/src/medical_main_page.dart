@@ -59,8 +59,10 @@ class MedicalMainPage extends StatelessWidget {
                       children: [
                         const Text(
                           "Upcoming consultations",
-                          style: const TextStyle(
+                          style: TextStyle(
                             color: Colors.white,
+                            fontSize: 16,
+                            fontWeight: FontWeight.bold,
                           ),
                         ),
                         IconButton(
@@ -121,38 +123,38 @@ class MedicalMainPage extends StatelessWidget {
                                           )
                                         ],
                                       ),
-                                      SizedBox(
+                                      const SizedBox(
                                         height: 16,
                                       ),
-                                      Text(
+                                      const Text(
                                         "Dream",
                                         style: TextStyle(
                                           color: Colors.white,
                                           fontWeight: FontWeight.bold,
                                         ),
                                       ),
-                                      SizedBox(
+                                      const SizedBox(
                                         height: 4,
                                       ),
-                                      Text(
+                                      const Text(
                                         "Walker",
                                         style: TextStyle(
                                           color: Colors.white,
                                           fontWeight: FontWeight.bold,
                                         ),
                                       ),
-                                      SizedBox(
+                                      const SizedBox(
                                         height: 16,
                                       ),
                                       Container(
                                         decoration: BoxDecoration(
                                           color: index == 0
-                                              ? Color.fromRGBO(0, 219, 167, 1)
-                                              : Color.fromRGBO(7, 33, 60, 1),
+                                              ? const Color.fromRGBO(0, 219, 167, 1)
+                                              : const Color.fromRGBO(7, 33, 60, 1),
                                           borderRadius: BorderRadius.circular(16),
                                         ),
-                                        padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
-                                        child: Center(
+                                        padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                                        child: const Center(
                                           child: Text(
                                             "Join the call",
                                             style: TextStyle(color: Colors.white, fontSize: 12),
