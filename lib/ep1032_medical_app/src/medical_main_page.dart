@@ -66,23 +66,32 @@ class MedicalMainPage extends StatelessWidget {
                     foregroundColor: const Color.fromRGBO(0, 219, 167, 1),
                     child: const Icon(Icons.home_outlined),
                   )),
-                   Expanded(
+                  Expanded(
                       child: Center(
-                    child: IconButton(onPressed: () {}, icon: Icon(Icons.contact_mail_outlined),
-                    color: Colors.grey,),
+                    child: IconButton(
+                      onPressed: () {},
+                      icon: const Icon(Icons.contact_mail_outlined),
+                      color: Colors.grey,
+                    ),
                   )),
                   Expanded(
                       child: Center(
-                        child: IconButton(onPressed: () {}, icon: Icon(Icons.calendar_today), color: Colors.grey,),
-                      )),
-                   Expanded(child: Center(
-                     child: Badge(
-                       badgeContent: Text('3'),
-                       child: Icon(Icons.notifications_outlined, color: Colors.grey,),
-
-
-                     ),
-                   )),
+                    child: IconButton(
+                      onPressed: () {},
+                      icon: const Icon(Icons.calendar_today),
+                      color: Colors.grey,
+                    ),
+                  )),
+                  Expanded(
+                      child: Center(
+                    child: Badge(
+                      badgeContent: const Text('3'),
+                      child: const Icon(
+                        Icons.notifications_outlined,
+                        color: Colors.grey,
+                      ),
+                    ),
+                  )),
                 ],
               ),
               flex: 3,
