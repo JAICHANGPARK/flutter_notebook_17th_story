@@ -74,7 +74,7 @@ class MedicalMainPage extends StatelessWidget {
                   Padding(
                     padding: const EdgeInsets.only(left: 16),
                     child: SizedBox(
-                      height: 200,
+                      height: 190,
                       child: Container(
                         color: Colors.grey,
                         child: ListView.builder(
@@ -136,6 +136,7 @@ class MedicalMainPage extends StatelessWidget {
                                           color: Colors.tealAccent,
                                           borderRadius: BorderRadius.circular(16),
                                         ),
+                                        padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
                                         child: Center(
                                           child: Text(
                                             "Join the call",
