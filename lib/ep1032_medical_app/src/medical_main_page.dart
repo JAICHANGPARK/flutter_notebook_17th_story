@@ -133,15 +133,16 @@ class MedicalMainPage extends StatelessWidget {
                                       SizedBox(height: 16,),
                                       Container(
                                         decoration: BoxDecoration(
-                                          color: Colors.tealAccent,
+                                          color: index == 0 ? Colors.tealAccent : Color.fromRGBO(7, 33, 60, 1),
                                           borderRadius: BorderRadius.circular(16),
                                         ),
-                                        padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
+                                        padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                                         child: Center(
                                           child: Text(
                                             "Join the call",
                                             style: TextStyle(
                                               color: Colors.white,
+                                              fontSize: 12
                                             ),
                                           ),
                                         ),
