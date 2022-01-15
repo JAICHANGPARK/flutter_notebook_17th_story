@@ -77,24 +77,45 @@ class MedicalMainPage extends StatelessWidget {
                       height: 200,
                       child: Container(
                         color: Colors.grey,
-                        child: ListView.builder(itemBuilder: (context, index) {
-                          return Padding(
-                            padding: const EdgeInsets.all(8.0),
-                            child: Container(
-                              color: Colors.blue,
-                              child: Padding(
-                                padding: const EdgeInsets.all(16.0),
-                                child: Column(
-                                  children: [
+                        child: ListView.builder(
+                          itemBuilder: (context, index) {
+                            return Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Container(
+                                width: 160,
+                                color: Colors.blue,
+                                child: Padding(
+                                  padding: const EdgeInsets.all(16.0),
+                                  child: Column(
 
-                                  ],
+                                    children: [
+                                      Row(
+                                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                        children: [
+                                          CircleAvatar(),
+                                          Column(
+
+                                            crossAxisAlignment: CrossAxisAlignment.end,
+                                            children: [
+                                              Text(
+                                                "5:45 PM",
+                                              ),
+                                              Text(
+                                                "DEC 7",
+                                              ),
+                                            ],
+                                          )
+                                        ],
+                                      )
+                                    ],
+                                  ),
                                 ),
                               ),
-                            ),
-                          );
-                        },
-                        scrollDirection: Axis.horizontal,
-                        itemCount: 8,),
+                            );
+                          },
+                          scrollDirection: Axis.horizontal,
+                          itemCount: 8,
+                        ),
                       ),
                     ),
                   )
