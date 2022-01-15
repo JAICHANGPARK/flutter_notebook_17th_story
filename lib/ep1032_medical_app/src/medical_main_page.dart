@@ -92,6 +92,7 @@ class MedicalMainPage extends StatelessWidget {
                                   padding: const EdgeInsets.all(16.0),
                                   child: Column(
                                     crossAxisAlignment: CrossAxisAlignment.start,
+                                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                     children: [
                                       Row(
                                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
