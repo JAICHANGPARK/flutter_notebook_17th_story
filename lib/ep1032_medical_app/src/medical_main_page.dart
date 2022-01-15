@@ -82,12 +82,12 @@ class MedicalMainPage extends StatelessWidget {
                             return Padding(
                               padding: const EdgeInsets.all(8.0),
                               child: Container(
-                                width: 160,
+                                width: 140,
                                 decoration: BoxDecoration(
-                                  color: index == 0 ? const Color.fromRGBO(0, 82, 168, 1) :
-                                  const Color.fromRGBO(37, 61, 87, 1),
-                                  borderRadius: BorderRadius.circular(8)
-                                ),
+                                    color: index == 0
+                                        ? const Color.fromRGBO(0, 82, 168, 1)
+                                        : const Color.fromRGBO(37, 61, 87, 1),
+                                    borderRadius: BorderRadius.circular(8)),
                                 child: Padding(
                                   padding: const EdgeInsets.all(16.0),
                                   child: Column(
@@ -119,7 +119,28 @@ class MedicalMainPage extends StatelessWidget {
                                           )
                                         ],
                                       ),
-
+                                      Text("Dream", style: TextStyle(
+                                        color: Colors.white,
+                                        fontWeight: FontWeight.bold,
+                                      ),),
+                                      Text("Walker", style: TextStyle(
+                                        color: Colors.white,
+                                        fontWeight: FontWeight.bold,
+                                      ),),
+                                      Container(
+                                        decoration: BoxDecoration(
+                                          color: Colors.tealAccent,
+                                          borderRadius: BorderRadius.circular(16),
+                                        ),
+                                        child: Center(
+                                          child: Text(
+                                            "Join the call",
+                                            style: TextStyle(
+                                              color: Colors.white,
+                                            ),
+                                          ),
+                                        ),
+                                      )
                                     ],
                                   ),
                                 ),
