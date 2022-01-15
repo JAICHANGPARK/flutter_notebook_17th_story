@@ -200,7 +200,7 @@ class MedicalMainPage extends StatelessWidget {
                       child: ListView.builder(
                         itemBuilder: (context, index) {
                           return Padding(
-                            padding: const EdgeInsets.only(right: 8),
+                            padding: const EdgeInsets.only(right: 12),
                             child: CircleAvatar(
                               radius: 24,
                             ),
