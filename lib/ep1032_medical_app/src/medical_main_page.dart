@@ -83,7 +83,11 @@ class MedicalMainPage extends StatelessWidget {
                               padding: const EdgeInsets.all(8.0),
                               child: Container(
                                 width: 160,
-                                color: Colors.blue,
+                                decoration: BoxDecoration(
+                                  color: index == 0 ? Color.fromRGBO(0, 82, 168, 1) :
+                                  Color.fromRGBO(37, 61, 87, 1),
+                                  borderRadius: BorderRadius.circular(8)
+                                ),
                                 child: Padding(
                                   padding: const EdgeInsets.all(16.0),
                                   child: Column(
