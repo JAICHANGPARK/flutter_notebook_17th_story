@@ -190,19 +190,24 @@ class MedicalMainPage extends StatelessWidget {
                         ),
                       ],
                     ),
-
                   ),
-
                   Padding(
                     padding: const EdgeInsets.only(left: 16),
                     child: SizedBox(
-                      height: 64,
+                      height: 48,
                       child: ListView.builder(
                         itemBuilder: (context, index) {
                           return Padding(
                             padding: const EdgeInsets.only(right: 12),
                             child: CircleAvatar(
                               radius: 24,
+                              backgroundColor: index == 0 ? const Color.fromRGBO(0, 219, 167, 1) : Colors.blueAccent,
+                              child: index == 0
+                                  ? const Icon(
+                                      Icons.add,
+                                      color: Colors.white,
+                                    )
+                                  : Container(),
                             ),
                           );
                         },
