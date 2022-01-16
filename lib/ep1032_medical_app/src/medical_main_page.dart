@@ -251,10 +251,16 @@ class MedicalMainPage extends StatelessWidget {
                                     ),
                                   )),
                               Positioned(
+                                bottom: 0,
+                                left: 0,
+                                right: 0,
                                 child: Center(
                                   child: Container(
                                     height: 4,
                                     width: 4,
+                                    decoration: BoxDecoration(
+                                      color:  const Color.fromRGBO(0, 82, 168, 1),
+                                    ),
                                   ),
                                 ),
                               ),
