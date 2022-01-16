@@ -258,12 +258,12 @@ class MedicalMainPage extends StatelessWidget {
                                 right: 0,
                                 child: Center(
                                   child: Transform.rotate(
-                                   angle: 2.5/ pi,
+                                    angle: 2.5 / pi,
                                     child: Container(
                                       height: 8,
                                       width: 8,
                                       decoration: const BoxDecoration(
-                                        color:  Color.fromRGBO(0, 82, 168, 1),
+                                        color: Color.fromRGBO(0, 82, 168, 1),
                                       ),
                                     ),
                                   ),
@@ -293,9 +293,27 @@ class MedicalMainPage extends StatelessWidget {
                         Container(
                           height: 52,
                           width: 2,
-                          decoration: BoxDecoration(
-                            color: Colors.tealAccent
-                          ),
+                          decoration: BoxDecoration(color: Colors.tealAccent),
+                        ),
+                        SizedBox(
+                          width: 16,
+                        ),
+                        CircleAvatar(),
+                        SizedBox(
+                          width: 16,
+                        ),
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              "Dreamwalker",
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                            Text("Flutter / Android Developer")
+                          ],
                         )
                       ],
                     ),
