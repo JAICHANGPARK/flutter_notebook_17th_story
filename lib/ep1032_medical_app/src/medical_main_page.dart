@@ -228,7 +228,7 @@ class MedicalMainPage extends StatelessWidget {
                       height: 52,
                       decoration: BoxDecoration(
                           border: Border.all(color: Colors.grey, width: 0.7), borderRadius: BorderRadius.circular(36)),
-                      padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                      padding: EdgeInsets.symmetric(horizontal: 12, vertical: 4),
                       child: Row(
                         children: [
                           Expanded(
