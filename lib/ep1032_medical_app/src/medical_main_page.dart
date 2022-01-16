@@ -232,7 +232,21 @@ class MedicalMainPage extends StatelessWidget {
                           Expanded(
                               child: Stack(
                             children: [
-                              Positioned(child: Container())
+                              Positioned(
+                                  left: 0,
+                                  right: 0,
+                                  top: 0,
+                                  bottom: 8,
+                                  child: Container(
+                                    child: Center(
+                                      child: Text(
+                                        "Last enquiries",
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                        ),
+                                      ),
+                                    ),
+                                  ))
                             ],
                           )),
                           Expanded(
