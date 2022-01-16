@@ -228,7 +228,7 @@ class MedicalMainPage extends StatelessWidget {
                       height: 52,
                       decoration: BoxDecoration(
                           border: Border.all(color: Colors.grey, width: 0.7), borderRadius: BorderRadius.circular(36)),
-                      padding: EdgeInsets.symmetric(horizontal: 12, vertical: 4),
+                      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
                       child: Row(
                         children: [
                           Expanded(
@@ -243,7 +243,7 @@ class MedicalMainPage extends StatelessWidget {
                                     decoration: BoxDecoration(
                                         color: const Color.fromRGBO(0, 82, 168, 1),
                                         borderRadius: BorderRadius.circular(24)),
-                                    child: Center(
+                                    child: const Center(
                                       child: Text(
                                         "Last enquiries",
                                         style: TextStyle(
@@ -262,8 +262,8 @@ class MedicalMainPage extends StatelessWidget {
                                     child: Container(
                                       height: 8,
                                       width: 8,
-                                      decoration: BoxDecoration(
-                                        color:  const Color.fromRGBO(0, 82, 168, 1),
+                                      decoration: const BoxDecoration(
+                                        color:  Color.fromRGBO(0, 82, 168, 1),
                                       ),
                                     ),
                                   ),
@@ -273,7 +273,7 @@ class MedicalMainPage extends StatelessWidget {
                           )),
                           Expanded(
                               child: Container(
-                            child: Center(
+                            child: const Center(
                               child: Text(
                                 "Reports",
                                 style: TextStyle(
