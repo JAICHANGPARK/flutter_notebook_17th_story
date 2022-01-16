@@ -285,6 +285,20 @@ class MedicalMainPage extends StatelessWidget {
                         ],
                       ),
                     ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 16),
+                    child: Row(
+                      children: [
+                        Container(
+                          height: 52,
+                          width: 2,
+                          decoration: BoxDecoration(
+                            color: Colors.tealAccent
+                          ),
+                        )
+                      ],
+                    ),
                   )
                 ],
               ),
