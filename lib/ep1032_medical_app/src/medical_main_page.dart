@@ -226,7 +226,7 @@ class MedicalMainPage extends StatelessWidget {
                       height: 52,
                       decoration: BoxDecoration(
                           border: Border.all(color: Colors.grey, width: 0.7), borderRadius: BorderRadius.circular(36)),
-                      padding: EdgeInsets.symmetric(horizontal: 8, vertical: 2),
+                      padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                       child: Row(
                         children: [
                           Expanded(
@@ -235,9 +235,12 @@ class MedicalMainPage extends StatelessWidget {
                               Positioned(
                                   left: 0,
                                   right: 0,
-                                  top: 0,
+                                  top: 4,
                                   bottom: 8,
                                   child: Container(
+                                    decoration: BoxDecoration(
+                                        color: const Color.fromRGBO(0, 82, 168, 1),
+                                        borderRadius: BorderRadius.circular(24)),
                                     child: Center(
                                       child: Text(
                                         "Last enquiries",
@@ -246,7 +249,15 @@ class MedicalMainPage extends StatelessWidget {
                                         ),
                                       ),
                                     ),
-                                  ))
+                                  )),
+                              Positioned(
+                                child: Center(
+                                  child: Container(
+                                    height: 4,
+                                    width: 4,
+                                  ),
+                                ),
+                              ),
                             ],
                           )),
                           Expanded(
