@@ -291,8 +291,8 @@ class MedicalMainPage extends StatelessWidget {
                     child: Row(
                       children: [
                         Container(
-                          height: 52,
-                          width: 2,
+                          height: 48,
+                          width: 3,
                           decoration: BoxDecoration(color: Colors.tealAccent),
                         ),
                         SizedBox(
@@ -312,7 +312,16 @@ class MedicalMainPage extends StatelessWidget {
                                 fontWeight: FontWeight.bold,
                               ),
                             ),
-                            Text("Flutter / Android Developer")
+                            SizedBox(
+                              height: 4,
+                            ),
+                            Text(
+                              "Flutter / Android Developer",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                color: Colors.grey,
+                              ),
+                            )
                           ],
                         )
                       ],
