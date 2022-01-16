@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:badges/badges.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -251,15 +253,18 @@ class MedicalMainPage extends StatelessWidget {
                                     ),
                                   )),
                               Positioned(
-                                bottom: 0,
+                                bottom: 4,
                                 left: 0,
                                 right: 0,
                                 child: Center(
-                                  child: Container(
-                                    height: 4,
-                                    width: 4,
-                                    decoration: BoxDecoration(
-                                      color:  const Color.fromRGBO(0, 82, 168, 1),
+                                  child: Transform.rotate(
+                                   angle: 2.5/ pi,
+                                    child: Container(
+                                      height: 8,
+                                      width: 8,
+                                      decoration: BoxDecoration(
+                                        color:  const Color.fromRGBO(0, 82, 168, 1),
+                                      ),
                                     ),
                                   ),
                                 ),
