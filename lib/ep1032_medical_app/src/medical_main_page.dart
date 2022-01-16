@@ -1,4 +1,5 @@
 import 'package:badges/badges.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class MedicalMainPage extends StatelessWidget {
@@ -216,20 +217,35 @@ class MedicalMainPage extends StatelessWidget {
                       ),
                     ),
                   ),
-                  const SizedBox(height: 16,),
+                  const SizedBox(
+                    height: 16,
+                  ),
                   Padding(
                     padding: const EdgeInsets.all(16.0),
                     child: Container(
                       height: 52,
                       decoration: BoxDecoration(
-                        border: Border.all(color: Colors.grey,
-                        width: 0.7),
-                        borderRadius: BorderRadius.circular(36)
-                      ),
+                          border: Border.all(color: Colors.grey, width: 0.7), borderRadius: BorderRadius.circular(36)),
+                      padding: EdgeInsets.symmetric(horizontal: 8, vertical: 2),
                       child: Row(
-                        children: const [
-                          Expanded(child: Placeholder()),
-                          Expanded(child: Placeholder()),
+                        children: [
+                          Expanded(
+                              child: Stack(
+                            children: [
+                              Positioned(child: Container())
+                            ],
+                          )),
+                          Expanded(
+                              child: Container(
+                            child: Center(
+                              child: Text(
+                                "Reports",
+                                style: TextStyle(
+                                  color: Colors.grey,
+                                ),
+                              ),
+                            ),
+                          )),
                         ],
                       ),
                     ),
