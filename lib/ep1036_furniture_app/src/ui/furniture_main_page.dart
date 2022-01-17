@@ -28,28 +28,36 @@ class FurnitureMainPage extends ConsumerWidget {
                         iconSize: 32,
                     icon: Icon(Icons.home_outlined),
                     color: menuIndex == FurnitureMenu.home ? Colors.indigoAccent : Colors.black,
-                    onPressed: () {},
+                    onPressed: () {
+                      ref.read(furnitureMenuProvider.notifier).state = FurnitureMenu.home;
+                    },
                   )),
                   Expanded(
                       child: IconButton(
                         iconSize: 32,
                         icon: Icon(Icons.favorite_border),
                         color: menuIndex == FurnitureMenu.favorite ? Colors.indigoAccent : Colors.black,
-                        onPressed: () {},
+                        onPressed: () {
+                          ref.read(furnitureMenuProvider.notifier).state = FurnitureMenu.favorite;
+                        },
                       )),
                   Expanded(
                       child: IconButton(
                         iconSize: 32,
                         icon: Icon(Icons.shopping_bag_outlined),
-                        color: menuIndex == FurnitureMenu.favorite ? Colors.indigoAccent : Colors.black,
-                        onPressed: () {},
+                        color: menuIndex == FurnitureMenu.cart ? Colors.indigoAccent : Colors.black,
+                        onPressed: () {
+                          ref.read(furnitureMenuProvider.notifier).state = FurnitureMenu.cart;
+                        },
                       )),
                   Expanded(
                       child: IconButton(
                         iconSize: 32,
                         icon: Icon(Icons.person_outlined),
-                        color: menuIndex == FurnitureMenu.favorite ? Colors.indigoAccent : Colors.black,
-                        onPressed: () {},
+                        color: menuIndex == FurnitureMenu.profile ? Colors.indigoAccent : Colors.black,
+                        onPressed: () {
+                          ref.read(furnitureMenuProvider.notifier).state = FurnitureMenu.profile;
+                        },
                       )),
                 ],
               ),
