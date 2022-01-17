@@ -12,11 +12,11 @@ class FurnitureMainPage extends ConsumerWidget {
       body: SafeArea(
         child: Column(
           children: [
-            Expanded(
+            const Expanded(
               child: Placeholder(),
               flex: 20,
             ),
-            Divider(
+            const Divider(
               height: 0,
               color: Colors.grey,
             ),
@@ -26,7 +26,7 @@ class FurnitureMainPage extends ConsumerWidget {
                   Expanded(
                       child: IconButton(
                         iconSize: 32,
-                    icon: Icon(Icons.home_outlined),
+                    icon: const Icon(Icons.home_outlined),
                     color: menuIndex == FurnitureMenu.home ? Colors.indigoAccent : Colors.black,
                     onPressed: () {
                       ref.read(furnitureMenuProvider.notifier).state = FurnitureMenu.home;
@@ -35,7 +35,7 @@ class FurnitureMainPage extends ConsumerWidget {
                   Expanded(
                       child: IconButton(
                         iconSize: 32,
-                        icon: Icon(Icons.favorite_border),
+                        icon: const Icon(Icons.favorite_border),
                         color: menuIndex == FurnitureMenu.favorite ? Colors.indigoAccent : Colors.black,
                         onPressed: () {
                           ref.read(furnitureMenuProvider.notifier).state = FurnitureMenu.favorite;
@@ -44,7 +44,7 @@ class FurnitureMainPage extends ConsumerWidget {
                   Expanded(
                       child: IconButton(
                         iconSize: 32,
-                        icon: Icon(Icons.shopping_bag_outlined),
+                        icon: const Icon(Icons.shopping_bag_outlined),
                         color: menuIndex == FurnitureMenu.cart ? Colors.indigoAccent : Colors.black,
                         onPressed: () {
                           ref.read(furnitureMenuProvider.notifier).state = FurnitureMenu.cart;
@@ -53,7 +53,7 @@ class FurnitureMainPage extends ConsumerWidget {
                   Expanded(
                       child: IconButton(
                         iconSize: 32,
-                        icon: Icon(Icons.person_outlined),
+                        icon: const Icon(Icons.person_outlined),
                         color: menuIndex == FurnitureMenu.profile ? Colors.indigoAccent : Colors.black,
                         onPressed: () {
                           ref.read(furnitureMenuProvider.notifier).state = FurnitureMenu.profile;
@@ -63,7 +63,7 @@ class FurnitureMainPage extends ConsumerWidget {
               ),
               flex: 2,
             ),
-            SizedBox(
+            const SizedBox(
               height: 16,
             ),
           ],
