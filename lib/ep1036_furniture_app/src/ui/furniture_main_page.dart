@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 
-class FurnitureMainPage extends StatelessWidget {
+class FurnitureMainPage extends ConsumerWidget {
   const FurnitureMainPage({Key? key}) : super(key: key);
 
   @override
-  Widget build(BuildContext context) {
-    return Container();
+  Widget build(BuildContext context, ref) {
+    return Scaffold(
+
+    );
   }
 }
