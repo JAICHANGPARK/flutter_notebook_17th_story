@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_17th/ep1036_furniture_app/src/ui/furniture_main_page.dart';
 
 
 class FurnitureApp extends StatelessWidget {
@@ -6,8 +7,8 @@ class FurnitureApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-
+    return const MaterialApp(
+      home: FurnitureMainPage(),
     );
   }
 }
