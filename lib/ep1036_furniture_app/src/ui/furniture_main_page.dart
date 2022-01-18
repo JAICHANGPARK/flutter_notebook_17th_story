@@ -27,7 +27,7 @@ class FurnitureMainPage extends ConsumerWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         const Text("Discount"),
-                        SizedBox(height: 8,),
+                        const SizedBox(height: 16,),
                         Container(
                           height: 52,
                           decoration: BoxDecoration(
@@ -45,7 +45,7 @@ class FurnitureMainPage extends ConsumerWidget {
                                 ),
                               ),
                               const SizedBox(
-                                width: 8,
+                                width: 16,
                               ),
                               Container(
                                 decoration: BoxDecoration(
@@ -58,18 +58,18 @@ class FurnitureMainPage extends ConsumerWidget {
                             ],
                           ),
                         ),
-                        SizedBox(height: 8,),
+                        const SizedBox(height: 16,),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: [
+                          children: const [
                             Text("Subtotal"),
                             Text("498\$"),
                           ],
                         ),
-                        Divider(),
+                        const Divider(),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: [
+                          children: const [
                             Text("Shipping"),
                             Text("19\$"),
                           ],
