@@ -9,7 +9,6 @@ class FurnitureMainPage extends ConsumerWidget {
   Widget build(context, ref) {
     final menuIndex = ref.watch(furnitureMenuProvider);
     return Scaffold(
-
       body: SafeArea(
         child: Column(
           children: [
@@ -22,38 +21,44 @@ class FurnitureMainPage extends ConsumerWidget {
                     child: Center(child: Text("Shopping Cart")),
                   ),
                   const Expanded(child: Placeholder()),
-                  const Text("Discount"),
                   Padding(
                     padding: const EdgeInsets.all(16.0),
-                    child: Container(
-                      height: 52,
-                      decoration: BoxDecoration(
-                        color: Colors.grey[100],
-                      ),
-                      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
-                      child: Row(
-                        children: [
-                          const Expanded(
-                            child: TextField(
-                              decoration: InputDecoration(
-                                border: InputBorder.none,
-                                hintText: "Add Promo Code",
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        const Text("Discount"),
+                        SizedBox(height: 8,),
+                        Container(
+                          height: 52,
+                          decoration: BoxDecoration(
+                            color: Colors.grey[100],
+                          ),
+                          padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+                          child: Row(
+                            children: [
+                              const Expanded(
+                                child: TextField(
+                                  decoration: InputDecoration(
+                                    border: InputBorder.none,
+                                    hintText: "Add Promo Code",
+                                  ),
+                                ),
                               ),
-                            ),
+                              const SizedBox(
+                                width: 8,
+                              ),
+                              Container(
+                                decoration: BoxDecoration(
+                                  color: Colors.white,
+                                  borderRadius: BorderRadius.circular(7),
+                                ),
+                                padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 8),
+                                child: const Text("Apply"),
+                              )
+                            ],
                           ),
-                          const SizedBox(
-                            width: 8,
-                          ),
-                          Container(
-                            decoration: BoxDecoration(
-                              color: Colors.white,
-                              borderRadius: BorderRadius.circular(7),
-                            ),
-                            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 8),
-                            child: const Text("Apply"),
-                          )
-                        ],
-                      ),
+                        ),
+                      ],
                     ),
                   ),
                   Padding(
