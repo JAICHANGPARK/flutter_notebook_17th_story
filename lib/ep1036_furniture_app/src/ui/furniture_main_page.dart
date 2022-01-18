@@ -16,14 +16,16 @@ class FurnitureMainPage extends ConsumerWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: const Text("Shopping Cart"),
+                  const Padding(
+                    padding: EdgeInsets.all(8.0),
+                    child: Center(child: Text("Shopping Cart")),
                   ),
                   const Expanded(child: Placeholder()),
                   const Text("Discount"),
                   Container(
-                    decoration: const BoxDecoration(),
+                    decoration: const BoxDecoration(
+                      color: Colors.grey[100],
+                    ),
                   ),
                   Padding(
                     padding: const EdgeInsets.all(16.0),
