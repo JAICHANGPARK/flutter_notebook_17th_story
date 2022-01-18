@@ -23,8 +23,22 @@ class FurnitureMainPage extends ConsumerWidget {
                   const Expanded(child: Placeholder()),
                   const Text("Discount"),
                   Container(
-                    decoration: const BoxDecoration(
+                    height: 62,
+                    decoration: BoxDecoration(
                       color: Colors.grey[100],
+                    ),
+                    child: Row(
+                      children: [
+                        Expanded(
+                          child: TextField(),
+                        ),
+                        Container(
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                          ),
+                          child: Text("Apply"),
+                        )
+                      ],
                     ),
                   ),
                   Padding(
