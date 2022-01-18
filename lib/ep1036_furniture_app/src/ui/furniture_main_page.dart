@@ -9,6 +9,7 @@ class FurnitureMainPage extends ConsumerWidget {
   Widget build(context, ref) {
     final menuIndex = ref.watch(furnitureMenuProvider);
     return Scaffold(
+
       body: SafeArea(
         child: Column(
           children: [
@@ -22,23 +23,37 @@ class FurnitureMainPage extends ConsumerWidget {
                   ),
                   const Expanded(child: Placeholder()),
                   const Text("Discount"),
-                  Container(
-                    height: 62,
-                    decoration: BoxDecoration(
-                      color: Colors.grey[100],
-                    ),
-                    child: Row(
-                      children: [
-                        Expanded(
-                          child: TextField(),
-                        ),
-                        Container(
-                          decoration: BoxDecoration(
-                            color: Colors.white,
+                  Padding(
+                    padding: const EdgeInsets.all(16.0),
+                    child: Container(
+                      height: 52,
+                      decoration: BoxDecoration(
+                        color: Colors.grey[100],
+                      ),
+                      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+                      child: Row(
+                        children: [
+                          const Expanded(
+                            child: TextField(
+                              decoration: InputDecoration(
+                                border: InputBorder.none,
+                                hintText: "Add Promo Code",
+                              ),
+                            ),
                           ),
-                          child: Text("Apply"),
-                        )
-                      ],
+                          const SizedBox(
+                            width: 8,
+                          ),
+                          Container(
+                            decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(7),
+                            ),
+                            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 8),
+                            child: const Text("Apply"),
+                          )
+                        ],
+                      ),
                     ),
                   ),
                   Padding(
