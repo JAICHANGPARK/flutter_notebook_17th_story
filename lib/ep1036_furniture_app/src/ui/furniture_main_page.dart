@@ -12,10 +12,36 @@ class FurnitureMainPage extends ConsumerWidget {
       body: SafeArea(
         child: Column(
           children: [
-             Expanded(
+            Expanded(
               child: Column(
                 children: [
-
+                  Text("Shopping Cart"),
+                  Expanded(child: Placeholder()),
+                  Text("Discount"),
+                  Container(
+                    decoration: BoxDecoration(),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(16.0),
+                    child: Container(
+                      decoration: BoxDecoration(
+                        color: Colors.indigo,
+                        borderRadius: BorderRadius.circular(8),
+                      ),
+                      padding: EdgeInsets.symmetric(
+                        horizontal: 8,
+                        vertical: 16,
+                      ),
+                      child: Center(
+                        child: Text(
+                          "Checkout",
+                          style: TextStyle(
+                            color: Colors.white,
+                          ),
+                        ),
+                      ),
+                    ),
+                  )
                 ],
               ),
               flex: 20,
@@ -29,7 +55,7 @@ class FurnitureMainPage extends ConsumerWidget {
                 children: [
                   Expanded(
                       child: IconButton(
-                        iconSize: 32,
+                    iconSize: 32,
                     icon: const Icon(Icons.home_outlined),
                     color: menuIndex == FurnitureMenu.home ? Colors.indigoAccent : Colors.black,
                     onPressed: () {
@@ -38,31 +64,31 @@ class FurnitureMainPage extends ConsumerWidget {
                   )),
                   Expanded(
                       child: IconButton(
-                        iconSize: 32,
-                        icon: const Icon(Icons.favorite_border),
-                        color: menuIndex == FurnitureMenu.favorite ? Colors.indigoAccent : Colors.black,
-                        onPressed: () {
-                          ref.read(furnitureMenuProvider.notifier).state = FurnitureMenu.favorite;
-                        },
-                      )),
+                    iconSize: 32,
+                    icon: const Icon(Icons.favorite_border),
+                    color: menuIndex == FurnitureMenu.favorite ? Colors.indigoAccent : Colors.black,
+                    onPressed: () {
+                      ref.read(furnitureMenuProvider.notifier).state = FurnitureMenu.favorite;
+                    },
+                  )),
                   Expanded(
                       child: IconButton(
-                        iconSize: 32,
-                        icon: const Icon(Icons.shopping_bag_outlined),
-                        color: menuIndex == FurnitureMenu.cart ? Colors.indigoAccent : Colors.black,
-                        onPressed: () {
-                          ref.read(furnitureMenuProvider.notifier).state = FurnitureMenu.cart;
-                        },
-                      )),
+                    iconSize: 32,
+                    icon: const Icon(Icons.shopping_bag_outlined),
+                    color: menuIndex == FurnitureMenu.cart ? Colors.indigoAccent : Colors.black,
+                    onPressed: () {
+                      ref.read(furnitureMenuProvider.notifier).state = FurnitureMenu.cart;
+                    },
+                  )),
                   Expanded(
                       child: IconButton(
-                        iconSize: 32,
-                        icon: const Icon(Icons.person_outlined),
-                        color: menuIndex == FurnitureMenu.profile ? Colors.indigoAccent : Colors.black,
-                        onPressed: () {
-                          ref.read(furnitureMenuProvider.notifier).state = FurnitureMenu.profile;
-                        },
-                      )),
+                    iconSize: 32,
+                    icon: const Icon(Icons.person_outlined),
+                    color: menuIndex == FurnitureMenu.profile ? Colors.indigoAccent : Colors.black,
+                    onPressed: () {
+                      ref.read(furnitureMenuProvider.notifier).state = FurnitureMenu.profile;
+                    },
+                  )),
                 ],
               ),
               flex: 2,
