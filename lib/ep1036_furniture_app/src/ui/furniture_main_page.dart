@@ -15,11 +15,11 @@ class FurnitureMainPage extends ConsumerWidget {
             Expanded(
               child: Column(
                 children: [
-                  Text("Shopping Cart"),
-                  Expanded(child: Placeholder()),
-                  Text("Discount"),
+                  const Text("Shopping Cart"),
+                  const Expanded(child: Placeholder()),
+                  const Text("Discount"),
                   Container(
-                    decoration: BoxDecoration(),
+                    decoration: const BoxDecoration(),
                   ),
                   Padding(
                     padding: const EdgeInsets.all(16.0),
@@ -28,12 +28,12 @@ class FurnitureMainPage extends ConsumerWidget {
                         color: Colors.indigo,
                         borderRadius: BorderRadius.circular(8),
                       ),
-                      padding: EdgeInsets.symmetric(
+                      padding: const EdgeInsets.symmetric(
                         horizontal: 8,
                         vertical: 16,
                       ),
-                      child: Center(
-                        child: Text(
+                      child: const Center(
+                        child: const Text(
                           "Checkout",
                           style: TextStyle(
                             color: Colors.white,
