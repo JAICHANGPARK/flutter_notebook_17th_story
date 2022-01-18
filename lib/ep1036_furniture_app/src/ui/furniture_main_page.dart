@@ -37,7 +37,7 @@ class FurnitureMainPage extends ConsumerWidget {
                         vertical: 16,
                       ),
                       child: const Center(
-                        child: const Text(
+                        child: Text(
                           "Checkout",
                           style: TextStyle(
                             color: Colors.white,
