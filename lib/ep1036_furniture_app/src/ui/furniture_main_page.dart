@@ -14,8 +14,12 @@ class FurnitureMainPage extends ConsumerWidget {
           children: [
             Expanded(
               child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const Text("Shopping Cart"),
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: const Text("Shopping Cart"),
+                  ),
                   const Expanded(child: Placeholder()),
                   const Text("Discount"),
                   Container(
