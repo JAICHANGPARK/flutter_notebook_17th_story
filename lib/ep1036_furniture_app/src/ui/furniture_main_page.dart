@@ -12,8 +12,12 @@ class FurnitureMainPage extends ConsumerWidget {
       body: SafeArea(
         child: Column(
           children: [
-            const Expanded(
-              child: Placeholder(),
+             Expanded(
+              child: Column(
+                children: [
+
+                ],
+              ),
               flex: 20,
             ),
             const Divider(
