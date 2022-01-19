@@ -40,7 +40,6 @@ class FurnitureMainPage extends ConsumerWidget {
                                   image: CachedNetworkImageProvider("${cartItems[index].img}"),
                                   fit: BoxFit.cover,
                                 ),
-
                               ),
                             ),
                             Padding(
@@ -50,17 +49,13 @@ class FurnitureMainPage extends ConsumerWidget {
                                 children: [
                                   Text(
                                     "${cartItems[index].title}",
-                                    style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      fontSize: 16
-                                    ),
+                                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
                                   ),
                                   Text(
                                     "${cartItems[index].subtitle}",
                                     style: TextStyle(
-                                        fontWeight: FontWeight.bold,
-                                        fontSize: 12,
-
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 12,
                                     ),
                                   ),
                                   Text(
@@ -72,11 +67,21 @@ class FurnitureMainPage extends ConsumerWidget {
                                   SizedBox(
                                     height: 42,
                                     child: Row(
-
                                       children: [
-                                        CircleAvatar(),
-                                        Text(""),
-                                        CircleAvatar(),
+                                        GestureDetector(
+                                          onTap: () {
+
+                                          },
+                                          child: CircleAvatar(
+                                            child: Icon(Icons.remove),
+                                          ),
+                                        ),
+                                        Text(
+                                          "${cartItems[index].count} \$",
+                                        ),
+                                        CircleAvatar(
+                                          child: Icon(Icons.add),
+                                        ),
                                       ],
                                     ),
                                   )
