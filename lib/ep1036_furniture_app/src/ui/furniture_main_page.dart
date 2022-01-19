@@ -31,13 +31,16 @@ class FurnitureMainPage extends ConsumerWidget {
                         child: Row(
                           children: [
                             Container(
-                              height: 100,
-                              width: 120,
+                              height: 160,
+                              width: 160,
                               decoration: BoxDecoration(
                                 color: Colors.grey,
+                                borderRadius: BorderRadius.circular(8),
                                 image: DecorationImage(
                                   image: CachedNetworkImageProvider("${cartItems[index].img}"),
+                                  fit: BoxFit.cover,
                                 ),
+
                               ),
                             ),
                             Column(
