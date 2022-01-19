@@ -1,3 +1,4 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_notebook_17th/ep1036_furniture_app/src/provider/furniture_cart_provider.dart';
 import 'package:flutter_notebook_17th/ep1036_furniture_app/src/provider/furniture_menu_provider.dart';
@@ -30,10 +31,13 @@ class FurnitureMainPage extends ConsumerWidget {
                         child: Row(
                           children: [
                             Container(
-                              height: 64,
-                              width: 64,
+                              height: 100,
+                              width: 120,
                               decoration: BoxDecoration(
                                 color: Colors.grey,
+                                image: DecorationImage(
+                                  image: CachedNetworkImageProvider("${cartItems[index].img}"),
+                                ),
                               ),
                             ),
                             Column(
