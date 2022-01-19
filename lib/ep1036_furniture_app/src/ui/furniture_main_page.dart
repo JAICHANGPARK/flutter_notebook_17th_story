@@ -70,7 +70,9 @@ class FurnitureMainPage extends ConsumerWidget {
                                       children: [
                                         GestureDetector(
                                           onTap: () {
-
+                                            cartItems
+                                                  ref.read(furnitureCartProvider.notifier)
+                                                  .state = [cartItems[index]];
                                           },
                                           child: CircleAvatar(
                                             child: Icon(Icons.remove),
