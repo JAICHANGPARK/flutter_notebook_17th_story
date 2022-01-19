@@ -75,7 +75,7 @@ class FurnitureMainPage extends ConsumerWidget {
 
                                       children: [
                                         CircleAvatar(),
-                                        Expanded(child: Text(""),),
+                                        Text(""),
                                         CircleAvatar(),
                                       ],
                                     ),
