@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_17th/ep1036_furniture_app/src/provider/furniture_cart_provider.dart';
 import 'package:flutter_notebook_17th/ep1036_furniture_app/src/provider/furniture_menu_provider.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
@@ -8,6 +9,7 @@ class FurnitureMainPage extends ConsumerWidget {
   @override
   Widget build(context, ref) {
     final menuIndex = ref.watch(furnitureMenuProvider);
+    final cartItems = ref.watch(furnitureCartProvider);
     return Scaffold(
       body: SafeArea(
         child: Column(
@@ -20,14 +22,39 @@ class FurnitureMainPage extends ConsumerWidget {
                     padding: EdgeInsets.all(8.0),
                     child: Center(child: Text("Shopping Cart")),
                   ),
-                  const Expanded(child: Placeholder()),
+                  Expanded(
+                      child: ListView.builder(
+                    itemBuilder: (context, index) {
+                      return Row(
+                        children: [
+                          Container(
+                            height: 64,
+                            width: 64,
+                            decoration: BoxDecoration(
+                              color: Colors.grey,
+                            ),
+                          ),
+                          Column(
+                            children: [
+                              Text(
+                                "${cartItems[index].title}",
+                              ),
+                            ],
+                          )
+                        ],
+                      );
+                    },
+                    itemCount: ref.read(furnitureCartProvider).length,
+                  )),
                   Padding(
                     padding: const EdgeInsets.all(16.0),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         const Text("Discount"),
-                        const SizedBox(height: 16,),
+                        const SizedBox(
+                          height: 16,
+                        ),
                         Container(
                           height: 52,
                           decoration: BoxDecoration(
@@ -58,7 +85,9 @@ class FurnitureMainPage extends ConsumerWidget {
                             ],
                           ),
                         ),
-                        const SizedBox(height: 16,),
+                        const SizedBox(
+                          height: 16,
+                        ),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: const [
@@ -111,48 +140,40 @@ class FurnitureMainPage extends ConsumerWidget {
                 children: [
                   Expanded(
                       child: IconButton(
-                        iconSize: 32,
-                        icon: const Icon(Icons.home_outlined),
-                        color: menuIndex == FurnitureMenu.home ? Colors.indigoAccent : Colors.black,
-                        onPressed: () {
-                          ref
-                              .read(furnitureMenuProvider.notifier)
-                              .state = FurnitureMenu.home;
-                        },
-                      )),
+                    iconSize: 32,
+                    icon: const Icon(Icons.home_outlined),
+                    color: menuIndex == FurnitureMenu.home ? Colors.indigoAccent : Colors.black,
+                    onPressed: () {
+                      ref.read(furnitureMenuProvider.notifier).state = FurnitureMenu.home;
+                    },
+                  )),
                   Expanded(
                       child: IconButton(
-                        iconSize: 32,
-                        icon: const Icon(Icons.favorite_border),
-                        color: menuIndex == FurnitureMenu.favorite ? Colors.indigoAccent : Colors.black,
-                        onPressed: () {
-                          ref
-                              .read(furnitureMenuProvider.notifier)
-                              .state = FurnitureMenu.favorite;
-                        },
-                      )),
+                    iconSize: 32,
+                    icon: const Icon(Icons.favorite_border),
+                    color: menuIndex == FurnitureMenu.favorite ? Colors.indigoAccent : Colors.black,
+                    onPressed: () {
+                      ref.read(furnitureMenuProvider.notifier).state = FurnitureMenu.favorite;
+                    },
+                  )),
                   Expanded(
                       child: IconButton(
-                        iconSize: 32,
-                        icon: const Icon(Icons.shopping_bag_outlined),
-                        color: menuIndex == FurnitureMenu.cart ? Colors.indigoAccent : Colors.black,
-                        onPressed: () {
-                          ref
-                              .read(furnitureMenuProvider.notifier)
-                              .state = FurnitureMenu.cart;
-                        },
-                      )),
+                    iconSize: 32,
+                    icon: const Icon(Icons.shopping_bag_outlined),
+                    color: menuIndex == FurnitureMenu.cart ? Colors.indigoAccent : Colors.black,
+                    onPressed: () {
+                      ref.read(furnitureMenuProvider.notifier).state = FurnitureMenu.cart;
+                    },
+                  )),
                   Expanded(
                       child: IconButton(
-                        iconSize: 32,
-                        icon: const Icon(Icons.person_outlined),
-                        color: menuIndex == FurnitureMenu.profile ? Colors.indigoAccent : Colors.black,
-                        onPressed: () {
-                          ref
-                              .read(furnitureMenuProvider.notifier)
-                              .state = FurnitureMenu.profile;
-                        },
-                      )),
+                    iconSize: 32,
+                    icon: const Icon(Icons.person_outlined),
+                    color: menuIndex == FurnitureMenu.profile ? Colors.indigoAccent : Colors.black,
+                    onPressed: () {
+                      ref.read(furnitureMenuProvider.notifier).state = FurnitureMenu.profile;
+                    },
+                  )),
                 ],
               ),
               flex: 2,
