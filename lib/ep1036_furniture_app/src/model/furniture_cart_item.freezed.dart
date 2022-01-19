@@ -18,12 +18,18 @@ final _privateConstructorUsedError = UnsupportedError(
 class _$CartItemTearOff {
   const _$CartItemTearOff();
 
-  _CartItem call({String? img, String? title, int? price, String? color}) {
+  _CartItem call(
+      {String? img,
+      String? title,
+      int? price,
+      String? color,
+      String? subtitle}) {
     return _CartItem(
       img: img,
       title: title,
       price: price,
       color: color,
+      subtitle: subtitle,
     );
   }
 }
@@ -37,6 +43,7 @@ mixin _$CartItem {
   String? get title => throw _privateConstructorUsedError;
   int? get price => throw _privateConstructorUsedError;
   String? get color => throw _privateConstructorUsedError;
+  String? get subtitle => throw _privateConstructorUsedError;
 
   @JsonKey(ignore: true)
   $CartItemCopyWith<CartItem> get copyWith =>
@@ -47,7 +54,12 @@ mixin _$CartItem {
 abstract class $CartItemCopyWith<$Res> {
   factory $CartItemCopyWith(CartItem value, $Res Function(CartItem) then) =
       _$CartItemCopyWithImpl<$Res>;
-  $Res call({String? img, String? title, int? price, String? color});
+  $Res call(
+      {String? img,
+      String? title,
+      int? price,
+      String? color,
+      String? subtitle});
 }
 
 /// @nodoc
@@ -64,6 +76,7 @@ class _$CartItemCopyWithImpl<$Res> implements $CartItemCopyWith<$Res> {
     Object? title = freezed,
     Object? price = freezed,
     Object? color = freezed,
+    Object? subtitle = freezed,
   }) {
     return _then(_value.copyWith(
       img: img == freezed
@@ -82,6 +95,10 @@ class _$CartItemCopyWithImpl<$Res> implements $CartItemCopyWith<$Res> {
           ? _value.color
           : color // ignore: cast_nullable_to_non_nullable
               as String?,
+      subtitle: subtitle == freezed
+          ? _value.subtitle
+          : subtitle // ignore: cast_nullable_to_non_nullable
+              as String?,
     ));
   }
 }
@@ -91,7 +108,12 @@ abstract class _$CartItemCopyWith<$Res> implements $CartItemCopyWith<$Res> {
   factory _$CartItemCopyWith(_CartItem value, $Res Function(_CartItem) then) =
       __$CartItemCopyWithImpl<$Res>;
   @override
-  $Res call({String? img, String? title, int? price, String? color});
+  $Res call(
+      {String? img,
+      String? title,
+      int? price,
+      String? color,
+      String? subtitle});
 }
 
 /// @nodoc
@@ -109,6 +131,7 @@ class __$CartItemCopyWithImpl<$Res> extends _$CartItemCopyWithImpl<$Res>
     Object? title = freezed,
     Object? price = freezed,
     Object? color = freezed,
+    Object? subtitle = freezed,
   }) {
     return _then(_CartItem(
       img: img == freezed
@@ -127,6 +150,10 @@ class __$CartItemCopyWithImpl<$Res> extends _$CartItemCopyWithImpl<$Res>
           ? _value.color
           : color // ignore: cast_nullable_to_non_nullable
               as String?,
+      subtitle: subtitle == freezed
+          ? _value.subtitle
+          : subtitle // ignore: cast_nullable_to_non_nullable
+              as String?,
     ));
   }
 }
@@ -134,7 +161,7 @@ class __$CartItemCopyWithImpl<$Res> extends _$CartItemCopyWithImpl<$Res>
 /// @nodoc
 
 class _$_CartItem implements _CartItem {
-  _$_CartItem({this.img, this.title, this.price, this.color});
+  _$_CartItem({this.img, this.title, this.price, this.color, this.subtitle});
 
   @override
   final String? img;
@@ -144,10 +171,12 @@ class _$_CartItem implements _CartItem {
   final int? price;
   @override
   final String? color;
+  @override
+  final String? subtitle;
 
   @override
   String toString() {
-    return 'CartItem(img: $img, title: $title, price: $price, color: $color)';
+    return 'CartItem(img: $img, title: $title, price: $price, color: $color, subtitle: $subtitle)';
   }
 
   @override
@@ -158,7 +187,8 @@ class _$_CartItem implements _CartItem {
             const DeepCollectionEquality().equals(other.img, img) &&
             const DeepCollectionEquality().equals(other.title, title) &&
             const DeepCollectionEquality().equals(other.price, price) &&
-            const DeepCollectionEquality().equals(other.color, color));
+            const DeepCollectionEquality().equals(other.color, color) &&
+            const DeepCollectionEquality().equals(other.subtitle, subtitle));
   }
 
   @override
@@ -167,7 +197,8 @@ class _$_CartItem implements _CartItem {
       const DeepCollectionEquality().hash(img),
       const DeepCollectionEquality().hash(title),
       const DeepCollectionEquality().hash(price),
-      const DeepCollectionEquality().hash(color));
+      const DeepCollectionEquality().hash(color),
+      const DeepCollectionEquality().hash(subtitle));
 
   @JsonKey(ignore: true)
   @override
@@ -176,8 +207,12 @@ class _$_CartItem implements _CartItem {
 }
 
 abstract class _CartItem implements CartItem {
-  factory _CartItem({String? img, String? title, int? price, String? color}) =
-      _$_CartItem;
+  factory _CartItem(
+      {String? img,
+      String? title,
+      int? price,
+      String? color,
+      String? subtitle}) = _$_CartItem;
 
   @override
   String? get img;
@@ -187,6 +222,8 @@ abstract class _CartItem implements CartItem {
   int? get price;
   @override
   String? get color;
+  @override
+  String? get subtitle;
   @override
   @JsonKey(ignore: true)
   _$CartItemCopyWith<_CartItem> get copyWith =>
