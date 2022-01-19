@@ -1,5 +1,6 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_17th/ep1036_furniture_app/src/model/furniture_cart_item.dart';
 import 'package:flutter_notebook_17th/ep1036_furniture_app/src/provider/furniture_cart_provider.dart';
 import 'package:flutter_notebook_17th/ep1036_furniture_app/src/provider/furniture_menu_provider.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -70,9 +71,14 @@ class FurnitureMainPage extends ConsumerWidget {
                                       children: [
                                         GestureDetector(
                                           onTap: () {
-                                            cartItems
-                                                  ref.read(furnitureCartProvider.notifier)
-                                                  .state = [cartItems[index]];
+
+                                            //item
+                                            var _item = CartItem(
+                                              count: ((cartItems[index].count ?? 0) - 1),
+                                            );
+                                            cartItems[index] = _item;
+
+                                            ref.read(furnitureCartProvider.notifier).state = [];
                                           },
                                           child: CircleAvatar(
                                             child: Icon(Icons.remove),
