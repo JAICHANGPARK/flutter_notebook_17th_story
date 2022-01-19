@@ -25,23 +25,35 @@ class FurnitureMainPage extends ConsumerWidget {
                   Expanded(
                       child: ListView.builder(
                     itemBuilder: (context, index) {
-                      return Row(
-                        children: [
-                          Container(
-                            height: 64,
-                            width: 64,
-                            decoration: BoxDecoration(
-                              color: Colors.grey,
-                            ),
-                          ),
-                          Column(
-                            children: [
-                              Text(
-                                "${cartItems[index].title}",
+                      return Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Row(
+                          children: [
+                            Container(
+                              height: 64,
+                              width: 64,
+                              decoration: BoxDecoration(
+                                color: Colors.grey,
                               ),
-                            ],
-                          )
-                        ],
+                            ),
+                            Column(
+                              children: [
+                                Text(
+                                  "${cartItems[index].title}",
+                                ),
+                                Text(
+                                  "${cartItems[index].subtitle}",
+                                ),
+                                Text(
+                                  "Color: ${cartItems[index].color}",
+                                ),
+                                Text(
+                                  "${cartItems[index].price} \$",
+                                ),
+                              ],
+                            )
+                          ],
+                        ),
                       );
                     },
                     itemCount: ref.read(furnitureCartProvider).length,
