@@ -10,5 +10,6 @@ class CartItem with _$CartItem {
     int? price,
     String? color,
     String? subtitle,
+    int? count,
   }) = _CartItem;
 }
