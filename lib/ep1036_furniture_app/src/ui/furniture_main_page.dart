@@ -31,7 +31,7 @@ class FurnitureMainPage extends ConsumerWidget {
                         child: Row(
                           children: [
                             Container(
-                              height: 160,
+                              height: 140,
                               width: 160,
                               decoration: BoxDecoration(
                                 color: Colors.grey,
@@ -43,21 +43,42 @@ class FurnitureMainPage extends ConsumerWidget {
 
                               ),
                             ),
-                            Column(
-                              children: [
-                                Text(
-                                  "${cartItems[index].title}",
-                                ),
-                                Text(
-                                  "${cartItems[index].subtitle}",
-                                ),
-                                Text(
-                                  "Color: ${cartItems[index].color}",
-                                ),
-                                Text(
-                                  "${cartItems[index].price} \$",
-                                ),
-                              ],
+                            Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text(
+                                    "${cartItems[index].title}",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 16
+                                    ),
+                                  ),
+                                  Text(
+                                    "${cartItems[index].subtitle}",
+                                    style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 12,
+
+                                    ),
+                                  ),
+                                  Text(
+                                    "Color: ${cartItems[index].color}",
+                                  ),
+                                  Text(
+                                    "${cartItems[index].price} \$",
+                                  ),
+                                  Row(
+
+                                    children: [
+                                      CircleAvatar(),
+                                      Expanded(child: Text(""),),
+                                      CircleAvatar(),
+                                    ],
+                                  )
+                                ],
+                              ),
                             )
                           ],
                         ),
