@@ -69,13 +69,16 @@ class FurnitureMainPage extends ConsumerWidget {
                                   Text(
                                     "${cartItems[index].price} \$",
                                   ),
-                                  Row(
+                                  SizedBox(
+                                    height: 42,
+                                    child: Row(
 
-                                    children: [
-                                      CircleAvatar(),
-                                      Expanded(child: Text(""),),
-                                      CircleAvatar(),
-                                    ],
+                                      children: [
+                                        CircleAvatar(),
+                                        Expanded(child: Text(""),),
+                                        CircleAvatar(),
+                                      ],
+                                    ),
                                   )
                                 ],
                               ),
