@@ -7,13 +7,15 @@ final furnitureCartProvider = StateProvider<List<CartItem>>((ref) => [
           color: "Black",
           price: 299,
           img: "https://cdn.pixabay.com/photo/2017/03/19/01/43/living-room-2155376__340.jpg",
-          subtitle: "Modern Couch"),
+          subtitle: "Modern Couch",
+          count: 1),
       CartItem(
           title: "George",
           color: "Black",
           price: 299,
           img: "https://cdn.pixabay.com/photo/2017/03/19/01/43/living-room-2155376__340.jpg",
-          subtitle: "Modern Couch"),
+          subtitle: "Modern Couch",
+          count: 1),
     ]);
 
 class FurnitureCartItems extends StateNotifier {
