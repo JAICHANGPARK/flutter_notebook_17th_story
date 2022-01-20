@@ -11,7 +11,7 @@ class FurnitureMainPage extends ConsumerWidget {
   @override
   Widget build(context, ref) {
     final menuIndex = ref.watch(furnitureMenuProvider);
-    final cartItems = ref.watch(furnitureCartProvider.state);
+    final cartItems = ref.watch(furnitureCartProvider);
 
     return Scaffold(
       body: SafeArea(
@@ -39,7 +39,7 @@ class FurnitureMainPage extends ConsumerWidget {
                                 color: Colors.grey,
                                 borderRadius: BorderRadius.circular(8),
                                 image: DecorationImage(
-                                  image: CachedNetworkImageProvider("${cartItems?[index].img}"),
+                                  image: CachedNetworkImageProvider("${cartItems[index].img}"),
                                   fit: BoxFit.cover,
                                 ),
                               ),
@@ -50,11 +50,11 @@ class FurnitureMainPage extends ConsumerWidget {
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Text(
-                                    "${cartItems?[index]?.title}",
+                                    "${cartItems[index].title}",
                                     style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
                                   ),
                                   Text(
-                                    "${cartItems?[index].subtitle}",
+                                    "${cartItems[index].subtitle}",
                                     style: const TextStyle(
                                       fontWeight: FontWeight.bold,
                                       fontSize: 12,
@@ -82,14 +82,14 @@ class FurnitureMainPage extends ConsumerWidget {
                                             ref.read(furnitureCartProvider.notifier).state = [];
                                           },
                                           child: const CircleAvatar(
-                                            child: const Icon(Icons.remove),
+                                            child: Icon(Icons.remove),
                                           ),
                                         ),
                                         Text(
                                           "${cartItems[index].count} \$",
                                         ),
                                         const CircleAvatar(
-                                          child: const Icon(Icons.add),
+                                          child: Icon(Icons.add),
                                         ),
                                       ],
                                     ),
