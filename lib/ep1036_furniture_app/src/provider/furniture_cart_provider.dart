@@ -24,17 +24,38 @@ final furnitureCartProvider = StateNotifierProvider<FurnitureCartItems, List<Car
           color: "Black",
           price: 299,
           img: "https://cdn.pixabay.com/photo/2017/03/19/01/43/living-room-2155376__340.jpg",
-          subtitle: "Modern Couch"),
+          subtitle: "Modern Couch",
+          count: 1),
       CartItem(
           title: "George",
           color: "Black",
           price: 299,
           img: "https://cdn.pixabay.com/photo/2017/03/19/01/43/living-room-2155376__340.jpg",
-          subtitle: "Modern Couch"),
+          subtitle: "Modern Couch",
+          count: 1),
     ]));
 
 class FurnitureCartItems extends StateNotifier<List<CartItem>> {
   FurnitureCartItems(state) : super(state ?? []);
 
-  incrementItem(int index) {}
+  decrementItem(int index) {
+    int _currentCnt = state[index].count ?? 0;
+    _currentCnt--;
+    if(_currentCnt <= 1){
+      _currentCnt = 1;
+    }
+    List<CartItem> _tmpItem = [...state];
+    CartItem _item = state[index].copyWith(count: _currentCnt);
+    _tmpItem[index] = _item;
+    state = _tmpItem;
+  }
+
+  incrementItem(int index) {
+    int _currentCnt = state[index].count ?? 0;
+    _currentCnt++;
+    List<CartItem> _tmpItem = [...state];
+    CartItem _item = state[index].copyWith(count: _currentCnt);
+    _tmpItem[index] = _item;
+    state = _tmpItem;
+  }
 }
