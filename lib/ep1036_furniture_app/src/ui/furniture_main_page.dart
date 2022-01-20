@@ -71,7 +71,7 @@ class FurnitureMainPage extends ConsumerWidget {
                                     child: Row(
                                       children: [
                                         GestureDetector(
-                                          onTap: () {},
+                                          onTap: ()=>ref.read(furnitureCartProvider.notifier).decrementItem(index),
                                           child: const CircleAvatar(
                                             child: Icon(Icons.remove),
                                           ),
