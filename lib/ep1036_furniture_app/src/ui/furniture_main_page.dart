@@ -11,7 +11,8 @@ class FurnitureMainPage extends ConsumerWidget {
   @override
   Widget build(context, ref) {
     final menuIndex = ref.watch(furnitureMenuProvider);
-    final cartItems = ref.watch(furnitureCartProvider);
+    final cartItems = ref.watch(furnitureCartProvider.state);
+
     return Scaffold(
       body: SafeArea(
         child: Column(
@@ -38,7 +39,7 @@ class FurnitureMainPage extends ConsumerWidget {
                                 color: Colors.grey,
                                 borderRadius: BorderRadius.circular(8),
                                 image: DecorationImage(
-                                  image: CachedNetworkImageProvider("${cartItems[index].img}"),
+                                  image: CachedNetworkImageProvider("${cartItems?[index].img}"),
                                   fit: BoxFit.cover,
                                 ),
                               ),
@@ -49,12 +50,12 @@ class FurnitureMainPage extends ConsumerWidget {
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Text(
-                                    "${cartItems[index].title}",
-                                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+                                    "${cartItems?[index]?.title}",
+                                    style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
                                   ),
                                   Text(
-                                    "${cartItems[index].subtitle}",
-                                    style: TextStyle(
+                                    "${cartItems?[index].subtitle}",
+                                    style: const TextStyle(
                                       fontWeight: FontWeight.bold,
                                       fontSize: 12,
                                     ),
@@ -80,15 +81,15 @@ class FurnitureMainPage extends ConsumerWidget {
 
                                             ref.read(furnitureCartProvider.notifier).state = [];
                                           },
-                                          child: CircleAvatar(
-                                            child: Icon(Icons.remove),
+                                          child: const CircleAvatar(
+                                            child: const Icon(Icons.remove),
                                           ),
                                         ),
                                         Text(
                                           "${cartItems[index].count} \$",
                                         ),
-                                        CircleAvatar(
-                                          child: Icon(Icons.add),
+                                        const CircleAvatar(
+                                          child: const Icon(Icons.add),
                                         ),
                                       ],
                                     ),
