@@ -71,16 +71,7 @@ class FurnitureMainPage extends ConsumerWidget {
                                     child: Row(
                                       children: [
                                         GestureDetector(
-                                          onTap: () {
-
-                                            //item
-                                            var _item = CartItem(
-                                              count: ((cartItems[index].count ?? 0) - 1),
-                                            );
-                                            cartItems[index] = _item;
-
-                                            ref.read(furnitureCartProvider.notifier).state = [];
-                                          },
+                                          onTap: () {},
                                           child: const CircleAvatar(
                                             child: Icon(Icons.remove),
                                           ),
@@ -88,8 +79,13 @@ class FurnitureMainPage extends ConsumerWidget {
                                         Text(
                                           "${cartItems[index].count} \$",
                                         ),
-                                        const CircleAvatar(
-                                          child: Icon(Icons.add),
+                                        GestureDetector(
+                                          onTap: () {
+                                            ref.read(furnitureCartProvider.notifier).incrementItem(index);
+                                          },
+                                          child: const CircleAvatar(
+                                            child: Icon(Icons.add),
+                                          ),
                                         ),
                                       ],
                                     ),
