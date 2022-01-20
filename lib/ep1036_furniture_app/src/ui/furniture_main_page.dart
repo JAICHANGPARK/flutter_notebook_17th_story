@@ -1,4 +1,5 @@
 import 'package:cached_network_image/cached_network_image.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_notebook_17th/ep1036_furniture_app/src/model/furniture_cart_item.dart';
 import 'package:flutter_notebook_17th/ep1036_furniture_app/src/provider/furniture_cart_provider.dart';
@@ -29,7 +30,7 @@ class FurnitureMainPage extends ConsumerWidget {
                       child: ListView.builder(
                     itemBuilder: (context, index) {
                       return Padding(
-                        padding: const EdgeInsets.all(8.0),
+                        padding: const EdgeInsets.all(16.0),
                         child: Row(
                           children: [
                             Container(
@@ -44,51 +45,60 @@ class FurnitureMainPage extends ConsumerWidget {
                                 ),
                               ),
                             ),
-                            Padding(
-                              padding: const EdgeInsets.all(8.0),
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Text(
-                                    "${cartItems[index].title}",
-                                    style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
-                                  ),
-                                  Text(
-                                    "${cartItems[index].subtitle}",
-                                    style: const TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      fontSize: 12,
+                            Expanded(
+                              child: Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text(
+                                      "${cartItems[index].title}",
+                                      style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
                                     ),
-                                  ),
-                                  Text(
-                                    "Color: ${cartItems[index].color}",
-                                  ),
-                                  Text(
-                                    "${cartItems[index].price} \$",
-                                  ),
-                                  SizedBox(
-                                    height: 42,
-                                    child: Row(
-                                      children: [
-                                        GestureDetector(
-                                          onTap: ()=>ref.read(furnitureCartProvider.notifier).decrementItem(index),
-                                          child: const CircleAvatar(
-                                            child: Icon(Icons.remove),
-                                          ),
-                                        ),
-                                        Text(
-                                          "${cartItems[index].count} \$",
-                                        ),
-                                        GestureDetector(
-                                          onTap: ()=>ref.read(furnitureCartProvider.notifier).incrementItem(index),
-                                          child: const CircleAvatar(
-                                            child: Icon(Icons.add),
-                                          ),
-                                        ),
-                                      ],
+                                    Text(
+                                      "${cartItems[index].subtitle}",
+                                      style: const TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 12,
+                                      ),
                                     ),
-                                  )
-                                ],
+                                    Text(
+                                      "Color: ${cartItems[index].color}",
+                                    ),
+                                    Text(
+                                      "${cartItems[index].price} \$",
+                                    ),
+                                    SizedBox(
+                                      height: 42,
+                                      child: Row(
+                                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                        children: [
+                                          GestureDetector(
+                                            onTap: () => ref.read(furnitureCartProvider.notifier).decrementItem(index),
+                                            child: CircleAvatar(
+                                              radius: 18,
+                                              backgroundColor: Colors.grey[200],
+                                              foregroundColor: Colors.black,
+                                              child: Icon(Icons.remove),
+                                            ),
+                                          ),
+                                          Text(
+                                            "${cartItems[index].count} \$",
+                                          ),
+                                          GestureDetector(
+                                            onTap: () => ref.read(furnitureCartProvider.notifier).incrementItem(index),
+                                            child: CircleAvatar(
+                                              radius: 18,
+                                              backgroundColor: Colors.grey[200],
+                                              foregroundColor: Colors.black,
+                                              child: Icon(Icons.add),
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                    )
+                                  ],
+                                ),
                               ),
                             )
                           ],
