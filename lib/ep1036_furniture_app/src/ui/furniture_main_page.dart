@@ -45,10 +45,12 @@ class FurnitureMainPage extends ConsumerWidget {
                                 ),
                               ),
                             ),
+                            SizedBox(width: 16,),
                             Expanded(
                               child: Padding(
                                 padding: const EdgeInsets.all(8.0),
                                 child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Text(
