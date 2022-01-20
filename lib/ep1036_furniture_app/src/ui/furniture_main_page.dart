@@ -30,7 +30,7 @@ class FurnitureMainPage extends ConsumerWidget {
                       child: ListView.builder(
                     itemBuilder: (context, index) {
                       return Padding(
-                        padding: const EdgeInsets.all(16.0),
+                        padding: const EdgeInsets.all(12.0),
                         child: Row(
                           children: [
                             Container(
@@ -45,7 +45,9 @@ class FurnitureMainPage extends ConsumerWidget {
                                 ),
                               ),
                             ),
-                            SizedBox(width: 16,),
+                            const SizedBox(
+                              width: 16,
+                            ),
                             Expanded(
                               child: Padding(
                                 padding: const EdgeInsets.all(8.0),
@@ -57,6 +59,9 @@ class FurnitureMainPage extends ConsumerWidget {
                                       "${cartItems[index].title}",
                                       style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
                                     ),
+                                    const SizedBox(
+                                      height: 8,
+                                    ),
                                     Text(
                                       "${cartItems[index].subtitle}",
                                       style: const TextStyle(
@@ -64,16 +69,25 @@ class FurnitureMainPage extends ConsumerWidget {
                                         fontSize: 12,
                                       ),
                                     ),
+                                    const SizedBox(
+                                      height: 8,
+                                    ),
                                     Text(
                                       "Color: ${cartItems[index].color}",
+                                    ),
+                                    const SizedBox(
+                                      height: 8,
                                     ),
                                     Text(
                                       "${cartItems[index].price} \$",
                                     ),
+                                    const SizedBox(
+                                      height: 8,
+                                    ),
                                     SizedBox(
                                       height: 42,
                                       child: Row(
-                                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                         children: [
                                           GestureDetector(
                                             onTap: () => ref.read(furnitureCartProvider.notifier).decrementItem(index),
@@ -81,11 +95,14 @@ class FurnitureMainPage extends ConsumerWidget {
                                               radius: 18,
                                               backgroundColor: Colors.grey[200],
                                               foregroundColor: Colors.black,
-                                              child: Icon(Icons.remove),
+                                              child: const Icon(Icons.remove),
                                             ),
                                           ),
                                           Text(
-                                            "${cartItems[index].count} \$",
+                                            "${cartItems[index].count}",
+                                            style: const TextStyle(
+                                              fontWeight: FontWeight.bold,
+                                            ),
                                           ),
                                           GestureDetector(
                                             onTap: () => ref.read(furnitureCartProvider.notifier).incrementItem(index),
@@ -93,7 +110,7 @@ class FurnitureMainPage extends ConsumerWidget {
                                               radius: 18,
                                               backgroundColor: Colors.grey[200],
                                               foregroundColor: Colors.black,
-                                              child: Icon(Icons.add),
+                                              child: const Icon(Icons.add),
                                             ),
                                           ),
                                         ],
