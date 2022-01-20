@@ -80,9 +80,7 @@ class FurnitureMainPage extends ConsumerWidget {
                                           "${cartItems[index].count} \$",
                                         ),
                                         GestureDetector(
-                                          onTap: () {
-                                            ref.read(furnitureCartProvider.notifier).incrementItem(index);
-                                          },
+                                          onTap: ()=>ref.read(furnitureCartProvider.notifier).incrementItem(index),
                                           child: const CircleAvatar(
                                             child: Icon(Icons.add),
                                           ),
