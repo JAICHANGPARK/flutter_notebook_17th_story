@@ -13,7 +13,12 @@ class _FlightHomePageState extends State<FlightHomePage> {
     return Scaffold(
       body: Column(
         children: [
-          
+          Expanded(
+            child: Placeholder(),
+          ),
+          Expanded(
+            child: Placeholder(),
+          ),
         ],
       ),
     );
