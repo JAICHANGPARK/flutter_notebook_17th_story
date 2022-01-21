@@ -10,6 +10,12 @@ class FlightHomePage extends StatefulWidget {
 class _FlightHomePageState extends State<FlightHomePage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: Column(
+        children: [
+          
+        ],
+      ),
+    );
   }
 }
