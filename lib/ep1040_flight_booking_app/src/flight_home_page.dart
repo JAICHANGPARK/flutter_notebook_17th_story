@@ -19,7 +19,10 @@ class _FlightHomePageState extends State<FlightHomePage> {
         title: Text("e Flights"),
         foregroundColor: Colors.black,
         actions: [
-          IconButton(onPressed: (){}, icon: Icon(Icons.no))
+          IconButton(
+            onPressed: () {},
+            icon: Icon(Icons.notifications_outlined),
+          )
         ],
       ),
       body: SafeArea(
@@ -29,22 +32,15 @@ class _FlightHomePageState extends State<FlightHomePage> {
             Expanded(
               flex: 19,
               child: Column(
-                children: [
-
-
-                ],
+                children: [],
               ),
             ),
             Expanded(
               flex: 2,
               child: Container(
                 decoration: BoxDecoration(
-                  color: Colors.indigo,
-                  borderRadius: BorderRadius.only(
-                    topLeft: Radius.circular(24),
-                    topRight: Radius.circular(24)
-                  )
-                ),
+                    color: Colors.indigo,
+                    borderRadius: BorderRadius.only(topLeft: Radius.circular(24), topRight: Radius.circular(24))),
                 child: Row(
                   children: [],
                 ),
