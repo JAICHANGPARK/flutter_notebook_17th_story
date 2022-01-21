@@ -7,7 +7,7 @@ class FlightBookingApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: ,
+      home: FlightHomePage(),
     );
   }
 }
