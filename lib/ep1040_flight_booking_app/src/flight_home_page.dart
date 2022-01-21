@@ -85,9 +85,12 @@ class _FlightHomePageState extends State<FlightHomePage> {
                       ),
                     ),
                   ),
-                  Container(
-                    height: 240,
-                    color: Colors.blueAccent,
+                  Padding(
+                    padding: const EdgeInsets.all(16.0),
+                    child: Container(
+                      height: 240,
+                      color: Colors.blueAccent,
+                    ),
                   ),
                   Padding(
                     padding: const EdgeInsets.all(16.0),
@@ -97,12 +100,15 @@ class _FlightHomePageState extends State<FlightHomePage> {
                         decoration: BoxDecoration(
                           color: Colors.deepOrangeAccent,
                           borderRadius: BorderRadius.circular(16),
-
                         ),
                         child: Center(
-                          child: Text("Search Flights",style: TextStyle(
-
-                          ),),
+                          child: Text(
+                            "Search Flights",
+                            style: TextStyle(
+                              fontSize: 20,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
                         )),
                   ),
                 ],
