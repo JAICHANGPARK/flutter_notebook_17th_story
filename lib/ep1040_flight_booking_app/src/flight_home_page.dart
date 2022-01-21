@@ -14,9 +14,11 @@ class _FlightHomePageState extends State<FlightHomePage> {
       body: Column(
         children: [
           Expanded(
+            flex: 25,
             child: Placeholder(),
           ),
           Expanded(
+            flex: 3,
             child: Placeholder(),
           ),
         ],
