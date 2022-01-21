@@ -16,12 +16,12 @@ class _FlightHomePageState extends State<FlightHomePage> {
         backgroundColor: Colors.white,
         elevation: 0,
         centerTitle: true,
-        title: Text("e Flights"),
+        title: const Text("e Flights"),
         foregroundColor: Colors.black,
         actions: [
           IconButton(
             onPressed: () {},
-            icon: Icon(Icons.notifications_outlined),
+            icon: const Icon(Icons.notifications_outlined),
           )
         ],
       ),
@@ -36,14 +36,28 @@ class _FlightHomePageState extends State<FlightHomePage> {
                   Padding(
                     padding: const EdgeInsets.all(16.0),
                     child: Container(
-                      height: 48,
+                      height: 54,
                       decoration: BoxDecoration(
-                          color: Colors.white,
-                          borderRadius: BorderRadius.circular(16),
-                          border: Border.all(
-                            color: Colors.black,
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(16),
+                        border: Border.all(
+                          color: Colors.black,
+                        ),
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.indigo[400]!,
+                            offset: const Offset(5, 5),
                           ),
-                          boxShadow: [BoxShadow(color: Colors.indigo[400]!, offset: Offset(4, 4))]),
+                        ],
+                      ),
+                      padding: EdgeInsets.symmetric(horizontal: 12, vertical: 4),
+                      child: Row(
+                        children: [
+                          Expanded(child: Placeholder()),
+                          Expanded(child: Placeholder()),
+                          Expanded(child: Placeholder()),
+                        ],
+                      ),
                     ),
                   )
                 ],
@@ -52,9 +66,9 @@ class _FlightHomePageState extends State<FlightHomePage> {
             Expanded(
               flex: 2,
               child: Container(
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                     color: Colors.indigo,
-                    borderRadius: BorderRadius.only(topLeft: Radius.circular(24), topRight: Radius.circular(24))),
+                    borderRadius: const BorderRadius.only(topLeft: Radius.circular(24), topRight: Radius.circular(24))),
                 child: Row(
                   children: [],
                 ),
