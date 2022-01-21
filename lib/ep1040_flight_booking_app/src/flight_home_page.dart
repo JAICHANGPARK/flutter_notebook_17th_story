@@ -12,6 +12,16 @@ class _FlightHomePageState extends State<FlightHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
+      appBar: AppBar(
+        backgroundColor: Colors.white,
+        elevation: 0,
+        centerTitle: true,
+        title: Text("e Flights"),
+        foregroundColor: Colors.black,
+        actions: [
+          IconButton(onPressed: (){}, icon: Icon(Icons.no))
+        ],
+      ),
       body: SafeArea(
         top: true,
         child: Column(
@@ -20,6 +30,7 @@ class _FlightHomePageState extends State<FlightHomePage> {
               flex: 19,
               child: Column(
                 children: [
+
 
                 ],
               ),
