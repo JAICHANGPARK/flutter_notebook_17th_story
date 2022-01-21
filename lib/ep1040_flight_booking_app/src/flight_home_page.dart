@@ -53,13 +53,58 @@ class _FlightHomePageState extends State<FlightHomePage> {
                       padding: EdgeInsets.symmetric(horizontal: 12, vertical: 4),
                       child: Row(
                         children: [
-                          Expanded(child: Placeholder()),
-                          Expanded(child: Placeholder()),
-                          Expanded(child: Placeholder()),
+                          Expanded(
+                              child: Center(
+                            child: Text(
+                              "One Way",
+                              style: TextStyle(
+                                fontWeight: FontWeight.w400,
+                              ),
+                            ),
+                          )),
+                          Expanded(
+                              child: Container(
+                            decoration: BoxDecoration(color: Colors.black, borderRadius: BorderRadius.circular(8)),
+                            child: Center(
+                              child: Text(
+                                "Round To",
+                                style: TextStyle(fontWeight: FontWeight.w400, color: Colors.white),
+                              ),
+                            ),
+                          )),
+                          Expanded(
+                              child: Center(
+                            child: Text(
+                              "Multi-City",
+                              style: TextStyle(
+                                fontWeight: FontWeight.w400,
+                              ),
+                            ),
+                          )),
                         ],
                       ),
                     ),
-                  )
+                  ),
+                  Container(
+                    height: 240,
+                    color: Colors.blueAccent,
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(16.0),
+                    child: Container(
+                        height: 64,
+                        padding: EdgeInsets.symmetric(horizontal: 12, vertical: 4),
+                        decoration: BoxDecoration(
+                          color: Colors.deepOrangeAccent,
+                          borderRadius: BorderRadius.circular(16),
+
+                        ),
+                        child: Center(
+                          child: Text("Search Flights",style: TextStyle(
+
+                          ),),
+                        )),
+                  ),
                 ],
               ),
             ),
@@ -70,7 +115,7 @@ class _FlightHomePageState extends State<FlightHomePage> {
                     color: Colors.indigo,
                     borderRadius: const BorderRadius.only(topLeft: Radius.circular(24), topRight: Radius.circular(24))),
                 child: Row(
-                  children: [],
+                  children: const [],
                 ),
               ),
             ),
