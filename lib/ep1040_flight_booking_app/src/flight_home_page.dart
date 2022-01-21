@@ -14,12 +14,23 @@ class _FlightHomePageState extends State<FlightHomePage> {
       body: Column(
         children: [
           Expanded(
-            flex: 25,
+            flex: 19,
             child: Placeholder(),
           ),
           Expanded(
-            flex: 3,
-            child: Placeholder(),
+            flex: 2,
+            child: Container(
+              decoration: BoxDecoration(
+                color: Colors.indigo,
+                borderRadius: BorderRadius.only(
+                  topLeft: Radius.circular(24),
+                  topRight: Radius.circular(24)
+                )
+              ),
+              child: Row(
+                children: [],
+              ),
+            ),
           ),
         ],
       ),
