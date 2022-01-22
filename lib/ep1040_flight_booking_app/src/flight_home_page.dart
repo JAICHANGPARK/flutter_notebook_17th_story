@@ -113,7 +113,7 @@ class _FlightHomePageState extends State<FlightHomePage> {
                                     ),
                                   )),
                                   const SizedBox(
-                                    height: 8,
+                                    height: 4,
                                   ),
                                    Expanded(
                                       child: TextField(
@@ -134,20 +134,34 @@ class _FlightHomePageState extends State<FlightHomePage> {
                                   Expanded(
                                       child: Row(
                                     children: [
-                                      const Expanded(
+                                       Expanded(
                                           child: TextField(
-                                        decoration: InputDecoration(
-                                          border: OutlineInputBorder(),
-                                        ),
+                                            decoration: InputDecoration(
+                                              // icon: Icon(Icons.flight_takeoff_outlined),
+                                              // suffixIcon: Icon(Icons.flight_takeoff_outlined),
+                                              prefixIcon: const Icon(Icons.calendar_month_outlined),
+                                              hintText: "Date",
+                                              border: OutlineInputBorder(
+                                                borderSide: const BorderSide(width: 2),
+                                                borderRadius: BorderRadius.circular(12),
+                                              ),
+                                            ),
                                       )),
                                       const SizedBox(
                                         width: 16,
                                       ),
-                                      const Expanded(
+                                       Expanded(
                                           child: TextField(
-                                        decoration: InputDecoration(
-                                          border: OutlineInputBorder(),
-                                        ),
+                                            decoration: InputDecoration(
+                                              // icon: Icon(Icons.flight_takeoff_outlined),
+                                              // suffixIcon: Icon(Icons.flight_takeoff_outlined),
+                                              prefixIcon: const Icon(Icons.calendar_month_outlined),
+                                              hintText: "Date",
+                                              border: OutlineInputBorder(
+                                                borderSide: const BorderSide(width: 2),
+                                                borderRadius: BorderRadius.circular(12),
+                                              ),
+                                            ),
                                       )),
                                     ],
                                   )),
