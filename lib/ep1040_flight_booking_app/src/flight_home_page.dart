@@ -90,6 +90,22 @@ class _FlightHomePageState extends State<FlightHomePage> {
                     child: Container(
                       height: 240,
                       color: Colors.blueAccent,
+                      child: Stack(
+                        children: [
+                          Positioned(
+                            left: 0,
+                              top: 0,
+                              right: 0,
+                              bottom: 0,
+                              child: Column(
+                            children: [
+                              Expanded(child: TextField()),
+                              Expanded(child: TextField()),
+                              Expanded(child: TextField()),
+                            ],
+                          ))
+                        ],
+                      ),
                     ),
                   ),
                   Padding(
