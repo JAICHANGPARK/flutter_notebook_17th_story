@@ -93,17 +93,49 @@ class _FlightHomePageState extends State<FlightHomePage> {
                       child: Stack(
                         children: [
                           Positioned(
-                            left: 0,
+                              left: 0,
                               top: 0,
                               right: 0,
                               bottom: 0,
                               child: Column(
-                            children: [
-                              Expanded(child: TextField()),
-                              Expanded(child: TextField()),
-                              Expanded(child: TextField()),
-                            ],
-                          ))
+                                children: [
+                                  Expanded(
+                                      child: TextField(
+                                    decoration: InputDecoration(
+                                      border: OutlineInputBorder(),
+                                    ),
+                                  )),
+                                  SizedBox(
+                                    height: 8,
+                                  ),
+                                  Expanded(child: TextField(
+                                    decoration: InputDecoration(
+                                      border: OutlineInputBorder(),
+                                    ),
+                                  )),
+                                  SizedBox(
+                                    height: 8,
+                                  ),
+                                  Expanded(
+                                      child: Row(
+                                    children: [
+                                      Expanded(child: TextField(
+                                        decoration: InputDecoration(
+                                          border: OutlineInputBorder(),
+                                        ),
+                                      )),
+                                      SizedBox(
+                                        width: 16,
+                                      ),
+                                      Expanded(child: TextField(
+                                        decoration: InputDecoration(
+                                          border: OutlineInputBorder(),
+                                        ),
+                                      )),
+                                    ],
+                                  )),
+                                ],
+                              ))
                         ],
                       ),
                     ),
