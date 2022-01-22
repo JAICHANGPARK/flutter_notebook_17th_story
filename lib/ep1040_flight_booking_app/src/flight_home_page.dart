@@ -56,32 +56,32 @@ class _FlightHomePageState extends State<FlightHomePage> {
                         children: [
                           const Expanded(
                               child: Center(
-                                child: Text(
-                                  "One Way",
-                                  style: TextStyle(
-                                    fontWeight: FontWeight.w400,
-                                  ),
-                                ),
-                              )),
+                            child: Text(
+                              "One Way",
+                              style: TextStyle(
+                                fontWeight: FontWeight.w400,
+                              ),
+                            ),
+                          )),
                           Expanded(
                               child: Container(
-                                decoration: BoxDecoration(color: Colors.black, borderRadius: BorderRadius.circular(8)),
-                                child: const Center(
-                                  child: Text(
-                                    "Round To",
-                                    style: TextStyle(fontWeight: FontWeight.w400, color: Colors.white),
-                                  ),
-                                ),
-                              )),
+                            decoration: BoxDecoration(color: Colors.black, borderRadius: BorderRadius.circular(8)),
+                            child: const Center(
+                              child: Text(
+                                "Round To",
+                                style: TextStyle(fontWeight: FontWeight.w400, color: Colors.white),
+                              ),
+                            ),
+                          )),
                           const Expanded(
                               child: Center(
-                                child: Text(
-                                  "Multi-City",
-                                  style: TextStyle(
-                                    fontWeight: FontWeight.w400,
-                                  ),
-                                ),
-                              )),
+                            child: Text(
+                              "Multi-City",
+                              style: TextStyle(
+                                fontWeight: FontWeight.w400,
+                              ),
+                            ),
+                          )),
                         ],
                       ),
                     ),
@@ -93,108 +93,140 @@ class _FlightHomePageState extends State<FlightHomePage> {
                       child: Stack(
                         children: [
                           Positioned(
-                              left: 0,
-                              top: 0,
-                              right: 0,
-                              bottom: 0,
-                              child: Column(
-                                children: [
-                                  Expanded(
-                                      child: TextField(
-                                        decoration: InputDecoration(
-                                          // icon: Icon(Icons.flight_takeoff_outlined),
-                                          // suffixIcon: Icon(Icons.flight_takeoff_outlined),
-                                          prefixIcon: const Icon(Icons.flight_takeoff_outlined),
-                                          hintText: "From",
-                                          border: OutlineInputBorder(
-                                            borderSide: const BorderSide(width: 1.5, color: Colors.black),
-                                            borderRadius: BorderRadius.circular(12),
-                                          ),
-                                          disabledBorder:  OutlineInputBorder(
-                                            borderSide: const BorderSide(width: 1.5, color: Colors.black),
-                                            borderRadius: BorderRadius.circular(12),
-                                          ),
-                                          enabledBorder: OutlineInputBorder(
-                                            borderSide: const BorderSide(width: 1.5, color: Colors.black),
-                                            borderRadius: BorderRadius.circular(12),
-                                          ),
-                                        ),
-                                      )),
-                                  const SizedBox(
-                                    height: 8,
+                            left: 0,
+                            top: 0,
+                            right: 0,
+                            bottom: 0,
+                            child: Column(
+                              children: [
+                                Expanded(
+                                    child: TextField(
+                                  decoration: InputDecoration(
+                                    // icon: Icon(Icons.flight_takeoff_outlined),
+                                    // suffixIcon: Icon(Icons.flight_takeoff_outlined),
+                                    prefixIcon: const Icon(Icons.flight_takeoff_outlined),
+                                    hintText: "From",
+                                    border: OutlineInputBorder(
+                                      borderSide: const BorderSide(width: 1.5, color: Colors.black),
+                                      borderRadius: BorderRadius.circular(12),
+                                    ),
+                                    disabledBorder: OutlineInputBorder(
+                                      borderSide: const BorderSide(width: 1.5, color: Colors.black),
+                                      borderRadius: BorderRadius.circular(12),
+                                    ),
+                                    enabledBorder: OutlineInputBorder(
+                                      borderSide: const BorderSide(width: 1.5, color: Colors.black),
+                                      borderRadius: BorderRadius.circular(12),
+                                    ),
                                   ),
-                                  Expanded(
-                                      child: TextField(
-                                        decoration: InputDecoration(
-                                          // icon: Icon(Icons.flight_takeoff_outlined),
-                                          // suffixIcon: Icon(Icons.flight_takeoff_outlined),
-                                          prefixIcon: const Icon(Icons.flight_land_outlined),
-                                          hintText: "To",
-                                          border: OutlineInputBorder(
-                                            borderSide: const BorderSide(width: 1.5, color: Colors.black),
-                                            borderRadius: BorderRadius.circular(12),
-                                          ),
-                                          disabledBorder:  OutlineInputBorder(
-                                            borderSide: const BorderSide(width: 1.5, color: Colors.black),
-                                            borderRadius: BorderRadius.circular(12),
-                                          ),
-                                          enabledBorder: OutlineInputBorder(
-                                            borderSide: const BorderSide(width: 1.5, color: Colors.black),
-                                            borderRadius: BorderRadius.circular(12),
-                                          ),
-                                        ),
-                                      )),
-                                  const SizedBox(
-                                    height: 8,
+                                )),
+                                const SizedBox(
+                                  height: 8,
+                                ),
+                                Expanded(
+                                    child: TextField(
+                                  decoration: InputDecoration(
+                                    // icon: Icon(Icons.flight_takeoff_outlined),
+                                    // suffixIcon: Icon(Icons.flight_takeoff_outlined),
+                                    prefixIcon: const Icon(Icons.flight_land_outlined),
+                                    hintText: "To",
+                                    border: OutlineInputBorder(
+                                      borderSide: const BorderSide(width: 1.5, color: Colors.black),
+                                      borderRadius: BorderRadius.circular(12),
+                                    ),
+                                    disabledBorder: OutlineInputBorder(
+                                      borderSide: const BorderSide(width: 1.5, color: Colors.black),
+                                      borderRadius: BorderRadius.circular(12),
+                                    ),
+                                    enabledBorder: OutlineInputBorder(
+                                      borderSide: const BorderSide(width: 1.5, color: Colors.black),
+                                      borderRadius: BorderRadius.circular(12),
+                                    ),
                                   ),
-                                  Expanded(
-                                      child: Row(
-                                        children: [
-                                          Expanded(
-                                              child: TextField(
-                                                decoration: InputDecoration(
-                                                  // icon: Icon(Icons.flight_takeoff_outlined),
-                                                  // suffixIcon: Icon(Icons.flight_takeoff_outlined),
-                                                  prefixIcon: const Icon(Icons.calendar_month_outlined),
-                                                  hintText: "Date",
-                                                  border: OutlineInputBorder(
-                                                    borderSide: const BorderSide(width: 5, color: Colors.black),
-                                                    borderRadius: BorderRadius.circular(12),
-                                                  ),
-                                                ),
-                                                onTap: () async {
-                                                  await showDatePicker(context: context,
-                                                    initialDate: DateTime.now(),
-                                                    firstDate: DateTime.now(),
-                                                    lastDate: DateTime.now(),);
-                                                },
-                                              )),
-                                          const SizedBox(
-                                            width: 16,
-                                          ),
-                                          Expanded(
-                                              child: TextField(
-                                                decoration: InputDecoration(
-                                                  // icon: Icon(Icons.flight_takeoff_outlined),
-                                                  // suffixIcon: Icon(Icons.flight_takeoff_outlined),
-                                                  prefixIcon: const Icon(Icons.calendar_month_outlined),
-                                                  hintText: "Date",
-                                                  border: OutlineInputBorder(
-                                                    borderSide: const BorderSide(width: 5, color: Colors.black),
-                                                    borderRadius: BorderRadius.circular(12),
-                                                  ),
-
-                                                ),
-                                                onTap: () async {
-                                                  await showDatePicker(context: context,
-                                                    initialDate: DateTime.now(),
-                                                    firstDate: DateTime.now(),
-                                                    lastDate: DateTime.now(),);
-                                                },
-                                              )),
-                                        ],
-                                      )),
-                                ],
+                                )),
+                                const SizedBox(
+                                  height: 8,
+                                ),
+                                Expanded(
+                                    child: Row(
+                                  children: [
+                                    Expanded(
+                                        child: TextField(
+                                      decoration: InputDecoration(
+                                        // icon: Icon(Icons.flight_takeoff_outlined),
+                                        // suffixIcon: Icon(Icons.flight_takeoff_outlined),
+                                        prefixIcon: const Icon(Icons.calendar_month_outlined),
+                                        hintText: "Date",
+                                        border: OutlineInputBorder(
+                                          borderSide: const BorderSide(width: 1.5, color: Colors.black),
+                                          borderRadius: BorderRadius.circular(12),
+                                        ),
+                                        disabledBorder: OutlineInputBorder(
+                                          borderSide: const BorderSide(width: 1.5, color: Colors.black),
+                                          borderRadius: BorderRadius.circular(12),
+                                        ),
+                                        enabledBorder: OutlineInputBorder(
+                                          borderSide: const BorderSide(width: 1.5, color: Colors.black),
+                                          borderRadius: BorderRadius.circular(12),
+                                        ),
+                                      ),
+                                      onTap: () async {
+                                        await showDatePicker(
+                                          context: context,
+                                          initialDate: DateTime.now(),
+                                          firstDate: DateTime.now(),
+                                          lastDate: DateTime.now(),
+                                        );
+                                      },
+                                    )),
+                                    const SizedBox(
+                                      width: 16,
+                                    ),
+                                    Expanded(
+                                        child: TextField(
+                                      decoration: InputDecoration(
+                                        // icon: Icon(Icons.flight_takeoff_outlined),
+                                        // suffixIcon: Icon(Icons.flight_takeoff_outlined),
+                                        prefixIcon: const Icon(Icons.calendar_month_outlined),
+                                        hintText: "Date",
+                                        border: OutlineInputBorder(
+                                          borderSide: const BorderSide(width: 1.5, color: Colors.black),
+                                          borderRadius: BorderRadius.circular(12),
+                                        ),
+                                        disabledBorder: OutlineInputBorder(
+                                          borderSide: const BorderSide(width: 1.5, color: Colors.black),
+                                          borderRadius: BorderRadius.circular(12),
+                                        ),
+                                        enabledBorder: OutlineInputBorder(
+                                          borderSide: const BorderSide(width: 1.5, color: Colors.black),
+                                          borderRadius: BorderRadius.circular(12),
+                                        ),
+                                      ),
+                                      onTap: () async {
+                                        await showDatePicker(
+                                          context: context,
+                                          initialDate: DateTime.now(),
+                                          firstDate: DateTime.now(),
+                                          lastDate: DateTime.now(),
+                                        );
+                                      },
+                                    )),
+                                  ],
+                                )),
+                              ],
+                            ),
+                          ),
+                          Positioned(
+                              top: 42,
+                              right: 16,
+                              child: Container(
+                                height: 40,
+                                width: 40,
+                                decoration: BoxDecoration(
+                                  color: Colors.blueGrey[50],
+                                  shape: BoxShape.circle,
+                                  border: Border.all(color: Colors.black),
+                                ),
                               ))
                         ],
                       ),
