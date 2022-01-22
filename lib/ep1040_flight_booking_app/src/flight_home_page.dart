@@ -107,7 +107,15 @@ class _FlightHomePageState extends State<FlightHomePage> {
                                           prefixIcon: const Icon(Icons.flight_takeoff_outlined),
                                           hintText: "From",
                                           border: OutlineInputBorder(
-                                            borderSide: const BorderSide(width: 5, color: Colors.black),
+                                            borderSide: const BorderSide(width: 1.5, color: Colors.black),
+                                            borderRadius: BorderRadius.circular(12),
+                                          ),
+                                          disabledBorder:  OutlineInputBorder(
+                                            borderSide: const BorderSide(width: 1.5, color: Colors.black),
+                                            borderRadius: BorderRadius.circular(12),
+                                          ),
+                                          enabledBorder: OutlineInputBorder(
+                                            borderSide: const BorderSide(width: 1.5, color: Colors.black),
                                             borderRadius: BorderRadius.circular(12),
                                           ),
                                         ),
@@ -123,7 +131,15 @@ class _FlightHomePageState extends State<FlightHomePage> {
                                           prefixIcon: const Icon(Icons.flight_land_outlined),
                                           hintText: "To",
                                           border: OutlineInputBorder(
-                                            borderSide: const BorderSide(width: 5, color: Colors.black),
+                                            borderSide: const BorderSide(width: 1.5, color: Colors.black),
+                                            borderRadius: BorderRadius.circular(12),
+                                          ),
+                                          disabledBorder:  OutlineInputBorder(
+                                            borderSide: const BorderSide(width: 1.5, color: Colors.black),
+                                            borderRadius: BorderRadius.circular(12),
+                                          ),
+                                          enabledBorder: OutlineInputBorder(
+                                            borderSide: const BorderSide(width: 1.5, color: Colors.black),
                                             borderRadius: BorderRadius.circular(12),
                                           ),
                                         ),
