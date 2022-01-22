@@ -88,7 +88,7 @@ class _FlightHomePageState extends State<FlightHomePage> {
                   Padding(
                     padding: const EdgeInsets.all(16.0),
                     child: Container(
-                      height: 240,
+                      height: 220,
                       color: Colors.blueAccent,
                       child: Stack(
                         children: [
