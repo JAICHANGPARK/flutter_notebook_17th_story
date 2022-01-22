@@ -25,6 +25,7 @@ class _FlightHomePageState extends State<FlightHomePage> {
           )
         ],
       ),
+      resizeToAvoidBottomInset: false,
       body: SafeArea(
         top: true,
         child: Column(
