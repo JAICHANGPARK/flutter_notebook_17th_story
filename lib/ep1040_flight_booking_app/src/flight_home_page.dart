@@ -102,32 +102,49 @@ class _FlightHomePageState extends State<FlightHomePage> {
                                   Expanded(
                                       child: TextField(
                                     decoration: InputDecoration(
-                                      border: OutlineInputBorder(),
+                                      // icon: Icon(Icons.flight_takeoff_outlined),
+                                      // suffixIcon: Icon(Icons.flight_takeoff_outlined),
+                                      prefixIcon: const Icon(Icons.flight_takeoff_outlined),
+                                      hintText: "From",
+                                      border: OutlineInputBorder(
+                                        borderSide: const BorderSide(width: 2),
+                                        borderRadius: BorderRadius.circular(12),
+                                      ),
                                     ),
                                   )),
-                                  SizedBox(
+                                  const SizedBox(
                                     height: 8,
                                   ),
-                                  Expanded(child: TextField(
-                                    decoration: InputDecoration(
-                                      border: OutlineInputBorder(),
-                                    ),
+                                   Expanded(
+                                      child: TextField(
+                                        decoration: InputDecoration(
+                                          // icon: Icon(Icons.flight_takeoff_outlined),
+                                          // suffixIcon: Icon(Icons.flight_takeoff_outlined),
+                                          prefixIcon: const Icon(Icons.flight_land_outlined),
+                                          hintText: "To",
+                                          border: OutlineInputBorder(
+                                            borderSide: const BorderSide(width: 2),
+                                            borderRadius: BorderRadius.circular(12),
+                                          ),
+                                        ),
                                   )),
-                                  SizedBox(
+                                  const SizedBox(
                                     height: 8,
                                   ),
                                   Expanded(
                                       child: Row(
                                     children: [
-                                      Expanded(child: TextField(
+                                      const Expanded(
+                                          child: TextField(
                                         decoration: InputDecoration(
                                           border: OutlineInputBorder(),
                                         ),
                                       )),
-                                      SizedBox(
+                                      const SizedBox(
                                         width: 16,
                                       ),
-                                      Expanded(child: TextField(
+                                      const Expanded(
+                                          child: TextField(
                                         decoration: InputDecoration(
                                           border: OutlineInputBorder(),
                                         ),
