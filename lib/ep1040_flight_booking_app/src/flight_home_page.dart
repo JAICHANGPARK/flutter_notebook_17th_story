@@ -88,8 +88,7 @@ class _FlightHomePageState extends State<FlightHomePage> {
                   Padding(
                     padding: const EdgeInsets.all(16.0),
                     child: Container(
-                      height: 220,
-                      color: Colors.blueAccent,
+                      height: 200,
                       child: Stack(
                         children: [
                           Positioned(
@@ -107,13 +106,13 @@ class _FlightHomePageState extends State<FlightHomePage> {
                                       prefixIcon: const Icon(Icons.flight_takeoff_outlined),
                                       hintText: "From",
                                       border: OutlineInputBorder(
-                                        borderSide: const BorderSide(width: 2),
+                                        borderSide: const BorderSide(width: 5, color: Colors.black),
                                         borderRadius: BorderRadius.circular(12),
                                       ),
                                     ),
                                   )),
                                   const SizedBox(
-                                    height: 4,
+                                    height: 8,
                                   ),
                                    Expanded(
                                       child: TextField(
@@ -123,7 +122,7 @@ class _FlightHomePageState extends State<FlightHomePage> {
                                           prefixIcon: const Icon(Icons.flight_land_outlined),
                                           hintText: "To",
                                           border: OutlineInputBorder(
-                                            borderSide: const BorderSide(width: 2),
+                                            borderSide: const BorderSide(width: 5, color: Colors.black),
                                             borderRadius: BorderRadius.circular(12),
                                           ),
                                         ),
@@ -142,7 +141,7 @@ class _FlightHomePageState extends State<FlightHomePage> {
                                               prefixIcon: const Icon(Icons.calendar_month_outlined),
                                               hintText: "Date",
                                               border: OutlineInputBorder(
-                                                borderSide: const BorderSide(width: 2),
+                                                borderSide: const BorderSide(width: 5, color: Colors.black),
                                                 borderRadius: BorderRadius.circular(12),
                                               ),
                                             ),
@@ -158,7 +157,7 @@ class _FlightHomePageState extends State<FlightHomePage> {
                                               prefixIcon: const Icon(Icons.calendar_month_outlined),
                                               hintText: "Date",
                                               border: OutlineInputBorder(
-                                                borderSide: const BorderSide(width: 2),
+                                                borderSide: const BorderSide(width: 5, color: Colors.black),
                                                 borderRadius: BorderRadius.circular(12),
                                               ),
                                             ),
