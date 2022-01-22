@@ -217,17 +217,21 @@ class _FlightHomePageState extends State<FlightHomePage> {
                             ),
                           ),
                           Positioned(
-                              top: 42,
-                              right: 16,
-                              child: Container(
-                                height: 40,
-                                width: 40,
-                                decoration: BoxDecoration(
-                                  color: Colors.blueGrey[50],
-                                  shape: BoxShape.circle,
-                                  border: Border.all(color: Colors.black),
-                                ),
-                              ))
+                            top: 42,
+                            right: 16,
+                            child: Container(
+                              height: 40,
+                              width: 40,
+                              decoration: BoxDecoration(
+                                color: Colors.blueGrey[50],
+                                shape: BoxShape.circle,
+                                border: Border.all(color: Colors.black),
+                              ),
+                              child: Center(
+                                child: Icon(Icons.import_export),
+                              ),
+                            ),
+                          )
                         ],
                       ),
                     ),
