@@ -268,7 +268,7 @@ class _FlightHomePageState extends State<FlightHomePage> {
                             left: 0,
                             top: 0,
                             right: 8,
-                            bottom: 8,
+                            bottom: 4,
                             child: Container(
                                 height: 64,
                                 padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
