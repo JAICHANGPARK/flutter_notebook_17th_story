@@ -328,6 +328,7 @@ class _FlightHomePageState extends State<FlightHomePage> {
                                       width: 100,
                                       decoration: const BoxDecoration(
                                           color: Colors.blue,
+                                          borderRadius: BorderRadius.circular(8),
                                           image: DecorationImage(
                                             image: CachedNetworkImageProvider(
                                               "https://cdn.pixabay.com/photo/2014/11/13/23/34/palace-530055__480.jpg",
