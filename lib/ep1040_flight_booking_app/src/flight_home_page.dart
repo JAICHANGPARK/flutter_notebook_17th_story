@@ -238,22 +238,57 @@ class _FlightHomePageState extends State<FlightHomePage> {
                   ),
                   Padding(
                     padding: const EdgeInsets.all(16.0),
-                    child: Container(
-                        height: 64,
-                        padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
-                        decoration: BoxDecoration(
-                          color: Colors.deepOrangeAccent,
-                          borderRadius: BorderRadius.circular(16),
-                        ),
-                        child: const Center(
-                          child: Text(
-                            "Search Flights",
-                            style: TextStyle(
-                              fontSize: 20,
-                              fontWeight: FontWeight.bold,
-                            ),
+                    child: SizedBox(
+                      height: 68,
+                      child: Stack(
+                        children: [
+                          Positioned(
+                            left: 4,
+                            top: 4,
+                            right: 0,
+                            bottom: 0,
+                            child: Container(
+                                height: 64,
+                                padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(16),
+                                  border: Border.all(color: Colors.black)
+                                ),
+                                child: const Center(
+                                  child: Text(
+                                    "Search Flights",
+                                    style: TextStyle(
+                                      fontSize: 20,
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                )),
                           ),
-                        )),
+                          Positioned(
+                            left: 0,
+                            top: 0,
+                            right: 8,
+                            bottom: 8,
+                            child: Container(
+                                height: 64,
+                                padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
+                                decoration: BoxDecoration(
+                                  color: Colors.deepOrangeAccent,
+                                  borderRadius: BorderRadius.circular(16),
+                                ),
+                                child: const Center(
+                                  child: Text(
+                                    "Search Flights",
+                                    style: TextStyle(
+                                      fontSize: 20,
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                )),
+                          ),
+                        ],
+                      ),
+                    ),
                   ),
                 ],
               ),
