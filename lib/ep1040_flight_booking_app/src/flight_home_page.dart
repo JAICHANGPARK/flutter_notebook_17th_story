@@ -227,7 +227,7 @@ class _FlightHomePageState extends State<FlightHomePage> {
                                 shape: BoxShape.circle,
                                 border: Border.all(color: Colors.black),
                               ),
-                              child: Center(
+                              child: const Center(
                                 child: Icon(Icons.import_export),
                               ),
                             ),
@@ -298,13 +298,13 @@ class _FlightHomePageState extends State<FlightHomePage> {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
+                        const Text(
                           "Your recent searches",
-                          style: TextStyle(
+                          style: const TextStyle(
                             fontWeight: FontWeight.bold,
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 8,
                         ),
                         SizedBox(
@@ -316,25 +316,33 @@ class _FlightHomePageState extends State<FlightHomePage> {
                               child: Container(
                                 width: 320,
                                 decoration: BoxDecoration(border: Border.all(color: Colors.black)),
-                                padding: EdgeInsets.all(8),
+                                padding: const EdgeInsets.all(8),
                                 child: Row(
                                   children: [
                                     Container(
                                       height: 100,
                                       width: 80,
-                                      decoration: BoxDecoration(color: Colors.blue),
+                                      decoration: const BoxDecoration(color: Colors.blue),
                                     ),
                                     Padding(
                                       padding: const EdgeInsets.all(8.0),
                                       child: Column(
                                         crossAxisAlignment: CrossAxisAlignment.start,
                                         mainAxisAlignment: MainAxisAlignment.center,
-                                        children: [
-                                          Text("United States - UK"),
+                                        children: const [
+                                          Text(
+                                            "United States - UK",
+                                            style: TextStyle(
+                                              fontWeight: FontWeight.bold,
+                                            ),
+                                          ),
                                           SizedBox(
                                             height: 8,
                                           ),
-                                          Text("2 Filters")
+                                          Text("2 Filters",style: TextStyle(
+                                            color: Colors.grey,
+                                            fontSize: 10
+                                          ),)
                                         ],
                                       ),
                                     )
