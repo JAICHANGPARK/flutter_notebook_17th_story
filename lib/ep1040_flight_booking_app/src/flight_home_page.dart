@@ -312,16 +312,19 @@ class _FlightHomePageState extends State<FlightHomePage> {
                           child: ListView.builder(
                             itemCount: 4,
                             itemBuilder: (context, index) => Padding(
-                              padding: const EdgeInsets.fromLTRB(0, 8, 12, 8),
+                              padding: const EdgeInsets.fromLTRB(0, 8, 16, 8),
                               child: Container(
-                                width: 320,
-                                decoration: BoxDecoration(border: Border.all(color: Colors.black)),
+                                width: 280,
+                                decoration: BoxDecoration(
+                                  border: Border.all(color: Colors.black),
+                                  borderRadius: BorderRadius.circular(8),
+                                ),
                                 padding: const EdgeInsets.all(8),
                                 child: Row(
                                   children: [
                                     Container(
                                       height: 100,
-                                      width: 80,
+                                      width: 100,
                                       decoration: const BoxDecoration(color: Colors.blue),
                                     ),
                                     Padding(
@@ -339,10 +342,10 @@ class _FlightHomePageState extends State<FlightHomePage> {
                                           SizedBox(
                                             height: 8,
                                           ),
-                                          Text("2 Filters",style: TextStyle(
-                                            color: Colors.grey,
-                                            fontSize: 10
-                                          ),)
+                                          Text(
+                                            "2 Filters",
+                                            style: TextStyle(color: Colors.grey, fontSize: 10),
+                                          )
                                         ],
                                       ),
                                     )
