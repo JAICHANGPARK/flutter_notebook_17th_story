@@ -297,6 +297,7 @@ class _FlightHomePageState extends State<FlightHomePage> {
                       SizedBox(
                         height: 120,
                         child: ListView.builder(
+                          itemCount: 4,
                           itemBuilder: (context, index) => Container(
                             width: 320,
                             decoration: BoxDecoration(
