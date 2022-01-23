@@ -294,10 +294,17 @@ class _FlightHomePageState extends State<FlightHomePage> {
                       child: Column(
                     children: [
                       Text("Your recent searches"),
-                      SizedBox(height: 120, child: ListView.builder(itemBuilder: (context, index) => Container(),
-                      scrollDirection: Axis.horizontal,
-                      ),
-
+                      SizedBox(
+                        height: 120,
+                        child: ListView.builder(
+                          itemBuilder: (context, index) => Container(
+                            width: 320,
+                            decoration: BoxDecoration(
+                              border: Border.all(color: Colors.black)
+                            ),
+                          ),
+                          scrollDirection: Axis.horizontal,
+                        ),
                       ),
                     ],
                   )),
