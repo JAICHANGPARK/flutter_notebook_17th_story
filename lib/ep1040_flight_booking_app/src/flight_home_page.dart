@@ -248,11 +248,12 @@ class _FlightHomePageState extends State<FlightHomePage> {
                             right: 0,
                             bottom: 0,
                             child: Container(
-                                height: 64,
                                 padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
                                 decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(16),
-                                  border: Border.all(color: Colors.black)
+                                  border: Border.all(
+                                    color: Colors.black,
+                                  ),
                                 ),
                                 child: const Center(
                                   child: Text(
@@ -270,7 +271,6 @@ class _FlightHomePageState extends State<FlightHomePage> {
                             right: 8,
                             bottom: 4,
                             child: Container(
-                                height: 64,
                                 padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
                                 decoration: BoxDecoration(
                                   color: Colors.deepOrangeAccent,
