@@ -291,6 +291,9 @@ class _FlightHomePageState extends State<FlightHomePage> {
                       ),
                     ),
                   ),
+                  const SizedBox(
+                    height: 16,
+                  ),
                   Expanded(
                       child: Padding(
                     padding: const EdgeInsets.only(
@@ -326,10 +329,10 @@ class _FlightHomePageState extends State<FlightHomePage> {
                                     Container(
                                       height: 100,
                                       width: 100,
-                                      decoration: const BoxDecoration(
+                                      decoration:  BoxDecoration(
                                           color: Colors.blue,
                                           borderRadius: BorderRadius.circular(8),
-                                          image: DecorationImage(
+                                          image: const DecorationImage(
                                             image: CachedNetworkImageProvider(
                                               "https://cdn.pixabay.com/photo/2014/11/13/23/34/palace-530055__480.jpg",
                                             ),
