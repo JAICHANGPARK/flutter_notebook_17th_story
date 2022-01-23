@@ -268,7 +268,7 @@ class _FlightHomePageState extends State<FlightHomePage> {
                           Positioned(
                             left: 0,
                             top: 0,
-                            right: 8,
+                            right: 6,
                             bottom: 4,
                             child: Container(
                                 padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
@@ -290,6 +290,17 @@ class _FlightHomePageState extends State<FlightHomePage> {
                       ),
                     ),
                   ),
+                  Expanded(
+                      child: Column(
+                    children: [
+                      Text("Your recent searches"),
+                      SizedBox(height: 120, child: ListView.builder(itemBuilder: (context, index) => Container(),
+                      scrollDirection: Axis.horizontal,
+                      ),
+
+                      ),
+                    ],
+                  )),
                 ],
               ),
             ),
