@@ -316,6 +316,7 @@ class _FlightHomePageState extends State<FlightHomePage> {
                               child: Container(
                                 width: 320,
                                 decoration: BoxDecoration(border: Border.all(color: Colors.black)),
+                                padding: EdgeInsets.all(8),
                                 child: Row(
                                   children: [
                                     Container(
