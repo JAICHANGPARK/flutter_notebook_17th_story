@@ -292,44 +292,61 @@ class _FlightHomePageState extends State<FlightHomePage> {
                   ),
                   Expanded(
                       child: Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                        Text("Your recent searches"),
+                    padding: const EdgeInsets.only(
+                      left: 16,
+                    ),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          "Your recent searches",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        SizedBox(
+                          height: 8,
+                        ),
                         SizedBox(
                           height: 120,
                           child: ListView.builder(
                             itemCount: 4,
-                            itemBuilder: (context, index) => Container(
-                              width: 320,
-                              decoration: BoxDecoration(
-                                border: Border.all(color: Colors.black)
-                              ),
-                              child: Row(
-                                children: [
-                                  Container(
-                                    height: 100,
-                                    width: 80,
-                                    decoration: BoxDecoration(),
-                                  ),
-                                  Column(
-                                    crossAxisAlignment: CrossAxisAlignment.start,
-                                    children: [
-                                      Text("United States - UK"),
-                                      SizedBox(height: 8,),
-                                      Text("2 Filters")
-                                    ],
-                                  )
-                                ],
+                            itemBuilder: (context, index) => Padding(
+                              padding: const EdgeInsets.fromLTRB(0, 8, 12, 8),
+                              child: Container(
+                                width: 320,
+                                decoration: BoxDecoration(border: Border.all(color: Colors.black)),
+                                child: Row(
+                                  children: [
+                                    Container(
+                                      height: 100,
+                                      width: 80,
+                                      decoration: BoxDecoration(color: Colors.blue),
+                                    ),
+                                    Padding(
+                                      padding: const EdgeInsets.all(8.0),
+                                      child: Column(
+                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                        mainAxisAlignment: MainAxisAlignment.center,
+                                        children: [
+                                          Text("United States - UK"),
+                                          SizedBox(
+                                            height: 8,
+                                          ),
+                                          Text("2 Filters")
+                                        ],
+                                      ),
+                                    )
+                                  ],
+                                ),
                               ),
                             ),
                             scrollDirection: Axis.horizontal,
                           ),
                         ),
-                    ],
-                  ),
-                      )),
+                      ],
+                    ),
+                  )),
                 ],
               ),
             ),
