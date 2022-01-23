@@ -1,3 +1,4 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 
 class FlightHomePage extends StatefulWidget {
@@ -325,7 +326,14 @@ class _FlightHomePageState extends State<FlightHomePage> {
                                     Container(
                                       height: 100,
                                       width: 100,
-                                      decoration: const BoxDecoration(color: Colors.blue),
+                                      decoration: const BoxDecoration(
+                                          color: Colors.blue,
+                                          image: DecorationImage(
+                                            image: CachedNetworkImageProvider(
+                                              "https://cdn.pixabay.com/photo/2014/11/13/23/34/palace-530055__480.jpg",
+                                            ),
+                                            fit: BoxFit.cover,
+                                          )),
                                     ),
                                     Padding(
                                       padding: const EdgeInsets.all(8.0),
