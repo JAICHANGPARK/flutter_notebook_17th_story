@@ -6,12 +6,16 @@ class SmallTalkHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.black,
       appBar: AppBar(
+        backgroundColor: Colors.black,
         foregroundColor: Colors.white,
         centerTitle: true,
         leading: Padding(
           padding: const EdgeInsets.all(10.0),
           child: CircleAvatar(
+            backgroundColor: Colors.white.withOpacity(0.2),
+            foregroundColor: Colors.white,
             radius: 16,
             child: Icon(Icons.calendar_today_outlined),
           ),
@@ -21,6 +25,8 @@ class SmallTalkHomePage extends StatelessWidget {
           CircleAvatar(
             radius: 16,
             child: Icon(Icons.person_outlined),
+            backgroundColor: Colors.white.withOpacity(0.2),
+            foregroundColor: Colors.white,
           ),
         ],
       ),
