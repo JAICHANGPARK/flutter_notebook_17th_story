@@ -35,7 +35,7 @@ class SmallTalkHomePage extends StatelessWidget {
         child: Column(
           children: [
             const SizedBox(
-              height: 24,
+              height: 32,
             ),
             Row(
               children: [
@@ -53,10 +53,9 @@ class SmallTalkHomePage extends StatelessWidget {
                       padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                       decoration: BoxDecoration(
                           border: Border.all(
-                        color: Colors.blueAccent,
-                      ),
-                      borderRadius: BorderRadius.circular(24)
-                      ),
+                            color: Colors.blueAccent,
+                          ),
+                          borderRadius: BorderRadius.circular(24)),
                       child: const Text(
                         "INSPIRATION",
                         style: TextStyle(color: Colors.blueAccent),
@@ -66,7 +65,9 @@ class SmallTalkHomePage extends StatelessWidget {
                 ),
                 Expanded(child: Container()),
               ],
-            )
+            ),
+            Expanded(child: Placeholder()),
+            IconButton(),
           ],
         ),
       ),
