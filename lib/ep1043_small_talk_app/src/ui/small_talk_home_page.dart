@@ -31,15 +31,15 @@ class SmallTalkHomePage extends StatelessWidget {
         ],
       ),
       body: Padding(
-        padding: const EdgeInsets.all(8.0),
+        padding: const EdgeInsets.symmetric(horizontal: 16),
         child: Column(
           children: [
-            SizedBox(
+            const SizedBox(
               height: 24,
             ),
             Row(
               children: [
-                Expanded(
+                const Expanded(
                     child: Text(
                   "TODAY",
                   style: TextStyle(
@@ -50,12 +50,14 @@ class SmallTalkHomePage extends StatelessWidget {
                 Expanded(
                   child: Center(
                     child: Container(
-                      padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                       decoration: BoxDecoration(
                           border: Border.all(
                         color: Colors.blueAccent,
-                      )),
-                      child: Text(
+                      ),
+                      borderRadius: BorderRadius.circular(24)
+                      ),
+                      child: const Text(
                         "INSPIRATION",
                         style: TextStyle(color: Colors.blueAccent),
                       ),
