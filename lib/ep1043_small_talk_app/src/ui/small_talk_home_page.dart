@@ -7,11 +7,21 @@ class SmallTalkHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        foregroundColor: Colors.white,
         centerTitle: true,
-        leading: CircleAvatar(),
+        leading: Padding(
+          padding: const EdgeInsets.all(10.0),
+          child: CircleAvatar(
+            radius: 16,
+            child: Icon(Icons.calendar_today_outlined),
+          ),
+        ),
         title: Text("small talk"),
         actions: [
-          CircleAvatar(),
+          CircleAvatar(
+            radius: 16,
+            child: Icon(Icons.person_outlined),
+          ),
         ],
       ),
       body: Column(),
