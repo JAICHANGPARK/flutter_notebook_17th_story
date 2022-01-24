@@ -17,20 +17,57 @@ class SmallTalkHomePage extends StatelessWidget {
             backgroundColor: Colors.white.withOpacity(0.2),
             foregroundColor: Colors.white,
             radius: 16,
-            child: Icon(Icons.calendar_today_outlined),
+            child: const Icon(Icons.calendar_today_outlined),
           ),
         ),
-        title: Text("small talk"),
+        title: const Text("small talk"),
         actions: [
           CircleAvatar(
             radius: 16,
-            child: Icon(Icons.person_outlined),
+            child: const Icon(Icons.person_outlined),
             backgroundColor: Colors.white.withOpacity(0.2),
             foregroundColor: Colors.white,
           ),
         ],
       ),
-      body: Column(),
+      body: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: Column(
+          children: [
+            SizedBox(
+              height: 24,
+            ),
+            Row(
+              children: [
+                Expanded(
+                    child: Text(
+                  "TODAY",
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                  ),
+                )),
+                Expanded(
+                  child: Center(
+                    child: Container(
+                      padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                      decoration: BoxDecoration(
+                          border: Border.all(
+                        color: Colors.blueAccent,
+                      )),
+                      child: Text(
+                        "INSPIRATION",
+                        style: TextStyle(color: Colors.blueAccent),
+                      ),
+                    ),
+                  ),
+                ),
+                Expanded(child: Container()),
+              ],
+            )
+          ],
+        ),
+      ),
     );
   }
 }
