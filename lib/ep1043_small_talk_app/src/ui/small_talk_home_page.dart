@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+
+final smallTalkBottomIndexProvider = StateProvider((ref)=> 0);
 
 class SmallTalkHomePage extends StatelessWidget {
   const SmallTalkHomePage({Key? key}) : super(key: key);
