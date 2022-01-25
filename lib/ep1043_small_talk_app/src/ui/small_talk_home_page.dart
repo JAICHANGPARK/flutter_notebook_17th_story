@@ -67,6 +67,15 @@ class SmallTalkHomePage extends StatelessWidget {
               ],
             ),
             Expanded(child: Placeholder()),
+            SizedBox(
+              height: 52,
+              child: Container(
+                color: Colors.blue,
+                child: Row(
+                  children: [],
+                ),
+              ),
+            ),
             IconButton(
               onPressed: () {},
               icon: Icon(Icons.keyboard_arrow_down),
