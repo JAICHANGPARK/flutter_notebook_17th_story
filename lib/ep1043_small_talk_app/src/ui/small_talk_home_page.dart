@@ -231,7 +231,7 @@ class SmallTalkHomePage extends ConsumerWidget {
                                   border: Border.all(color: Colors.blueAccent),
                                 ),
                                 child: Icon(
-                                  tabIndex ==5 ? Icons.flash_on : Icons.flash_on_outlined,
+                                  tabIndex == 5 ? Icons.flash_on : Icons.flash_on_outlined,
                                   color: tabIndex == 5 ? Colors.white : Colors.blueAccent,
                                 ),
                               ),
