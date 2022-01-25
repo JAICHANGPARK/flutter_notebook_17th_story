@@ -80,10 +80,10 @@ class SmallTalkHomePage extends ConsumerWidget {
                         child: Stack(
                       children: [
                         AnimatedPositioned(
-                            left: 0,
-                            right: 0,
-                            top: tabIndex == 0 ? 0 : 8,
-                            bottom: tabIndex == 0 ? 8 : 0,
+                            left: 8,
+                            right: 8,
+                            top: tabIndex == 0 ? 0 : 12,
+                            bottom: tabIndex == 0 ? 12 : 0,
                             duration: const Duration(milliseconds: 250),
                             child: GestureDetector(
                               onTap: () {
@@ -92,12 +92,12 @@ class SmallTalkHomePage extends ConsumerWidget {
                               child: Container(
                                 decoration: BoxDecoration(
                                   shape: BoxShape.circle,
-                                  color:   tabIndex == 0 ? Colors.blueAccent : Colors.transparent,
+                                  color: tabIndex == 0 ? Colors.blueAccent : Colors.transparent,
                                   border: Border.all(color: Colors.blueAccent),
                                 ),
-                                child:  Icon(
+                                child: Icon(
                                   tabIndex == 0 ? Icons.flash_on : Icons.flash_on_outlined,
-                                  color:  tabIndex == 0 ? Colors.white : Colors.blueAccent,
+                                  color: tabIndex == 0 ? Colors.white : Colors.blueAccent,
                                 ),
                               ),
                             ))
@@ -105,139 +105,139 @@ class SmallTalkHomePage extends ConsumerWidget {
                     )),
                     Expanded(
                         child: Stack(
-                          children: [
-                            AnimatedPositioned(
-                                left: 4,
-                                right: 4,
-                                top: tabIndex == 1 ? 0 : 12,
-                                bottom: tabIndex == 1 ? 12 : 0,
-                                duration: const Duration(milliseconds: 250),
-                                child: GestureDetector(
-                                  onTap: () {
-                                    ref.read(smallTalkBottomIndexProvider.notifier).state = 1;
-                                  },
-                                  child: Container(
-                                    decoration: BoxDecoration(
-                                      shape: BoxShape.circle,
-                                      color:   tabIndex == 1 ? Colors.blueAccent : Colors.transparent,
-                                      border: Border.all(color: Colors.blueAccent),
-                                    ),
-                                    child:  Icon(
-                                      tabIndex == 1? Icons.flash_on : Icons.flash_on_outlined,
-                                      color:  tabIndex == 1 ? Colors.white : Colors.blueAccent,
-                                    ),
-                                  ),
-                                ))
-                          ],
-                        )),
+                      children: [
+                        AnimatedPositioned(
+                            left: 8,
+                            right: 8,
+                            top: tabIndex == 1 ? 0 : 12,
+                            bottom: tabIndex == 1 ? 12 : 0,
+                            duration: const Duration(milliseconds: 250),
+                            child: GestureDetector(
+                              onTap: () {
+                                ref.read(smallTalkBottomIndexProvider.notifier).state = 1;
+                              },
+                              child: Container(
+                                decoration: BoxDecoration(
+                                  shape: BoxShape.circle,
+                                  color: tabIndex == 1 ? Colors.blueAccent : Colors.transparent,
+                                  border: Border.all(color: Colors.blueAccent),
+                                ),
+                                child: Icon(
+                                  tabIndex == 1 ? Icons.flash_on : Icons.flash_on_outlined,
+                                  color: tabIndex == 1 ? Colors.white : Colors.blueAccent,
+                                ),
+                              ),
+                            ))
+                      ],
+                    )),
                     Expanded(
                         child: Stack(
-                          children: [
-                            AnimatedPositioned(
-                                left: 4,
-                                right: 4,
-                                top: tabIndex == 2 ? 0 : 12,
-                                bottom: tabIndex == 2 ? 12 : 0,
-                                duration: const Duration(milliseconds: 250),
-                                child: GestureDetector(
-                                  onTap: () {
-                                    ref.read(smallTalkBottomIndexProvider.notifier).state = 2;
-                                  },
-                                  child: Container(
-                                    decoration: BoxDecoration(
-                                      shape: BoxShape.circle,
-                                      color:   tabIndex == 2 ? Colors.blueAccent : Colors.transparent,
-                                      border: Border.all(color: Colors.blueAccent),
-                                    ),
-                                    child:  Icon(
-                                      tabIndex == 2 ? Icons.flash_on : Icons.flash_on_outlined,
-                                      color:  tabIndex == 2 ? Colors.white : Colors.blueAccent,
-                                    ),
-                                  ),
-                                ))
-                          ],
-                        )),
+                      children: [
+                        AnimatedPositioned(
+                            left: 8,
+                            right: 8,
+                            top: tabIndex == 2 ? 0 : 12,
+                            bottom: tabIndex == 2 ? 12 : 0,
+                            duration: const Duration(milliseconds: 250),
+                            child: GestureDetector(
+                              onTap: () {
+                                ref.read(smallTalkBottomIndexProvider.notifier).state = 2;
+                              },
+                              child: Container(
+                                decoration: BoxDecoration(
+                                  shape: BoxShape.circle,
+                                  color: tabIndex == 2 ? Colors.blueAccent : Colors.transparent,
+                                  border: Border.all(color: Colors.blueAccent),
+                                ),
+                                child: Icon(
+                                  tabIndex == 2 ? Icons.flash_on : Icons.flash_on_outlined,
+                                  color: tabIndex == 2 ? Colors.white : Colors.blueAccent,
+                                ),
+                              ),
+                            ))
+                      ],
+                    )),
                     Expanded(
                         child: Stack(
-                          children: [
-                            AnimatedPositioned(
-                                left: 0,
-                                right: 0,
-                                top: tabIndex == 3 ? 0 : 8,
-                                bottom: tabIndex == 3 ? 8 : 0,
-                                duration: const Duration(milliseconds: 250),
-                                child: GestureDetector(
-                                  onTap: () {
-                                    ref.read(smallTalkBottomIndexProvider.notifier).state = 3;
-                                  },
-                                  child: Container(
-                                    decoration: BoxDecoration(
-                                      shape: BoxShape.circle,
-                                      color:   tabIndex == 3 ? Colors.blueAccent : Colors.transparent,
-                                      border: Border.all(color: Colors.blueAccent),
-                                    ),
-                                    child:  Icon(
-                                      tabIndex == 3? Icons.flash_on : Icons.flash_on_outlined,
-                                      color:  tabIndex == 3 ? Colors.white : Colors.blueAccent,
-                                    ),
-                                  ),
-                                ))
-                          ],
-                        )),
+                      children: [
+                        AnimatedPositioned(
+                            left: 8,
+                            right: 8,
+                            top: tabIndex == 3 ? 0 : 12,
+                            bottom: tabIndex == 3 ? 12 : 0,
+                            duration: const Duration(milliseconds: 250),
+                            child: GestureDetector(
+                              onTap: () {
+                                ref.read(smallTalkBottomIndexProvider.notifier).state = 3;
+                              },
+                              child: Container(
+                                decoration: BoxDecoration(
+                                  shape: BoxShape.circle,
+                                  color: tabIndex == 3 ? Colors.blueAccent : Colors.transparent,
+                                  border: Border.all(color: Colors.blueAccent),
+                                ),
+                                child: Icon(
+                                  tabIndex == 3 ? Icons.flash_on : Icons.flash_on_outlined,
+                                  color: tabIndex == 3 ? Colors.white : Colors.blueAccent,
+                                ),
+                              ),
+                            ))
+                      ],
+                    )),
                     Expanded(
                         child: Stack(
-                          children: [
-                            AnimatedPositioned(
-                                left: 0,
-                                right: 0,
-                                top: tabIndex == 0 ? 0 : 8,
-                                bottom: tabIndex == 0 ? 8 : 0,
-                                duration: const Duration(milliseconds: 250),
-                                child: GestureDetector(
-                                  onTap: () {
-                                    ref.read(smallTalkBottomIndexProvider.notifier).state = 0;
-                                  },
-                                  child: Container(
-                                    decoration: BoxDecoration(
-                                      shape: BoxShape.circle,
-                                      color:   tabIndex == 0 ? Colors.blueAccent : Colors.transparent,
-                                      border: Border.all(color: Colors.blueAccent),
-                                    ),
-                                    child:  Icon(
-                                      tabIndex == 0 ? Icons.flash_on : Icons.flash_on_outlined,
-                                      color:  tabIndex == 0 ? Colors.white : Colors.blueAccent,
-                                    ),
-                                  ),
-                                ))
-                          ],
-                        )),
+                      children: [
+                        AnimatedPositioned(
+                            left: 8,
+                            right: 8,
+                            top: tabIndex == 4 ? 0 : 12,
+                            bottom: tabIndex == 4 ? 12 : 0,
+                            duration: const Duration(milliseconds: 250),
+                            child: GestureDetector(
+                              onTap: () {
+                                ref.read(smallTalkBottomIndexProvider.notifier).state = 4;
+                              },
+                              child: Container(
+                                decoration: BoxDecoration(
+                                  shape: BoxShape.circle,
+                                  color: tabIndex == 4 ? Colors.blueAccent : Colors.transparent,
+                                  border: Border.all(color: Colors.blueAccent),
+                                ),
+                                child: Icon(
+                                  tabIndex == 4 ? Icons.flash_on : Icons.flash_on_outlined,
+                                  color: tabIndex == 4 ? Colors.white : Colors.blueAccent,
+                                ),
+                              ),
+                            ))
+                      ],
+                    )),
                     Expanded(
                         child: Stack(
-                          children: [
-                            AnimatedPositioned(
-                                left: 0,
-                                right: 0,
-                                top: tabIndex == 0 ? 0 : 8,
-                                bottom: tabIndex == 0 ? 8 : 0,
-                                duration: const Duration(milliseconds: 250),
-                                child: GestureDetector(
-                                  onTap: () {
-                                    ref.read(smallTalkBottomIndexProvider.notifier).state = 0;
-                                  },
-                                  child: Container(
-                                    decoration: BoxDecoration(
-                                      shape: BoxShape.circle,
-                                      color:   tabIndex == 0 ? Colors.blueAccent : Colors.transparent,
-                                      border: Border.all(color: Colors.blueAccent),
-                                    ),
-                                    child:  Icon(
-                                      tabIndex == 0 ? Icons.flash_on : Icons.flash_on_outlined,
-                                      color:  tabIndex == 0 ? Colors.white : Colors.blueAccent,
-                                    ),
-                                  ),
-                                ))
-                          ],
-                        )),
+                      children: [
+                        AnimatedPositioned(
+                            left: 8,
+                            right: 8,
+                            top: tabIndex == 5 ? 0 : 12,
+                            bottom: tabIndex == 5 ? 12 : 0,
+                            duration: const Duration(milliseconds: 250),
+                            child: GestureDetector(
+                              onTap: () {
+                                ref.read(smallTalkBottomIndexProvider.notifier).state = 5;
+                              },
+                              child: Container(
+                                decoration: BoxDecoration(
+                                  shape: BoxShape.circle,
+                                  color: tabIndex == 5 ? Colors.blueAccent : Colors.transparent,
+                                  border: Border.all(color: Colors.blueAccent),
+                                ),
+                                child: Icon(
+                                  tabIndex ==5 ? Icons.flash_on : Icons.flash_on_outlined,
+                                  color: tabIndex == 5 ? Colors.white : Colors.blueAccent,
+                                ),
+                              ),
+                            ))
+                      ],
+                    )),
                   ],
                 ),
               ),
