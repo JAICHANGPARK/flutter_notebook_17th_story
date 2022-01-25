@@ -70,9 +70,35 @@ class SmallTalkHomePage extends StatelessWidget {
             SizedBox(
               height: 52,
               child: Container(
-                color: Colors.blue,
                 child: Row(
-                  children: [],
+                  children: [
+                    Expanded(
+                        child: Stack(
+                      children: [
+                        AnimatedPositioned(
+                            left: 0,
+                            right: 0,
+                            top: 0,
+                            bottom: 0,
+                            duration: Duration(milliseconds: 250),
+                            child: Container(
+                              decoration: BoxDecoration(
+                                shape: BoxShape.circle,
+                                color: Colors.blueAccent,
+                                border: Border.all(color: Colors.blueAccent),
+                              ),
+                              child: Icon(
+                                Icons.flash_on,
+                                color: Colors.white,
+                              ),
+                            ))
+                      ],
+                    )),
+                    Expanded(child: Stack()),
+                    Expanded(child: Stack()),
+                    Expanded(child: Stack()),
+                    Expanded(child: Stack()),
+                  ],
                 ),
               ),
             ),
