@@ -71,13 +71,15 @@ class SmallTalkHomePage extends ConsumerWidget {
                 Expanded(child: Container()),
               ],
             ),
-            SizedBox(height: 24,),
+            SizedBox(
+              height: 24,
+            ),
             Expanded(
                 child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  "There is nothing either good or bad but thinking makes it so.",
+                  "There is nothing either\ngood or bad\nbut thinking makes\nit so.",
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 32,
