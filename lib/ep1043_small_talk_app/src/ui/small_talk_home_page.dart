@@ -22,16 +22,17 @@ class SmallTalkHomePage extends ConsumerWidget {
             backgroundColor: Colors.white.withOpacity(0.2),
             foregroundColor: Colors.white,
             radius: 16,
-            child: const Icon(Icons.calendar_today_outlined),
+            child: const Icon(Icons.calendar_today_outlined, size: 18,),
           ),
         ),
         title: const Text("small talk"),
         actions: [
           CircleAvatar(
             radius: 16,
-            child: const Icon(Icons.person_outlined),
+            child: const Icon(Icons.person_outlined, size: 18,),
             backgroundColor: Colors.white.withOpacity(0.2),
             foregroundColor: Colors.white,
+
           ),
         ],
       ),
