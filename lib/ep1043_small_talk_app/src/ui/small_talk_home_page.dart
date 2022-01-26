@@ -108,6 +108,7 @@ class SmallTalkHomePage extends ConsumerWidget {
                   height: 24,
                 ),
                 Row(
+                  mainAxisAlignment: MainAxisAlignment.end,
                   children: [
                     CircleAvatar(
                       radius: 16,
@@ -124,6 +125,7 @@ class SmallTalkHomePage extends ConsumerWidget {
                       foregroundColor: Colors.white,
 
                     ),
+                    SizedBox(width: 12,),
                     CircleAvatar(
                       radius: 16,
                       child: const Icon(Icons.person_outlined, size: 18,),
