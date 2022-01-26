@@ -79,7 +79,7 @@ class SmallTalkHomePage extends ConsumerWidget {
               ],
             ),
             const SizedBox(
-              height: 24,
+              height: 42,
             ),
             Expanded(
                 child: Column(
