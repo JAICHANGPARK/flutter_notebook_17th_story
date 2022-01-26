@@ -25,6 +25,8 @@ dependencies:
   json_annotation: ^4.4.0
   badges: any
 
+  google_fonts: any
+
 
 dev_dependencies:
   flutter_test:
