@@ -89,7 +89,7 @@ class SmallTalkHomePage extends ConsumerWidget {
                   "There is nothing either\ngood or bad\nbut thinking makes\nit so.",
                   style: GoogleFonts.merriweather(
                     color: Colors.white,
-                    fontSize: 32,
+                    fontSize: 30,
                   ),
                 ),
                 const SizedBox(
