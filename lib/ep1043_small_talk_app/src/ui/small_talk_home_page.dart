@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 final smallTalkBottomIndexProvider = StateProvider((ref) => 0);
 
@@ -22,17 +23,22 @@ class SmallTalkHomePage extends ConsumerWidget {
             backgroundColor: Colors.white.withOpacity(0.2),
             foregroundColor: Colors.white,
             radius: 16,
-            child: const Icon(Icons.calendar_today_outlined, size: 18,),
+            child: const Icon(
+              Icons.calendar_today_outlined,
+              size: 18,
+            ),
           ),
         ),
         title: const Text("small talk"),
         actions: [
           CircleAvatar(
             radius: 16,
-            child: const Icon(Icons.person_outlined, size: 18,),
+            child: const Icon(
+              Icons.person_outlined,
+              size: 18,
+            ),
             backgroundColor: Colors.white.withOpacity(0.2),
             foregroundColor: Colors.white,
-
           ),
         ],
       ),
@@ -79,9 +85,9 @@ class SmallTalkHomePage extends ConsumerWidget {
                 child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                const Text(
+                Text(
                   "There is nothing either\ngood or bad\nbut thinking makes\nit so.",
-                  style: const TextStyle(
+                  style: GoogleFonts.merriweather(
                     color: Colors.white,
                     fontSize: 32,
                   ),
@@ -112,28 +118,37 @@ class SmallTalkHomePage extends ConsumerWidget {
                   children: [
                     CircleAvatar(
                       radius: 16,
-                      child: const Icon(Icons.person_outlined, size: 18,),
+                      child: const Icon(
+                        Icons.book_outlined,
+                        size: 18,
+                      ),
                       backgroundColor: Colors.white.withOpacity(0.2),
                       foregroundColor: Colors.white,
-
                     ),
-                    SizedBox(width: 12,),
+                    SizedBox(
+                      width: 12,
+                    ),
                     CircleAvatar(
                       radius: 16,
-                      child: const Icon(Icons.person_outlined, size: 18,),
+                      child: const Icon(
+                        Icons.bookmark_border_outlined,
+                        size: 18,
+                      ),
                       backgroundColor: Colors.white.withOpacity(0.2),
                       foregroundColor: Colors.white,
-
                     ),
-                    SizedBox(width: 12,),
+                    SizedBox(
+                      width: 12,
+                    ),
                     CircleAvatar(
                       radius: 16,
-                      child: const Icon(Icons.person_outlined, size: 18,),
+                      child: const Icon(
+                        Icons.send_outlined,
+                        size: 18,
+                      ),
                       backgroundColor: Colors.white.withOpacity(0.2),
                       foregroundColor: Colors.white,
-
                     ),
-
                   ],
                 )
               ],
