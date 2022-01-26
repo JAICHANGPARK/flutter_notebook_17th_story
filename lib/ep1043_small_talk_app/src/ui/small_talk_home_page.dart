@@ -67,21 +67,26 @@ class SmallTalkHomePage extends ConsumerWidget {
                     ),
                   ),
                 ),
-                Expanded(child: Column(
-                  children: [
-                    Text("There is nothing either good or bad but thinking makes it so."),
-                    Text("WILLIAM SHAKESPEARE"),
-                    Text("English poet"),
-                    Row(
-                      children: [
-                        
-                      ],
-                    )
-                  ],
-                )),
+                Expanded(child: Container()),
               ],
             ),
-            const Expanded(child: Placeholder()),
+            Expanded(
+                child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  "There is nothing either good or bad but thinking makes it so.",
+                  style: TextStyle(
+                    color: Colors.white,
+                  ),
+                ),
+                Text("WILLIAM SHAKESPEARE"),
+                Text("English poet"),
+                Row(
+                  children: [],
+                )
+              ],
+            )),
             SizedBox(
               height: 64,
               child: Container(
