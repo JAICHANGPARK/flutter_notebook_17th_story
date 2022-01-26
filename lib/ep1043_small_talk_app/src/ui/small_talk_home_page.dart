@@ -146,12 +146,12 @@ class SmallTalkHomePage extends ConsumerWidget {
                               child: Container(
                                 decoration: BoxDecoration(
                                   shape: BoxShape.circle,
-                                  color: tabIndex == 2 ? Colors.blueAccent : Colors.transparent,
-                                  border: Border.all(color: Colors.blueAccent),
+                                  color: tabIndex == 2 ? Colors.pink : Colors.transparent,
+                                  border: Border.all(color: Colors.pink),
                                 ),
                                 child: Icon(
                                   tabIndex == 2 ? Icons.flash_on : Icons.flash_on_outlined,
-                                  color: tabIndex == 2 ? Colors.white : Colors.blueAccent,
+                                  color: tabIndex == 2 ? Colors.white : Colors.pink,
                                 ),
                               ),
                             ))
@@ -173,12 +173,12 @@ class SmallTalkHomePage extends ConsumerWidget {
                               child: Container(
                                 decoration: BoxDecoration(
                                   shape: BoxShape.circle,
-                                  color: tabIndex == 3 ? Colors.blueAccent : Colors.transparent,
-                                  border: Border.all(color: Colors.blueAccent),
+                                  color: tabIndex == 3 ? Colors.orange : Colors.transparent,
+                                  border: Border.all(color: Colors.orange),
                                 ),
                                 child: Icon(
-                                  tabIndex == 3 ? Icons.flash_on : Icons.flash_on_outlined,
-                                  color: tabIndex == 3 ? Colors.white : Colors.blueAccent,
+                                  tabIndex == 3 ? Icons.calendar_month : Icons.calendar_today,
+                                  color: tabIndex == 3 ? Colors.white : Colors.orange,
                                 ),
                               ),
                             ))
@@ -200,12 +200,12 @@ class SmallTalkHomePage extends ConsumerWidget {
                               child: Container(
                                 decoration: BoxDecoration(
                                   shape: BoxShape.circle,
-                                  color: tabIndex == 4 ? Colors.blueAccent : Colors.transparent,
-                                  border: Border.all(color: Colors.blueAccent),
+                                  color: tabIndex == 4 ? Colors.red : Colors.transparent,
+                                  border: Border.all(color: Colors.red),
                                 ),
                                 child: Icon(
-                                  tabIndex == 4 ? Icons.flash_on : Icons.flash_on_outlined,
-                                  color: tabIndex == 4 ? Colors.white : Colors.blueAccent,
+                                  tabIndex == 4 ? Icons.mobile_friendly : Icons.mobile_friendly,
+                                  color: tabIndex == 4 ? Colors.white : Colors.red,
                                 ),
                               ),
                             ))
@@ -227,12 +227,12 @@ class SmallTalkHomePage extends ConsumerWidget {
                               child: Container(
                                 decoration: BoxDecoration(
                                   shape: BoxShape.circle,
-                                  color: tabIndex == 5 ? Colors.blueAccent : Colors.transparent,
-                                  border: Border.all(color: Colors.blueAccent),
+                                  color: tabIndex == 5 ? Colors.purple : Colors.transparent,
+                                  border: Border.all(color: Colors.purple),
                                 ),
                                 child: Icon(
-                                  tabIndex == 5 ? Icons.flash_on : Icons.flash_on_outlined,
-                                  color: tabIndex == 5 ? Colors.white : Colors.blueAccent,
+                                  tabIndex == 5 ? Icons.chat : Icons.chat_outlined,
+                                  color: tabIndex == 5 ? Colors.white : Colors.purple,
                                 ),
                               ),
                             ))
