@@ -119,12 +119,12 @@ class SmallTalkHomePage extends ConsumerWidget {
                               child: Container(
                                 decoration: BoxDecoration(
                                   shape: BoxShape.circle,
-                                  color: tabIndex == 1 ? Colors.blueAccent : Colors.transparent,
-                                  border: Border.all(color: Colors.blueAccent),
+                                  color: tabIndex == 1 ? Colors.green : Colors.transparent,
+                                  border: Border.all(color: Colors.green),
                                 ),
                                 child: Icon(
-                                  tabIndex == 1 ? Icons.flash_on : Icons.flash_on_outlined,
-                                  color: tabIndex == 1 ? Colors.white : Colors.blueAccent,
+                                  tabIndex == 1 ? Icons.highlight : Icons.highlight_outlined,
+                                  color: tabIndex == 1 ? Colors.white : Colors.green,
                                 ),
                               ),
                             ))
