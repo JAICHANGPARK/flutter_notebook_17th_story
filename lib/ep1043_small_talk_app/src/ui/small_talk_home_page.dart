@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
@@ -70,6 +71,7 @@ class SmallTalkHomePage extends ConsumerWidget {
                 Expanded(child: Container()),
               ],
             ),
+            SizedBox(height: 24,),
             Expanded(
                 child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -78,10 +80,21 @@ class SmallTalkHomePage extends ConsumerWidget {
                   "There is nothing either good or bad but thinking makes it so.",
                   style: TextStyle(
                     color: Colors.white,
+                    fontSize: 32,
                   ),
                 ),
-                Text("WILLIAM SHAKESPEARE"),
-                Text("English poet"),
+                Text(
+                  "WILLIAM SHAKESPEARE",
+                  style: TextStyle(
+                    color: Colors.white,
+                  ),
+                ),
+                Text(
+                  "English poet",
+                  style: TextStyle(
+                    color: Colors.grey,
+                  ),
+                ),
                 Row(
                   children: [],
                 )
