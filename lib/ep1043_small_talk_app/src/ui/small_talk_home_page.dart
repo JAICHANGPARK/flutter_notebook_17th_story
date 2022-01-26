@@ -72,43 +72,67 @@ class SmallTalkHomePage extends ConsumerWidget {
                 Expanded(child: Container()),
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 24,
             ),
             Expanded(
                 child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text(
+                const Text(
                   "There is nothing either\ngood or bad\nbut thinking makes\nit so.",
-                  style: TextStyle(
+                  style: const TextStyle(
                     color: Colors.white,
                     fontSize: 32,
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 24,
                 ),
-                Text(
+                const Text(
                   "WILLIAM SHAKESPEARE",
                   style: TextStyle(
                     color: Colors.white,
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 4,
                 ),
-                Text(
+                const Text(
                   "English poet",
                   style: TextStyle(
                     color: Colors.grey,
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 24,
                 ),
                 Row(
-                  children: [],
+                  children: [
+                    CircleAvatar(
+                      radius: 16,
+                      child: const Icon(Icons.person_outlined, size: 18,),
+                      backgroundColor: Colors.white.withOpacity(0.2),
+                      foregroundColor: Colors.white,
+
+                    ),
+                    SizedBox(width: 12,),
+                    CircleAvatar(
+                      radius: 16,
+                      child: const Icon(Icons.person_outlined, size: 18,),
+                      backgroundColor: Colors.white.withOpacity(0.2),
+                      foregroundColor: Colors.white,
+
+                    ),
+                    CircleAvatar(
+                      radius: 16,
+                      child: const Icon(Icons.person_outlined, size: 18,),
+                      backgroundColor: Colors.white.withOpacity(0.2),
+                      foregroundColor: Colors.white,
+
+                    ),
+
+                  ],
                 )
               ],
             )),
