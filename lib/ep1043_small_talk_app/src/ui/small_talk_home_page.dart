@@ -85,17 +85,26 @@ class SmallTalkHomePage extends ConsumerWidget {
                     fontSize: 32,
                   ),
                 ),
+                SizedBox(
+                  height: 24,
+                ),
                 Text(
                   "WILLIAM SHAKESPEARE",
                   style: TextStyle(
                     color: Colors.white,
                   ),
                 ),
+                SizedBox(
+                  height: 4,
+                ),
                 Text(
                   "English poet",
                   style: TextStyle(
                     color: Colors.grey,
                   ),
+                ),
+                SizedBox(
+                  height: 24,
                 ),
                 Row(
                   children: [],
