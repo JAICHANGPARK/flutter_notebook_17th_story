@@ -18,11 +18,18 @@ class ECommerceHomePage extends StatelessWidget {
               topRight: Radius.circular(24)
             ),
             panel: Container(),
-            body: CachedNetworkImage(
-              imageUrl: 'https://cdn.pixabay.com/photo/2016/11/22/06/32/girl-1848478__340.jpg',
-              width: MediaQuery.of(context).size.width,
-              height: MediaQuery.of(context).size.height,
-              fit: BoxFit.cover,
+            body: Column(
+              children: [
+                Expanded(
+                  child: CachedNetworkImage(
+                    imageUrl: 'https://cdn.pixabay.com/photo/2019/12/10/09/06/apple-iphone-11-pro-4685404__340.jpg',
+                    width: MediaQuery.of(context).size.width,
+                    height: MediaQuery.of(context).size.height,
+                    fit: BoxFit.fitHeight,
+                  ),
+                ),
+                Expanded(child: Container()),
+              ],
             )),
       ),
     );
