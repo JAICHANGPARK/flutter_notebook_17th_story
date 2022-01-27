@@ -9,6 +9,9 @@ class ECommerceHomePage extends StatelessWidget {
     return Scaffold(
       body: SafeArea(
         child: SlidingUpPanel(
+          isDraggable: false,
+          maxHeight: MediaQuery.of(context).size.height / 3,
+          minHeight: MediaQuery.of(context).size.height / 3,
           panel: Container(),
           body: Column(
             children: [],
