@@ -15,7 +15,7 @@ class ECommerceHomePage extends StatelessWidget {
             minHeight: MediaQuery.of(context).size.height / 2,
             panel: Container(),
             body: CachedNetworkImage(
-              imageUrl: 'https://cdn.pixabay.com/photo/2019/06/02/17/33/woman-4246954_960_720.jpg',
+              imageUrl: 'https://cdn.pixabay.com/photo/2016/02/10/16/39/girl-1192032__340.jpg',
               width: MediaQuery.of(context).size.width,
               height: MediaQuery.of(context).size.height,
               fit: BoxFit.cover,
