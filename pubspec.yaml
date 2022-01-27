@@ -26,6 +26,7 @@ dependencies:
   badges: any
 
   google_fonts: any
+  sliding_up_panel: ^2.0.0+1
 
 
 dev_dependencies:
