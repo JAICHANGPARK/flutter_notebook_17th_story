@@ -6,7 +6,7 @@
 
 ### UI Source
 
-- Mobile Case e-commere by Taras Migulko
+- Mobile Case e-commerce by Taras Migulko
 - https://dribbble.com/shots/17366650-Mobile-Case-e-commerce
 
 ## EP1043-EP1045
