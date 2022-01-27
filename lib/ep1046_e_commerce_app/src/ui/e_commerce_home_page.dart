@@ -13,7 +13,7 @@ class ECommerceHomePage extends StatelessWidget {
             isDraggable: false,
             maxHeight: MediaQuery.of(context).size.height / 2,
             minHeight: MediaQuery.of(context).size.height / 2,
-            borderRadius: BorderRadius.only(
+            borderRadius: const BorderRadius.only(
               topLeft: Radius.circular(24),
               topRight: Radius.circular(24)
             ),
