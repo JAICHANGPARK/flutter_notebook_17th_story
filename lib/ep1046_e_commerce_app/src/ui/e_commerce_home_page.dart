@@ -13,6 +13,10 @@ class ECommerceHomePage extends StatelessWidget {
             isDraggable: false,
             maxHeight: MediaQuery.of(context).size.height / 2,
             minHeight: MediaQuery.of(context).size.height / 2,
+            borderRadius: BorderRadius.only(
+              topLeft: Radius.circular(24),
+              topRight: Radius.circular(24)
+            ),
             panel: Container(),
             body: CachedNetworkImage(
               imageUrl: 'https://cdn.pixabay.com/photo/2016/11/22/06/32/girl-1848478__340.jpg',
