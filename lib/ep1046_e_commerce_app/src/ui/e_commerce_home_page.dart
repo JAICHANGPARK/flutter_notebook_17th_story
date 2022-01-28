@@ -10,10 +10,10 @@ class ECommerceHomePage extends StatelessWidget {
     return Scaffold(
       body: SafeArea(
         child: SlidingUpPanel(
-            isDraggable: false,
-            maxHeight: MediaQuery.of(context).size.height / 2,
-            minHeight: MediaQuery.of(context).size.height / 2,
-            borderRadius: const BorderRadius.only(topLeft: Radius.circular(24), topRight: Radius.circular(24)),
+          isDraggable: false,
+          maxHeight: MediaQuery.of(context).size.height / 2,
+          minHeight: MediaQuery.of(context).size.height / 2,
+          borderRadius: const BorderRadius.only(topLeft: Radius.circular(24), topRight: Radius.circular(24)),
           body: Column(
             children: [
               Expanded(
@@ -27,9 +27,22 @@ class ECommerceHomePage extends StatelessWidget {
               Expanded(child: Container()),
             ],
           ),
-            panel: Container(),
-
-
+          panel: Column(
+            children: [
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Center(
+                  child: Container(
+                    height: 8,
+                    width: 42,
+                    decoration: BoxDecoration(
+                      color: Colors.grey
+                    ),
+                  ),
+                ),
+              )
+            ],
+          ),
         ),
       ),
     );
