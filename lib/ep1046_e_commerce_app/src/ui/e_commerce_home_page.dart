@@ -62,10 +62,19 @@ class ECommerceHomePage extends StatelessWidget {
                           padding: const EdgeInsets.symmetric(horizontal: 16),
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [const Text("PP-0008", style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              fontSize: 24,
-                            ),), const Text("Free Shipping")],
+                            children: [
+                              const Text(
+                                "PP-0008",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 24,
+                                ),
+                              ),
+                              SizedBox(
+                                height: 8,
+                              ),
+                              const Text("Free Shipping")
+                            ],
                           ),
                         ),
                         Spacer(),
