@@ -141,7 +141,7 @@ class ECommerceHomePage extends StatelessWidget {
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.all(16.0),
+                padding: const EdgeInsets.symmetric(vertical: 24),
                 child: Row(
                   children: [
                     CircleAvatar(
