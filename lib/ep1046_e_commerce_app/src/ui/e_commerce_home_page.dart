@@ -48,9 +48,9 @@ class ECommerceHomePage extends StatelessWidget {
                   children: [
                     Row(
                       children: [
-                        CircleAvatar(
+                        const CircleAvatar(
                           radius: 32,
-                          child: Text(
+                          child: const Text(
                             "\$68",
                             style: TextStyle(
                               fontSize: 32,
@@ -59,28 +59,34 @@ class ECommerceHomePage extends StatelessWidget {
                           ),
                         ),
                         Column(
-                          children: [Text("PP-0008"), Text("Free Shipping")],
+                          children: [const Text("PP-0008"), const Text("Free Shipping")],
                         ),
-                        IconButton(onPressed: () {}, icon: Icon(Icons.favorite)),
+                        IconButton(onPressed: () {}, icon: const Icon(Icons.favorite)),
                       ],
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 24,
                     ),
-                    Text("Montreal-based foundry, Pangram\nPangram*, has been a disrupter in the\n"
+                    const Text("Montreal-based foundry, Pangram\nPangram*, has been a disrupter in the\n"
                         "typography world since 2016."),
-                    ListView(
-                      scrollDirection: Axis.horizontal,
-                      children: [
-                        CircleAvatar(
-                          child: Text("XS"),
-                          forgroundColor: Colors.black,
-                          backgroundColor: Colors.grey,
+                    Padding(
+                      padding: const EdgeInsets.symmetric(vertical: 16),
+                      child: SizedBox(
+                        height: 42,
+                        child: ListView(
+                          scrollDirection: Axis.horizontal,
+                          children: [
+                            const CircleAvatar(
+                              child: Text("XS"),
+                              foregroundColor: Colors.black,
+                              backgroundColor: Colors.grey,
+                            ),
+                            const CircleAvatar(),
+                            const CircleAvatar(),
+                            const CircleAvatar(),
+                          ],
                         ),
-                        CircleAvatar(),
-                        CircleAvatar(),
-                        CircleAvatar(),
-                      ],
+                      ),
                     )
                   ],
                 ),
