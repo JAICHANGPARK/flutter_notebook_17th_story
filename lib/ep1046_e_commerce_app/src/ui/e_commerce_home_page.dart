@@ -58,9 +58,17 @@ class ECommerceHomePage extends StatelessWidget {
                             ),
                           ),
                         ),
-                        Column(
-                          children: [const Text("PP-0008"), const Text("Free Shipping")],
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 16),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [const Text("PP-0008", style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 24,
+                            ),), const Text("Free Shipping")],
+                          ),
                         ),
+                        Spacer(),
                         IconButton(onPressed: () {}, icon: const Icon(Icons.favorite)),
                       ],
                     ),
