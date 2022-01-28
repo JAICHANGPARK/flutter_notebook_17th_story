@@ -34,12 +34,28 @@ class ECommerceHomePage extends StatelessWidget {
                 child: Center(
                   child: Container(
                     height: 8,
-                    width: 42,
+                    width: 52,
                     decoration: BoxDecoration(
-                      color: Colors.grey
+                      color: Colors.grey,
+                      borderRadius: BorderRadius.circular(8),
                     ),
                   ),
                 ),
+              ),
+              Row(
+                children: [
+                  CircleAvatar(
+                    child: Text("\$68", style: TextStyle(
+                      fontSize: 32,
+                      fontWeight: FontWeight.bold,
+                    ),),
+                  ),
+                  Column(
+                    children: [
+                      
+                    ],
+                  )
+                ],
               )
             ],
           ),
