@@ -11,8 +11,8 @@ class ECommerceHomePage extends StatelessWidget {
       body: SafeArea(
         child: SlidingUpPanel(
           isDraggable: false,
-          maxHeight: MediaQuery.of(context).size.height / 2,
-          minHeight: MediaQuery.of(context).size.height / 2,
+          maxHeight: MediaQuery.of(context).size.height / 2.2,
+          minHeight: MediaQuery.of(context).size.height / 2.2,
           borderRadius: const BorderRadius.only(topLeft: Radius.circular(24), topRight: Radius.circular(24)),
           body: Column(
             children: [
