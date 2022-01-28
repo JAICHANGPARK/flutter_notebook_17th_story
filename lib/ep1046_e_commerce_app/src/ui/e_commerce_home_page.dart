@@ -78,38 +78,38 @@ class ECommerceHomePage extends StatelessWidget {
                           children: [
                             Padding(
                               padding: const EdgeInsets.only(right: 16),
-                              child: const CircleAvatar(
+                              child: CircleAvatar(
                                 child: Text("XS"),
                                 radius: 28,
                                 foregroundColor: Colors.black,
-                                backgroundColor: Colors.grey,
+                                backgroundColor: Colors.grey[200],
                               ),
                             ),
                             Padding(
                               padding: const EdgeInsets.only(right: 16),
-                              child: const CircleAvatar(
+                              child: CircleAvatar(
                                 child: Text("XS"),
                                 radius: 28,
                                 foregroundColor: Colors.black,
-                                backgroundColor: Colors.grey,
+                                backgroundColor: Colors.grey[200],
                               ),
                             ),
                             Padding(
                               padding: const EdgeInsets.only(right: 16),
-                              child: const CircleAvatar(
+                              child: CircleAvatar(
                                 child: Text("XS"),
                                 radius: 28,
                                 foregroundColor: Colors.black,
-                                backgroundColor: Colors.grey,
+                                backgroundColor: Colors.grey[200],
                               ),
                             ),
                             Padding(
                               padding: const EdgeInsets.only(right: 16),
-                              child: const CircleAvatar(
+                              child: CircleAvatar(
                                 child: Text("XS"),
                                 radius: 28,
                                 foregroundColor: Colors.black,
-                                backgroundColor: Colors.grey,
+                                backgroundColor: Colors.grey[200],
                               ),
                             ),
                           ],
