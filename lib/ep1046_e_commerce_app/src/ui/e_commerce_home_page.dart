@@ -72,18 +72,46 @@ class ECommerceHomePage extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsets.symmetric(vertical: 16),
                       child: SizedBox(
-                        height: 42,
+                        height: 52,
                         child: ListView(
                           scrollDirection: Axis.horizontal,
                           children: [
-                            const CircleAvatar(
-                              child: Text("XS"),
-                              foregroundColor: Colors.black,
-                              backgroundColor: Colors.grey,
+                            Padding(
+                              padding: const EdgeInsets.only(right: 16),
+                              child: const CircleAvatar(
+                                child: Text("XS"),
+                                radius: 28,
+                                foregroundColor: Colors.black,
+                                backgroundColor: Colors.grey,
+                              ),
                             ),
-                            const CircleAvatar(),
-                            const CircleAvatar(),
-                            const CircleAvatar(),
+                            Padding(
+                              padding: const EdgeInsets.only(right: 16),
+                              child: const CircleAvatar(
+                                child: Text("XS"),
+                                radius: 28,
+                                foregroundColor: Colors.black,
+                                backgroundColor: Colors.grey,
+                              ),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.only(right: 16),
+                              child: const CircleAvatar(
+                                child: Text("XS"),
+                                radius: 28,
+                                foregroundColor: Colors.black,
+                                backgroundColor: Colors.grey,
+                              ),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.only(right: 16),
+                              child: const CircleAvatar(
+                                child: Text("XS"),
+                                radius: 28,
+                                foregroundColor: Colors.black,
+                                backgroundColor: Colors.grey,
+                              ),
+                            ),
                           ],
                         ),
                       ),
