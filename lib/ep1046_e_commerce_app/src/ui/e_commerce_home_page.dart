@@ -25,9 +25,7 @@ class ECommerceHomePage extends StatelessWidget {
                   fit: BoxFit.fitHeight,
                 ),
               ),
-              Expanded(
-                  flex: 3,
-                  child: Container()),
+              Expanded(flex: 3, child: Container()),
             ],
           ),
           panel: Column(
@@ -138,7 +136,42 @@ class ECommerceHomePage extends StatelessWidget {
                           ],
                         ),
                       ),
-                    )
+                    ),
+                  ],
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.all(16.0),
+                child: Row(
+                  children: [
+                    CircleAvatar(
+                      backgroundColor: Colors.orange,
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Text(
+                        "02",
+                        style: TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ),
+                    CircleAvatar(
+                      backgroundColor: Colors.orange,
+                    ),
+                    SizedBox(width: 16,),
+                    Expanded(child: Container(
+                      decoration: BoxDecoration(
+                        color: Colors.black,
+                      ),
+                      padding: EdgeInsets.symmetric(vertical: 16),
+                      child: Center(
+                        child: Text("Add to cart", style: TextStyle(
+                          color: Colors.white,
+                        ),),
+                      ),
+                    ),),
                   ],
                 ),
               )
