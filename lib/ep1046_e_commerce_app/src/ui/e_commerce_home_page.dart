@@ -50,33 +50,41 @@ class ECommerceHomePage extends StatelessWidget {
                       children: [
                         CircleAvatar(
                           radius: 32,
-                          child: Text("\$68", style: TextStyle(
-                            fontSize: 32,
-                            fontWeight: FontWeight.bold,
-                          ),),
+                          child: Text(
+                            "\$68",
+                            style: TextStyle(
+                              fontSize: 32,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
                         ),
                         Column(
-                          children: [
-                            Text("PP-0008"),
-                            Text("Free Shipping")
-                          ],
+                          children: [Text("PP-0008"), Text("Free Shipping")],
                         ),
-                        IconButton(onPressed: (){}, icon: Icon(Icons.favorite)),
-
+                        IconButton(onPressed: () {}, icon: Icon(Icons.favorite)),
                       ],
                     ),
-                    SizedBox(height: 24,),
+                    SizedBox(
+                      height: 24,
+                    ),
                     Text("Montreal-based foundry, Pangram\nPangram*, has been a disrupter in the\n"
                         "typography world since 2016."),
                     ListView(
+                      scrollDirection: Axis.horizontal,
                       children: [
-                        CircleAvatar()
+                        CircleAvatar(
+                          child: Text("XS"),
+                          forgroundColor: Colors.black,
+                          backgroundColor: Colors.grey,
+                        ),
+                        CircleAvatar(),
+                        CircleAvatar(),
+                        CircleAvatar(),
                       ],
                     )
                   ],
                 ),
               )
-
             ],
           ),
         ),
