@@ -14,20 +14,23 @@ class ECommerceHomePage extends StatelessWidget {
             maxHeight: MediaQuery.of(context).size.height / 2,
             minHeight: MediaQuery.of(context).size.height / 2,
             borderRadius: const BorderRadius.only(topLeft: Radius.circular(24), topRight: Radius.circular(24)),
-            panel: Container(),
-            body: Column(
-              children: [
-                Expanded(
-                  child: CachedNetworkImage(
-                    imageUrl: 'https://cdn.pixabay.com/photo/2019/12/10/09/06/apple-iphone-11-pro-4685404__340.jpg',
-                    width: MediaQuery.of(context).size.width,
-                    height: MediaQuery.of(context).size.height,
-                    fit: BoxFit.fitHeight,
-                  ),
+          body: Column(
+            children: [
+              Expanded(
+                child: CachedNetworkImage(
+                  imageUrl: 'https://cdn.pixabay.com/photo/2019/12/10/09/06/apple-iphone-11-pro-4685404__340.jpg',
+                  width: MediaQuery.of(context).size.width,
+                  height: MediaQuery.of(context).size.height,
+                  fit: BoxFit.fitHeight,
                 ),
-                Expanded(child: Container()),
-              ],
-            )),
+              ),
+              Expanded(child: Container()),
+            ],
+          ),
+            panel: Container(),
+
+
+        ),
       ),
     );
   }
