@@ -28,6 +28,7 @@ class ECommerceHomePage extends StatelessWidget {
             ],
           ),
           panel: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Padding(
                 padding: const EdgeInsets.all(8.0),
@@ -50,10 +51,11 @@ class ECommerceHomePage extends StatelessWidget {
                       children: [
                         const CircleAvatar(
                           radius: 32,
+                          foregroundColor: Colors.black,
                           child: const Text(
                             "\$68",
                             style: TextStyle(
-                              fontSize: 32,
+                              fontSize: 24,
                               fontWeight: FontWeight.bold,
                             ),
                           ),
