@@ -42,21 +42,41 @@ class ECommerceHomePage extends StatelessWidget {
                   ),
                 ),
               ),
-              Row(
-                children: [
-                  CircleAvatar(
-                    child: Text("\$68", style: TextStyle(
-                      fontSize: 32,
-                      fontWeight: FontWeight.bold,
-                    ),),
-                  ),
-                  Column(
-                    children: [
-                      
-                    ],
-                  )
-                ],
+              Padding(
+                padding: const EdgeInsets.all(16.0),
+                child: Column(
+                  children: [
+                    Row(
+                      children: [
+                        CircleAvatar(
+                          radius: 32,
+                          child: Text("\$68", style: TextStyle(
+                            fontSize: 32,
+                            fontWeight: FontWeight.bold,
+                          ),),
+                        ),
+                        Column(
+                          children: [
+                            Text("PP-0008"),
+                            Text("Free Shipping")
+                          ],
+                        ),
+                        IconButton(onPressed: (){}, icon: Icon(Icons.favorite)),
+
+                      ],
+                    ),
+                    SizedBox(height: 24,),
+                    Text("Montreal-based foundry, Pangram\nPangram*, has been a disrupter in the\n"
+                        "typography world since 2016."),
+                    ListView(
+                      children: [
+                        CircleAvatar()
+                      ],
+                    )
+                  ],
+                ),
               )
+
             ],
           ),
         ),
