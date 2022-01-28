@@ -164,6 +164,7 @@ class ECommerceHomePage extends StatelessWidget {
                     Expanded(child: Container(
                       decoration: BoxDecoration(
                         color: Colors.black,
+                        borderRadius: BorderRadius.circular(32)
                       ),
                       padding: EdgeInsets.symmetric(vertical: 16),
                       child: Center(
