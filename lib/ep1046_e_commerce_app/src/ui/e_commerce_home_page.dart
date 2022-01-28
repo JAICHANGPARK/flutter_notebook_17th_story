@@ -169,6 +169,8 @@ class ECommerceHomePage extends StatelessWidget {
                       child: Center(
                         child: Text("Add to cart", style: TextStyle(
                           color: Colors.white,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 20
                         ),),
                       ),
                     ),),
