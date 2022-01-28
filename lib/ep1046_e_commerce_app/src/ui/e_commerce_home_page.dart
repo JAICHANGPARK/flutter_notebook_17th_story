@@ -17,6 +17,7 @@ class ECommerceHomePage extends StatelessWidget {
           body: Column(
             children: [
               Expanded(
+                flex: 4,
                 child: CachedNetworkImage(
                   imageUrl: 'https://cdn.pixabay.com/photo/2019/12/10/09/06/apple-iphone-11-pro-4685404__340.jpg',
                   width: MediaQuery.of(context).size.width,
@@ -24,7 +25,9 @@ class ECommerceHomePage extends StatelessWidget {
                   fit: BoxFit.fitHeight,
                 ),
               ),
-              Expanded(child: Container()),
+              Expanded(
+                  flex: 3,
+                  child: Container()),
             ],
           ),
           panel: Column(
