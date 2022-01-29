@@ -136,8 +136,15 @@ class ECommerceHomePage extends StatelessWidget {
                 padding: const EdgeInsets.symmetric(horizontal: 20),
                 child: Row(
                   children: [
-                    const CircleAvatar(
-                      backgroundColor: Colors.orange,
+                    GestureDetector(
+                      onTap: () {
+                        
+                      },
+                      child: const CircleAvatar(
+                        backgroundColor: Colors.orange,
+                        foregroundColor: Colors.black,
+                        child: Icon(Icons.remove),
+                      ),
                     ),
                     const Padding(
                       padding: EdgeInsets.all(8.0),
@@ -150,11 +157,10 @@ class ECommerceHomePage extends StatelessWidget {
                       ),
                     ),
                     GestureDetector(
-                      onTap: () {
-
-                      },
+                      onTap: () {},
                       child: const CircleAvatar(
                         backgroundColor: Colors.orange,
+                        foregroundColor: Colors.black,
                         child: Icon(Icons.add),
                       ),
                     ),
