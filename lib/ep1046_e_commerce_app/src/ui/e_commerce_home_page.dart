@@ -151,7 +151,7 @@ class ECommerceHomePage extends StatelessWidget {
                     ),
                     GestureDetector(
                       onTap: () {
-                        
+
                       },
                       child: const CircleAvatar(
                         backgroundColor: Colors.orange,
