@@ -110,11 +110,19 @@ class ECommerceHomePage extends StatelessWidget {
                           itemBuilder: (context, index) {
                             return Padding(
                               padding: const EdgeInsets.only(right: 16),
-                              child: CircleAvatar(
-                                child: Text(sizeItems[index].size ?? "12"),
-                                radius: 28,
-                                foregroundColor: Colors.black,
-                                backgroundColor: Colors.grey[200],
+                              child: GestureDetector(
+                                onTap: () {
+                                  for (int i = 0; i < sizeItems.length; i++) {
+                                    sizeItems[index].isSelect = false;
+                                  }
+                                  sizeItems[index].isSelect = true;
+                                },
+                                child: CircleAvatar(
+                                  child: Text(sizeItems[index].size ?? "12"),
+                                  radius: 28,
+                                  foregroundColor: Colors.black,
+                                  backgroundColor: Colors.grey[200],
+                                ),
                               ),
                             );
                           },
@@ -141,8 +149,14 @@ class ECommerceHomePage extends StatelessWidget {
                         ),
                       ),
                     ),
-                    const CircleAvatar(
-                      backgroundColor: Colors.orange,
+                    GestureDetector(
+                      onTap: () {
+                        
+                      },
+                      child: const CircleAvatar(
+                        backgroundColor: Colors.orange,
+                        child: Icon(Icons.add),
+                      ),
                     ),
                     const SizedBox(
                       width: 16,
