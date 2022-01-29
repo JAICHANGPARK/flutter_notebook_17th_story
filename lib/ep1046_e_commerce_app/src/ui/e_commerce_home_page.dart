@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_notebook_17th/ep1046_e_commerce_app/src/model/case_size.dart';
 import 'package:sliding_up_panel/sliding_up_panel.dart';
 
-List<CaseSize> sizeItems= [
+List<CaseSize> sizeItems = [
   CaseSize(false, "XS"),
   CaseSize(false, "XE"),
   CaseSize(false, "11"),
@@ -104,46 +104,20 @@ class ECommerceHomePage extends StatelessWidget {
                       padding: const EdgeInsets.symmetric(vertical: 16),
                       child: SizedBox(
                         height: 52,
-                        child: ListView(
+                        child: ListView.builder(
                           scrollDirection: Axis.horizontal,
-                          children: [
-                            Padding(
+                          itemCount: sizeItems.length,
+                          itemBuilder: (context, index) {
+                            return Padding(
                               padding: const EdgeInsets.only(right: 16),
                               child: CircleAvatar(
-                                child: const Text("XS"),
+                                child: Text(sizeItems[index].size ?? "12"),
                                 radius: 28,
                                 foregroundColor: Colors.black,
                                 backgroundColor: Colors.grey[200],
                               ),
-                            ),
-                            Padding(
-                              padding: const EdgeInsets.only(right: 16),
-                              child: CircleAvatar(
-                                child: const Text("XS"),
-                                radius: 28,
-                                foregroundColor: Colors.black,
-                                backgroundColor: Colors.grey[200],
-                              ),
-                            ),
-                            Padding(
-                              padding: const EdgeInsets.only(right: 16),
-                              child: CircleAvatar(
-                                child: const Text("XS"),
-                                radius: 28,
-                                foregroundColor: Colors.black,
-                                backgroundColor: Colors.grey[200],
-                              ),
-                            ),
-                            Padding(
-                              padding: const EdgeInsets.only(right: 16),
-                              child: CircleAvatar(
-                                child: const Text("XS"),
-                                radius: 28,
-                                foregroundColor: Colors.black,
-                                backgroundColor: Colors.grey[200],
-                              ),
-                            ),
-                          ],
+                            );
+                          },
                         ),
                       ),
                     ),
@@ -170,21 +144,21 @@ class ECommerceHomePage extends StatelessWidget {
                     const CircleAvatar(
                       backgroundColor: Colors.orange,
                     ),
-                    const SizedBox(width: 16,),
-                    Expanded(child: Container(
-                      decoration: BoxDecoration(
-                        color: Colors.black,
-                        borderRadius: BorderRadius.circular(32)
+                    const SizedBox(
+                      width: 16,
+                    ),
+                    Expanded(
+                      child: Container(
+                        decoration: BoxDecoration(color: Colors.black, borderRadius: BorderRadius.circular(32)),
+                        padding: const EdgeInsets.symmetric(vertical: 16),
+                        child: const Center(
+                          child: Text(
+                            "Add to cart",
+                            style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 20),
+                          ),
+                        ),
                       ),
-                      padding: const EdgeInsets.symmetric(vertical: 16),
-                      child: const Center(
-                        child: Text("Add to cart", style: TextStyle(
-                          color: Colors.white,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 20
-                        ),),
-                      ),
-                    ),),
+                    ),
                   ],
                 ),
               )
