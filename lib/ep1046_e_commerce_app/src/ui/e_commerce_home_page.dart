@@ -143,7 +143,12 @@ class ECommerceHomePage extends StatelessWidget {
                       children: [
                         GestureDetector(
                           onTap: () {
-                            ref.read(caseCountProvider.notifier).state--;
+                            int _cnt = cnt;
+                            _cnt--;
+                            if (_cnt < 1) {
+                              _cnt = 1;
+                            }
+                            ref.read(caseCountProvider.notifier).state = _cnt;
                           },
                           child: const CircleAvatar(
                             backgroundColor: Colors.orange,
@@ -154,7 +159,7 @@ class ECommerceHomePage extends StatelessWidget {
                         Padding(
                           padding: EdgeInsets.all(8.0),
                           child: Text(
-                            "$cnt",
+                            "${cnt < 10 ? "0" : ""}$cnt",
                             style: TextStyle(
                               fontSize: 16,
                               fontWeight: FontWeight.bold,
