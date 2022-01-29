@@ -157,10 +157,10 @@ class ECommerceHomePage extends StatelessWidget {
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsets.all(8.0),
+                          padding: const EdgeInsets.all(8.0),
                           child: Text(
                             "${cnt < 10 ? "0" : ""}$cnt",
-                            style: TextStyle(
+                            style: const TextStyle(
                               fontSize: 16,
                               fontWeight: FontWeight.bold,
                             ),
