@@ -1,6 +1,8 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_notebook_17th/ep1046_e_commerce_app/src/model/case_size.dart';
+import 'package:flutter_notebook_17th/ep1046_e_commerce_app/src/provider/case_provider.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:sliding_up_panel/sliding_up_panel.dart';
 
 List<CaseSize> sizeItems = [
@@ -134,52 +136,57 @@ class ECommerceHomePage extends StatelessWidget {
               ),
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 20),
-                child: Row(
-                  children: [
-                    GestureDetector(
-                      onTap: () {
-                        
-                      },
-                      child: const CircleAvatar(
-                        backgroundColor: Colors.orange,
-                        foregroundColor: Colors.black,
-                        child: Icon(Icons.remove),
-                      ),
-                    ),
-                    const Padding(
-                      padding: EdgeInsets.all(8.0),
-                      child: const Text(
-                        "02",
-                        style: TextStyle(
-                          fontSize: 16,
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                    ),
-                    GestureDetector(
-                      onTap: () {},
-                      child: const CircleAvatar(
-                        backgroundColor: Colors.orange,
-                        foregroundColor: Colors.black,
-                        child: Icon(Icons.add),
-                      ),
-                    ),
-                    const SizedBox(
-                      width: 16,
-                    ),
-                    Expanded(
-                      child: Container(
-                        decoration: BoxDecoration(color: Colors.black, borderRadius: BorderRadius.circular(32)),
-                        padding: const EdgeInsets.symmetric(vertical: 16),
-                        child: const Center(
-                          child: Text(
-                            "Add to cart",
-                            style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 20),
+                child: Consumer(
+                  builder: (BuildContext context, WidgetRef ref, Widget? child) {
+                    final cnt = ref.watch(caseCountProvider);
+                    return Row(
+                      children: [
+                        GestureDetector(
+                          onTap: () {
+                            ref.read(caseCountProvider.notifier).state--;
+                          },
+                          child: const CircleAvatar(
+                            backgroundColor: Colors.orange,
+                            foregroundColor: Colors.black,
+                            child: Icon(Icons.remove),
                           ),
                         ),
-                      ),
-                    ),
-                  ],
+                        Padding(
+                          padding: EdgeInsets.all(8.0),
+                          child: Text(
+                            "$cnt",
+                            style: TextStyle(
+                              fontSize: 16,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                        ),
+                        GestureDetector(
+                          onTap: () {},
+                          child: const CircleAvatar(
+                            backgroundColor: Colors.orange,
+                            foregroundColor: Colors.black,
+                            child: Icon(Icons.add),
+                          ),
+                        ),
+                        const SizedBox(
+                          width: 16,
+                        ),
+                        Expanded(
+                          child: Container(
+                            decoration: BoxDecoration(color: Colors.black, borderRadius: BorderRadius.circular(32)),
+                            padding: const EdgeInsets.symmetric(vertical: 16),
+                            child: const Center(
+                              child: Text(
+                                "Add to cart",
+                                style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 20),
+                              ),
+                            ),
+                          ),
+                        ),
+                      ],
+                    );
+                  },
                 ),
               )
             ],
