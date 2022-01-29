@@ -1,6 +1,16 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_17th/ep1046_e_commerce_app/src/model/case_size.dart';
 import 'package:sliding_up_panel/sliding_up_panel.dart';
+
+List<CaseSize> sizeItems= [
+  CaseSize(false, "XS"),
+  CaseSize(false, "XE"),
+  CaseSize(false, "11"),
+  CaseSize(false, "SE"),
+  CaseSize(false, "12"),
+  CaseSize(false, "13"),
+];
 
 class ECommerceHomePage extends StatelessWidget {
   const ECommerceHomePage({Key? key}) : super(key: key);
