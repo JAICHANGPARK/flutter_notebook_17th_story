@@ -74,14 +74,14 @@ class ECommerceHomePage extends StatelessWidget {
                                   fontSize: 24,
                                 ),
                               ),
-                              SizedBox(
+                              const SizedBox(
                                 height: 8,
                               ),
                               const Text("Free Shipping")
                             ],
                           ),
                         ),
-                        Spacer(),
+                        const Spacer(),
                         IconButton(onPressed: () {}, icon: const Icon(Icons.favorite)),
                       ],
                     ),
@@ -100,7 +100,7 @@ class ECommerceHomePage extends StatelessWidget {
                             Padding(
                               padding: const EdgeInsets.only(right: 16),
                               child: CircleAvatar(
-                                child: Text("XS"),
+                                child: const Text("XS"),
                                 radius: 28,
                                 foregroundColor: Colors.black,
                                 backgroundColor: Colors.grey[200],
@@ -109,7 +109,7 @@ class ECommerceHomePage extends StatelessWidget {
                             Padding(
                               padding: const EdgeInsets.only(right: 16),
                               child: CircleAvatar(
-                                child: Text("XS"),
+                                child: const Text("XS"),
                                 radius: 28,
                                 foregroundColor: Colors.black,
                                 backgroundColor: Colors.grey[200],
@@ -118,7 +118,7 @@ class ECommerceHomePage extends StatelessWidget {
                             Padding(
                               padding: const EdgeInsets.only(right: 16),
                               child: CircleAvatar(
-                                child: Text("XS"),
+                                child: const Text("XS"),
                                 radius: 28,
                                 foregroundColor: Colors.black,
                                 backgroundColor: Colors.grey[200],
@@ -127,7 +127,7 @@ class ECommerceHomePage extends StatelessWidget {
                             Padding(
                               padding: const EdgeInsets.only(right: 16),
                               child: CircleAvatar(
-                                child: Text("XS"),
+                                child: const Text("XS"),
                                 radius: 28,
                                 foregroundColor: Colors.black,
                                 backgroundColor: Colors.grey[200],
@@ -144,12 +144,12 @@ class ECommerceHomePage extends StatelessWidget {
                 padding: const EdgeInsets.symmetric(horizontal: 20),
                 child: Row(
                   children: [
-                    CircleAvatar(
+                    const CircleAvatar(
                       backgroundColor: Colors.orange,
                     ),
-                    Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: Text(
+                    const Padding(
+                      padding: EdgeInsets.all(8.0),
+                      child: const Text(
                         "02",
                         style: TextStyle(
                           fontSize: 16,
@@ -157,17 +157,17 @@ class ECommerceHomePage extends StatelessWidget {
                         ),
                       ),
                     ),
-                    CircleAvatar(
+                    const CircleAvatar(
                       backgroundColor: Colors.orange,
                     ),
-                    SizedBox(width: 16,),
+                    const SizedBox(width: 16,),
                     Expanded(child: Container(
                       decoration: BoxDecoration(
                         color: Colors.black,
                         borderRadius: BorderRadius.circular(32)
                       ),
-                      padding: EdgeInsets.symmetric(vertical: 16),
-                      child: Center(
+                      padding: const EdgeInsets.symmetric(vertical: 16),
+                      child: const Center(
                         child: Text("Add to cart", style: TextStyle(
                           color: Colors.white,
                           fontWeight: FontWeight.bold,
