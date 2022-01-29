@@ -167,7 +167,15 @@ class ECommerceHomePage extends StatelessWidget {
                           ),
                         ),
                         GestureDetector(
-                          onTap: () {},
+                          onTap: () {
+                            int _cnt = cnt;
+                            _cnt++;
+                            if(_cnt > 99){
+                              _cnt = 99;
+                            }
+
+                            ref.read(caseCountProvider.notifier).state = _cnt;
+                          },
                           child: const CircleAvatar(
                             backgroundColor: Colors.orange,
                             foregroundColor: Colors.black,
