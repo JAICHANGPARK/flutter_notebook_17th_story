@@ -2,7 +2,15 @@
 
 # Index
 
-## EP1046-
+## EP1049-
+
+### UI Source
+
+- Account Settings - Droid Multipurpose Mobile UI Kit by WhiteUI.Store
+- https://dribbble.com/shots/17375300-Account-Settings-Droid-Multipurpose-Mobile-UI-Kit/attachments/12498287?mode=media
+
+
+## EP1046-1048
 
 ### UI Source
 
