@@ -23,6 +23,7 @@ class AccountSettingPage extends StatelessWidget {
                           radius: 16,
                           backgroundColor: Colors.grey[200],
                           child: const Icon(Icons.chevron_left),
+                          foregroundColor: Colors.black,
                         ),
                         CircleAvatar(
                           radius: 16,
@@ -197,7 +198,10 @@ class AccountSettingPage extends StatelessWidget {
                                 radius: 8,
                                 backgroundColor: Colors.black,
                                 foregroundColor: Colors.white,
-                                child: Icon(Icons.add, size: 12,),
+                                child: Icon(
+                                  Icons.add,
+                                  size: 12,
+                                ),
                               ),
                               const SizedBox(
                                 width: 12,
