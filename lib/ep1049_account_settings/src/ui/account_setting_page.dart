@@ -60,7 +60,7 @@ class AccountSettingPage extends StatelessWidget {
                             ),
                           ),
                           const SizedBox(
-                            height: 16,
+                            height: 24,
                           ),
                           Row(
                             children: [
@@ -103,7 +103,7 @@ class AccountSettingPage extends StatelessWidget {
                             ],
                           ),
                           const Divider(
-                            height: 24,
+                            height: 32,
                           ),
                           Row(
                             children: [
@@ -145,6 +145,71 @@ class AccountSettingPage extends StatelessWidget {
                               ),
                             ],
                           ),
+                          const Divider(
+                            height: 32,
+                          ),
+                          Row(
+                            children: [
+                              Container(
+                                height: 42,
+                                width: 42,
+                                decoration: BoxDecoration(
+                                  shape: BoxShape.circle,
+                                  border: Border.all(
+                                    color: Colors.grey,
+                                  ),
+                                ),
+                              ),
+                              const SizedBox(
+                                width: 12,
+                              ),
+                              Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: const [
+                                  Text(
+                                    "Google",
+                                    style: TextStyle(
+                                      fontSize: 12,
+                                    ),
+                                  ),
+                                  Text(
+                                    "Not Connected",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                              const Spacer(),
+                              const CircleAvatar(
+                                backgroundColor: Color.fromRGBO(34, 34, 225, 1),
+                                foregroundColor: Colors.white,
+                                child: Icon(Icons.insert_link),
+                              ),
+                            ],
+                          ),
+                          const Divider(
+                            height: 32,
+                          ),
+                          Row(
+                            children: [
+                              CircleAvatar(
+                                radius: 8,
+                                backgroundColor: Colors.black,
+                                foregroundColor: Colors.white,
+                                child: Icon(Icons.add, size: 12,),
+                              ),
+                              const SizedBox(
+                                width: 12,
+                              ),
+                              Text(
+                                "Add More",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              )
+                            ],
+                          )
                         ],
                       ),
                     )
@@ -152,7 +217,7 @@ class AccountSettingPage extends StatelessWidget {
                 ),
               ),
             ),
-            const Divider(
+            Divider(
               height: 0,
               thickness: 1.2,
               color: Colors.grey[200],
