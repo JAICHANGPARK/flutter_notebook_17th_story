@@ -59,6 +59,9 @@ class AccountSettingPage extends StatelessWidget {
                               fontWeight: FontWeight.bold,
                             ),
                           ),
+                          SizedBox(
+                            height: 16,
+                          ),
                           Row(
                             children: [
                               Container(
@@ -71,19 +74,35 @@ class AccountSettingPage extends StatelessWidget {
                                   ),
                                 ),
                               ),
+                              SizedBox(
+                                width: 12,
+                              ),
                               Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
                                 children: const [
-                                  Text("Facebook"),
-                                  Text("Connected"),
+                                  Text(
+                                    "Facebook",
+                                    style: TextStyle(
+                                      fontSize: 12,
+                                    ),
+                                  ),
+                                  Text(
+                                    "Connected",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
                                 ],
                               ),
+                              Spacer(),
                               const CircleAvatar(
                                 backgroundColor: Color.fromRGBO(238, 238, 255, 1),
                                 foregroundColor: Color.fromRGBO(34, 34, 225, 1),
                                 child: Icon(Icons.check),
-                              )
+                              ),
                             ],
-                          )
+                          ),
+                          Divider(),
                         ],
                       ),
                     )
