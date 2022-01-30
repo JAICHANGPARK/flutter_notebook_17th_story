@@ -59,7 +59,7 @@ class AccountSettingPage extends StatelessWidget {
                               fontWeight: FontWeight.bold,
                             ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 16,
                           ),
                           Row(
@@ -74,7 +74,7 @@ class AccountSettingPage extends StatelessWidget {
                                   ),
                                 ),
                               ),
-                              SizedBox(
+                              const SizedBox(
                                 width: 12,
                               ),
                               Column(
@@ -94,7 +94,7 @@ class AccountSettingPage extends StatelessWidget {
                                   ),
                                 ],
                               ),
-                              Spacer(),
+                              const Spacer(),
                               const CircleAvatar(
                                 backgroundColor: Color.fromRGBO(238, 238, 255, 1),
                                 foregroundColor: Color.fromRGBO(34, 34, 225, 1),
@@ -102,7 +102,49 @@ class AccountSettingPage extends StatelessWidget {
                               ),
                             ],
                           ),
-                          Divider(),
+                          const Divider(
+                            height: 24,
+                          ),
+                          Row(
+                            children: [
+                              Container(
+                                height: 42,
+                                width: 42,
+                                decoration: BoxDecoration(
+                                  shape: BoxShape.circle,
+                                  border: Border.all(
+                                    color: Colors.grey,
+                                  ),
+                                ),
+                              ),
+                              const SizedBox(
+                                width: 12,
+                              ),
+                              Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: const [
+                                  Text(
+                                    "Twitter",
+                                    style: TextStyle(
+                                      fontSize: 12,
+                                    ),
+                                  ),
+                                  Text(
+                                    "Not Connected",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                              const Spacer(),
+                              const CircleAvatar(
+                                backgroundColor: Color.fromRGBO(34, 34, 225, 1),
+                                foregroundColor: Colors.white,
+                                child: Icon(Icons.insert_link),
+                              ),
+                            ],
+                          ),
                         ],
                       ),
                     )
@@ -113,7 +155,7 @@ class AccountSettingPage extends StatelessWidget {
             const Divider(
               height: 0,
               thickness: 1.2,
-              color: Colors.grey,
+              color: Colors.grey[200],
             ),
             Container(
               height: 72,
