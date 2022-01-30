@@ -22,7 +22,7 @@ class AccountSettingPage extends StatelessWidget {
                         CircleAvatar(
                           radius: 16,
                           backgroundColor: Colors.grey[200],
-                          child: Icon(Icons.chevron_left),
+                          child: const Icon(Icons.chevron_left),
                         ),
                         CircleAvatar(
                           radius: 16,
@@ -30,30 +30,30 @@ class AccountSettingPage extends StatelessWidget {
                         )
                       ],
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 16,
                     ),
-                    Text(
+                    const Text(
                       "Apps",
                       style: TextStyle(
                         fontSize: 24,
                         fontWeight: FontWeight.bold,
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 4,
                     ),
-                    Text("Connected apps and services"),
-                    SizedBox(
+                    const Text("Connected apps and services"),
+                    const SizedBox(
                       height: 16,
                     ),
                     Container(
                       decoration: BoxDecoration(color: Colors.grey[100], borderRadius: BorderRadius.circular(8)),
-                      padding: EdgeInsets.all(16),
+                      padding: const EdgeInsets.all(16),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text(
+                          const Text(
                             "Social profiles",
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
@@ -72,12 +72,12 @@ class AccountSettingPage extends StatelessWidget {
                                 ),
                               ),
                               Column(
-                                children: [
+                                children: const [
                                   Text("Facebook"),
                                   Text("Connected"),
                                 ],
                               ),
-                              CircleAvatar(
+                              const CircleAvatar(
                                 backgroundColor: Color.fromRGBO(238, 238, 255, 1),
                                 foregroundColor: Color.fromRGBO(34, 34, 225, 1),
                                 child: Icon(Icons.check),
@@ -91,26 +91,26 @@ class AccountSettingPage extends StatelessWidget {
                 ),
               ),
             ),
-            Divider(
+            const Divider(
               height: 0,
               thickness: 1.2,
               color: Colors.grey,
             ),
             Container(
               height: 72,
-              decoration: BoxDecoration(color: Colors.white),
+              decoration: const BoxDecoration(color: Colors.white),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  IconButton(onPressed: () {}, icon: Icon(Icons.inbox)),
-                  IconButton(onPressed: () {}, icon: Icon(Icons.bookmarks)),
+                  IconButton(onPressed: () {}, icon: const Icon(Icons.inbox)),
+                  IconButton(onPressed: () {}, icon: const Icon(Icons.bookmarks)),
                   FloatingActionButton(
                     onPressed: () {},
-                    backgroundColor: Color.fromRGBO(34, 34, 225, 1),
-                    child: Icon(Icons.edit),
+                    backgroundColor: const Color.fromRGBO(34, 34, 225, 1),
+                    child: const Icon(Icons.edit),
                   ),
-                  IconButton(onPressed: () {}, icon: Icon(Icons.send)),
-                  IconButton(onPressed: () {}, icon: Icon(Icons.menu)),
+                  IconButton(onPressed: () {}, icon: const Icon(Icons.send)),
+                  IconButton(onPressed: () {}, icon: const Icon(Icons.menu)),
                 ],
               ),
             )
