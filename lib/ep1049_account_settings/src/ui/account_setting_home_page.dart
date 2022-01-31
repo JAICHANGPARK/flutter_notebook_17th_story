@@ -52,14 +52,30 @@ class AccountSettingHomePage extends StatelessWidget {
                       padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                       child: TextField(
                         decoration: InputDecoration(
-                          border: InputBorder.none,
-                          hintText: "Type to search",
-                          icon: Icon(Icons.search),
-                          hintStyle: TextStyle(
-                            fontSize: 13
-                          )
-                        ),
+                            border: InputBorder.none,
+                            hintText: "Type to search",
+                            icon: Icon(Icons.search),
+                            hintStyle: TextStyle(fontSize: 13)),
                       ),
+                    ),
+                  ),
+                  SizedBox(
+                    height: 32,
+                  ),
+                  Text("Account"),
+                  Text("Update your info to keep your account"),
+                  Container(
+                    decoration: BoxDecoration(color: Colors.blueGrey[50], borderRadius: BorderRadius.circular(16)),
+                    child: Column(
+                      children: [
+                        Row(
+                          children: [
+                            Icon(Icons.account_circle_outlined),
+                            Text("Account information"),
+                            IconButton(onPressed: () {}, icon: Icon(Icons.keyboard_arrow_right))
+                          ],
+                        )
+                      ],
                     ),
                   )
                 ],
