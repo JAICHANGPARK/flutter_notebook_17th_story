@@ -101,7 +101,7 @@ class AccountSettingHomePage extends StatelessWidget {
                               ),
                               const Text(
                                 "Account information",
-                                style: const TextStyle(
+                                style: TextStyle(
                                   fontWeight: FontWeight.bold,
                                 ),
                               ),
@@ -160,6 +160,7 @@ class AccountSettingHomePage extends StatelessWidget {
                       ),
                     ),
                   ),
+                  SizedBox(height: 24,),
                   Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: Column(
@@ -180,6 +181,101 @@ class AccountSettingHomePage extends StatelessWidget {
                           ),
                         ),
                       ],
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Container(
+                      padding: const EdgeInsets.all(12),
+                      decoration: BoxDecoration(color: Colors.blueGrey[50], borderRadius: BorderRadius.circular(16)),
+                      child: Column(
+                        children: [
+                          Row(
+                            children: [
+                              const Icon(Icons.lock_outlined),
+                              const SizedBox(
+                                width: 8,
+                              ),
+                              const Text(
+                                "Security",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                              const Spacer(),
+                              IconButton(
+                                onPressed: () {},
+                                icon: const Icon(
+                                  Icons.keyboard_arrow_right,
+                                ),
+                              )
+                            ],
+                          ),
+                          Row(
+                            children: [
+                              const Icon(Icons.logout),
+                              const SizedBox(
+                                width: 8,
+                              ),
+                              const Text(
+                                "Login details",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                              const Spacer(),
+                              IconButton(
+                                onPressed: () {},
+                                icon: const Icon(
+                                  Icons.keyboard_arrow_right,
+                                ),
+                              )
+                            ],
+                          ),
+                          Row(
+                            children: [
+                              const Icon(Icons.monetization_on),
+                              const SizedBox(
+                                width: 8,
+                              ),
+                              const Text(
+                                "Billing",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                              const Spacer(),
+                              IconButton(
+                                onPressed: () {},
+                                icon: const Icon(
+                                  Icons.keyboard_arrow_right,
+                                ),
+                              )
+                            ],
+                          ),
+                          Row(
+                            children: [
+                              const Icon(Icons.visibility_off_outlined),
+                              const SizedBox(
+                                width: 8,
+                              ),
+                              const Text(
+                                "Privacy",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                              const Spacer(),
+                              IconButton(
+                                onPressed: () {},
+                                icon: const Icon(
+                                  Icons.keyboard_arrow_right,
+                                ),
+                              )
+                            ],
+                          )
+                        ],
+                      ),
                     ),
                   ),
                 ],
