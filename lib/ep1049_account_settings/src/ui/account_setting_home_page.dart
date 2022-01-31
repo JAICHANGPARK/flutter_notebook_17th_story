@@ -30,13 +30,31 @@ class AccountSettingHomePage extends StatelessWidget {
                             ),),
                           ),
                         ),
-
                       ],
                     ),
                   ),
                   const SizedBox(
                     height: 16,
                   ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 16),
+                    child: Container(
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.grey,
+                            spreadRadius: 2,
+                            blurRadius: 2
+                          ),
+
+                        ],
+                      ),
+                      child: TextField(
+
+                      ),
+                    ),
+                  )
                 ],
               ),
             )),
