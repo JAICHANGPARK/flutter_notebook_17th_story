@@ -68,15 +68,71 @@ class AccountSettingHomePage extends StatelessWidget {
                   Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: Container(
-                      padding: EdgeInsets.all(8),
+                      padding: EdgeInsets.all(12),
                       decoration: BoxDecoration(color: Colors.blueGrey[50], borderRadius: BorderRadius.circular(16)),
                       child: Column(
                         children: [
                           Row(
                             children: [
                               Icon(Icons.account_circle_outlined),
-                              Text("Account information"),
-                              IconButton(onPressed: () {}, icon: Icon(Icons.keyboard_arrow_right))
+                              SizedBox(
+                                width: 8,
+                              ),
+                              Text(
+                                "Account information",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                              Spacer(),
+                              IconButton(
+                                onPressed: () {},
+                                icon: Icon(
+                                  Icons.keyboard_arrow_right,
+                                ),
+                              )
+                            ],
+                          ),
+                          Row(
+                            children: [
+                              Icon(Icons.supervisor_account_outlined),
+                              SizedBox(
+                                width: 8,
+                              ),
+                              Text(
+                                "Friends",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                              Spacer(),
+                              IconButton(
+                                onPressed: () {},
+                                icon: Icon(
+                                  Icons.keyboard_arrow_right,
+                                ),
+                              )
+                            ],
+                          ),
+                          Row(
+                            children: [
+                              Icon(Icons.notifications_outlined),
+                              SizedBox(
+                                width: 8,
+                              ),
+                              Text(
+                                "Account information",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                              Spacer(),
+                              IconButton(
+                                onPressed: () {},
+                                icon: Icon(
+                                  Icons.keyboard_arrow_right,
+                                ),
+                              )
                             ],
                           )
                         ],
