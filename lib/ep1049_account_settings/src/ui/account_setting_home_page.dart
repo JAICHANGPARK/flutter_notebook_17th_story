@@ -44,7 +44,7 @@ class AccountSettingHomePage extends StatelessWidget {
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(24),
                         boxShadow: [
-                          BoxShadow(color: Colors.grey[200]!, spreadRadius: 2, blurRadius: 2),
+                          BoxShadow(color: Colors.grey[400]!, spreadRadius: 1.5, blurRadius: 3),
                         ],
                       ),
                       padding: EdgeInsets.symmetric(horizontal: 8),
