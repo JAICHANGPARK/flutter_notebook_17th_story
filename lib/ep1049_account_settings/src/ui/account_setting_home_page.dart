@@ -41,9 +41,10 @@ class AccountSettingHomePage extends StatelessWidget {
                     child: Container(
                       decoration: BoxDecoration(
                         color: Colors.white,
+                        borderRadius: BorderRadius.circular(24),
                         boxShadow: [
                           BoxShadow(
-                            color: Colors.grey,
+                            color: Colors.grey[200]!,
                             spreadRadius: 2,
                             blurRadius: 2
                           ),
