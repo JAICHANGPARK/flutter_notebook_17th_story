@@ -51,8 +51,8 @@ class AccountSettingHomePage extends StatelessWidget {
                           BoxShadow(color: Colors.grey[300]!, spreadRadius: 3, blurRadius: 1.5),
                         ],
                       ),
-                      padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
-                      child: TextField(
+                      padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                      child: const TextField(
                         decoration: InputDecoration(
                             border: InputBorder.none,
                             hintText: "Type to search",
@@ -61,14 +61,14 @@ class AccountSettingHomePage extends StatelessWidget {
                       ),
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 32,
                   ),
                   Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
+                      children: const [
                         Text(
                           "Account",
                           style: TextStyle(
@@ -89,26 +89,26 @@ class AccountSettingHomePage extends StatelessWidget {
                   Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: Container(
-                      padding: EdgeInsets.all(12),
+                      padding: const EdgeInsets.all(12),
                       decoration: BoxDecoration(color: Colors.blueGrey[50], borderRadius: BorderRadius.circular(16)),
                       child: Column(
                         children: [
                           Row(
                             children: [
-                              Icon(Icons.account_circle_outlined),
-                              SizedBox(
+                              const Icon(Icons.account_circle_outlined),
+                              const SizedBox(
                                 width: 8,
                               ),
-                              Text(
+                              const Text(
                                 "Account information",
-                                style: TextStyle(
+                                style: const TextStyle(
                                   fontWeight: FontWeight.bold,
                                 ),
                               ),
-                              Spacer(),
+                              const Spacer(),
                               IconButton(
                                 onPressed: () {},
-                                icon: Icon(
+                                icon: const Icon(
                                   Icons.keyboard_arrow_right,
                                 ),
                               )
@@ -116,20 +116,20 @@ class AccountSettingHomePage extends StatelessWidget {
                           ),
                           Row(
                             children: [
-                              Icon(Icons.supervisor_account_outlined),
-                              SizedBox(
+                              const Icon(Icons.supervisor_account_outlined),
+                              const SizedBox(
                                 width: 8,
                               ),
-                              Text(
+                              const Text(
                                 "Friends",
                                 style: TextStyle(
                                   fontWeight: FontWeight.bold,
                                 ),
                               ),
-                              Spacer(),
+                              const Spacer(),
                               IconButton(
                                 onPressed: () {},
-                                icon: Icon(
+                                icon: const Icon(
                                   Icons.keyboard_arrow_right,
                                 ),
                               )
@@ -137,20 +137,20 @@ class AccountSettingHomePage extends StatelessWidget {
                           ),
                           Row(
                             children: [
-                              Icon(Icons.notifications_outlined),
-                              SizedBox(
+                              const Icon(Icons.notifications_outlined),
+                              const SizedBox(
                                 width: 8,
                               ),
-                              Text(
+                              const Text(
                                 "Account information",
                                 style: TextStyle(
                                   fontWeight: FontWeight.bold,
                                 ),
                               ),
-                              Spacer(),
+                              const Spacer(),
                               IconButton(
                                 onPressed: () {},
-                                icon: Icon(
+                                icon: const Icon(
                                   Icons.keyboard_arrow_right,
                                 ),
                               )
@@ -164,7 +164,7 @@ class AccountSettingHomePage extends StatelessWidget {
                     padding: const EdgeInsets.all(8.0),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
+                      children: const [
                         Text(
                           "Privacy",
                           style: TextStyle(
