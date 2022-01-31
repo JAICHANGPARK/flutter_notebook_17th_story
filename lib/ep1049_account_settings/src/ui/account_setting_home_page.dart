@@ -54,6 +54,9 @@ class AccountSettingHomePage extends StatelessWidget {
                           border: InputBorder.none,
                           hintText: "Type to search",
                           icon: Icon(Icons.search),
+                          hintStyle: TextStyle(
+                            fontSize: 13
+                          )
                         ),
                       ),
                     ),
