@@ -40,11 +40,12 @@ class AccountSettingHomePage extends StatelessWidget {
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 16),
                     child: Container(
+                      height: 42,
                       decoration: BoxDecoration(
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(24),
                         boxShadow: [
-                          BoxShadow(color: Colors.grey[400]!, spreadRadius: 1.5, blurRadius: 3),
+                          BoxShadow(color: Colors.grey[300]!, spreadRadius: 3, blurRadius: 1.5),
                         ],
                       ),
                       padding: EdgeInsets.symmetric(horizontal: 8),
