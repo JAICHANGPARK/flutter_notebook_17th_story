@@ -10,7 +10,36 @@ class AccountSettingHomePage extends StatelessWidget {
       body: SafeArea(
         child: Column(
           children: [
-            Expanded(child: Placeholder()),
+            Expanded(child: SingleChildScrollView(
+              child: Column(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.all(16.0),
+                    child: Row(
+                      children: [
+                        CircleAvatar(
+                          radius: 16,
+                          backgroundColor: Colors.grey[200],
+                          child: const Icon(Icons.chevron_left),
+                          foregroundColor: Colors.black,
+                        ),
+                        const Expanded(
+                          child: Center(
+                            child: Text("Settings", style: TextStyle(
+                              fontWeight: FontWeight.bold
+                            ),),
+                          ),
+                        ),
+
+                      ],
+                    ),
+                  ),
+                  const SizedBox(
+                    height: 16,
+                  ),
+                ],
+              ),
+            )),
             Divider(
               height: 0,
               thickness: 1.2,
