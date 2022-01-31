@@ -6,6 +6,7 @@ class AccountSettingHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       body: SafeArea(
         child: Column(
           children: [
@@ -48,7 +49,7 @@ class AccountSettingHomePage extends StatelessWidget {
                           BoxShadow(color: Colors.grey[300]!, spreadRadius: 3, blurRadius: 1.5),
                         ],
                       ),
-                      padding: EdgeInsets.symmetric(horizontal: 8),
+                      padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                       child: TextField(
                         decoration: InputDecoration(
                           border: InputBorder.none,
