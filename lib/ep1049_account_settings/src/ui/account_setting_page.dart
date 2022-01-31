@@ -193,7 +193,7 @@ class AccountSettingPage extends StatelessWidget {
                             height: 32,
                           ),
                           Row(
-                            children: [
+                            children: const [
                               CircleAvatar(
                                 radius: 8,
                                 backgroundColor: Colors.black,
@@ -203,7 +203,7 @@ class AccountSettingPage extends StatelessWidget {
                                   size: 12,
                                 ),
                               ),
-                              const SizedBox(
+                              SizedBox(
                                 width: 12,
                               ),
                               Text(
