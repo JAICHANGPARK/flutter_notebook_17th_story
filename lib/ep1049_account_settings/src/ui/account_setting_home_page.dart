@@ -14,6 +14,7 @@ class AccountSettingHomePage extends StatelessWidget {
             Expanded(
                 child: SingleChildScrollView(
               child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8),
@@ -63,8 +64,28 @@ class AccountSettingHomePage extends StatelessWidget {
                   SizedBox(
                     height: 32,
                   ),
-                  Text("Account"),
-                  Text("Update your info to keep your account"),
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          "Account",
+                          style: TextStyle(
+                            fontSize: 16,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        Text(
+                          "Update your info to keep your account",
+                          style: TextStyle(
+                            fontSize: 12,
+                            color: Colors.grey,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
                   Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: Container(
