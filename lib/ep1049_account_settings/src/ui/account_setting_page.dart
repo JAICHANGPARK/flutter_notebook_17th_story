@@ -49,7 +49,10 @@ class AccountSettingPage extends StatelessWidget {
                       height: 16,
                     ),
                     Container(
-                      decoration: BoxDecoration(color: Colors.grey[100], borderRadius: BorderRadius.circular(8)),
+                      decoration: BoxDecoration(
+                        color: Colors.grey[100],
+                        borderRadius: BorderRadius.circular(8),
+                      ),
                       padding: const EdgeInsets.all(16),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
@@ -186,6 +189,95 @@ class AccountSettingPage extends StatelessWidget {
                                 backgroundColor: Color.fromRGBO(34, 34, 225, 1),
                                 foregroundColor: Colors.white,
                                 child: Icon(Icons.insert_link),
+                              ),
+                            ],
+                          ),
+                          const Divider(
+                            height: 32,
+                          ),
+                          Row(
+                            children: const [
+                              CircleAvatar(
+                                radius: 8,
+                                backgroundColor: Colors.black,
+                                foregroundColor: Colors.white,
+                                child: Icon(
+                                  Icons.add,
+                                  size: 12,
+                                ),
+                              ),
+                              SizedBox(
+                                width: 12,
+                              ),
+                              Text(
+                                "Add More",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              )
+                            ],
+                          )
+                        ],
+                      ),
+                    ),
+                    const SizedBox(
+                      height: 16,
+                    ),
+                    Container(
+                      decoration: BoxDecoration(
+                        color: Colors.grey[100],
+                        borderRadius: BorderRadius.circular(8),
+                      ),
+                      padding: const EdgeInsets.all(16),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          const Text(
+                            "Apps",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                          const SizedBox(
+                            height: 24,
+                          ),
+                          Row(
+                            children: [
+                              Container(
+                                height: 42,
+                                width: 42,
+                                decoration: BoxDecoration(
+                                  shape: BoxShape.circle,
+                                  border: Border.all(
+                                    color: Colors.grey,
+                                  ),
+                                ),
+                              ),
+                              const SizedBox(
+                                width: 12,
+                              ),
+                              Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: const [
+                                  Text(
+                                    "Dropbox",
+                                    style: TextStyle(
+                                      fontSize: 12,
+                                    ),
+                                  ),
+                                  Text(
+                                    "Connected",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                              const Spacer(),
+                              const CircleAvatar(
+                                backgroundColor: Color.fromRGBO(238, 238, 255, 1),
+                                foregroundColor: Color.fromRGBO(34, 34, 225, 1),
+                                child: Icon(Icons.check),
                               ),
                             ],
                           ),
