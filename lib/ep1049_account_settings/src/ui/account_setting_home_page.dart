@@ -9,6 +9,7 @@ class AccountSettingHomePage extends StatelessWidget {
       resizeToAvoidBottomInset: false,
       body: SafeArea(
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Expanded(
                 child: SingleChildScrollView(
@@ -64,18 +65,22 @@ class AccountSettingHomePage extends StatelessWidget {
                   ),
                   Text("Account"),
                   Text("Update your info to keep your account"),
-                  Container(
-                    decoration: BoxDecoration(color: Colors.blueGrey[50], borderRadius: BorderRadius.circular(16)),
-                    child: Column(
-                      children: [
-                        Row(
-                          children: [
-                            Icon(Icons.account_circle_outlined),
-                            Text("Account information"),
-                            IconButton(onPressed: () {}, icon: Icon(Icons.keyboard_arrow_right))
-                          ],
-                        )
-                      ],
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Container(
+                      padding: EdgeInsets.all(8),
+                      decoration: BoxDecoration(color: Colors.blueGrey[50], borderRadius: BorderRadius.circular(16)),
+                      child: Column(
+                        children: [
+                          Row(
+                            children: [
+                              Icon(Icons.account_circle_outlined),
+                              Text("Account information"),
+                              IconButton(onPressed: () {}, icon: Icon(Icons.keyboard_arrow_right))
+                            ],
+                          )
+                        ],
+                      ),
                     ),
                   )
                 ],
