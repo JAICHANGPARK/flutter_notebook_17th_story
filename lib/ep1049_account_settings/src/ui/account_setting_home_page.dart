@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class AccountSettingHomePage extends StatelessWidget {
   const AccountSettingHomePage({Key? key}) : super(key: key);
 
@@ -10,7 +9,8 @@ class AccountSettingHomePage extends StatelessWidget {
       body: SafeArea(
         child: Column(
           children: [
-            Expanded(child: SingleChildScrollView(
+            Expanded(
+                child: SingleChildScrollView(
               child: Column(
                 children: [
                   Padding(
@@ -25,9 +25,10 @@ class AccountSettingHomePage extends StatelessWidget {
                         ),
                         const Expanded(
                           child: Center(
-                            child: Text("Settings", style: TextStyle(
-                              fontWeight: FontWeight.bold
-                            ),),
+                            child: Text(
+                              "Settings",
+                              style: TextStyle(fontWeight: FontWeight.bold),
+                            ),
                           ),
                         ),
                       ],
@@ -43,16 +44,16 @@ class AccountSettingHomePage extends StatelessWidget {
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(24),
                         boxShadow: [
-                          BoxShadow(
-                            color: Colors.grey[200]!,
-                            spreadRadius: 2,
-                            blurRadius: 2
-                          ),
-
+                          BoxShadow(color: Colors.grey[200]!, spreadRadius: 2, blurRadius: 2),
                         ],
                       ),
+                      padding: EdgeInsets.symmetric(horizontal: 8),
                       child: TextField(
-
+                        decoration: InputDecoration(
+                          border: InputBorder.none,
+                          hintText: "Type to search",
+                          icon: Icon(Icons.search),
+                        ),
                       ),
                     ),
                   )
